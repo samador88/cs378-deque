@@ -65,3 +65,43 @@ TYPED_TEST(Deque_Fixture, test_2) {
     //***************remember to change this backASSERT_FALSE(x.empty());
     ASSERT_EQ(x.size(),5);}
 
+// -----
+// =operator
+// -----
+
+TYPED_TEST(Deque_Fixture, assignment1) {
+    typedef typename TestFixture::deque_type deque_type;
+    deque_type x(5, 1);
+    deque_type y(10, 2);
+    x = y;
+    ASSERT_EQ(x,y);}
+
+TYPED_TEST(Deque_Fixture, assignment2) {
+    typedef typename TestFixture::deque_type deque_type;
+    deque_type x(10, 2);
+    deque_type y(5, 1);
+    x = y;
+    ASSERT_EQ(x,y);}
+
+TYPED_TEST(Deque_Fixture, assignment3) {
+    typedef typename TestFixture::deque_type deque_type;
+    deque_type x(5, 1);
+    deque_type y(5, 1);
+    x = y;
+    ASSERT_EQ(x,y);}
+
+TYPED_TEST(Deque_Fixture, assignment4) {
+    typedef typename TestFixture::deque_type deque_type;
+    deque_type x(5, 2);
+    deque_type y(5, 1);
+    x = y;
+    ASSERT_EQ(x,y);}
+
+// -----
+// index
+// -----
+
+TYPED_TEST(Deque_Fixture, index1) {
+    typedef typename TestFixture::deque_type deque_type;
+    deque_type x(5, 1);
+    ASSERT_EQ(x[1],1);}

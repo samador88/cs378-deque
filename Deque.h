@@ -585,13 +585,11 @@ class my_deque {
         // -----------
 
         /**
-         * <your documentation>
+         * @param 
+         * @return reference to element at that index
          */
         reference operator [] (size_type index) {
-            // <your code>
-            // dummy is just to be able to compile the skeleton, remove it
-            static value_type dummy;
-            return dummy;}
+            return *(_bm+index);}
 
         /**
          * <your documentation>
