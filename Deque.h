@@ -376,7 +376,13 @@ class my_deque {
                 // data
                 // ----
 
-                // <your data>
+                allocates_type _a;
+                pointer _b;
+                pointer _e; //capactity
+                pointer _bm; //beginning of actual data
+                pointer _em; //end of actual data, size
+                pointer _mm; //middle of data
+                unsigned int _size;
 
             private:
                 // -----
@@ -499,14 +505,18 @@ class my_deque {
         // ------------
 
         /**
-         * <your documentation>
+         * default constructor
+         *allocator type is defaulted
          */
-        explicit my_deque (const allocator_type& a = allocator_type()) {
-            // <your code>
+        explicit my_deque (const allocator_type& a = allocator_type()) : 
+            _a (a){
+            _b = _e = _em = _bm = _mm = 0;
+            _size = 0; 
+            
             assert(valid());}
 
         /**
-         * <your documentation>
+         * creates a deque of given size, type and allocator are defaulted
          */
         explicit my_deque (size_type s, const_reference v = value_type(), const allocator_type& a = allocator_type()) {
             // <your code>
