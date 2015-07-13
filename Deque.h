@@ -522,7 +522,7 @@ class my_deque {
             _size = s;
             _e = _b + _size;
             _mm = _em = _b + (_size/2);
-            my_uninitialized_fill(_a, begin(), end(), v);
+            uninitialized_fill(_a, begin(), end(), v);
             assert(valid());}
 
         /**
@@ -536,7 +536,7 @@ class my_deque {
             _e = _b + that.size();
             _mm = _em = _b + (that.size()/2);
             _size = that.size();
-            my_uninitialized_copy(_a, that.begin(), that.end(), begin());
+            uninitialized_copy(_a, that.begin(), that.end(), begin());
             assert(valid());}
 
         // ----------
