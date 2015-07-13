@@ -379,13 +379,6 @@ class my_deque {
                 // data
                 // ----
 
-                allocaor_type _a;
-                pointer _b;
-                pointer _e; //capactity
-                pointer _bm; //beginning of actual data
-                pointer _em; //end of actual data, size
-                pointer _mm; //middle of data
-                unsigned int _size;
 
             private:
                 // -----
@@ -523,7 +516,7 @@ class my_deque {
          * allocates the correct size and fills it with the correct type
          * moves pointers to appropriate places
          */
-        explicit my_deque (size_type s, const_reference v = value_type(), const allocator_type& a = allocator_type()) 
+        explicit my_deque (size_type s, const_reference v = value_type(), const allocator_type& a = allocator_type()) :
             _a (a) {
             _b = _bm = a.allocate(s);
             _size = s;
