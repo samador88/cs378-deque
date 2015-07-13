@@ -579,8 +579,8 @@ class my_deque {
             }
             else{
                 clear();
-                reserve(rhs.size());
-                _em = uninitialized_copy(_a,rhs.begin(),rhs.end(),begin());
+                //reserve(rhs.size());  either create reserve function or create new deque of that size and swap
+                _em = &(*uninitialized_copy(_a,rhs.begin(),rhs.end(),begin()));
             }
             assert(valid());
             return *this;}
