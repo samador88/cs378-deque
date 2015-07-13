@@ -125,11 +125,14 @@ class my_deque {
         // ----
         // data
         // ----
-
-        allocator_type _a;
-
-        // <your data>
-
+        allocater_type _a;
+        pointer _b;
+        pointer _e; //capactity
+        pointer _bm; //beginning of actual data
+        pointer _em; //end of actual data, size
+        pointer _mm; //middle of data
+        unsigned int _size;
+        
     private:
         // -----
         // valid
@@ -376,7 +379,7 @@ class my_deque {
                 // data
                 // ----
 
-                allocates_type _a;
+                allocater_type _a;
                 pointer _b;
                 pointer _e; //capactity
                 pointer _bm; //beginning of actual data
@@ -517,15 +520,23 @@ class my_deque {
 
         /**
          * creates a deque of given size, type and allocator are defaulted
+         * allocates the correct size and fills it with the correct type
+         * moves pointers to appropriate places
          */
-        explicit my_deque (size_type s, const_reference v = value_type(), const allocator_type& a = allocator_type()) {
-            // <your code>
+        explicit my_deque (size_type s, const_reference v = value_type(), const allocator_type& a = allocator_type()) 
+            _a (a) {
+            _b = _bm = a.allocate(s);
+            _size = s;
+            _e = _b + _size;
+            _mm = _em = b + (_size/2);
+            my_uninitialized_fill(_a, begin(), end(), v);
             assert(valid());}
 
         /**
          * <your documentation>
          */
-        my_deque (const my_deque& that) {
+        my_deque (const my_deque& that) : 
+            a(that.a) {
             // <your code>
             assert(valid());}
 

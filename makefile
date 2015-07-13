@@ -2,8 +2,8 @@ FILES := 				 				\
 	.travis.yml				 			\
 	deque-tests/ll9338-TestDeque.c++ \
 	deque-tests/ll9338-TestDeque.out \
-	Integer.h							 \
-	Integer.log							 \
+	Deque.h							 \
+	Deque.log							 \
 	html				 			   	\
 	TestDeque.c++			 			\
 	TestDeque.out						 \
