@@ -65,11 +65,3 @@ TYPED_TEST(Deque_Fixture, test_2) {
     ASSERT_FALSE(x.empty());
     ASSERT_EQ(x.size(),5);}
 
-TYPED_TEST(Deque_Fixture, test_3) {
-    typedef typename TestFixture::deque_type deque_type;
-
-    const deque_type x();
-    const deque_type y(x);
-    ASSERT_TRUE(y.empty());
-    ASSERT_EQ(y.size, 0);}
-

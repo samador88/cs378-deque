@@ -549,7 +549,7 @@ class my_deque {
         ~my_deque () {
             if (_bm) {
                 clear();
-                _a.deallocate(_bm, capacity());}
+                _a.deallocate(_bm, (_e - _b));}
             assert(valid());}
 
         // ----------
