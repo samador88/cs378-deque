@@ -567,14 +567,14 @@ class my_deque {
                 return *this;
             }
             if(rhs.size() == size()){
-                copy(rhs.begin(), rhs.end(), begin());
+                std::copy(rhs.begin(), rhs.end(), begin());
             }
             else if (rhs.size() < size()) {
-                copy(rhs.begin(), rhs.end(), begin());
+                std::copy(rhs.begin(), rhs.end(), begin());
                 resize(rhs.size());
             }
             else if (rhs.size() <= (_e-_b)) {
-                copy(rhs.begin(), rhs.begin()+size(),begin());
+                std::copy(rhs.begin(), rhs.begin()+size(),begin());
                 _em = uninitialized_copy(_a, rhs.begin(),rhs.end(),begin());
             }
             assert(valid());
