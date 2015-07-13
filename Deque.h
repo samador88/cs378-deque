@@ -526,7 +526,9 @@ class my_deque {
             assert(valid());}
 
         /**
-         * <your documentation>
+         * copy constructor
+         * creates a deque of size of that
+         * copies that into the new deque
          */
         my_deque (const my_deque& that) : 
             _a (that._a) {
@@ -542,10 +544,12 @@ class my_deque {
         // ----------
 
         /**
-         * <your documentation>
+         * clear and deallocate memory
          */
         ~my_deque () {
-            // <your code>
+            if (_bm) {
+                clear();
+                _a.deallocate(_bm, capacity());}
             assert(valid());}
 
         // ----------

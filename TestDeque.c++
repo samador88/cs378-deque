@@ -46,9 +46,30 @@ TYPED_TEST_CASE(Deque_Fixture, deque_types);
 // Tests
 // -----
 
+
+// -----
+// Constructors
+// _____
+
 TYPED_TEST(Deque_Fixture, test_1) {
     typedef typename TestFixture::deque_type deque_type;
 
     const deque_type x;
     ASSERT_TRUE(x.empty());
     ASSERT_EQ(x.size(),0);}
+
+TYPED_TEST(Deque_Fixture, test_2) {
+    typedef typename TestFixture::deque_type deque_type;
+
+    const deque_type x(5);
+    ASSERT_FALSE(x.empty());
+    ASSERT_EQ(x.size(),5);}
+
+TYPED_TEST(Deque_Fixture, test_3) {
+    typedef typename TestFixture::deque_type deque_type;
+
+    const deque_type x();
+    const deque_type y(x);
+    ASSERT_TRUE(y.empty());
+    ASSERT_EQ(y.size, 0);}
+
