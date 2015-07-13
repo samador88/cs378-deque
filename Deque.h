@@ -575,7 +575,12 @@ class my_deque {
             }
             else if (rhs.size() <= (_e-_b)) {
                 std::copy(rhs.begin(), rhs.begin()+size(),begin());
-                _em = uninitialized_copy(_a, rhs.begin(),rhs.end(),begin());
+                _em = &(*uninitialized_copy(_a, rhs.begin(),rhs.end(),begin()));
+            }
+            else{
+                clear();
+                reserve(rhs.size());
+                _em = uninitialized_copy(_a,rhs.begin(),rhs.end(),begin());
             }
             assert(valid());
             return *this;}
