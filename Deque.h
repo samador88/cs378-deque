@@ -521,7 +521,7 @@ class my_deque {
             _b = _bm = a.allocate(s);
             _size = s;
             _e = _b + _size;
-            _mm = _em = b + (_size/2);
+            _mm = _em = _b + (_size/2);
             my_uninitialized_fill(_a, begin(), end(), v);
             assert(valid());}
 
@@ -529,10 +529,10 @@ class my_deque {
          * <your documentation>
          */
         my_deque (const my_deque& that) : 
-            a(that._a) {
+            _a (that._a) {
             _b = _bm = _a.allocate(that.size());
             _e = _b + that.size();
-            _mm = _em = b + (that.size()/2);
+            _mm = _em = _b + (that.size()/2);
             _size = that.size();
             my_uninitialized_copy(_a, that.begin(), that.end(), begin());
             assert(valid());}
