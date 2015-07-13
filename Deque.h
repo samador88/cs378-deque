@@ -125,14 +125,14 @@ class my_deque {
         // ----
         // data
         // ----
-        allocater_type _a;
+        allocator_type _a;
         pointer _b;
         pointer _e; //capactity
         pointer _bm; //beginning of actual data
         pointer _em; //end of actual data, size
         pointer _mm; //middle of data
         unsigned int _size;
-        
+
     private:
         // -----
         // valid
@@ -379,7 +379,7 @@ class my_deque {
                 // data
                 // ----
 
-                allocater_type _a;
+                allocaor_type _a;
                 pointer _b;
                 pointer _e; //capactity
                 pointer _bm; //beginning of actual data
@@ -536,8 +536,12 @@ class my_deque {
          * <your documentation>
          */
         my_deque (const my_deque& that) : 
-            a(that.a) {
-            // <your code>
+            a(that._a) {
+            _b = _bm = _a.allocate(that.size());
+            _e = _b + that.size();
+            _mm = _em = b + (that.size()/2);
+            _size = that.size();
+            my_uninitialized_copy(_a, that.begin(), that.end(), begin());
             assert(valid());}
 
         // ----------
