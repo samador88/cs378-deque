@@ -574,7 +574,7 @@ class my_deque {
                 resize(rhs.size());
             }
             else if (rhs.size() <= (_e-_b)) {
-                copy(rhs.begin(), rhs.begin()+size(),being());
+                copy(rhs.begin(), rhs.begin()+size(),begin());
                 _em = uninitialized_copy(_a, rhs.begin(),rhs.end(),begin());
             }
             assert(valid());
