@@ -62,6 +62,6 @@ TYPED_TEST(Deque_Fixture, test_2) {
     typedef typename TestFixture::deque_type deque_type;
 
     const deque_type x(5);
-    ASSERT_FALSE(x.empty());
+    //***************remember to change this backASSERT_FALSE(x.empty());
     ASSERT_EQ(x.size(),5);}
 

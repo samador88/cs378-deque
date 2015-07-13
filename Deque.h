@@ -512,6 +512,7 @@ class my_deque {
             assert(valid());}
 
         /**
+         * @param size of deque, value type, allocator type
          * creates a deque of given size, type and allocator are defaulted
          * allocates the correct size and fills it with the correct type
          * moves pointers to appropriate places
@@ -526,6 +527,7 @@ class my_deque {
             assert(valid());}
 
         /**
+         * @param that
          * copy constructor
          * creates a deque of size of that
          * copies that into the new deque
@@ -557,10 +559,24 @@ class my_deque {
         // ----------
 
         /**
-         * <your documentation>
+         * @param rhs
+         * @return a deque
          */
         my_deque& operator = (const my_deque& rhs) {
-            // <your code>
+            if (this == &rhs){
+                return *this;
+            }
+            if(rhs.size() == size()){
+                copy(rhs.begin(), rhs.end(), begin());
+            }
+            else if (rhs.size() < size()) {
+                copy(rhs.begin(), rhs.end(), begin());
+                resize(rhs.size());
+            }
+            else if (rhs.size() <= (_e-_b)) {
+                copy(rhs.begin(), rhs.begin()+size(),being());
+                _em = uninitialized_copy(_a, rhs.begin(),rhs.end(),begin());
+            }
             assert(valid());
             return *this;}
 
