@@ -518,7 +518,7 @@ class my_deque {
          */
         explicit my_deque (size_type s, const_reference v = value_type(), const allocator_type& a = allocator_type()) :
             _a (a) {
-            _b = _bm = a.allocate(s);
+            _b = _bm = _a.allocate(s);
             _size = s;
             _e = _b + _size;
             _mm = _em = _b + (_size/2);
