@@ -207,8 +207,8 @@ class my_deque {
                 // data
                 // ----
 
-                difference_type _i;
-                my_deque* _d;
+                difference_type _i; //current position
+                my_deque* _d;       //deque we are using
 
             private:
                 // -----
@@ -316,10 +316,12 @@ class my_deque {
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @param difference type which is how much we are incrementing by
+                 * increment curernt index by d
+                 * @return this
                  */
                 iterator& operator += (difference_type d) {
-                    // <your code>
+                    _i += d;
                     assert(valid());
                     return *this;}
 
@@ -328,10 +330,12 @@ class my_deque {
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @param difference type which is how much we are decrementing by
+                 * decrement current index by d
+                 * @return this
                  */
                 iterator& operator -= (difference_type d) {
-                    // <your code>
+                    _i -= d;
                     assert(valid());
                     return *this;}};
 
@@ -358,14 +362,18 @@ class my_deque {
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @param take in two const iterators
+                 * @return true if they are equal deques and equal positions
                  */
                 friend bool operator == (const const_iterator& lhs, const const_iterator& rhs) {
-                    // <your code>
-                    return true;}
+                    if(lhs._d == rhs._d && lhs._s == rhs._s){
+                        return true;
+                    }
+                    return false;}
 
                 /**
-                 * <your documentation>
+                 * @param two const iterators
+                 * @return true if they are nto equal deques or not equal positions
                  */
                 friend bool operator != (const const_iterator& lhs, const const_iterator& rhs) {
                     return !(lhs == rhs);}
@@ -375,7 +383,9 @@ class my_deque {
                 // ----------
 
                 /**
-                 * <your documentation>
+                 * @param const iterator
+                 * @param difference type
+                 * @return iterator plus the difference type
                  */
                 friend const_iterator operator + (const_iterator lhs, difference_type rhs) {
                     return lhs += rhs;}
@@ -385,7 +395,9 @@ class my_deque {
                 // ----------
 
                 /**
-                 * <your documentation>
+                 * @param iterator
+                 * @param difference type
+                 * @return the difference of iterator and difference type (subtract)
                  */
                 friend const_iterator operator - (const_iterator lhs, difference_type rhs) {
                     return lhs -= rhs;}
@@ -395,7 +407,8 @@ class my_deque {
                 // data
                 // ----
 
-                // <your data>
+                const my_deque* _d; //deque we are using
+                difference_type _i; //current position
 
             private:
                 // -----
@@ -403,8 +416,10 @@ class my_deque {
                 // -----
 
                 bool valid () const {
-                    // <your code>
-                    return true;}
+                    if(_i>=0){
+                        return true;
+                    }
+                    return false;}
 
             public:
                 // -----------
@@ -412,10 +427,13 @@ class my_deque {
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @param const deque
+                 * @param difference type
+                 * set iterator to given deque and position
                  */
-                const_iterator (/* <your arguments> */) {
-                    // <your code>
+                const_iterator (const my_deque d, difference_type i = 0) {
+                    _d = d;
+                    _i = i;
                     assert(valid());}
 
                 // Default copy, destructor, and copy assignment.
@@ -428,20 +446,17 @@ class my_deque {
                 // ----------
 
                 /**
-                 * <your documentation>
+                 * @return the value at the given index of the deque
                  */
                 reference operator * () const {
-                    // <your code>
-                    // dummy is just to be able to compile the skeleton, remove it
-                    static value_type dummy;
-                    return dummy;}
+                    return (*_d)[_i];}
 
                 // -----------
                 // operator ->
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @return pointer
                  */
                 pointer operator -> () const {
                     return &**this;}
@@ -451,15 +466,19 @@ class my_deque {
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * increment the current position by one
+                 * @return this
                  */
                 const_iterator& operator ++ () {
-                    // <your code>
+                    ++_i;
                     assert(valid());
                     return *this;}
 
                 /**
-                 * <your documentation>
+                 * post ++
+                 * make a copy of the current iterator
+                 * increment the current iterator
+                 * @return copy
                  */
                 const_iterator operator ++ (int) {
                     const_iterator x = *this;
@@ -472,15 +491,20 @@ class my_deque {
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * pre --
+                 * decrement current position
+                 * @return this
                  */
                 const_iterator& operator -- () {
-                    // <your code>
+                    --_i;
                     assert(valid());
                     return *this;}
 
                 /**
-                 * <your documentation>
+                 * post --
+                 * make a copy of the current iterator
+                 * decrement the current position
+                 * @return copy
                  */
                 const_iterator operator -- (int) {
                     const_iterator x = *this;
@@ -493,10 +517,12 @@ class my_deque {
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @param number to increment by
+                 * increment current position by number
+                 * @return this
                  */
-                const_iterator& operator += (difference_type) {
-                    // <your code>
+                const_iterator& operator += (difference_type d) {
+                    _i += d;
                     assert(valid());
                     return *this;}
 
@@ -505,10 +531,12 @@ class my_deque {
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @param number to decrement by
+                 * decrement current position by number
+                 * @return this
                  */
-                const_iterator& operator -= (difference_type) {
-                    // <your code>
+                const_iterator& operator -= (difference_type d) {
+                    _i -= d;
                     assert(valid());
                     return *this;}};
 
