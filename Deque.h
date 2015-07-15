@@ -547,7 +547,8 @@ class my_deque {
         // ------------
 
         /**
-         * <your documentation>
+         * @param allocator type, defaulted
+         * default constructor
          */
         explicit my_deque (const allocator_type& a = allocator_type()) :
                 _a (a), _aP(), _outermost(0) {
@@ -555,7 +556,7 @@ class my_deque {
             assert(valid());}
 
         /**
-         * <your documentation>
+         * @param size, value type defaulted, allocated type defaulted
          */
         explicit my_deque (size_type s, const_reference v = value_type(), const allocator_type& a = allocator_type())  : _a(a), _aP() {
             size_type numrows = s/100;       //divide the whole size by 100 and make that many rows in inner array
@@ -582,12 +583,13 @@ class my_deque {
             uninitialized_fill(_a, begin(), end(), v);
             assert(valid());}
         /**
-         * <your documentation>
+         * @param const deque
+         * copy constructor
          */
-        my_deque (const my_deque& that) {
+        my_deque (const my_deque& that)
             : _a(that._a), _aP() { 
             _lb = _bd = _a.allocate(that.size());
-            _e = _lb = _bd + that.size();
+            _ed = _lb = _bd + that.size();
             uninitialized_copy(_a, that.begin(), that.end(), begin());
             assert(valid());}
 
@@ -596,10 +598,13 @@ class my_deque {
         // ----------
 
         /**
-         * <your documentation>
+         * deconstructor
+         * clear and deallocate the capacity
          */
         ~my_deque () {
-            // <your code>
+            if (!empty()) {
+                clear();
+                _a.deallocate(_lb, (_le-_lb));}
             assert(valid());}
 
         // ----------
@@ -610,8 +615,20 @@ class my_deque {
          * <your documentation>
          */
         my_deque& operator = (const my_deque& rhs) {
-            // <your code>
-            assert(valid());
+            if (this == &rhs) 
+                return *this;
+            if (rhs.size() == size())
+                std::copy(rhs.begin(), rhs.end(), begin());
+            else if (rhs.size() < size()) {
+                std::copy(rhs.begin(), rhs.end(), begin());
+                resize(rhs.size());}
+            else if (rhs.size() <= (_le-_bd)) {
+                std::copy(rhs.begin(), rhs.begin() + size(), begin());
+                _ed = uninitialized_copy(_a, rhs.begin() + size(), rhs.end(), end());}
+            else { //if rhs is greater than the capacity of lhs we need to make a new deque and swap
+                clear();
+                my_deque temp(rhs);
+                swap(temp);}
             return *this;}
 
         // -----------
@@ -619,16 +636,15 @@ class my_deque {
         // -----------
 
         /**
-         * <your documentation>
+         * @param size_type index of element we want
+         * @return reference of the element at the index within the data
          */
         reference operator [] (size_type index) {
-            // <your code>
-            // dummy is just to be able to compile the skeleton, remove it
-            static value_type dummy;
-            return dummy;}
+            return *(_bd+index);}
 
         /**
-         * <your documentation>
+         * @param size_type index of element we want
+         * @return const reference of that element
          */
         const_reference operator [] (size_type index) const {
             return const_cast<my_deque*>(this)->operator[](index);}

@@ -1084,7 +1084,7 @@ TYPED_TEST(Deque_Fixture, test_1) {
 
                     ASSERT_EQ(x_b1->b, 7);
                 }*/
-                    
+
 /* 			NEED TO CHANGE THESE
 				// -----------
                 // operator ++
@@ -1387,4 +1387,66 @@ TYPED_TEST(Deque_Fixture, test_1) {
 
                     ASSERT_FALSE(x_b1 == x_b2);
                 }
+*/
+    // --------
+    // my_deque
+    // --------
+/*   NEED TO CHANGE THESE
+        // ----------
+        // operator =
+        // ----------
+
+        TYPED_TEST(Deque_Fixture, deque_assignment_op_test_1) {
+            typedef typename TestFixture::deque_type deque_type;
+
+            deque_type x(4); x[0] = 1; x[1] = 2; x[2] = 3; x[3] = 4;
+            deque_type y = x;
+            ASSERT_EQ(x,y);
+        }
+
+        TYPED_TEST(Deque_Fixture, deque_assignment_op_test_2) {
+            typedef typename TestFixture::deque_type deque_type;
+
+            deque_type x(4); x[0] = 1; x[1] = 2; x[2] = 3; x[3] = 4;
+            deque_type y(4);
+            y = x;
+            x[0] = 20;
+            ASSERT_TRUE(x != y);
+        }
+
+        TYPED_TEST(Deque_Fixture, deque_assignment_op_test_3) {
+            typedef typename TestFixture::deque_type deque_type;
+
+            deque_type x(4); x[0] = 1; x[1] = 2; x[2] = 3; x[3] = 4;
+            deque_type y = x;
+            y[0] = 20;
+            ASSERT_TRUE(x != y);
+        }
+
+        TYPED_TEST(Deque_Fixture, deque_assignment_op_test_4) {
+            typedef typename TestFixture::deque_type deque_type;
+
+            deque_type x(4); x[0] = 1; x[1] = 2; x[2] = 3; x[3] = 4;
+            deque_type y;
+            x = y;
+            ASSERT_EQ(x,y);
+        }
+
+        TYPED_TEST(Deque_Fixture, deque_assignment_op_test_5) {
+            typedef typename TestFixture::deque_type deque_type;
+
+            deque_type x(100, 10);
+            deque_type y(2);
+            x = y;
+            ASSERT_EQ(x,y);
+        }
+
+        TYPED_TEST(Deque_Fixture, deque_assignment_op_test_6) {
+            typedef typename TestFixture::deque_type deque_type;
+
+            deque_type x(100, 10);
+            deque_type y(2);
+            y = x;
+            ASSERT_EQ(x,y);
+        }
 */
