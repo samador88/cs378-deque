@@ -654,16 +654,18 @@ class my_deque {
         // --
 
         /**
-         * <your documentation>
+         * @param size_type index
+         * @return reference to element at that index
+         * throw exception if index is out of range
          */
         reference at (size_type index) {
-            // <your code>
-            // dummy is just to be able to compile the skeleton, remove it
-            static value_type dummy;
-            return dummy;}
+            if (index >= size())
+                throw std::out_of_range("my_deque");
+            return (*this)[index];}
 
         /**
-         * <your documentation>
+         * @param size_type index
+         * @return const reference to element at that index
          */
         const_reference at (size_type index) const {
             return const_cast<my_deque*>(this)->at(index);}
@@ -673,16 +675,14 @@ class my_deque {
         // ----
 
         /**
-         * <your documentation>
+         * @return reference to the last element in the deque
          */
         reference back () {
-            // <your code>
-            // dummy is just to be able to compile the skeleton, remove it
-            static value_type dummy;
-            return dummy;}
+            assert(size()>0);
+            return *(_ed - 1);}
 
         /**
-         * <your documentation>
+         * @return const reference to last element in deque
          */
         const_reference back () const {
             return const_cast<my_deque*>(this)->back();}
