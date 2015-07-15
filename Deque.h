@@ -95,6 +95,7 @@ class my_deque {
         typedef typename allocator_type::const_reference    const_reference;
 
         typedef typename A::template rebind<pointer>::other B;
+        typedef typename allocator_type::template rebind<T*>::other allocator_pointer_type;
 
     public:
         // -----------
@@ -126,12 +127,12 @@ class my_deque {
         // ----
 
         allocator_type _a; 
-//        allocatorPointer_type _aPointer; 
         pointer* _outermost;  
         pointer _bd; //beginning of actual data
         pointer _ed; //end of actual data 
         pointer _lb;  
         pointer _le; //capacity
+        allocator_pointer_type _aP;
 
     private:
         // -----
@@ -168,7 +169,7 @@ class my_deque {
                  * @return true if they are equal
                  */
                 friend bool operator == (const iterator& lhs, const iterator& rhs) {
-                    if(lhs._d == rhs._d && lhs._s == rhs._s){
+                    if(lhs._d == rhs._d && lhs._i == rhs._i){
                         return true;
                     }
                     return false;}
@@ -366,7 +367,7 @@ class my_deque {
                  * @return true if they are equal deques and equal positions
                  */
                 friend bool operator == (const const_iterator& lhs, const const_iterator& rhs) {
-                    if(lhs._d == rhs._d && lhs._s == rhs._s){
+                    if(lhs._d == rhs._d && lhs._i == rhs._i){
                         return true;
                     }
                     return false;}
@@ -548,17 +549,38 @@ class my_deque {
         /**
          * <your documentation>
          */
-        explicit my_deque (const allocator_type& a = allocator_type()) {
-            // <your code>
+        explicit my_deque (const allocator_type& a = allocator_type()) :
+                _a (a), _aP(), _outermost(0) {
+             _bd = _ed = _lb = _le = 0;
             assert(valid());}
 
         /**
          * <your documentation>
          */
-        explicit my_deque (size_type s, const_reference v = value_type(), const allocator_type& a = allocator_type()) {
-            // <your code>
-            assert(valid());}
+        explicit my_deque (size_type s, const_reference v = value_type(), const allocator_type& a = allocator_type())  : _a(a), _aP() {
+            size_type numrows = s/100;       //divide the whole size by 100 and make that many rows in inner array
+            if(s % 100 != 0){                //if there are leftovers, make an extra row
+                ++numrows;
+            }
 
+            _outermost = _aP.allocate(numrows); //allocate space to have each row
+            size_type outerindex = 0;
+            while(outerindex != numrows){       //for each row allocate enough space for 100 elements
+                _outermost[outerindex] = _a.allocate(100);
+                ++outerindex;
+            }
+    
+            outerindex = 0;
+            while(outerindex != numrows){              
+                _a.deallocate(_outermost[outerindex], 100);
+                ++outerindex;
+            }
+
+            _aP.deallocate(_outermost, numrows);
+            _lb = _bd = _a.allocate(s);
+            _ed = _le = _bd + s;
+            uninitialized_fill(_a, begin(), end(), v);
+            assert(valid());}
         /**
          * <your documentation>
          */
