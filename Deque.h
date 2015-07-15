@@ -585,7 +585,10 @@ class my_deque {
          * <your documentation>
          */
         my_deque (const my_deque& that) {
-            // <your code>
+            : _a(that._a), _aP() { 
+            _lb = _bd = _a.allocate(that.size());
+            _e = _lb = _bd + that.size();
+            uninitialized_copy(_a, that.begin(), that.end(), begin());
             assert(valid());}
 
         // ----------
