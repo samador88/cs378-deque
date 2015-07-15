@@ -692,28 +692,26 @@ class my_deque {
         // -----
 
         /**
-         * <your documentation>
+         * @return iterator to this
          */
         iterator begin () {
-            // <your code>
-            return iterator(/* <your arguments> */);}
+            return iterator(this);}
 
         /**
-         * <your documentation>
+         * @return iterator to this
          */
         const_iterator begin () const {
-            // <your code>
-            return const_iterator(/* <your arguments> */);}
+            return const_iterator(this);}
 
         // -----
         // clear
         // -----
 
         /**
-         * <your documentation>
+         * resizes deque to 0 which clears all data
          */
         void clear () {
-            // <your code>
+            resize(0);
             assert(valid());}
 
         // -----
@@ -721,7 +719,7 @@ class my_deque {
         // -----
 
         /**
-         * <your documentation>
+         * @return true is size is 0
          */
         bool empty () const {
             return !size();}
