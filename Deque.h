@@ -196,7 +196,8 @@ class my_deque {
                 // ----------
 
                 /**
-                 * <your documentation>
+                 * @param take in an iterator and a difference type
+                 * @return the difference between the iterator and the difference type (subtract)
                  */
                 friend iterator operator - (iterator lhs, difference_type rhs) {
                     return lhs -= rhs;}
@@ -206,7 +207,8 @@ class my_deque {
                 // data
                 // ----
 
-                // <your data>
+                difference_type _i;
+                my_deque* _d;
 
             private:
                 // -----
@@ -214,8 +216,10 @@ class my_deque {
                 // -----
 
                 bool valid () const {
-                    // <your code>
-                    return true;}
+                   if(_i >= 0){
+                    return true;
+                   } 
+                   return false;}
 
             public:
                 // -----------
@@ -223,10 +227,13 @@ class my_deque {
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @param take in a deque and a starting position
+                 * starting position is index 0 by default
+                 * set _d to equal given deck and _i to equal given index
                  */
-                iterator (/* <your arguments> */) {
-                    // <your code>
+                iterator (my_deque d, difference_type i = 0) {
+                    _d = d;
+                    _i = i;
                     assert(valid());}
 
                 // Default copy, destructor, and copy assignment.
@@ -239,20 +246,17 @@ class my_deque {
                 // ----------
 
                 /**
-                 * <your documentation>
+                 * @return the value at the given index of the deque
                  */
                 reference operator * () const {
-                    // <your code>
-                    // dummy is just to be able to compile the skeleton, remove it
-                    static value_type dummy;
-                    return dummy;}
+                    return (*_d)[_i];}
 
                 // -----------
                 // operator ->
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @return pointer
                  */
                 pointer operator -> () const {
                     return &**this;}
@@ -262,15 +266,19 @@ class my_deque {
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * move to the next index
+                 * @return this
                  */
                 iterator& operator ++ () {
-                    // <your code>
+                    ++_i;
                     assert(valid());
                     return *this;}
 
                 /**
-                 * <your documentation>
+                 * post ++
+                 * make copy of current iterator before incrementing
+                 * increment current iterator
+                 * @return copy
                  */
                 iterator operator ++ (int) {
                     iterator x = *this;
@@ -283,15 +291,19 @@ class my_deque {
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * move to previous index
+                 * @return this
                  */
                 iterator& operator -- () {
-                    // <your code>
+                    --_i;
                     assert(valid());
                     return *this;}
 
                 /**
-                 * <your documentation>
+                 * post --
+                 * make copy of current this before decrementing
+                 * decrement this
+                 * @return copy
                  */
                 iterator operator -- (int) {
                     iterator x = *this;
