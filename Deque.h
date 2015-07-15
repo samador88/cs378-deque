@@ -102,33 +102,36 @@ class my_deque {
         // -----------
 
         /**
-         * <your documentation>
+         * @param takes in two const my_deque reference
+         * @return true if they are equal
          */
         friend bool operator == (const my_deque& lhs, const my_deque& rhs) {
-            // <your code>
-            // you must use std::equal()
-            return true;}
+            return (lhs.size() == rhs.size()) && std::equal(lhs.begin(), lhs.end(), rhs.begin());}
+
 
         // ----------
         // operator <
         // ----------
 
         /**
-         * <your documentation>
+         * @param two const my_deque reference
+         * @return true if lhs is less than rhs
          */
         friend bool operator < (const my_deque& lhs, const my_deque& rhs) {
-            // <your code>
-            // you must use std::lexicographical_compare()
-            return true;}
+            return std::lexicographical_compare(lhs.begin(), lhs.end(), rhs.begin(), rhs.end());}
 
     private:
         // ----
         // data
         // ----
 
-        allocator_type _a;
-
-        // <your data>
+        allocator_type _a; 
+//        allocatorPointer_type _aPointer; 
+        pointer* _outermost;  
+        pointer _bd; //beginning of actual data
+        pointer _ed; //end of actual data 
+        pointer _lb;  
+        pointer _le; //capacity
 
     private:
         // -----
@@ -136,8 +139,7 @@ class my_deque {
         // -----
 
         bool valid () const {
-            // <your code>
-            return true;}
+            return (!_bd && !_ed && !_lb && !_le) || ((_bd <= _ed) && (_ed <= _le) && (_lb <= _bd));}
 
     public:
         // --------
@@ -162,14 +164,18 @@ class my_deque {
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @param take in two const iterators
+                 * @return true if they are equal
                  */
                 friend bool operator == (const iterator& lhs, const iterator& rhs) {
-                    // <your code>
-                    return true;}
+                    if(lhs._d == rhs._d && lhs._s == rhs._s){
+                        return true;
+                    }
+                    return false;}
 
                 /**
-                 * <your documentation>
+                 * @param take in two const iterators
+                 * @return true if lhs and rhs are not equal to each other
                  */
                 friend bool operator != (const iterator& lhs, const iterator& rhs) {
                     return !(lhs == rhs);}
@@ -179,7 +185,8 @@ class my_deque {
                 // ----------
 
                 /**
-                 * <your documentation>
+                 * @param take in an iterator and a difference_type
+                 * @return the sum of a adding the difference type to iterator
                  */
                 friend iterator operator + (iterator lhs, difference_type rhs) {
                     return lhs += rhs;}
