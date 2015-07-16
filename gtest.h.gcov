@@ -258,21 +258,21 @@
         -:  253://   Expected: Foo() is even
         -:  254://     Actual: it's 5
         -:  255://
-function _ZN7testing15AssertionResultD2Ev called 22 returned 100% blocks executed 100%
-       22:  256:class GTEST_API_ AssertionResult {
+function _ZN7testing15AssertionResultD2Ev called 94 returned 100% blocks executed 100%
+       94:  256:class GTEST_API_ AssertionResult {
 call    0 returned 100%
         -:  257: public:
         -:  258:  // Copy constructor.
         -:  259:  // Used in EXPECT_TRUE/FALSE(assertion_result).
         -:  260:  AssertionResult(const AssertionResult& other);
         -:  261:  // Used in the EXPECT_TRUE/FALSE(bool_expression).
-function _ZN7testing15AssertionResultC2Eb called 20 returned 100% blocks executed 100%
-       20:  262:  explicit AssertionResult(bool success) : success_(success) {}
+function _ZN7testing15AssertionResultC2Eb called 80 returned 100% blocks executed 100%
+       80:  262:  explicit AssertionResult(bool success) : success_(success) {}
 call    0 returned 100%
         -:  263:
         -:  264:  // Returns true iff the assertion succeeded.
-function _ZNK7testing15AssertionResultcvbEv called 22 returned 100% blocks executed 100%
-       22:  265:  operator bool() const { return success_; }  // NOLINT
+function _ZNK7testing15AssertionResultcvbEv called 94 returned 100% blocks executed 100%
+       94:  265:  operator bool() const { return success_; }  // NOLINT
         -:  266:
         -:  267:  // Returns the assertion's negation. Used with EXPECT/ASSERT_FALSE.
         -:  268:  AssertionResult operator!() const;
@@ -1377,10 +1377,12 @@ function _ZN7testing4Test5SetupEv called 0 returned 0% blocks executed 0%
         -: 1356: public:
 function _ZN7testing8internal19FormatForComparisonIimE6FormatERKi called 0 returned 0% blocks executed 0%
 function _ZN7testing8internal19FormatForComparisonImiE6FormatERKm called 0 returned 0% blocks executed 0%
+function _ZN7testing8internal19FormatForComparisonIiiE6FormatERKi called 0 returned 0% blocks executed 0%
     #####: 1357:  static ::std::string Format(const ToPrint& value) {
     #####: 1358:    return ::testing::PrintToString(value);
 call    0 never executed
 call    1 never executed
+call    2 never executed
         -: 1359:  }
         -: 1360:};
         -: 1361:
@@ -1455,17 +1457,20 @@ call    1 never executed
         -: 1430:template <typename T1, typename T2>
 function _ZN7testing8internal33FormatForComparisonFailureMessageIimEESsRKT_RKT0_ called 0 returned 0% blocks executed 0%
 function _ZN7testing8internal33FormatForComparisonFailureMessageImiEESsRKT_RKT0_ called 0 returned 0% blocks executed 0%
+function _ZN7testing8internal33FormatForComparisonFailureMessageIiiEESsRKT_RKT0_ called 0 returned 0% blocks executed 0%
     #####: 1431:std::string FormatForComparisonFailureMessage(
         -: 1432:    const T1& value, const T2& /* other_operand */) {
     #####: 1433:  return FormatForComparison<T1, T2>::Format(value);
 call    0 never executed
 call    1 never executed
+call    2 never executed
         -: 1434:}
         -: 1435:
         -: 1436:// The helper function for {ASSERT|EXPECT}_EQ.
         -: 1437:template <typename T1, typename T2>
 function _ZN7testing8internal11CmpHelperEQImiEENS_15AssertionResultEPKcS4_RKT_RKT0_ called 2 returned 100% blocks executed 31%
-        2: 1438:AssertionResult CmpHelperEQ(const char* expected_expression,
+function _ZN7testing8internal11CmpHelperEQIiiEENS_15AssertionResultEPKcS4_RKT_RKT0_ called 12 returned 100% blocks executed 31%
+       14: 1438:AssertionResult CmpHelperEQ(const char* expected_expression,
         -: 1439:                            const char* actual_expression,
         -: 1440:                            const T1& expected,
         -: 1441:                            const T2& actual) {
@@ -1475,11 +1480,14 @@ function _ZN7testing8internal11CmpHelperEQImiEENS_15AssertionResultEPKcS4_RKT_RK
         -: 1445:                                // signed/unsigned mismatch.
         -: 1446:#endif
         -: 1447:
-        2: 1448:  if (expected == actual) {
+       14: 1448:  if (expected == actual) {
 branch  0 taken 100% (fallthrough)
 branch  1 taken 0%
-        2: 1449:    return AssertionSuccess();
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+       14: 1449:    return AssertionSuccess();
 call    0 returned 100%
+call    1 returned 100%
         -: 1450:  }
         -: 1451:
         -: 1452:#ifdef _MSC_VER
@@ -1502,6 +1510,17 @@ call    7 never executed
 call    8 never executed
 call    9 never executed
 call   10 never executed
+call   11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 never executed
+call   21 never executed
         -: 1461:}
         -: 1462:
         -: 1463:// With this overloaded version, we allow anonymous enums to be used
@@ -1522,13 +1541,15 @@ call   10 never executed
         -: 1478:  // This templatized version is for the general case.
         -: 1479:  template <typename T1, typename T2>
 function _ZN7testing8internal8EqHelperILb0EE7CompareImiEENS_15AssertionResultEPKcS6_RKT_RKT0_ called 2 returned 100% blocks executed 100%
-        2: 1480:  static AssertionResult Compare(const char* expected_expression,
+function _ZN7testing8internal8EqHelperILb0EE7CompareIiiEENS_15AssertionResultEPKcS6_RKT_RKT0_ called 12 returned 100% blocks executed 100%
+       14: 1480:  static AssertionResult Compare(const char* expected_expression,
         -: 1481:                                 const char* actual_expression,
         -: 1482:                                 const T1& expected,
         -: 1483:                                 const T2& actual) {
         -: 1484:    return CmpHelperEQ(expected_expression, actual_expression, expected,
-        2: 1485:                       actual);
+       14: 1485:                       actual);
 call    0 returned 100%
+call    1 returned 100%
         -: 1486:  }
         -: 1487:
         -: 1488:  // With this overloaded version, we allow anonymous enums to be used

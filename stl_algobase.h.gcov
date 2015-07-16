@@ -218,17 +218,17 @@
         -:  213:  */
         -:  214:  template<typename _Tp>
         -:  215:    inline const _Tp&
-function _ZSt3maxImERKT_S2_S2_ called 17 returned 100% blocks executed 75%
-       17:  216:    max(const _Tp& __a, const _Tp& __b)
+function _ZSt3maxImERKT_S2_S2_ called 56 returned 100% blocks executed 75%
+       56:  216:    max(const _Tp& __a, const _Tp& __b)
         -:  217:    {
         -:  218:      // concept requirements
         -:  219:      __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
         -:  220:      //return  __a < __b ? __b : __a;
-       17:  221:      if (__a < __b)
+       56:  221:      if (__a < __b)
 branch  0 taken 0% (fallthrough)
 branch  1 taken 100%
     #####:  222:	return __b;
-       17:  223:      return __a;
+       56:  223:      return __a;
         -:  224:    }
         -:  225:
         -:  226:  /**
@@ -282,11 +282,11 @@ branch  1 taken 100%
         -:  274:
         -:  275:  template<typename _Iterator>
         -:  276:    inline typename _Niter_base<_Iterator>::iterator_type
-function _ZSt12__niter_baseIPiENSt11_Niter_baseIT_E13iterator_typeES2_ called 28 returned 100% blocks executed 100%
+function _ZSt12__niter_baseIPiENSt11_Niter_baseIT_E13iterator_typeES2_ called 106 returned 100% blocks executed 100%
 function _ZSt12__niter_baseISt15_Deque_iteratorIiRKiPS1_EENSt11_Niter_baseIT_E13iterator_typeES6_ called 26 returned 100% blocks executed 100%
 function _ZSt12__niter_baseIN8my_dequeIiSaIiEE14const_iteratorEENSt11_Niter_baseIT_E13iterator_typeES5_ called 26 returned 100% blocks executed 100%
-       80:  277:    __niter_base(_Iterator __it)
-       80:  278:    { return std::_Niter_base<_Iterator>::_S_base(__it); }
+      158:  277:    __niter_base(_Iterator __it)
+      158:  278:    { return std::_Niter_base<_Iterator>::_S_base(__it); }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -699,16 +699,16 @@ call    2 returned 100%
         -:  685:  template<typename _ForwardIterator, typename _Tp>
         -:  686:    inline typename
         -:  687:    __gnu_cxx::__enable_if<__is_scalar<_Tp>::__value, void>::__type
-function _ZSt8__fill_aIPiiEN9__gnu_cxx11__enable_ifIXsrSt11__is_scalarIT0_E7__valueEvE6__typeET_S8_RKS4_ called 14 returned 100% blocks executed 100%
-       14:  688:    __fill_a(_ForwardIterator __first, _ForwardIterator __last,
+function _ZSt8__fill_aIPiiEN9__gnu_cxx11__enable_ifIXsrSt11__is_scalarIT0_E7__valueEvE6__typeET_S8_RKS4_ called 53 returned 100% blocks executed 100%
+       53:  688:    __fill_a(_ForwardIterator __first, _ForwardIterator __last,
         -:  689:	     const _Tp& __value)
         -:  690:    {
-       14:  691:      const _Tp __tmp = __value;
-       60:  692:      for (; __first != __last; ++__first)
-branch  0 taken 77%
-branch  1 taken 23% (fallthrough)
-       46:  693:	*__first = __tmp;
-       14:  694:    }
+       53:  691:      const _Tp __tmp = __value;
+      447:  692:      for (; __first != __last; ++__first)
+branch  0 taken 88%
+branch  1 taken 12% (fallthrough)
+      394:  693:	*__first = __tmp;
+       53:  694:    }
         -:  695:
         -:  696:  // Specialization: for char types we can use memset.
         -:  697:  template<typename _Tp>
@@ -735,20 +735,20 @@ branch  1 taken 23% (fallthrough)
         -:  718:  */
         -:  719:  template<typename _ForwardIterator, typename _Tp>
         -:  720:    inline void
-function _ZSt4fillIPiiEvT_S1_RKT0_ called 14 returned 100% blocks executed 100%
-       14:  721:    fill(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __value)
+function _ZSt4fillIPiiEvT_S1_RKT0_ called 53 returned 100% blocks executed 100%
+       53:  721:    fill(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __value)
         -:  722:    {
         -:  723:      // concept requirements
         -:  724:      __glibcxx_function_requires(_Mutable_ForwardIteratorConcept<
         -:  725:				  _ForwardIterator>)
         -:  726:      __glibcxx_requires_valid_range(__first, __last);
         -:  727:
-       14:  728:      std::__fill_a(std::__niter_base(__first), std::__niter_base(__last),
+       53:  728:      std::__fill_a(std::__niter_base(__first), std::__niter_base(__last),
 call    0 returned 100%
-       14:  729:		    __value);
+       53:  729:		    __value);
 call    0 returned 100%
 call    1 returned 100%
-       14:  730:    }
+       53:  730:    }
         -:  731:
         -:  732:  template<typename _OutputIterator, typename _Size, typename _Tp>
         -:  733:    inline typename

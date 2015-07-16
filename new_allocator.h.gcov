@@ -81,22 +81,32 @@
         -:   76:      typedef std::true_type propagate_on_container_move_assignment;
         -:   77:#endif
         -:   78:
-function _ZN9__gnu_cxx13new_allocatorIPiEC2Ev called 51 returned 100% blocks executed 100%
-function _ZN9__gnu_cxx13new_allocatorIiEC2Ev called 34 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIPZN29Deque_Fixture_iter_arrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIPZN29Deque_Fixture_iter_arrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIPiEC2Ev called 168 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIZN29Deque_Fixture_iter_arrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIZN29Deque_Fixture_iter_arrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIiEC2Ev called 112 returned 100% blocks executed 100%
 function _ZN9__gnu_cxx13new_allocatorIcEC2Ev called 0 returned 0% blocks executed 0%
-       85:   79:      new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+      284:   79:      new_allocator() _GLIBCXX_USE_NOEXCEPT { }
         -:   80:
-function _ZN9__gnu_cxx13new_allocatorIiEC2ERKS1_ called 17 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIZN29Deque_Fixture_iter_arrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS7_ called 1 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIZN29Deque_Fixture_iter_arrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS7_ called 1 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIiEC2ERKS1_ called 57 returned 100% blocks executed 100%
 function _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_ called 0 returned 0% blocks executed 0%
-       17:   81:      new_allocator(const new_allocator&) _GLIBCXX_USE_NOEXCEPT { }
+       59:   81:      new_allocator(const new_allocator&) _GLIBCXX_USE_NOEXCEPT { }
         -:   82:
         -:   83:      template<typename _Tp1>
         -:   84:        new_allocator(const new_allocator<_Tp1>&) _GLIBCXX_USE_NOEXCEPT { }
         -:   85:
-function _ZN9__gnu_cxx13new_allocatorIPiED2Ev called 51 returned 100% blocks executed 100%
-function _ZN9__gnu_cxx13new_allocatorIiED2Ev called 51 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIPZN29Deque_Fixture_iter_arrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 1 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIPZN29Deque_Fixture_iter_arrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 1 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIPiED2Ev called 168 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIZN29Deque_Fixture_iter_arrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIZN29Deque_Fixture_iter_arrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIiED2Ev called 169 returned 100% blocks executed 100%
 function _ZN9__gnu_cxx13new_allocatorIcED2Ev called 0 returned 0% blocks executed 0%
-      102:   86:      ~new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+      343:   86:      ~new_allocator() _GLIBCXX_USE_NOEXCEPT { }
         -:   87:
         -:   88:      pointer
         -:   89:      address(reference __x) const _GLIBCXX_NOEXCEPT
@@ -109,54 +119,102 @@ function _ZN9__gnu_cxx13new_allocatorIcED2Ev called 0 returned 0% blocks execute
         -:   96:      // NB: __n is permitted to be 0.  The C++ standard says nothing
         -:   97:      // about what the return value is when __n == 0.
         -:   98:      pointer
-function _ZN9__gnu_cxx13new_allocatorIiE8allocateEmPKv called 45 returned 100% blocks executed 83%
-function _ZN9__gnu_cxx13new_allocatorIPiE8allocateEmPKv called 31 returned 100% blocks executed 83%
-       76:   99:      allocate(size_type __n, const void* = 0)
+function _ZN9__gnu_cxx13new_allocatorIZN29Deque_Fixture_iter_arrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SE8allocateEmPKv called 2 returned 100% blocks executed 83%
+function _ZN9__gnu_cxx13new_allocatorIPZN29Deque_Fixture_iter_arrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SE8allocateEmPKv called 1 returned 100% blocks executed 83%
+function _ZN9__gnu_cxx13new_allocatorIZN29Deque_Fixture_iter_arrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SE8allocateEmPKv called 2 returned 100% blocks executed 83%
+function _ZN9__gnu_cxx13new_allocatorIPZN29Deque_Fixture_iter_arrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SE8allocateEmPKv called 1 returned 100% blocks executed 83%
+function _ZN9__gnu_cxx13new_allocatorIiE8allocateEmPKv called 164 returned 100% blocks executed 83%
+function _ZN9__gnu_cxx13new_allocatorIPiE8allocateEmPKv called 109 returned 100% blocks executed 83%
+      279:   99:      allocate(size_type __n, const void* = 0)
         -:  100:      { 
-       76:  101:	if (__n > this->max_size())
+      279:  101:	if (__n > this->max_size())
 call    0 returned 100%
 branch  1 taken 0% (fallthrough)
 branch  2 taken 100%
 call    3 returned 100%
 branch  4 taken 0% (fallthrough)
 branch  5 taken 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 returned 100%
+branch 10 taken 0% (fallthrough)
+branch 11 taken 100%
+call   12 returned 100%
+branch 13 taken 0% (fallthrough)
+branch 14 taken 100%
+call   15 returned 100%
+branch 16 taken 0% (fallthrough)
+branch 17 taken 100%
     #####:  102:	  std::__throw_bad_alloc();
 call    0 never executed
 call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
         -:  103:
-       76:  104:	return static_cast<_Tp*>(::operator new(__n * sizeof(_Tp)));
+      279:  104:	return static_cast<_Tp*>(::operator new(__n * sizeof(_Tp)));
 call    0 returned 100%
 call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
         -:  105:      }
         -:  106:
         -:  107:      // __p is not permitted to be a null pointer.
         -:  108:      void
-function _ZN9__gnu_cxx13new_allocatorIPiE10deallocateEPS1_m called 31 returned 100% blocks executed 100%
-function _ZN9__gnu_cxx13new_allocatorIiE10deallocateEPim called 45 returned 100% blocks executed 100%
-       76:  109:      deallocate(pointer __p, size_type)
-       76:  110:      { ::operator delete(__p); }
+function _ZN9__gnu_cxx13new_allocatorIPZN29Deque_Fixture_iter_arrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SE10deallocateEPS7_m called 1 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIZN29Deque_Fixture_iter_arrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SE10deallocateEPS6_m called 2 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIPZN29Deque_Fixture_iter_arrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SE10deallocateEPS7_m called 1 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIZN29Deque_Fixture_iter_arrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SE10deallocateEPS6_m called 2 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIPiE10deallocateEPS1_m called 109 returned 100% blocks executed 100%
+function _ZN9__gnu_cxx13new_allocatorIiE10deallocateEPim called 164 returned 100% blocks executed 100%
+      279:  109:      deallocate(pointer __p, size_type)
+      279:  110:      { ::operator delete(__p); }
 call    0 returned 100%
 call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
         -:  111:
         -:  112:      size_type
-function _ZNK9__gnu_cxx13new_allocatorIiE8max_sizeEv called 45 returned 100% blocks executed 100%
-function _ZNK9__gnu_cxx13new_allocatorIPiE8max_sizeEv called 31 returned 100% blocks executed 100%
-       76:  113:      max_size() const _GLIBCXX_USE_NOEXCEPT
-       76:  114:      { return size_t(-1) / sizeof(_Tp); }
+function _ZNK9__gnu_cxx13new_allocatorIZN29Deque_Fixture_iter_arrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SE8max_sizeEv called 2 returned 100% blocks executed 100%
+function _ZNK9__gnu_cxx13new_allocatorIPZN29Deque_Fixture_iter_arrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SE8max_sizeEv called 1 returned 100% blocks executed 100%
+function _ZNK9__gnu_cxx13new_allocatorIZN29Deque_Fixture_iter_arrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SE8max_sizeEv called 2 returned 100% blocks executed 100%
+function _ZNK9__gnu_cxx13new_allocatorIPZN29Deque_Fixture_iter_arrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SE8max_sizeEv called 1 returned 100% blocks executed 100%
+function _ZNK9__gnu_cxx13new_allocatorIiE8max_sizeEv called 164 returned 100% blocks executed 100%
+function _ZNK9__gnu_cxx13new_allocatorIPiE8max_sizeEv called 109 returned 100% blocks executed 100%
+      279:  113:      max_size() const _GLIBCXX_USE_NOEXCEPT
+      279:  114:      { return size_t(-1) / sizeof(_Tp); }
         -:  115:
         -:  116:#if __cplusplus >= 201103L
         -:  117:      template<typename _Up, typename... _Args>
         -:  118:        void
-function _ZN9__gnu_cxx13new_allocatorIiE9constructIiIRKiEEEvPT_DpOT0_ called 46 returned 100% blocks executed 83%
-       46:  119:        construct(_Up* __p, _Args&&... __args)
-       46:  120:	{ ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+function _ZN9__gnu_cxx13new_allocatorIZN29Deque_Fixture_iter_arrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SE9constructIS6_IRKS6_EEEvPT_DpOT0_ called 3 returned 100% blocks executed 83%
+function _ZN9__gnu_cxx13new_allocatorIZN29Deque_Fixture_iter_arrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SE9constructIS6_IRKS6_EEEvPT_DpOT0_ called 3 returned 100% blocks executed 83%
+function _ZN9__gnu_cxx13new_allocatorIiE9constructIiIRKiEEEvPT_DpOT0_ called 394 returned 100% blocks executed 83%
+      400:  119:        construct(_Up* __p, _Args&&... __args)
+      400:  120:	{ ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
 call    0 returned 100%
 call    1 returned 100%
 branch  2 taken 100% (fallthrough)
 branch  3 taken 0%
+call    4 returned 100%
+call    5 returned 100%
+branch  6 taken 100% (fallthrough)
+branch  7 taken 0%
+call    8 returned 100%
+call    9 returned 100%
+branch 10 taken 100% (fallthrough)
+branch 11 taken 0%
         -:  121:
         -:  122:      template<typename _Up>
         -:  123:        void 
+function _ZN9__gnu_cxx13new_allocatorIZN29Deque_Fixture_iter_arrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SE7destroyIS6_EEvPT_ called 0 returned 0% blocks executed 0%
+function _ZN9__gnu_cxx13new_allocatorIZN29Deque_Fixture_iter_arrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SE7destroyIS6_EEvPT_ called 0 returned 0% blocks executed 0%
 function _ZN9__gnu_cxx13new_allocatorIiE7destroyIiEEvPT_ called 0 returned 0% blocks executed 0%
     #####:  124:        destroy(_Up* __p) { __p->~_Up(); }
         -:  125:#else

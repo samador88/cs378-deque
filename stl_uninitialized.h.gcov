@@ -150,9 +150,11 @@
         -:  145:    {
         -:  146:      template<typename _ForwardIterator, typename _Tp>
         -:  147:        static void
-        -:  148:        __uninit_fill(_ForwardIterator __first, _ForwardIterator __last,
+function _ZNSt20__uninitialized_fillILb1EE13__uninit_fillIPiiEEvT_S3_RKT0_ called 1 returned 100% blocks executed 100%
+        1:  148:        __uninit_fill(_ForwardIterator __first, _ForwardIterator __last,
         -:  149:		      const _Tp& __x)
-        -:  150:        { std::fill(__first, __last, __x); }
+        1:  150:        { std::fill(__first, __last, __x); }
+call    0 returned 100%
         -:  151:    };
         -:  152:
         -:  153:  /**
@@ -166,15 +168,17 @@
         -:  161:  */
         -:  162:  template<typename _ForwardIterator, typename _Tp>
         -:  163:    inline void
-        -:  164:    uninitialized_fill(_ForwardIterator __first, _ForwardIterator __last,
+function _ZSt18uninitialized_fillIPiiEvT_S1_RKT0_ called 1 returned 100% blocks executed 100%
+        1:  164:    uninitialized_fill(_ForwardIterator __first, _ForwardIterator __last,
         -:  165:		       const _Tp& __x)
         -:  166:    {
         -:  167:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  168:	_ValueType;
         -:  169:
-        -:  170:      std::__uninitialized_fill<__is_trivial(_ValueType)>::
+        1:  170:      std::__uninitialized_fill<__is_trivial(_ValueType)>::
+call    0 returned 100%
         -:  171:	__uninit_fill(__first, __last, __x);
-        -:  172:    }
+        1:  172:    }
         -:  173:
         -:  174:
         -:  175:  template<bool _TrivialValueType>
@@ -307,9 +311,11 @@
         -:  302:
         -:  303:  template<typename _ForwardIterator, typename _Tp, typename _Tp2>
         -:  304:    inline void
-        -:  305:    __uninitialized_fill_a(_ForwardIterator __first, _ForwardIterator __last,
+function _ZSt22__uninitialized_fill_aIPiiiEvT_S1_RKT0_RSaIT1_E called 1 returned 100% blocks executed 100%
+        1:  305:    __uninitialized_fill_a(_ForwardIterator __first, _ForwardIterator __last,
         -:  306:			   const _Tp& __x, allocator<_Tp2>&)
-        -:  307:    { std::uninitialized_fill(__first, __last, __x); }
+        1:  307:    { std::uninitialized_fill(__first, __last, __x); }
+call    0 returned 100%
         -:  308:
         -:  309:  template<typename _ForwardIterator, typename _Size, typename _Tp,
         -:  310:	   typename _Allocator>
@@ -477,17 +483,17 @@
         -:  472:    {
         -:  473:      template<typename _ForwardIterator>
         -:  474:        static void
-function _ZNSt25__uninitialized_default_1ILb1EE16__uninit_defaultIPiEEvT_S3_ called 14 returned 100% blocks executed 100%
-       14:  475:        __uninit_default(_ForwardIterator __first, _ForwardIterator __last)
+function _ZNSt25__uninitialized_default_1ILb1EE16__uninit_defaultIPiEEvT_S3_ called 52 returned 100% blocks executed 100%
+       52:  475:        __uninit_default(_ForwardIterator __first, _ForwardIterator __last)
         -:  476:        {
         -:  477:	  typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  478:	    _ValueType;
         -:  479:
-       14:  480:	  std::fill(__first, __last, _ValueType());
+       52:  480:	  std::fill(__first, __last, _ValueType());
 call    0 returned 100%
 branch  1 taken 100% (fallthrough)
 branch  2 taken 0% (throw)
-       14:  481:	}
+       52:  481:	}
         -:  482:    };
         -:  483:
         -:  484:  template<bool _TrivialValueType>
@@ -530,17 +536,17 @@ branch  2 taken 0% (throw)
         -:  521:  // constructed value_types(s).
         -:  522:  template<typename _ForwardIterator>
         -:  523:    inline void
-function _ZSt23__uninitialized_defaultIPiEvT_S1_ called 14 returned 100% blocks executed 100%
-       14:  524:    __uninitialized_default(_ForwardIterator __first,
+function _ZSt23__uninitialized_defaultIPiEvT_S1_ called 52 returned 100% blocks executed 100%
+       52:  524:    __uninitialized_default(_ForwardIterator __first,
         -:  525:			    _ForwardIterator __last)
         -:  526:    {
         -:  527:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  528:	_ValueType;
         -:  529:
-       14:  530:      std::__uninitialized_default_1<__is_trivial(_ValueType)>::
+       52:  530:      std::__uninitialized_default_1<__is_trivial(_ValueType)>::
 call    0 returned 100%
         -:  531:	__uninit_default(__first, __last);
-       14:  532:    }
+       52:  532:    }
         -:  533:
         -:  534:  // __uninitialized_default_n
         -:  535:  // Fills [first, first + n) with n default constructed value_type(s).
@@ -581,11 +587,11 @@ call    0 returned 100%
         -:  570:
         -:  571:  template<typename _ForwardIterator, typename _Tp>
         -:  572:    inline void
-function _ZSt25__uninitialized_default_aIPiiEvT_S1_RSaIT0_E called 14 returned 100% blocks executed 100%
-       14:  573:    __uninitialized_default_a(_ForwardIterator __first,
+function _ZSt25__uninitialized_default_aIPiiEvT_S1_RSaIT0_E called 52 returned 100% blocks executed 100%
+       52:  573:    __uninitialized_default_a(_ForwardIterator __first,
         -:  574:			      _ForwardIterator __last,
         -:  575:			      allocator<_Tp>&)
-       14:  576:    { std::__uninitialized_default(__first, __last); }
+       52:  576:    { std::__uninitialized_default(__first, __last); }
 call    0 returned 100%
         -:  577:
         -:  578:

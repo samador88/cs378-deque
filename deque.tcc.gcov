@@ -68,14 +68,14 @@
         -:   63:#if __cplusplus >= 201103L
         -:   64:  template <typename _Tp, typename _Alloc>
         -:   65:    void
-function _ZNSt5dequeIiSaIiEE21_M_default_initializeEv called 14 returned 100% blocks executed 30%
-       14:   66:    deque<_Tp, _Alloc>::
+function _ZNSt5dequeIiSaIiEE21_M_default_initializeEv called 52 returned 100% blocks executed 30%
+       52:   66:    deque<_Tp, _Alloc>::
         -:   67:    _M_default_initialize()
         -:   68:    {
         -:   69:      _Map_pointer __cur;
         -:   70:      __try
         -:   71:        {
-       14:   72:          for (__cur = this->_M_impl._M_start._M_node;
+       52:   72:          for (__cur = this->_M_impl._M_start._M_node;
 branch  0 taken 0%
 branch  1 taken 100% (fallthrough)
         -:   73:	       __cur < this->_M_impl._M_finish._M_node;
@@ -87,12 +87,12 @@ branch  2 never executed
 branch  3 never executed
     #####:   76:					   _M_get_Tp_allocator());
 call    0 never executed
-       14:   77:          std::__uninitialized_default_a(this->_M_impl._M_finish._M_first,
+       52:   77:          std::__uninitialized_default_a(this->_M_impl._M_finish._M_first,
 call    0 returned 100%
 branch  1 taken 100% (fallthrough)
 branch  2 taken 0% (throw)
         -:   78:					 this->_M_impl._M_finish._M_cur,
-       14:   79:					 _M_get_Tp_allocator());
+       52:   79:					 _M_get_Tp_allocator());
 call    0 returned 100%
         -:   80:        }
     =====:   81:      __catch(...)
@@ -107,12 +107,10 @@ branch  2 never executed
     =====:   84:			_M_get_Tp_allocator());
 call    0 never executed
 call    1 never executed
-branch  2 never executed
-branch  3 never executed
-call    4 never executed
+call    2 never executed
     =====:   85:          __throw_exception_again;
         -:   86:        }
-       14:   87:    }
+       52:   87:    }
         -:   88:#endif
         -:   89:
         -:   90:  template <typename _Tp, typename _Alloc>
@@ -375,28 +373,49 @@ call    4 never executed
         -:  347:
         -:  348:  template <typename _Tp, typename _Alloc>
         -:  349:    void
-        -:  350:    deque<_Tp, _Alloc>::
+function _ZNSt5dequeIiSaIiEE18_M_fill_initializeERKi called 1 returned 100% blocks executed 30%
+        1:  350:    deque<_Tp, _Alloc>::
         -:  351:    _M_fill_initialize(const value_type& __value)
         -:  352:    {
         -:  353:      _Map_pointer __cur;
         -:  354:      __try
         -:  355:        {
-        -:  356:          for (__cur = this->_M_impl._M_start._M_node;
+        1:  356:          for (__cur = this->_M_impl._M_start._M_node;
+branch  0 taken 0%
+branch  1 taken 100% (fallthrough)
         -:  357:	       __cur < this->_M_impl._M_finish._M_node;
         -:  358:	       ++__cur)
-        -:  359:            std::__uninitialized_fill_a(*__cur, *__cur + _S_buffer_size(),
-        -:  360:					__value, _M_get_Tp_allocator());
-        -:  361:          std::__uninitialized_fill_a(this->_M_impl._M_finish._M_first,
+    #####:  359:            std::__uninitialized_fill_a(*__cur, *__cur + _S_buffer_size(),
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####:  360:					__value, _M_get_Tp_allocator());
+call    0 never executed
+        1:  361:          std::__uninitialized_fill_a(this->_M_impl._M_finish._M_first,
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
         -:  362:				      this->_M_impl._M_finish._M_cur,
-        -:  363:				      __value, _M_get_Tp_allocator());
+        1:  363:				      __value, _M_get_Tp_allocator());
+call    0 returned 100%
         -:  364:        }
-        -:  365:      __catch(...)
+    =====:  365:      __catch(...)
+call    0 never executed
+call    1 never executed
+call    2 never executed
         -:  366:        {
-        -:  367:          std::_Destroy(this->_M_impl._M_start, iterator(*__cur, __cur),
-        -:  368:			_M_get_Tp_allocator());
-        -:  369:          __throw_exception_again;
+    =====:  367:          std::_Destroy(this->_M_impl._M_start, iterator(*__cur, __cur),
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    =====:  368:			_M_get_Tp_allocator());
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    =====:  369:          __throw_exception_again;
         -:  370:        }
-        -:  371:    }
+        1:  371:    }
         -:  372:
         -:  373:  template <typename _Tp, typename _Alloc>
         -:  374:    template <typename _InputIterator>

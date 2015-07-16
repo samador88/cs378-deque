@@ -204,9 +204,9 @@
         -:  199:  template<typename _Iter>
         -:  200:    inline typename iterator_traits<_Iter>::iterator_category
 function _ZSt19__iterator_categoryIPcENSt15iterator_traitsIT_E17iterator_categoryERKS2_ called 0 returned 0% blocks executed 0%
-function _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_ called 138 returned 100% blocks executed 100%
-      138:  201:    __iterator_category(const _Iter&)
-      138:  202:    { return typename iterator_traits<_Iter>::iterator_category(); }
+function _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_ called 642 returned 100% blocks executed 100%
+      642:  201:    __iterator_category(const _Iter&)
+      642:  202:    { return typename iterator_traits<_Iter>::iterator_category(); }
         -:  203:
         -:  204:  //@}
         -:  205:
@@ -216,11 +216,11 @@ function _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_catego
         -:  209:    struct _Iter_base
         -:  210:    {
         -:  211:      typedef _Iterator iterator_type;
-function _ZNSt10_Iter_baseIPiLb0EE7_S_baseES0_ called 28 returned 100% blocks executed 100%
+function _ZNSt10_Iter_baseIPiLb0EE7_S_baseES0_ called 106 returned 100% blocks executed 100%
 function _ZNSt10_Iter_baseISt15_Deque_iteratorIiRKiPS1_ELb0EE7_S_baseES4_ called 26 returned 100% blocks executed 100%
 function _ZNSt10_Iter_baseIN8my_dequeIiSaIiEE14const_iteratorELb0EE7_S_baseES3_ called 26 returned 100% blocks executed 100%
-       80:  212:      static iterator_type _S_base(_Iterator __it)
-       80:  213:      { return __it; }
+      158:  212:      static iterator_type _S_base(_Iterator __it)
+      158:  213:      { return __it; }
         -:  214:    };
         -:  215:
         -:  216:  template<typename _Iterator>
