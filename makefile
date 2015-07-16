@@ -1,13 +1,13 @@
-FILES := 				 				\
-	.travis.yml				 			\
-	deque-tests/sa4265-TestDeque.out	\
-	deque-tests/sa4265-TestDeque.c++ 	\
-	Deque.h							 	\
-	Deque.log							 \
-	html				 			   	\
-	TestDeque.c++			 			\
-	TestDeque.out						 \
-
+FILES :=                              \
+    .travis.yml                       \
+    deque-tests/sa4265-TestDeque.c++  \
+    deque-tests/sa4265-TestDeque.out  \
+    Deque.h                         \
+    Deque.log                       \
+    html                              \
+    TestDeque.c++                   \
+    TestDeque.out
+    
 ifeq ($(CXX), clang++)
 	COVFLAGS := --coverage
 	GCOV     := gcov-4.6
