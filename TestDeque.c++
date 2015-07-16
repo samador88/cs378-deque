@@ -101,31 +101,29 @@ TYPED_TEST(Deque_Fixture, test_1) {
             ASSERT_FALSE(x == y);
         }
        
-       TYPED_TEST(Deque_Fixture, equalop4) {
-            typedef typename TestFixture::deque_type deque_type;
 
-            deque_type y(3); 
-            y[0] = 1; 
-            y[1] = 1; 
-            y[2] = 1;
-            deque_type x(y);
-            ASSERT_TRUE(x == y);
-        }
 		// ----------
         // operator <
         // ----------
 
-        /*NEED TO CHANGE THIS
+       
         TYPED_TEST(Deque_Fixture, lessthanop1) {
             typedef typename TestFixture::deque_type deque_type;
 
-            deque_type x(3); x[0] = 1; x[1] = 2; x[2] = 3;
-            deque_type y(3); y[0] = 1; y[1] = 2; y[2] = 3;
+            deque_type x(4); 
+            x[0] = 5; 
+            x[1] = 4; 
+            x[2] = 3;
+            x[3] = 4;
+            deque_type y(4); 
+            y[0] = 5; 
+            y[1] = 4; 
+            y[2] = 3;
+            y[3] = 4;
 
             ASSERT_FALSE(x < y);
-        }*/
+            ASSERT_TRUE(x == y);}
 
-       /*DONT NEED TO CHANGE THESE
         TYPED_TEST(Deque_Fixture, lessthanop2) {
             typedef typename TestFixture::deque_type deque_type;
 
@@ -152,8 +150,8 @@ TYPED_TEST(Deque_Fixture, test_1) {
             y[2] = 3;
             ASSERT_TRUE(x < y);
         }
-*/
-        /*DON'T NEED TO CHANGE THESE
+
+
         TYPED_TEST(Deque_Fixture, lessthanop4) {
             typedef typename TestFixture::deque_type deque_type;
 
@@ -173,7 +171,7 @@ TYPED_TEST(Deque_Fixture, test_1) {
             x[0] = 2;
             y[0] = 1;
             ASSERT_FALSE(x < y);
-        }*/
+        }
 		// --------
         // iterator
         // --------
@@ -227,7 +225,7 @@ TYPED_TEST(Deque_Fixture, test_1) {
                 // operator !=
                 // -----------
 
-                TYPED_TEST(Deque_Fixture, iter_inequality_op_test_1) {
+               /* TYPED_TEST(Deque_Fixture, iter_inequality_op_test_1) {
                     typedef typename TestFixture::deque_type deque_type;
 
                     deque_type x(5); x[0] = 1; x[1] = 4;
@@ -266,7 +264,7 @@ TYPED_TEST(Deque_Fixture, test_1) {
                     ++x_b;
 
                     ASSERT_FALSE(x_b != x_e);
-                }
+                }*/
  				// ----------
                 // operator +
                 // ----------
@@ -789,7 +787,7 @@ TYPED_TEST(Deque_Fixture, test_1) {
                 // -----------
                 // operator ==
                 // -----------
-
+/*
                 TYPED_TEST(Deque_Fixture, const_iter_equality_op_test_1) {
                     typedef typename TestFixture::deque_type deque_type;
 
@@ -891,7 +889,7 @@ TYPED_TEST(Deque_Fixture, test_1) {
 
                     ASSERT_FALSE(x_b != x_e);
                 }
-
+*/
               /*NEED TO CHANGE THESE 
                 // ----------
                 // operator +

@@ -851,8 +851,7 @@ class my_deque {
          * <your documentation>
          */
         size_type size () const {
-            // <your code>
-            return 0;}
+            return _ed - _bd;}
 
         // ----
         // swap
