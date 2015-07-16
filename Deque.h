@@ -208,7 +208,7 @@ class my_deque {
                 // data
                 // ----
 
-                difference_type _i; //current position
+                size_type _i; //current position/size
                 my_deque* _d;       //deque we are using
 
             private:
@@ -232,7 +232,7 @@ class my_deque {
                  * starting position is index 0 by default
                  * set _d to equal given deck and _i to equal given index
                  */
-                iterator (my_deque d, difference_type i = 0) {
+                iterator (my_deque* d, size_type i = 0) {
                     _d = d;
                     _i = i;
                     assert(valid());}
@@ -367,7 +367,7 @@ class my_deque {
                  * @return true if they are equal deques and equal positions
                  */
                 friend bool operator == (const const_iterator& lhs, const const_iterator& rhs) {
-                    if(lhs._d == rhs._d && lhs._i == rhs._i){
+                    if(lhs._constd == rhs._constd && lhs._i == rhs._i){
                         return true;
                     }
                     return false;}
@@ -408,8 +408,8 @@ class my_deque {
                 // data
                 // ----
 
-                const my_deque* _d; //deque we are using
-                difference_type _i; //current position
+                const my_deque* _constd; //deque we are using
+                size_type _i; //current position
 
             private:
                 // -----
@@ -432,8 +432,8 @@ class my_deque {
                  * @param difference type
                  * set iterator to given deque and position
                  */
-                const_iterator (const my_deque d, difference_type i = 0) {
-                    _d = d;
+                const_iterator (const my_deque* d, size_type i = 0) {
+                    _constd = d;
                     _i = i;
                     assert(valid());}
 
@@ -450,7 +450,7 @@ class my_deque {
                  * @return the value at the given index of the deque
                  */
                 reference operator * () const {
-                    return (*_d)[_i];}
+                    return (*_constd)[_i];}
 
                 // -----------
                 // operator ->
@@ -559,21 +559,21 @@ class my_deque {
          * @param size, value type defaulted, allocated type defaulted
          */
         explicit my_deque (size_type s, const_reference v = value_type(), const allocator_type& a = allocator_type())  : _a(a), _aP() {
-            size_type numrows = s/100;       //divide the whole size by 100 and make that many rows in inner array
-            if(s % 100 != 0){                //if there are leftovers, make an extra row
+            size_type numrows = s/50;       //divide the whole size by 100 and make that many rows in inner array
+            if(s % 50 != 0){                //if there are leftovers, make an extra row
                 ++numrows;
             }
 
             _outermost = _aP.allocate(numrows); //allocate space to have each row
             size_type outerindex = 0;
             while(outerindex != numrows){       //for each row allocate enough space for 100 elements
-                _outermost[outerindex] = _a.allocate(100);
+                _outermost[outerindex] = _a.allocate(50);
                 ++outerindex;
             }
     
             outerindex = 0;
             while(outerindex != numrows){              
-                _a.deallocate(_outermost[outerindex], 100);
+                _a.deallocate(_outermost[outerindex], 50);
                 ++outerindex;
             }
 
@@ -729,30 +729,41 @@ class my_deque {
         // ---
 
         /**
-         * <your documentation>
+         * @return iterator for this deque of this size
          */
         iterator end () {
-            // <your code>
-            return iterator(/* <your arguments> */);}
+            return iterator(this, size());}
 
         /**
-         * <your documentation>
+         * @return iterator for this deque of this size
          */
         const_iterator end () const {
-            // <your code>
-            return const_iterator(/* <your arguments> */);}
+            return const_iterator(this, size());}
 
         // -----
         // erase
         // -----
 
         /**
-         * <your documentation>
+         * @param takes in a position of an element iterator
+         * erases the element at that position
+         * if at the end, just pop that element
+         * else
+         * copies everything past the current position into the current position on
+         * resizes to one less
+         * returns an iterator at the same position with a new element now
          */
-        iterator erase (iterator) {
-            // <your code>
-            assert(valid());
-            return iterator();}
+        iterator erase (iterator element) {
+            if(element == end() -1){
+                pop_back();
+            }
+            else{
+                std::copy(element+1, end(), element);
+                resize(--size());
+            }
+            assert(valid() );
+            return iterator(this, 0);}
+
 
         // -----
         // front
