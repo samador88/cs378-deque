@@ -228,6 +228,7 @@ public:
                  * set iterator on deque at position given
                  */
                 iterator (my_deque* d, size_type i = 0){
+                    assert(i >= 0);
                     _d = d;
                     _i = i;
                     assert(valid());}
@@ -245,6 +246,7 @@ public:
                  * @return a reference to element at that position
                  */
                 reference operator * () const {
+                    assert(_i >= 0);
                     return (*_d)[_i];}
 
                  // -----------
@@ -307,6 +309,7 @@ public:
                  * increment iterator by value given
                  */
                 iterator& operator += (difference_type d) {
+                    assert(d >= 0);
                     _i += d;
                     assert(valid());
                     return *this;}
@@ -319,6 +322,7 @@ public:
                  * decrement iterator by value given
                  */
                 iterator& operator -= (difference_type d) {
+                    assert(d>=0);
                     _i -= d;
                     assert(valid());
                     return *this;}};
@@ -412,6 +416,7 @@ public:
                  * @return a const iterator starting at position given for given deque
                  */
             const_iterator (const my_deque* d, size_type i=0) {
+                assert(i>=0);
                 _d = d;
                 _i = i;
                 assert(valid());}
@@ -429,6 +434,7 @@ public:
                  * @return reference to element at current index
                  */
                 reference operator * () const {
+                    assert(_i >= 0);
                 return (*_d)[_i];}
 
                 // -----------
@@ -497,6 +503,7 @@ public:
                  * @return const iterator incremented by that many
                  */
                 const_iterator& operator += (difference_type d) {
+                    assert(d >= 0);
                 _i += d;
                 assert(valid());
                 return *this;}
@@ -510,6 +517,7 @@ public:
                  * @return const iterator decremented by that many
                  */
                 const_iterator& operator -= (difference_type d) {
+                    assert(d>=0);
                 _i -= d;
                 assert(valid());
                 return *this;}};
@@ -528,6 +536,10 @@ public:
             : _a(a), _aP() {
              _lb = _le = _bd = _ed = 0;
             _outermost = 0;
+            assert(_lb == 0);
+            assert(_le == 0);
+            assert(_bd == 0);
+            assert(_ed == 0);
             assert(valid() );}
 
         /**
@@ -536,9 +548,9 @@ public:
          */
         explicit my_deque (size_type s, const_reference v = value_type(), const allocator_type& a = allocator_type()) 
             : _a(a), _aP() {
-
+                assert (s>=0);
             size_type numrows = s / 10;         //divide the size into different rows
-            
+            assert(numrows >= 0);
             if (s % 10 > 0){                   //make sure there is no extra space, add an extra row if remainder
                 ++numrows;
 
@@ -594,6 +606,7 @@ public:
         my_deque (const my_deque& that) 
             : _a(that._a), _aP() {
             _outermost = 0; 
+            assert(_outermost == 0);
             _lb = _bd = _a.allocate(that.size());
             _ed = _le = _lb + that.size();
             uninitialized_copy(_a, that.begin(), that.end(), begin());
@@ -624,17 +637,24 @@ public:
         my_deque& operator = (const my_deque& rhs) {
             if (this == &rhs)
                 return *this;
-            if (rhs.size() == size())
+            if (rhs.size() == size()){
+                assert(rhs.size()==size());
                 std::copy(rhs.begin(), rhs.end(), begin());
+            }
             else if (rhs.size() < size()) {
+                assert(rhs.size()<size());
                 std::copy(rhs.begin(), rhs.end(), begin());
                 resize(rhs.size());
             }    
             else if (rhs.size() <= (_le - _bd)) {
+                assert(rhs.size()<=(_le - _bd));
                 std::copy(rhs.begin(), rhs.begin() + size(), begin());
                 _ed = &(*uninitialized_copy(_a, rhs.begin() + size(), rhs.end(), end())); //had to do * & because compiler said canot convert types
             }
             else {
+                assert(!(rhs.size()==size()));
+                assert(!(rhs.size()<size()));
+                assert(!(rhs.size()<=(_le - _bd)));
                 clear();
                 my_deque x(rhs);
                 swap(x);
@@ -650,12 +670,14 @@ public:
          * @return reference to value at index from beginning of data
          */
         reference operator [] (size_type index) {
+            assert(index >= 0);
             return *(_bd + index);}
 
         /**
          * @return const reference to value at index from beginning of data
          */
         const_reference operator [] (size_type index) const {
+            assert(index >= 0);
             return const_cast<my_deque*>(this)->operator[](index);}
 
         // --
@@ -666,6 +688,7 @@ public:
          * @return reference to value at index
          */
         reference at (size_type index) {
+            assert(index >= 0);
             if (index >= size())
                 throw std::out_of_range("my_deque");
             return (*this)[index];}
@@ -674,6 +697,7 @@ public:
          * @return const reference to value at index
          */
         const_reference at (size_type index) const {
+            assert(index >= 0);
             return const_cast<my_deque*>(this)->at(index);}
 
         // ----
@@ -692,6 +716,7 @@ public:
          * @return const reference to last element
          */
         const_reference back () const {
+            assert(size() > 0);
             return const_cast<my_deque*>(this)->back();}
 
         // -----
@@ -781,6 +806,7 @@ public:
          * @return const reference to first element
          */
         const_reference front () const {
+            assert(!empty());
             return const_cast<my_deque*>(this)->front();}
 
         // ------
@@ -792,13 +818,17 @@ public:
          */
         iterator insert (iterator it, const_reference r) {
             if(it == end()){ //if at the end already, just need to push it to the back
+                assert(it == end());
                 push_back(r);
             }
 
             else if (it == begin()){   //if at beginning utitlize push_front
+                assert(it == begin());
                 push_front(r);
             }
             else{           //have to grow the deque and copy everything, moving it one position down.  insert the value into current position
+                assert(!(it==begin()));
+                assert(!(it==end()));
                 value_type v = *(end()-1);
                 std::copy(it, end(), it+1);
                 *it = r;
@@ -863,20 +893,30 @@ public:
          * if not, make a new deque of the right size and copy elements over, swap
          */
         void resize (size_type s, const_reference v = value_type()) {
-            if (s == size())
+            if (s == size()){
+                assert(s==size());
                 return;
-            if (s < size())
+            }
+            if (s < size()){
+                assert(s<size());
                 _ed = &(*destroy(_a, begin() + s, end() )); //had to put &* to compile
-            else if (s <= (_ed -_lb))
+            }
+            else if (s <= (_ed -_lb)){
+                assert(s<=(_ed -_lb));
                 _ed = &*uninitialized_fill(_a, end(), begin() + s, v);
-         
+            }
             else {              //need to make new, bigger deque but keep all pointers the same
+                assert(!(s<=(_ed -_lb)));
+                assert(!(s<size()));
+                assert(!(s==size()));
                 size_type newsize = size() * 2;
                 if (s > newsize){
+                    assert(s>newsize);
                     newsize = s;
                 }
 
                 if (newsize == s){
+                    assert(s==newsize);
                     newsize = newsize + 10;
                 }
 
@@ -884,6 +924,7 @@ public:
                 size_type enddata = middled;
 
                 if ((newsize - s) % 2){
+                    assert((newsize-s)%2);
                     ++enddata;
                 }
                 
@@ -919,6 +960,7 @@ public:
          */
         void swap (my_deque& that) {
             if(_a == that._a) {
+                assert(_a==that._a);
                 std::swap(_bd, that._bd);
                 std::swap(_lb, that._lb);
                 std::swap(_ed, that._ed);

@@ -191,10 +191,10 @@ function _ZSteqIZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1S
 function _ZSteqIZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEbRKSaIT_ES9_ called 0 returned 0% blocks executed 0%
 function _ZSteqIZN28Deque_Fixture_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEbRKSaIT_ES9_ called 0 returned 0% blocks executed 0%
 function _ZSteqIZN34Deque_Fixture_const_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEbRKSaIT_ES9_ called 0 returned 0% blocks executed 0%
-function _ZSteqIiEbRKSaIT_ES3_ called 30 returned 100% blocks executed 100%
+function _ZSteqIiEbRKSaIT_ES3_ called 60 returned 100% blocks executed 100%
 function _ZSteqIcEbRKSaIT_ES3_ called 335 returned 100% blocks executed 100%
-      365:  133:    operator==(const allocator<_Tp>&, const allocator<_Tp>&)
-      365:  134:    { return true; }
+      395:  133:    operator==(const allocator<_Tp>&, const allocator<_Tp>&)
+      395:  134:    { return true; }
         -:  135:
         -:  136:  template<typename _T1, typename _T2>
         -:  137:    inline bool
