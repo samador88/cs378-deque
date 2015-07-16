@@ -1,7 +1,7 @@
 FILES := 				 				\
 	.travis.yml				 			\
-	deque-tests/ll9338-TestDeque.c++ \
-	deque-tests/ll9338-TestDeque.out \
+	deque-tests/sa4265-TestDeque.c++ \
+	deque-tests/sa4265-TestDeque.out \
 	Deque.h							 \
 	Deque.log							 \
 	html				 			   	\
