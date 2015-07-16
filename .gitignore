@@ -1,28 +1,8 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# This file is named "gitignore.sample".
+# Rename it ".gitignore".
+# http://git-scm.com/docs/gitignore/
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+.gitignore
+*.gcda
+*.gcno
+*.gcov
