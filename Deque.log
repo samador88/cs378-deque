@@ -1,0 +1,227 @@
+commit f12d9619d266a793e50af8b0ea5d5488247294a8
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Thu Jul 16 16:31:42 2015 -0500
+
+    added html
+
+commit 311b92a168c276908b8d169f4434fc949ea526d6
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Thu Jul 16 16:30:24 2015 -0500
+
+    added asserts.  closes #9.
+
+commit d639b84306b1de614734028a3bcfcc2cba2589e0
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Thu Jul 16 16:15:52 2015 -0500
+
+    fixed makefile to include my eid.  closes # 10  closes #11
+
+commit 1e969c5ad104d1a0dd3ad8a72186d63d9fcafb0e
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Thu Jul 16 16:07:07 2015 -0500
+
+    finished unit tests.  closes #17.  Closes #7.  closes #8
+
+commit 169c821661edd445646828aadd7acb9677be7095
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Thu Jul 16 12:55:58 2015 -0500
+
+    madmade unit tests for deque operators.
+
+commit 7e3dbd9d4cc8f16dc7b5ceeeedd55fe8daed3c0f
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Thu Jul 16 12:43:24 2015 -0500
+
+    all tests passing for classmates' tests.  need to make own unit tests.  closes 19.  closes 23.  closes 24.  closes 25.
+
+commit e1032441bda482f3267654e9f560d17129f4e179
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Wed Jul 15 22:05:02 2015 -0500
+
+    not passing tets
+
+commit 38899ec08c8d959278cf5253f19c380974f93c55
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Wed Jul 15 20:41:24 2015 -0500
+
+    added swap and pop_back
+
+commit 93dc2e7d51bc6ac8f95f42cece398681b405a6b1
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Wed Jul 15 20:33:47 2015 -0500
+
+    all non-const iterator tests passing
+
+commit d35a6b36014a15481955fc5b0dcc45fde9fe5e7e
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Wed Jul 15 19:46:31 2015 -0500
+
+    == and < tests passing.  closes #22
+
+commit c1a8d5a6882bdaf1cc976cbdce35b4bd8be81c5b
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Wed Jul 15 19:35:34 2015 -0500
+
+    closes #18 closes #21 closes #17.  Tests still failing because of size function
+
+commit 387c42722b4f355f28c5ab55e40eb3d4b23fbab5
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Wed Jul 15 18:46:08 2015 -0500
+
+    added begin, clear, and empty.  closes #18
+
+commit 79fee4c81f3b410729700ba36db8eb1f64a7c81e
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Wed Jul 15 18:39:43 2015 -0500
+
+    added at and back, still failing tests
+
+commit 3be6afe0d50545ba8ba3b90212051f22bda5464d
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Wed Jul 15 18:28:45 2015 -0500
+
+    assignment operator and index operator.  tests still failing
+
+commit 98642289d54f17ed6086e7b8410cf3ea388031d9
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Wed Jul 15 18:02:04 2015 -0500
+
+    made third constructor
+
+commit 9a0af2833a2b88a3035371eba55228428f52cbe8
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Wed Jul 15 17:58:27 2015 -0500
+
+    made 2 constructors.  still getting errors in tests because of iterator
+
+commit 8691e3f15a87c3b755969742b1a7f84ecfed4e87
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Wed Jul 15 17:05:45 2015 -0500
+
+    finished ops for const iterator.  tests still failing because missing constructor
+
+commit 9da36ae8402646f1bbacf2c50132a7ec4c7d42c4
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Wed Jul 15 16:43:42 2015 -0500
+
+    added in ops for iterator.  tests still failing because need constructor
+
+commit 22f15d3fc863b82d50cace91a041928a81085dfb
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Wed Jul 15 16:12:24 2015 -0500
+
+    added in operator functions up to line 206.  tests are failing
+
+commit fb5cb045fe87a866ce97efd00e6c8a07198c4311
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Wed Jul 15 15:31:20 2015 -0500
+
+    starting over
+
+commit ffb3855a55f19f150d50c6790b2018bcf240b72e
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Tue Jul 14 11:33:22 2015 -0500
+
+    added functions for my_deque
+
+commit d29335759647294436cd028096d4dcb7fc2b0b30
+Author: Samantha Amador <sa4265@cs.utexas.edu>
+Date:   Mon Jul 13 17:52:33 2015 -0500
+
+    fixed errors in deque.h
+
+commit 09c492cd9414953eab3b96cf60a1099da8edbd2f
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Mon Jul 13 17:45:27 2015 -0500
+
+    attempt to fix invalude assignment
+
+commit 9c748aea3137a385230526b23e68f9e826df67da
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Mon Jul 13 17:34:53 2015 -0500
+
+    changed copy to std::copy
+
+commit c9c2ce1ed9171bfef4548640a3e14ad919166faf
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Mon Jul 13 17:33:28 2015 -0500
+
+    added index function and unit tests
+
+commit 043f6925961534c3f4a19e54a337619876e30c5b
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Mon Jul 13 16:47:41 2015 -0500
+
+    fixed deque.h from having being to begin
+
+commit 3fb7c0f528280adf7bc06cfd66e274c1ce66aa5e
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Mon Jul 13 16:45:44 2015 -0500
+
+    added = operator for mydeque
+
+commit 96756ad760b939df69f602086ac5e6b9c786b947
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Mon Jul 13 16:20:03 2015 -0500
+
+    fixed problem with constructor a vs _a
+
+commit 89db5d9f49be4ac3a85887b6ec9ab2477c6f773c
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Mon Jul 13 16:15:25 2015 -0500
+
+    fixed unit tests and constructors
+
+commit 211bc71afaabe68c9f0e4906492b48b3ae77faab
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Mon Jul 13 16:11:58 2015 -0500
+
+    fixed unit tests and destructor
+
+commit 2f62e519387086576fa0aae276ba78800389453a
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Mon Jul 13 16:04:10 2015 -0500
+
+    made deconstructor.  made constructor tests
+
+commit c2792a06f611a780f0f688c5a27a58de00dedff7
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Mon Jul 13 15:39:05 2015 -0500
+
+    fix travis build
+
+commit 8f7fb2b6e4a259deea9e1ecdf8f7d1a6a696a87b
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Mon Jul 13 15:31:50 2015 -0500
+
+    trying to fix build with travis ci
+
+commit 313ea17d990f5177e48547552db0282c9481d2c2
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Mon Jul 13 15:25:39 2015 -0500
+
+    finished constructors, corrected variable misspelling
+
+commit 6ba5b6651009b7b98a209e99a2558d123f27afc6
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Mon Jul 13 15:19:55 2015 -0500
+
+    fixed travis.yml, makefile, and added constructors.  closes #16
+
+commit 289919ed12aa87752c48b84145557ed6b02f629b
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Mon Jul 13 15:06:01 2015 -0500
+
+    fixed .travis.yml file.  changed interger-tests and integer.log to deque
+
+commit 3df65a420a841ea01e651751d1a0160b20771ea7
+Author: samador88 <Sam@Samanthas-MacBook-Air.local>
+Date:   Mon Jul 13 14:04:51 2015 -0500
+
+    inital commit. created necessary files
+
+commit ee0f4e753d685f5147609db7b0574f68816aa894
+Author: samador88 <samador@utexas.edu>
+Date:   Mon Jul 13 13:38:29 2015 -0500
+
+    Initial commit
