@@ -770,16 +770,13 @@ class my_deque {
         // -----
 
         /**
-         * <your documentation>
+         * @return a reference to the value at the beginning of the data
          */
         reference front () {
-            // <your code>
-            // dummy is just to be able to compile the skeleton, remove it
-            static value_type dummy;
-            return dummy;}
-
+            assert(size >= 0);
+            return *(_bd);}
         /**
-         * <your documentation>
+         * @return a const reference to the value at the beginning of the data
          */
         const_reference front () const {
             return const_cast<my_deque*>(this)->front();}
@@ -822,9 +819,9 @@ class my_deque {
          * <your documentation>
          */
         void push_back (const_reference) {
-            // <your code>
+            assert(size() > 0);
+            resize(size() - 1);
             assert(valid());}
-
         /**
          * <your documentation>
          */
@@ -860,8 +857,18 @@ class my_deque {
         /**
          * <your documentation>
          */
-        void swap (my_deque&) {
-            // <your code>
-            assert(valid());}};
+        void swap (my_deque& that) {
+            if(_a == that._a){
+                std::swap(_bd, that._bd);
+                std::swap(_lb, that._lb);
+                std::swap(_ed, that._ed);
+                std::swap(_le, that._le);
+            }
+            else {
+                my_deque x(*this);
+                *this = that;
+                that = x;
+            }
 
+            assert(valid() );}};
 #endif // Deque_h

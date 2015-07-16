@@ -1233,81 +1233,78 @@ call    1 returned 100%
         -:  770:        // -----
         -:  771:
         -:  772:        /**
-        -:  773:         * <your documentation>
+        -:  773:         * @return a reference to the value at the beginning of the data
         -:  774:         */
         -:  775:        reference front () {
-        -:  776:            // <your code>
-        -:  777:            // dummy is just to be able to compile the skeleton, remove it
-        -:  778:            static value_type dummy;
-        -:  779:            return dummy;}
-        -:  780:
-        -:  781:        /**
-        -:  782:         * <your documentation>
-        -:  783:         */
-        -:  784:        const_reference front () const {
-        -:  785:            return const_cast<my_deque*>(this)->front();}
-        -:  786:
-        -:  787:        // ------
-        -:  788:        // insert
-        -:  789:        // ------
-        -:  790:
-        -:  791:        /**
-        -:  792:         * <your documentation>
-        -:  793:         */
-        -:  794:        iterator insert (iterator, const_reference) {
-        -:  795:            // <your code>
-        -:  796:            assert(valid());
-        -:  797:            return iterator();}
-        -:  798:
-        -:  799:        // ---
-        -:  800:        // pop
-        -:  801:        // ---
-        -:  802:
-        -:  803:        /**
-        -:  804:         * <your documentation>
-        -:  805:         */
-        -:  806:        void pop_back () {
-        -:  807:            // <your code>
-        -:  808:            assert(valid());}
-        -:  809:
-        -:  810:        /**
-        -:  811:         * <your documentation>
-        -:  812:         */
-        -:  813:        void pop_front () {
-        -:  814:            // <your code>
-        -:  815:            assert(valid());}
-        -:  816:
-        -:  817:        // ----
-        -:  818:        // push
-        -:  819:        // ----
-        -:  820:
-        -:  821:        /**
-        -:  822:         * <your documentation>
-        -:  823:         */
-        -:  824:        void push_back (const_reference) {
-        -:  825:            // <your code>
-        -:  826:            assert(valid());}
-        -:  827:
-        -:  828:        /**
-        -:  829:         * <your documentation>
-        -:  830:         */
-        -:  831:        void push_front (const_reference) {
-        -:  832:            // <your code>
-        -:  833:            assert(valid());}
-        -:  834:
-        -:  835:        // ------
-        -:  836:        // resize
-        -:  837:        // ------
-        -:  838:
-        -:  839:        /**
-        -:  840:         * <your documentation>
-        -:  841:         */
+        -:  776:            assert(size >= 0);
+        -:  777:            return *(_bd);}
+        -:  778:        /**
+        -:  779:         * @return a const reference to the value at the beginning of the data
+        -:  780:         */
+        -:  781:        const_reference front () const {
+        -:  782:            return const_cast<my_deque*>(this)->front();}
+        -:  783:
+        -:  784:        // ------
+        -:  785:        // insert
+        -:  786:        // ------
+        -:  787:
+        -:  788:        /**
+        -:  789:         * <your documentation>
+        -:  790:         */
+        -:  791:        iterator insert (iterator, const_reference) {
+        -:  792:            // <your code>
+        -:  793:            assert(valid());
+        -:  794:            return iterator();}
+        -:  795:
+        -:  796:        // ---
+        -:  797:        // pop
+        -:  798:        // ---
+        -:  799:
+        -:  800:        /**
+        -:  801:         * <your documentation>
+        -:  802:         */
+        -:  803:        void pop_back () {
+        -:  804:            // <your code>
+        -:  805:            assert(valid());}
+        -:  806:
+        -:  807:        /**
+        -:  808:         * <your documentation>
+        -:  809:         */
+        -:  810:        void pop_front () {
+        -:  811:            // <your code>
+        -:  812:            assert(valid());}
+        -:  813:
+        -:  814:        // ----
+        -:  815:        // push
+        -:  816:        // ----
+        -:  817:
+        -:  818:        /**
+        -:  819:         * <your documentation>
+        -:  820:         */
+        -:  821:        void push_back (const_reference) {
+        -:  822:            assert(size() > 0);
+        -:  823:            resize(size() - 1);
+        -:  824:            assert(valid());}
+        -:  825:        /**
+        -:  826:         * <your documentation>
+        -:  827:         */
+        -:  828:        void push_front (const_reference) {
+        -:  829:            // <your code>
+        -:  830:            assert(valid());}
+        -:  831:
+        -:  832:        // ------
+        -:  833:        // resize
+        -:  834:        // ------
+        -:  835:
+        -:  836:        /**
+        -:  837:         * <your documentation>
+        -:  838:         */
 function _ZN8my_dequeIZN29Deque_Fixture_iter_arrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE6resizeEmRKS5_ called 1 returned 100% blocks executed 75%
 function _ZN8my_dequeIZN29Deque_Fixture_iter_arrow_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE6resizeEmRKS4_ called 1 returned 100% blocks executed 75%
 function _ZN8my_dequeIiSaIiEE6resizeEmRKi called 53 returned 100% blocks executed 75%
-       55:  842:        void resize (size_type s, const_reference v = value_type()) {
-        -:  843:            // <your code>
-       55:  844:            assert(valid());}
+       55:  839:        void resize (size_type s, const_reference v = value_type()) {
+        -:  840:            // <your code>
+       55:  841:            assert(valid());}
 call    0 returned 100%
 branch  1 taken 0% (fallthrough)
 branch  2 taken 100%
@@ -1320,29 +1317,39 @@ call    8 returned 100%
 branch  9 taken 0% (fallthrough)
 branch 10 taken 100%
 call   11 never executed
-        -:  845:
-        -:  846:        // ----
-        -:  847:        // size
-        -:  848:        // ----
-        -:  849:
-        -:  850:        /**
-        -:  851:         * <your documentation>
-        -:  852:         */
+        -:  842:
+        -:  843:        // ----
+        -:  844:        // size
+        -:  845:        // ----
+        -:  846:
+        -:  847:        /**
+        -:  848:         * <your documentation>
+        -:  849:         */
 function _ZNK8my_dequeIZN29Deque_Fixture_iter_arrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE4sizeEv called 2 returned 100% blocks executed 100%
 function _ZNK8my_dequeIZN29Deque_Fixture_iter_arrow_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE4sizeEv called 2 returned 100% blocks executed 100%
 function _ZNK8my_dequeIiSaIiEE4sizeEv called 151 returned 100% blocks executed 100%
-      155:  853:        size_type size () const {
-      155:  854:            return _ed - _bd;}
-        -:  855:
-        -:  856:        // ----
-        -:  857:        // swap
-        -:  858:        // ----
-        -:  859:
-        -:  860:        /**
-        -:  861:         * <your documentation>
-        -:  862:         */
-        -:  863:        void swap (my_deque&) {
-        -:  864:            // <your code>
-        -:  865:            assert(valid());}};
-        -:  866:
-        -:  867:#endif // Deque_h
+      155:  850:        size_type size () const {
+      155:  851:            return _ed - _bd;}
+        -:  852:
+        -:  853:        // ----
+        -:  854:        // swap
+        -:  855:        // ----
+        -:  856:
+        -:  857:        /**
+        -:  858:         * <your documentation>
+        -:  859:         */
+        -:  860:        void swap (my_deque& that) {
+        -:  861:            if(_a == that._a){
+        -:  862:                std::swap(_bd, that._bd);
+        -:  863:                std::swap(_lb, that._lb);
+        -:  864:                std::swap(_ed, that._ed);
+        -:  865:                std::swap(_le, that._le);
+        -:  866:            }
+        -:  867:            else {
+        -:  868:                my_deque x(*this);
+        -:  869:                *this = that;
+        -:  870:                that = x;
+        -:  871:            }
+        -:  872:
+        -:  873:            assert(valid() );}};
+        -:  874:#endif // Deque_h
