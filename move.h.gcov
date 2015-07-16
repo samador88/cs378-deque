@@ -78,16 +78,14 @@
         -:   73:   */
         -:   74:  template<typename _Tp>
         -:   75:    constexpr _Tp&&
-function _ZSt7forwardIRKZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEOT_RNSt16remove_referenceIS8_E4typeE called 2 returned 100% blocks executed 100%
-function _ZSt7forwardIRKZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEOT_RNSt16remove_referenceIS8_E4typeE called 2 returned 100% blocks executed 100%
-function _ZSt7forwardIRKZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEOT_RNSt16remove_referenceIS8_E4typeE called 2 returned 100% blocks executed 100%
-function _ZSt7forwardIRKZN42Deque_Fixture_my_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEOT_RNSt16remove_referenceIS8_E4typeE called 2 returned 100% blocks executed 100%
-function _ZSt7forwardIRKZN42Deque_Fixture_my_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEOT_RNSt16remove_referenceIS8_E4typeE called 2 returned 100% blocks executed 100%
-function _ZSt7forwardIRKZN42Deque_Fixture_my_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEOT_RNSt16remove_referenceIS8_E4typeE called 2 returned 100% blocks executed 100%
-function _ZSt7forwardIiEOT_RNSt16remove_referenceIS0_E4typeE called 86 returned 100% blocks executed 100%
-function _ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE called 34073 returned 100% blocks executed 100%
-    34171:   76:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
-    34171:   77:    { return static_cast<_Tp&&>(__t); }
+function _ZSt7forwardIRKZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEOT_RNSt16remove_referenceIS8_E4typeE called 2 returned 100% blocks executed 100%
+function _ZSt7forwardIRKZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEOT_RNSt16remove_referenceIS8_E4typeE called 4 returned 100% blocks executed 100%
+function _ZSt7forwardIRKZN28Deque_Fixture_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEOT_RNSt16remove_referenceIS8_E4typeE called 2 returned 100% blocks executed 100%
+function _ZSt7forwardIRKZN34Deque_Fixture_const_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEOT_RNSt16remove_referenceIS8_E4typeE called 4 returned 100% blocks executed 100%
+function _ZSt7forwardIiEOT_RNSt16remove_referenceIS0_E4typeE called 70 returned 100% blocks executed 100%
+function _ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE called 2323 returned 100% blocks executed 100%
+     2405:   76:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+     2405:   77:    { return static_cast<_Tp&&>(__t); }
         -:   78:
         -:   79:  /**
         -:   80:   *  @brief  Forward an rvalue.
@@ -111,20 +109,18 @@ function _ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE called 34073 retu
         -:   98:  */
         -:   99:  template<typename _Tp>
         -:  100:    constexpr typename std::remove_reference<_Tp>::type&&
-function _ZSt4moveIRPZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEONSt16remove_referenceIT_E4typeEOS9_ called 0 returned 0% blocks executed 0%
-function _ZSt4moveIRPZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEONSt16remove_referenceIT_E4typeEOS9_ called 0 returned 0% blocks executed 0%
-function _ZSt4moveIRPZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEONSt16remove_referenceIT_E4typeEOS9_ called 0 returned 0% blocks executed 0%
-function _ZSt4moveIRPZN42Deque_Fixture_my_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEONSt16remove_referenceIT_E4typeEOS9_ called 0 returned 0% blocks executed 0%
-function _ZSt4moveIRPZN42Deque_Fixture_my_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEONSt16remove_referenceIT_E4typeEOS9_ called 0 returned 0% blocks executed 0%
-function _ZSt4moveIRPZN42Deque_Fixture_my_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEONSt16remove_referenceIT_E4typeEOS9_ called 0 returned 0% blocks executed 0%
-function _ZSt4moveIRmEONSt16remove_referenceIT_E4typeEOS2_ called 6 returned 100% blocks executed 100%
-function _ZSt4moveIRPPiEONSt16remove_referenceIT_E4typeEOS4_ called 6 returned 100% blocks executed 100%
-function _ZSt4moveIRSt15_Deque_iteratorIiRiPiEEONSt16remove_referenceIT_E4typeEOS6_ called 12 returned 100% blocks executed 100%
+function _ZSt4moveIRPZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEONSt16remove_referenceIT_E4typeEOS9_ called 0 returned 0% blocks executed 0%
+function _ZSt4moveIRPZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEONSt16remove_referenceIT_E4typeEOS9_ called 0 returned 0% blocks executed 0%
+function _ZSt4moveIRPZN28Deque_Fixture_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEONSt16remove_referenceIT_E4typeEOS9_ called 0 returned 0% blocks executed 0%
+function _ZSt4moveIRPZN34Deque_Fixture_const_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEONSt16remove_referenceIT_E4typeEOS9_ called 0 returned 0% blocks executed 0%
+function _ZSt4moveIRmEONSt16remove_referenceIT_E4typeEOS2_ called 9 returned 100% blocks executed 100%
+function _ZSt4moveIRPPiEONSt16remove_referenceIT_E4typeEOS4_ called 9 returned 100% blocks executed 100%
+function _ZSt4moveIRSt15_Deque_iteratorIiRiPiEEONSt16remove_referenceIT_E4typeEOS6_ called 18 returned 100% blocks executed 100%
 function _ZSt4moveIRPiEONSt16remove_referenceIT_E4typeEOS3_ called 360 returned 100% blocks executed 100%
-function _ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_ called 35 returned 100% blocks executed 100%
-function _ZSt4moveIRSsEONSt16remove_referenceIT_E4typeEOS2_ called 1344 returned 100% blocks executed 100%
-     1763:  101:    move(_Tp&& __t) noexcept
-     1763:  102:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+function _ZSt4moveIRiEONSt16remove_referenceIT_E4typeEOS2_ called 28 returned 100% blocks executed 100%
+function _ZSt4moveIRSsEONSt16remove_referenceIT_E4typeEOS2_ called 1320 returned 100% blocks executed 100%
+     1744:  101:    move(_Tp&& __t) noexcept
+     1744:  102:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
         -:  103:
         -:  104:
         -:  105:  template<typename _Tp>
@@ -188,17 +184,15 @@ function _ZSt4moveIRSsEONSt16remove_referenceIT_E4typeEOS2_ called 1344 returned
         -:  163:  */
         -:  164:  template<typename _Tp>
         -:  165:    inline void
-function _ZSt4swapIPZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEvRT_S8_ called 0 returned 0% blocks executed 0%
-function _ZSt4swapIPZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEvRT_S8_ called 0 returned 0% blocks executed 0%
-function _ZSt4swapIPZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEvRT_S8_ called 0 returned 0% blocks executed 0%
-function _ZSt4swapIPZN42Deque_Fixture_my_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEvRT_S8_ called 0 returned 0% blocks executed 0%
-function _ZSt4swapIPZN42Deque_Fixture_my_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEvRT_S8_ called 0 returned 0% blocks executed 0%
-function _ZSt4swapIPZN42Deque_Fixture_my_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEvRT_S8_ called 0 returned 0% blocks executed 0%
-function _ZSt4swapImEvRT_S1_ called 2 returned 100% blocks executed 100%
-function _ZSt4swapIPPiEvRT_S3_ called 2 returned 100% blocks executed 100%
-function _ZSt4swapISt15_Deque_iteratorIiRiPiEEvRT_S5_ called 4 returned 100% blocks executed 100%
+function _ZSt4swapIPZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEvRT_S8_ called 0 returned 0% blocks executed 0%
+function _ZSt4swapIPZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEvRT_S8_ called 0 returned 0% blocks executed 0%
+function _ZSt4swapIPZN28Deque_Fixture_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEvRT_S8_ called 0 returned 0% blocks executed 0%
+function _ZSt4swapIPZN34Deque_Fixture_const_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEvRT_S8_ called 0 returned 0% blocks executed 0%
+function _ZSt4swapImEvRT_S1_ called 3 returned 100% blocks executed 100%
+function _ZSt4swapIPPiEvRT_S3_ called 3 returned 100% blocks executed 100%
+function _ZSt4swapISt15_Deque_iteratorIiRiPiEEvRT_S5_ called 6 returned 100% blocks executed 100%
 function _ZSt4swapIPiEvRT_S2_ called 120 returned 100% blocks executed 100%
-      128:  166:    swap(_Tp& __a, _Tp& __b)
+      132:  166:    swap(_Tp& __a, _Tp& __b)
         -:  167:#if __cplusplus >= 201103L
         -:  168:    noexcept(__and_<is_nothrow_move_constructible<_Tp>,
         -:  169:	            is_nothrow_move_assignable<_Tp>>::value)
@@ -207,41 +201,35 @@ function _ZSt4swapIPiEvRT_S2_ called 120 returned 100% blocks executed 100%
         -:  172:      // concept requirements
         -:  173:      __glibcxx_function_requires(_SGIAssignableConcept<_Tp>)
         -:  174:
-      128:  175:      _Tp __tmp = _GLIBCXX_MOVE(__a);
+      132:  175:      _Tp __tmp = _GLIBCXX_MOVE(__a);
 call    0 never executed
 call    1 never executed
 call    2 never executed
 call    3 never executed
-call    4 never executed
-call    5 never executed
+call    4 returned 100%
+call    5 returned 100%
 call    6 returned 100%
 call    7 returned 100%
 call    8 returned 100%
-call    9 returned 100%
-call   10 returned 100%
-      128:  176:      __a = _GLIBCXX_MOVE(__b);
+      132:  176:      __a = _GLIBCXX_MOVE(__b);
 call    0 never executed
 call    1 never executed
 call    2 never executed
 call    3 never executed
-call    4 never executed
-call    5 never executed
+call    4 returned 100%
+call    5 returned 100%
 call    6 returned 100%
 call    7 returned 100%
-call    8 returned 100%
-call    9 returned 100%
-      128:  177:      __b = _GLIBCXX_MOVE(__tmp);
+      132:  177:      __b = _GLIBCXX_MOVE(__tmp);
 call    0 never executed
 call    1 never executed
 call    2 never executed
 call    3 never executed
-call    4 never executed
-call    5 never executed
+call    4 returned 100%
+call    5 returned 100%
 call    6 returned 100%
 call    7 returned 100%
-call    8 returned 100%
-call    9 returned 100%
-      128:  178:    }
+      132:  178:    }
         -:  179:
         -:  180:  // _GLIBCXX_RESOLVE_LIB_DEFECTS
         -:  181:  // DR 809. std::swap should be overloaded for array types.

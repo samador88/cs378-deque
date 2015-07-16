@@ -111,9 +111,9 @@
         -:  106:  __attribute__((__externally_visible__));
         -:  107:
         -:  108:// Default placement versions of operator new.
-function _ZnwmPv called 34120 returned 100% blocks executed 100%
-    34120:  109:inline void* operator new(std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
-    34120:  110:{ return __p; }
+function _ZnwmPv called 2360 returned 100% blocks executed 100%
+     2360:  109:inline void* operator new(std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+     2360:  110:{ return __p; }
         -:  111:inline void* operator new[](std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
         -:  112:{ return __p; }
         -:  113:

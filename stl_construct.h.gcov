@@ -114,19 +114,7 @@
         -:  109:    {
         -:  110:      template<typename _ForwardIterator>
         -:  111:        static void
-function _ZNSt12_Destroy_auxILb1EE9__destroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS8_PS8_EEEvT_SC_ called 0 returned 0% blocks executed 0%
-function _ZNSt12_Destroy_auxILb1EE9__destroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS8_PS8_EEEvT_SC_ called 0 returned 0% blocks executed 0%
-function _ZNSt12_Destroy_auxILb1EE9__destroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS8_PS8_EEEvT_SC_ called 0 returned 0% blocks executed 0%
-function _ZNSt12_Destroy_auxILb1EE9__destroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS8_PS8_EEEvT_SC_ called 0 returned 0% blocks executed 0%
-function _ZNSt12_Destroy_auxILb1EE9__destroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS8_PS8_EEEvT_SC_ called 0 returned 0% blocks executed 0%
-function _ZNSt12_Destroy_auxILb1EE9__destroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS8_PS8_EEEvT_SC_ called 0 returned 0% blocks executed 0%
 function _ZNSt12_Destroy_auxILb1EE9__destroyISt15_Deque_iteratorIiRiPiEEEvT_S6_ called 0 returned 0% blocks executed 0%
-function _ZNSt12_Destroy_auxILb1EE9__destroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS8_PS8_EEEvT_SC_ called 0 returned 0% blocks executed 0%
-function _ZNSt12_Destroy_auxILb1EE9__destroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS8_PS8_EEEvT_SC_ called 0 returned 0% blocks executed 0%
-function _ZNSt12_Destroy_auxILb1EE9__destroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS8_PS8_EEEvT_SC_ called 0 returned 0% blocks executed 0%
-function _ZNSt12_Destroy_auxILb1EE9__destroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS8_PS8_EEEvT_SC_ called 0 returned 0% blocks executed 0%
-function _ZNSt12_Destroy_auxILb1EE9__destroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS8_PS8_EEEvT_SC_ called 0 returned 0% blocks executed 0%
-function _ZNSt12_Destroy_auxILb1EE9__destroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS8_PS8_EEEvT_SC_ called 0 returned 0% blocks executed 0%
     #####:  112:        __destroy(_ForwardIterator, _ForwardIterator) { }
         -:  113:    };
         -:  114:
@@ -137,64 +125,16 @@ function _ZNSt12_Destroy_auxILb1EE9__destroyISt15_Deque_iteratorIZN45Deque_Fixtu
         -:  119:   */
         -:  120:  template<typename _ForwardIterator>
         -:  121:    inline void
-function _ZSt8_DestroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EEvT_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EEvT_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EEvT_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EEvT_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EEvT_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EEvT_SA_ called 0 returned 0% blocks executed 0%
 function _ZSt8_DestroyISt15_Deque_iteratorIiRiPiEEvT_S4_ called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EEvT_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EEvT_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EEvT_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EEvT_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EEvT_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EEvT_SA_ called 0 returned 0% blocks executed 0%
     #####:  122:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  123:    {
         -:  124:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  125:                       _Value_type;
     #####:  126:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
 call    0 never executed
-call    1 never executed
-call    2 never executed
-call    3 never executed
-call    4 never executed
-call    5 never executed
-call    6 never executed
-call    7 never executed
-call    8 never executed
-call    9 never executed
-call   10 never executed
-call   11 never executed
-call   12 never executed
     #####:  127:	__destroy(__first, __last);
 call    0 never executed
 call    1 never executed
-call    2 never executed
-call    3 never executed
-call    4 never executed
-call    5 never executed
-call    6 never executed
-call    7 never executed
-call    8 never executed
-call    9 never executed
-call   10 never executed
-call   11 never executed
-call   12 never executed
-call   13 never executed
-call   14 never executed
-call   15 never executed
-call   16 never executed
-call   17 never executed
-call   18 never executed
-call   19 never executed
-call   20 never executed
-call   21 never executed
-call   22 never executed
-call   23 never executed
-call   24 never executed
-call   25 never executed
     #####:  128:    }
         -:  129:
         -:  130:  /**
@@ -215,19 +155,7 @@ call   25 never executed
         -:  145:
         -:  146:  template<typename _ForwardIterator, typename _Tp>
         -:  147:    inline void
-function _ZSt8_DestroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_ES6_EvT_SA_RSaIT0_E called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_ES6_EvT_SA_RSaIT0_E called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_ES6_EvT_SA_RSaIT0_E called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_ES6_EvT_SA_RSaIT0_E called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_ES6_EvT_SA_RSaIT0_E called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_ES6_EvT_SA_RSaIT0_E called 0 returned 0% blocks executed 0%
 function _ZSt8_DestroyISt15_Deque_iteratorIiRiPiEiEvT_S4_RSaIT0_E called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_ES6_EvT_SA_RSaIT0_E called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_ES6_EvT_SA_RSaIT0_E called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_ES6_EvT_SA_RSaIT0_E called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_ES6_EvT_SA_RSaIT0_E called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_ES6_EvT_SA_RSaIT0_E called 0 returned 0% blocks executed 0%
-function _ZSt8_DestroyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_ES6_EvT_SA_RSaIT0_E called 0 returned 0% blocks executed 0%
     #####:  148:    _Destroy(_ForwardIterator __first, _ForwardIterator __last,
         -:  149:	     allocator<_Tp>&)
         -:  150:    {
@@ -237,66 +165,6 @@ call    1 never executed
 call    2 never executed
 branch  3 never executed
 branch  4 never executed
-call    5 never executed
-call    6 never executed
-call    7 never executed
-branch  8 never executed
-branch  9 never executed
-call   10 never executed
-call   11 never executed
-call   12 never executed
-branch 13 never executed
-branch 14 never executed
-call   15 never executed
-call   16 never executed
-call   17 never executed
-branch 18 never executed
-branch 19 never executed
-call   20 never executed
-call   21 never executed
-call   22 never executed
-branch 23 never executed
-branch 24 never executed
-call   25 never executed
-call   26 never executed
-call   27 never executed
-branch 28 never executed
-branch 29 never executed
-call   30 never executed
-call   31 never executed
-call   32 never executed
-branch 33 never executed
-branch 34 never executed
-call   35 never executed
-call   36 never executed
-call   37 never executed
-branch 38 never executed
-branch 39 never executed
-call   40 never executed
-call   41 never executed
-call   42 never executed
-branch 43 never executed
-branch 44 never executed
-call   45 never executed
-call   46 never executed
-call   47 never executed
-branch 48 never executed
-branch 49 never executed
-call   50 never executed
-call   51 never executed
-call   52 never executed
-branch 53 never executed
-branch 54 never executed
-call   55 never executed
-call   56 never executed
-call   57 never executed
-branch 58 never executed
-branch 59 never executed
-call   60 never executed
-call   61 never executed
-call   62 never executed
-branch 63 never executed
-branch 64 never executed
     #####:  152:    }
         -:  153:
         -:  154:_GLIBCXX_END_NAMESPACE_VERSION

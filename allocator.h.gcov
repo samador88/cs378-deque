@@ -115,33 +115,17 @@
         -:  110:      typedef true_type propagate_on_container_move_assignment;
         -:  111:#endif
         -:  112:
-function _ZNSaIZN39Deque_Fixture_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN39Deque_Fixture_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIPZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIPZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIPZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIPZN42Deque_Fixture_my_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIPZN42Deque_Fixture_my_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIPZN42Deque_Fixture_my_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
+function _ZNSaIPZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
+function _ZNSaIPZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 2 returned 100% blocks executed 100%
+function _ZNSaIPZN28Deque_Fixture_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
+function _ZNSaIPZN34Deque_Fixture_const_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 2 returned 100% blocks executed 100%
 function _ZNSaIPiEC2Ev called 276 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIiEC2Ev called 391 returned 100% blocks executed 100%
-      691:  113:      allocator() throw() { }
+function _ZNSaIZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
+function _ZNSaIZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
+function _ZNSaIZN28Deque_Fixture_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
+function _ZNSaIZN34Deque_Fixture_const_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2Ev called 1 returned 100% blocks executed 100%
+function _ZNSaIiEC2Ev called 399 returned 100% blocks executed 100%
+      685:  113:      allocator() throw() { }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -152,120 +136,36 @@ call    6 returned 100%
 call    7 returned 100%
 call    8 returned 100%
 call    9 returned 100%
-call   10 returned 100%
-call   11 returned 100%
-call   12 returned 100%
-call   13 returned 100%
-call   14 returned 100%
-call   15 returned 100%
-call   16 returned 100%
-call   17 returned 100%
-call   18 returned 100%
-call   19 returned 100%
-call   20 returned 100%
-call   21 returned 100%
-call   22 returned 100%
-call   23 returned 100%
-call   24 returned 100%
-call   25 returned 100%
         -:  114:
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS5_ called 1 returned 100% blocks executed 100%
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS5_ called 1 returned 100% blocks executed 100%
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS5_ called 1 returned 100% blocks executed 100%
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS5_ called 1 returned 100% blocks executed 100%
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS5_ called 1 returned 100% blocks executed 100%
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS5_ called 1 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS5_ called 1 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS5_ called 1 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS5_ called 1 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS5_ called 1 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS5_ called 1 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS5_ called 1 returned 100% blocks executed 100%
-function _ZNSaIiEC2ERKS_ called 348 returned 100% blocks executed 100%
-      360:  115:      allocator(const allocator& __a) throw()
-      360:  116:      : __allocator_base<_Tp>(__a) { }
+function _ZNSaIZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS5_ called 1 returned 100% blocks executed 100%
+function _ZNSaIZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS5_ called 2 returned 100% blocks executed 100%
+function _ZNSaIZN28Deque_Fixture_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS5_ called 1 returned 100% blocks executed 100%
+function _ZNSaIZN34Deque_Fixture_const_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2ERKS5_ called 2 returned 100% blocks executed 100%
+function _ZNSaIiEC2ERKS_ called 338 returned 100% blocks executed 100%
+      344:  115:      allocator(const allocator& __a) throw()
+      344:  116:      : __allocator_base<_Tp>(__a) { }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
 call    3 returned 100%
 call    4 returned 100%
-call    5 returned 100%
-call    6 returned 100%
-call    7 returned 100%
-call    8 returned 100%
-call    9 returned 100%
-call   10 returned 100%
-call   11 returned 100%
-call   12 returned 100%
         -:  117:
         -:  118:      template<typename _Tp1>
-function _ZNSaIPZN39Deque_Fixture_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2IS4_EERKSaIT_E called 2 returned 100% blocks executed 100%
-function _ZNSaIPZN39Deque_Fixture_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2IS4_EERKSaIT_E called 2 returned 100% blocks executed 100%
-function _ZNSaIPZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2IS4_EERKSaIT_E called 2 returned 100% blocks executed 100%
-function _ZNSaIPZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2IS4_EERKSaIT_E called 4 returned 100% blocks executed 100%
-function _ZNSaIPZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2IS4_EERKSaIT_E called 4 returned 100% blocks executed 100%
-function _ZNSaIPZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEC2IS4_EERKSaIT_E called 4 returned 100% blocks executed 100%
-function _ZNSaIPiEC2IiEERKSaIT_E called 496 returned 100% blocks executed 100%
-function _ZNSaIPZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2IS4_EERKSaIT_E called 2 returned 100% blocks executed 100%
-function _ZNSaIPZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2IS4_EERKSaIT_E called 2 returned 100% blocks executed 100%
-function _ZNSaIPZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2IS4_EERKSaIT_E called 2 returned 100% blocks executed 100%
-function _ZNSaIPZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2IS4_EERKSaIT_E called 4 returned 100% blocks executed 100%
-function _ZNSaIPZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2IS4_EERKSaIT_E called 4 returned 100% blocks executed 100%
-function _ZNSaIPZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEC2IS4_EERKSaIT_E called 4 returned 100% blocks executed 100%
-      532:  119:        allocator(const allocator<_Tp1>&) throw() { }
+function _ZNSaIPiEC2IiEERKSaIT_E called 498 returned 100% blocks executed 100%
+      498:  119:        allocator(const allocator<_Tp1>&) throw() { }
 call    0 returned 100%
-call    1 returned 100%
-call    2 returned 100%
-call    3 returned 100%
-call    4 returned 100%
-call    5 returned 100%
-call    6 returned 100%
-call    7 returned 100%
-call    8 returned 100%
-call    9 returned 100%
-call   10 returned 100%
-call   11 returned 100%
-call   12 returned 100%
         -:  120:
-function _ZNSaIPZN39Deque_Fixture_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIPZN39Deque_Fixture_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIPZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIPZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 4 returned 100% blocks executed 100%
-function _ZNSaIPZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 4 returned 100% blocks executed 100%
-function _ZNSaIPZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 4 returned 100% blocks executed 100%
-function _ZNSaIPZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIPZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIPZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIPZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 4 returned 100% blocks executed 100%
-function _ZNSaIPZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 4 returned 100% blocks executed 100%
-function _ZNSaIPZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 4 returned 100% blocks executed 100%
-function _ZNSaIZN39Deque_Fixture_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN39Deque_Fixture_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIPZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIPZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIPZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIPZN42Deque_Fixture_my_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIPZN42Deque_Fixture_my_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIPZN42Deque_Fixture_my_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 1 returned 100% blocks executed 100%
-function _ZNSaIPiED2Ev called 772 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSaIiED2Ev called 739 returned 100% blocks executed 100%
-     1583:  121:      ~allocator() throw() { }
+function _ZNSaIPZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 1 returned 100% blocks executed 100%
+function _ZNSaIPZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
+function _ZNSaIPZN28Deque_Fixture_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 1 returned 100% blocks executed 100%
+function _ZNSaIPZN34Deque_Fixture_const_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
+function _ZNSaIPiED2Ev called 774 returned 100% blocks executed 100%
+function _ZNSaIZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
+function _ZNSaIZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 3 returned 100% blocks executed 100%
+function _ZNSaIZN28Deque_Fixture_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 2 returned 100% blocks executed 100%
+function _ZNSaIZN34Deque_Fixture_const_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SED2Ev called 3 returned 100% blocks executed 100%
+function _ZNSaIiED2Ev called 737 returned 100% blocks executed 100%
+     1527:  121:      ~allocator() throw() { }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -276,34 +176,6 @@ call    6 returned 100%
 call    7 returned 100%
 call    8 returned 100%
 call    9 returned 100%
-call   10 returned 100%
-call   11 returned 100%
-call   12 returned 100%
-call   13 returned 100%
-call   14 returned 100%
-call   15 returned 100%
-call   16 returned 100%
-call   17 returned 100%
-call   18 returned 100%
-call   19 returned 100%
-call   20 returned 100%
-call   21 returned 100%
-call   22 returned 100%
-call   23 returned 100%
-call   24 returned 100%
-call   25 returned 100%
-call   26 returned 100%
-call   27 returned 100%
-call   28 returned 100%
-call   29 returned 100%
-call   30 returned 100%
-call   31 returned 100%
-call   32 returned 100%
-call   33 returned 100%
-call   34 returned 100%
-call   35 returned 100%
-call   36 returned 100%
-call   37 returned 100%
         -:  122:
         -:  123:      // Inherit everything else.
         -:  124:    };
@@ -315,16 +187,14 @@ call   37 returned 100%
         -:  130:
         -:  131:  template<typename _Tp>
         -:  132:    inline bool
-function _ZSteqIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEbRKSaIT_ES9_ called 0 returned 0% blocks executed 0%
-function _ZSteqIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEbRKSaIT_ES9_ called 0 returned 0% blocks executed 0%
-function _ZSteqIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEbRKSaIT_ES9_ called 0 returned 0% blocks executed 0%
-function _ZSteqIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEbRKSaIT_ES9_ called 0 returned 0% blocks executed 0%
-function _ZSteqIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEbRKSaIT_ES9_ called 0 returned 0% blocks executed 0%
-function _ZSteqIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEbRKSaIT_ES9_ called 0 returned 0% blocks executed 0%
+function _ZSteqIZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEbRKSaIT_ES9_ called 0 returned 0% blocks executed 0%
+function _ZSteqIZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEbRKSaIT_ES9_ called 0 returned 0% blocks executed 0%
+function _ZSteqIZN28Deque_Fixture_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEbRKSaIT_ES9_ called 0 returned 0% blocks executed 0%
+function _ZSteqIZN34Deque_Fixture_const_iterarrow_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEbRKSaIT_ES9_ called 0 returned 0% blocks executed 0%
 function _ZSteqIiEbRKSaIT_ES3_ called 30 returned 100% blocks executed 100%
-function _ZSteqIcEbRKSaIT_ES3_ called 341 returned 100% blocks executed 100%
-      371:  133:    operator==(const allocator<_Tp>&, const allocator<_Tp>&)
-      371:  134:    { return true; }
+function _ZSteqIcEbRKSaIT_ES3_ called 335 returned 100% blocks executed 100%
+      365:  133:    operator==(const allocator<_Tp>&, const allocator<_Tp>&)
+      365:  134:    { return true; }
         -:  135:
         -:  136:  template<typename _T1, typename _T2>
         -:  137:    inline bool
@@ -351,8 +221,8 @@ function _ZSteqIcEbRKSaIT_ES3_ called 341 returned 100% blocks executed 100%
         -:  158:  // To implement Option 3 of DR 431.
         -:  159:  template<typename _Alloc, bool = __is_empty(_Alloc)>
         -:  160:    struct __alloc_swap
-function _ZNSt12__alloc_swapISaIiELb1EE8_S_do_itERS0_S2_ called 2 returned 100% blocks executed 100%
-        2:  161:    { static void _S_do_it(_Alloc&, _Alloc&) { } };
+function _ZNSt12__alloc_swapISaIiELb1EE8_S_do_itERS0_S2_ called 3 returned 100% blocks executed 100%
+        3:  161:    { static void _S_do_it(_Alloc&, _Alloc&) { } };
         -:  162:
         -:  163:  template<typename _Alloc>
         -:  164:    struct __alloc_swap<_Alloc, false>

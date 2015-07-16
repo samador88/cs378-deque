@@ -195,17 +195,17 @@
         -:  190:  */
         -:  191:  template<typename _Tp>
         -:  192:    inline const _Tp&
-function _ZSt3minIlERKT_S2_S2_ called 8 returned 100% blocks executed 75%
-        8:  193:    min(const _Tp& __a, const _Tp& __b)
+function _ZSt3minIlERKT_S2_S2_ called 10 returned 100% blocks executed 75%
+       10:  193:    min(const _Tp& __a, const _Tp& __b)
         -:  194:    {
         -:  195:      // concept requirements
         -:  196:      __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
         -:  197:      //return __b < __a ? __b : __a;
-        8:  198:      if (__b < __a)
+       10:  198:      if (__b < __a)
 branch  0 taken 0% (fallthrough)
 branch  1 taken 100%
     #####:  199:	return __b;
-        8:  200:      return __a;
+       10:  200:      return __a;
         -:  201:    }
         -:  202:
         -:  203:  /**
@@ -221,17 +221,17 @@ branch  1 taken 100%
         -:  213:  */
         -:  214:  template<typename _Tp>
         -:  215:    inline const _Tp&
-function _ZSt3maxImERKT_S2_S2_ called 266 returned 100% blocks executed 100%
-      266:  216:    max(const _Tp& __a, const _Tp& __b)
+function _ZSt3maxImERKT_S2_S2_ called 249 returned 100% blocks executed 75%
+      249:  216:    max(const _Tp& __a, const _Tp& __b)
         -:  217:    {
         -:  218:      // concept requirements
         -:  219:      __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
         -:  220:      //return  __a < __b ? __b : __a;
-      266:  221:      if (__a < __b)
-branch  0 taken 1% (fallthrough)
-branch  1 taken 99%
-        3:  222:	return __b;
-      263:  223:      return __a;
+      249:  221:      if (__a < __b)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  222:	return __b;
+      249:  223:      return __a;
         -:  224:    }
         -:  225:
         -:  226:  /**
@@ -285,99 +285,37 @@ branch  1 taken 99%
         -:  274:
         -:  275:  template<typename _Iterator>
         -:  276:    inline typename _Niter_base<_Iterator>::iterator_type
-function _ZSt12__niter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorEENSt11_Niter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
-function _ZSt12__niter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorEENSt11_Niter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
-function _ZSt12__niter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorEENSt11_Niter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
+function _ZSt12__niter_baseIN8my_dequeIZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorEENSt11_Niter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
+function _ZSt12__niter_baseIN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorEENSt11_Niter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
 function _ZSt12__niter_baseIPPiENSt11_Niter_baseIT_E13iterator_typeES3_ called 0 returned 0% blocks executed 0%
-function _ZSt12__niter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorEENSt11_Niter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
-function _ZSt12__niter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorEENSt11_Niter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
-function _ZSt12__niter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorEENSt11_Niter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
-function _ZSt12__niter_baseIPZN39Deque_Fixture_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SENSt11_Niter_baseIT_E13iterator_typeES8_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseIPZN39Deque_Fixture_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SENSt11_Niter_baseIT_E13iterator_typeES8_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseIPZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SENSt11_Niter_baseIT_E13iterator_typeES8_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EENSt11_Niter_baseIT_E13iterator_typeESB_ called 1 returned 100% blocks executed 100%
-function _ZSt12__niter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_EENSt11_Niter_baseIT_E13iterator_typeESC_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseIPZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SENSt11_Niter_baseIT_E13iterator_typeES8_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EENSt11_Niter_baseIT_E13iterator_typeESB_ called 1 returned 100% blocks executed 100%
-function _ZSt12__niter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_EENSt11_Niter_baseIT_E13iterator_typeESC_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseIPZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SENSt11_Niter_baseIT_E13iterator_typeES8_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EENSt11_Niter_baseIT_E13iterator_typeESB_ called 1 returned 100% blocks executed 100%
-function _ZSt12__niter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_EENSt11_Niter_baseIT_E13iterator_typeESC_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseIPZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SENSt11_Niter_baseIT_E13iterator_typeES8_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseISt15_Deque_iteratorIiRiPiEENSt11_Niter_baseIT_E13iterator_typeES5_ called 73 returned 100% blocks executed 100%
-function _ZSt12__niter_baseIPZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SENSt11_Niter_baseIT_E13iterator_typeES8_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseIPZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SENSt11_Niter_baseIT_E13iterator_typeES8_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseIPZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SENSt11_Niter_baseIT_E13iterator_typeES8_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EENSt11_Niter_baseIT_E13iterator_typeESB_ called 1 returned 100% blocks executed 100%
-function _ZSt12__niter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_EENSt11_Niter_baseIT_E13iterator_typeESC_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseIPZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SENSt11_Niter_baseIT_E13iterator_typeES8_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EENSt11_Niter_baseIT_E13iterator_typeESB_ called 1 returned 100% blocks executed 100%
-function _ZSt12__niter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_EENSt11_Niter_baseIT_E13iterator_typeESC_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseIPZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SENSt11_Niter_baseIT_E13iterator_typeES8_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_EENSt11_Niter_baseIT_E13iterator_typeESB_ called 1 returned 100% blocks executed 100%
-function _ZSt12__niter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_EENSt11_Niter_baseIT_E13iterator_typeESC_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseIPZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SENSt11_Niter_baseIT_E13iterator_typeES8_ called 2 returned 100% blocks executed 100%
-function _ZSt12__niter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorEENSt11_Niter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
-function _ZSt12__niter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorEENSt11_Niter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
-function _ZSt12__niter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorEENSt11_Niter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
-function _ZSt12__niter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorEENSt11_Niter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
-function _ZSt12__niter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorEENSt11_Niter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
-function _ZSt12__niter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorEENSt11_Niter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
-function _ZSt12__niter_baseIPiENSt11_Niter_baseIT_E13iterator_typeES2_ called 834 returned 100% blocks executed 100%
-function _ZSt12__niter_baseIN8my_dequeIiSaIiEE8iteratorEENSt11_Niter_baseIT_E13iterator_typeES5_ called 90 returned 100% blocks executed 100%
-function _ZSt12__niter_baseISt15_Deque_iteratorIiRKiPS1_EENSt11_Niter_baseIT_E13iterator_typeES6_ called 244 returned 100% blocks executed 100%
-function _ZSt12__niter_baseIN8my_dequeIiSaIiEE14const_iteratorEENSt11_Niter_baseIT_E13iterator_typeES5_ called 116 returned 100% blocks executed 100%
-     1399:  277:    __niter_base(_Iterator __it)
-     1399:  278:    { return std::_Niter_base<_Iterator>::_S_base(__it); }
+function _ZSt12__niter_baseIN8my_dequeIZN28Deque_Fixture_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorEENSt11_Niter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
+function _ZSt12__niter_baseIN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorEENSt11_Niter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
+function _ZSt12__niter_baseISt15_Deque_iteratorIiRiPiEENSt11_Niter_baseIT_E13iterator_typeES5_ called 68 returned 100% blocks executed 100%
+function _ZSt12__niter_baseIN8my_dequeIZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorEENSt11_Niter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
+function _ZSt12__niter_baseIN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorEENSt11_Niter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
+function _ZSt12__niter_baseIN8my_dequeIZN28Deque_Fixture_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorEENSt11_Niter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
+function _ZSt12__niter_baseIN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorEENSt11_Niter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
+function _ZSt12__niter_baseIPiENSt11_Niter_baseIT_E13iterator_typeES2_ called 369 returned 100% blocks executed 100%
+function _ZSt12__niter_baseIN8my_dequeIiSaIiEE8iteratorEENSt11_Niter_baseIT_E13iterator_typeES5_ called 89 returned 100% blocks executed 100%
+function _ZSt12__niter_baseISt15_Deque_iteratorIiRKiPS1_EENSt11_Niter_baseIT_E13iterator_typeES6_ called 223 returned 100% blocks executed 100%
+function _ZSt12__niter_baseIN8my_dequeIiSaIiEE14const_iteratorEENSt11_Niter_baseIT_E13iterator_typeES5_ called 99 returned 100% blocks executed 100%
+      848:  277:    __niter_base(_Iterator __it)
+      848:  278:    { return std::_Niter_base<_Iterator>::_S_base(__it); }
 call    0 never executed
 call    1 never executed
 call    2 never executed
 call    3 never executed
 call    4 never executed
-call    5 never executed
-call    6 never executed
-call    7 returned 100%
-call    8 returned 100%
-call    9 returned 100%
-call   10 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
 call   11 returned 100%
 call   12 returned 100%
 call   13 returned 100%
 call   14 returned 100%
-call   15 returned 100%
-call   16 returned 100%
-call   17 returned 100%
-call   18 returned 100%
-call   19 returned 100%
-call   20 returned 100%
-call   21 returned 100%
-call   22 returned 100%
-call   23 returned 100%
-call   24 returned 100%
-call   25 returned 100%
-call   26 returned 100%
-call   27 returned 100%
-call   28 returned 100%
-call   29 returned 100%
-call   30 returned 100%
-call   31 returned 100%
-call   32 returned 100%
-call   33 returned 100%
-call   34 returned 100%
-call   35 returned 100%
-call   36 returned 100%
-call   37 returned 100%
-call   38 returned 100%
-call   39 never executed
-call   40 never executed
-call   41 never executed
-call   42 never executed
-call   43 never executed
-call   44 never executed
-call   45 returned 100%
-call   46 returned 100%
-call   47 returned 100%
-call   48 returned 100%
         -:  279:
         -:  280:  // Likewise, for move_iterator.
         -:  281:  template<typename _Iterator>
@@ -388,31 +326,21 @@ call   48 returned 100%
         -:  286:  template<typename _Iterator>
         -:  287:    inline typename _Miter_base<_Iterator>::iterator_type
 function _ZSt12__miter_baseISt13move_iteratorISt15_Deque_iteratorIiRiPiEEENSt11_Miter_baseIT_E13iterator_typeES7_ called 0 returned 0% blocks executed 0%
-function _ZSt12__miter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorEENSt11_Miter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
-function _ZSt12__miter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorEENSt11_Miter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
-function _ZSt12__miter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorEENSt11_Miter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
+function _ZSt12__miter_baseIN8my_dequeIZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorEENSt11_Miter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
+function _ZSt12__miter_baseIN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorEENSt11_Miter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
 function _ZSt12__miter_baseIPPiENSt11_Miter_baseIT_E13iterator_typeES3_ called 0 returned 0% blocks executed 0%
-function _ZSt12__miter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorEENSt11_Miter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
-function _ZSt12__miter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorEENSt11_Miter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
-function _ZSt12__miter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorEENSt11_Miter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
-function _ZSt12__miter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_EENSt11_Miter_baseIT_E13iterator_typeESC_ called 2 returned 100% blocks executed 100%
-function _ZSt12__miter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_EENSt11_Miter_baseIT_E13iterator_typeESC_ called 2 returned 100% blocks executed 100%
-function _ZSt12__miter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_EENSt11_Miter_baseIT_E13iterator_typeESC_ called 2 returned 100% blocks executed 100%
-function _ZSt12__miter_baseISt15_Deque_iteratorIiRKiPS1_EENSt11_Miter_baseIT_E13iterator_typeES6_ called 134 returned 100% blocks executed 100%
-function _ZSt12__miter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_EENSt11_Miter_baseIT_E13iterator_typeESC_ called 2 returned 100% blocks executed 100%
-function _ZSt12__miter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_EENSt11_Miter_baseIT_E13iterator_typeESC_ called 2 returned 100% blocks executed 100%
-function _ZSt12__miter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_EENSt11_Miter_baseIT_E13iterator_typeESC_ called 2 returned 100% blocks executed 100%
-function _ZSt12__miter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorEENSt11_Miter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
-function _ZSt12__miter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorEENSt11_Miter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
-function _ZSt12__miter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorEENSt11_Miter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
-function _ZSt12__miter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorEENSt11_Miter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
-function _ZSt12__miter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorEENSt11_Miter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
-function _ZSt12__miter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorEENSt11_Miter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
-function _ZSt12__miter_baseIPiENSt11_Miter_baseIT_E13iterator_typeES2_ called 8 returned 100% blocks executed 100%
-function _ZSt12__miter_baseIN8my_dequeIiSaIiEE14const_iteratorEENSt11_Miter_baseIT_E13iterator_typeES5_ called 6 returned 100% blocks executed 100%
+function _ZSt12__miter_baseIN8my_dequeIZN28Deque_Fixture_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorEENSt11_Miter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
+function _ZSt12__miter_baseIN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorEENSt11_Miter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
+function _ZSt12__miter_baseISt15_Deque_iteratorIiRKiPS1_EENSt11_Miter_baseIT_E13iterator_typeES6_ called 128 returned 100% blocks executed 100%
+function _ZSt12__miter_baseIN8my_dequeIZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorEENSt11_Miter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
+function _ZSt12__miter_baseIN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorEENSt11_Miter_baseIT_E13iterator_typeESB_ called 0 returned 0% blocks executed 0%
+function _ZSt12__miter_baseIN8my_dequeIZN28Deque_Fixture_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorEENSt11_Miter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
+function _ZSt12__miter_baseIN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorEENSt11_Miter_baseIT_E13iterator_typeESA_ called 0 returned 0% blocks executed 0%
+function _ZSt12__miter_baseIPiENSt11_Miter_baseIT_E13iterator_typeES2_ called 10 returned 100% blocks executed 100%
+function _ZSt12__miter_baseIN8my_dequeIiSaIiEE14const_iteratorEENSt11_Miter_baseIT_E13iterator_typeES5_ called 4 returned 100% blocks executed 100%
 function _ZSt12__miter_baseIN8my_dequeIiSaIiEE8iteratorEENSt11_Miter_baseIT_E13iterator_typeES5_ called 58 returned 100% blocks executed 100%
-      218:  288:    __miter_base(_Iterator __it)
-      218:  289:    { return std::_Miter_base<_Iterator>::_S_base(__it); }
+      200:  288:    __miter_base(_Iterator __it)
+      200:  289:    { return std::_Miter_base<_Iterator>::_S_base(__it); }
 call    0 never executed
 call    1 never executed
 branch  2 never executed
@@ -422,24 +350,14 @@ call    5 never executed
 call    6 never executed
 call    7 never executed
 call    8 never executed
-call    9 never executed
+call    9 returned 100%
 call   10 never executed
-call   11 returned 100%
-call   12 returned 100%
-call   13 returned 100%
+call   11 never executed
+call   12 never executed
+call   13 never executed
 call   14 returned 100%
 call   15 returned 100%
 call   16 returned 100%
-call   17 returned 100%
-call   18 never executed
-call   19 never executed
-call   20 never executed
-call   21 never executed
-call   22 never executed
-call   23 never executed
-call   24 returned 100%
-call   25 returned 100%
-call   26 returned 100%
         -:  290:
         -:  291:  // All of these auxiliary structs serve two purposes.  (1) Replace
         -:  292:  // calls to copy with memmove whenever possible.  (Memmove, not memcpy,
@@ -452,23 +370,19 @@ call   26 returned 100%
         -:  299:    {
         -:  300:      template<typename _II, typename _OI>
         -:  301:        static _OI
-function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS9_EE14const_iteratorENSB_8iteratorEEET0_T_SF_SE_ called 0 returned 0% blocks executed 0%
-function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS9_EE14const_iteratorENSB_8iteratorEEET0_T_SF_SE_ called 0 returned 0% blocks executed 0%
-function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS9_EE14const_iteratorENSB_8iteratorEEET0_T_SF_SE_ called 0 returned 0% blocks executed 0%
-function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS3_IiSaIiEEE8TestBodyEvE1SSaIS8_EE14const_iteratorENSA_8iteratorEEET0_T_SE_SD_ called 0 returned 0% blocks executed 0%
-function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS3_IiSaIiEEE8TestBodyEvE1SSaIS8_EE14const_iteratorENSA_8iteratorEEET0_T_SE_SD_ called 0 returned 0% blocks executed 0%
-function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS3_IiSaIiEEE8TestBodyEvE1SSaIS8_EE14const_iteratorENSA_8iteratorEEET0_T_SE_SD_ called 0 returned 0% blocks executed 0%
-function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS9_EE8iteratorESC_EET0_T_SE_SD_ called 0 returned 0% blocks executed 0%
-function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS9_EE8iteratorESC_EET0_T_SE_SD_ called 0 returned 0% blocks executed 0%
-function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS9_EE8iteratorESC_EET0_T_SE_SD_ called 0 returned 0% blocks executed 0%
-function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS3_IiSaIiEEE8TestBodyEvE1SSaIS8_EE8iteratorESB_EET0_T_SD_SC_ called 0 returned 0% blocks executed 0%
-function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS3_IiSaIiEEE8TestBodyEvE1SSaIS8_EE8iteratorESB_EET0_T_SD_SC_ called 0 returned 0% blocks executed 0%
-function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS3_IiSaIiEEE8TestBodyEvE1SSaIS8_EE8iteratorESB_EET0_T_SD_SC_ called 0 returned 0% blocks executed 0%
-function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIiSaIiEE14const_iteratorENS5_8iteratorEEET0_T_S9_S8_ called 3 returned 100% blocks executed 100%
+function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS9_EE14const_iteratorENSB_8iteratorEEET0_T_SF_SE_ called 0 returned 0% blocks executed 0%
+function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS9_EE14const_iteratorENSB_8iteratorEEET0_T_SF_SE_ called 0 returned 0% blocks executed 0%
+function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN28Deque_Fixture_iterarrow_TestIS3_IiSaIiEEE8TestBodyEvE1SSaIS8_EE14const_iteratorENSA_8iteratorEEET0_T_SE_SD_ called 0 returned 0% blocks executed 0%
+function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestIS3_IiSaIiEEE8TestBodyEvE1SSaIS8_EE14const_iteratorENSA_8iteratorEEET0_T_SE_SD_ called 0 returned 0% blocks executed 0%
+function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS9_EE8iteratorESC_EET0_T_SE_SD_ called 0 returned 0% blocks executed 0%
+function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS9_EE8iteratorESC_EET0_T_SE_SD_ called 0 returned 0% blocks executed 0%
+function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN28Deque_Fixture_iterarrow_TestIS3_IiSaIiEEE8TestBodyEvE1SSaIS8_EE8iteratorESB_EET0_T_SD_SC_ called 0 returned 0% blocks executed 0%
+function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestIS3_IiSaIiEEE8TestBodyEvE1SSaIS8_EE8iteratorESB_EET0_T_SD_SC_ called 0 returned 0% blocks executed 0%
+function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIiSaIiEE14const_iteratorENS5_8iteratorEEET0_T_S9_S8_ called 2 returned 100% blocks executed 100%
 function _ZNSt11__copy_moveILb0ELb0ESt26bidirectional_iterator_tagE8__copy_mIN8my_dequeIiSaIiEE8iteratorES6_EET0_T_S8_S7_ called 29 returned 100% blocks executed 100%
-       32:  302:        __copy_m(_II __first, _II __last, _OI __result)
+       31:  302:        __copy_m(_II __first, _II __last, _OI __result)
         -:  303:        {
-       99:  304:	  for (; __first != __last; ++__result, ++__first)
+       83:  304:	  for (; __first != __last; ++__result, ++__first)
 call    0 never executed
 call    1 never executed
 call    2 never executed
@@ -509,37 +423,17 @@ call   36 never executed
 call   37 never executed
 branch 38 never executed
 branch 39 never executed
-call   40 never executed
-call   41 never executed
-call   42 never executed
-branch 43 never executed
-branch 44 never executed
-call   45 never executed
-call   46 never executed
-call   47 never executed
-branch 48 never executed
-branch 49 never executed
-call   50 never executed
-call   51 never executed
-call   52 never executed
-branch 53 never executed
-branch 54 never executed
-call   55 never executed
-call   56 never executed
-call   57 never executed
-branch 58 never executed
-branch 59 never executed
-call   60 returned 100%
-call   61 returned 100%
-call   62 returned 100%
-branch 63 taken 67%
-branch 64 taken 33% (fallthrough)
-call   65 returned 100%
-call   66 returned 100%
-call   67 returned 100%
-branch 68 taken 68%
-branch 69 taken 32% (fallthrough)
-       67:  305:	    *__result = *__first;
+call   40 returned 100%
+call   41 returned 100%
+call   42 returned 100%
+branch 43 taken 67%
+branch 44 taken 33% (fallthrough)
+call   45 returned 100%
+call   46 returned 100%
+call   47 returned 100%
+branch 48 taken 62%
+branch 49 taken 38% (fallthrough)
+       52:  305:	    *__result = *__first;
 call    0 never executed
 call    1 never executed
 call    2 never executed
@@ -556,19 +450,11 @@ call   12 never executed
 call   13 never executed
 call   14 never executed
 call   15 never executed
-call   16 never executed
-call   17 never executed
-call   18 never executed
-call   19 never executed
-call   20 never executed
-call   21 never executed
-call   22 never executed
-call   23 never executed
-call   24 returned 100%
-call   25 returned 100%
-call   26 returned 100%
-call   27 returned 100%
-       32:  306:	  return __result;
+call   16 returned 100%
+call   17 returned 100%
+call   18 returned 100%
+call   19 returned 100%
+       31:  306:	  return __result;
         -:  307:	}
         -:  308:    };
         -:  309:
@@ -592,79 +478,25 @@ call   27 returned 100%
         -:  327:    {
         -:  328:      template<typename _II, typename _OI>
         -:  329:        static _OI
-function _ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE8__copy_mISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS9_PSA_ES3_IS9_RS9_PS9_EEET0_T_SI_SH_ called 1 returned 100% blocks executed 100%
-function _ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE8__copy_mISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS9_PSA_ES3_IS9_RS9_PS9_EEET0_T_SI_SH_ called 1 returned 100% blocks executed 100%
-function _ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE8__copy_mISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS9_PSA_ES3_IS9_RS9_PS9_EEET0_T_SI_SH_ called 1 returned 100% blocks executed 100%
-function _ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE8__copy_mISt15_Deque_iteratorIiRKiPS4_ES3_IiRiPiEEET0_T_SC_SB_ called 67 returned 100% blocks executed 100%
-function _ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE8__copy_mISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS9_PSA_ES3_IS9_RS9_PS9_EEET0_T_SI_SH_ called 1 returned 100% blocks executed 100%
-function _ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE8__copy_mISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS9_PSA_ES3_IS9_RS9_PS9_EEET0_T_SI_SH_ called 1 returned 100% blocks executed 100%
-function _ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE8__copy_mISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS9_PSA_ES3_IS9_RS9_PS9_EEET0_T_SI_SH_ called 1 returned 100% blocks executed 100%
-       73:  330:        __copy_m(_II __first, _II __last, _OI __result)
+function _ZNSt11__copy_moveILb0ELb0ESt26random_access_iterator_tagE8__copy_mISt15_Deque_iteratorIiRKiPS4_ES3_IiRiPiEEET0_T_SC_SB_ called 64 returned 100% blocks executed 100%
+       64:  330:        __copy_m(_II __first, _II __last, _OI __result)
         -:  331:        { 
         -:  332:	  typedef typename iterator_traits<_II>::difference_type _Distance;
-      663:  333:	  for(_Distance __n = __last - __first; __n > 0; --__n)
+      706:  333:	  for(_Distance __n = __last - __first; __n > 0; --__n)
 call    0 returned 100%
-branch  1 taken 67%
-branch  2 taken 33% (fallthrough)
-call    3 returned 100%
-branch  4 taken 67%
-branch  5 taken 33% (fallthrough)
-call    6 returned 100%
-branch  7 taken 67%
-branch  8 taken 33% (fallthrough)
-call    9 returned 100%
-branch 10 taken 90%
-branch 11 taken 10% (fallthrough)
-call   12 returned 100%
-branch 13 taken 67%
-branch 14 taken 33% (fallthrough)
-call   15 returned 100%
-branch 16 taken 67%
-branch 17 taken 33% (fallthrough)
-call   18 returned 100%
-branch 19 taken 67%
-branch 20 taken 33% (fallthrough)
+branch  1 taken 91%
+branch  2 taken 9% (fallthrough)
         -:  334:	    {
-      590:  335:	      *__result = *__first;
+      642:  335:	      *__result = *__first;
 call    0 returned 100%
 call    1 returned 100%
-call    2 returned 100%
-call    3 returned 100%
-call    4 returned 100%
-call    5 returned 100%
-call    6 returned 100%
-call    7 returned 100%
-call    8 returned 100%
-call    9 returned 100%
-call   10 returned 100%
-call   11 returned 100%
-call   12 returned 100%
-call   13 returned 100%
-      590:  336:	      ++__first;
+      642:  336:	      ++__first;
 call    0 returned 100%
-call    1 returned 100%
-call    2 returned 100%
-call    3 returned 100%
-call    4 returned 100%
-call    5 returned 100%
-call    6 returned 100%
-      590:  337:	      ++__result;
+      642:  337:	      ++__result;
 call    0 returned 100%
-call    1 returned 100%
-call    2 returned 100%
-call    3 returned 100%
-call    4 returned 100%
-call    5 returned 100%
-call    6 returned 100%
         -:  338:	    }
-       73:  339:	  return __result;
+       64:  339:	  return __result;
 call    0 returned 100%
-call    1 returned 100%
-call    2 returned 100%
-call    3 returned 100%
-call    4 returned 100%
-call    5 returned 100%
-call    6 returned 100%
         -:  340:	}
         -:  341:    };
         -:  342:
@@ -704,16 +536,16 @@ call    0 never executed
         -:  366:      template<typename _Tp>
         -:  367:        static _Tp*
 function _ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIPiEEPT_PKS4_S7_S5_ called 0 returned 0% blocks executed 0%
-function _ZNSt11__copy_moveILb1ELb1ESt26random_access_iterator_tagE8__copy_mIiEEPT_PKS3_S6_S4_ called 1 returned 100% blocks executed 100%
-function _ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIiEEPT_PKS3_S6_S4_ called 3 returned 100% blocks executed 100%
+function _ZNSt11__copy_moveILb1ELb1ESt26random_access_iterator_tagE8__copy_mIiEEPT_PKS3_S6_S4_ called 0 returned 0% blocks executed 0%
+function _ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIiEEPT_PKS3_S6_S4_ called 4 returned 100% blocks executed 100%
         4:  368:        __copy_m(const _Tp* __first, const _Tp* __last, _Tp* __result)
         -:  369:        {
         4:  370:	  const ptrdiff_t _Num = __last - __first;
         4:  371:	  if (_Num)
 branch  0 never executed
 branch  1 never executed
-branch  2 taken 100% (fallthrough)
-branch  3 taken 0%
+branch  2 never executed
+branch  3 never executed
 branch  4 taken 100% (fallthrough)
 branch  5 taken 0%
         4:  372:	    __builtin_memmove(__result, __first, sizeof(_Tp) * _Num);
@@ -724,31 +556,21 @@ branch  5 taken 0%
         -:  377:  template<bool _IsMove, typename _II, typename _OI>
         -:  378:    inline _OI
 function _ZSt13__copy_move_aILb1ESt15_Deque_iteratorIiRiPiES3_ET1_T0_S5_S4_ called 0 returned 0% blocks executed 0%
-function _ZSt13__copy_move_aILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorENS8_8iteratorEET1_T0_SC_SB_ called 0 returned 0% blocks executed 0%
-function _ZSt13__copy_move_aILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorENS8_8iteratorEET1_T0_SC_SB_ called 0 returned 0% blocks executed 0%
-function _ZSt13__copy_move_aILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorENS8_8iteratorEET1_T0_SC_SB_ called 0 returned 0% blocks executed 0%
+function _ZSt13__copy_move_aILb0EN8my_dequeIZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorENS8_8iteratorEET1_T0_SC_SB_ called 0 returned 0% blocks executed 0%
+function _ZSt13__copy_move_aILb0EN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorENS8_8iteratorEET1_T0_SC_SB_ called 0 returned 0% blocks executed 0%
 function _ZSt13__copy_move_aILb0EPPiS1_ET1_T0_S3_S2_ called 0 returned 0% blocks executed 0%
-function _ZSt13__copy_move_aILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorENS7_8iteratorEET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt13__copy_move_aILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorENS7_8iteratorEET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt13__copy_move_aILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorENS7_8iteratorEET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt13__copy_move_aILb0ESt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET1_T0_SF_SE_ called 1 returned 100% blocks executed 100%
-function _ZSt13__copy_move_aILb0ESt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET1_T0_SF_SE_ called 1 returned 100% blocks executed 100%
-function _ZSt13__copy_move_aILb0ESt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET1_T0_SF_SE_ called 1 returned 100% blocks executed 100%
-function _ZSt13__copy_move_aILb0ESt15_Deque_iteratorIiRKiPS1_ES0_IiRiPiEET1_T0_S9_S8_ called 67 returned 100% blocks executed 100%
-function _ZSt13__copy_move_aILb0ESt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET1_T0_SF_SE_ called 1 returned 100% blocks executed 100%
-function _ZSt13__copy_move_aILb0ESt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET1_T0_SF_SE_ called 1 returned 100% blocks executed 100%
-function _ZSt13__copy_move_aILb0ESt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET1_T0_SF_SE_ called 1 returned 100% blocks executed 100%
-function _ZSt13__copy_move_aILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorES9_ET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt13__copy_move_aILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorES9_ET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt13__copy_move_aILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorES9_ET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt13__copy_move_aILb1EPiS0_ET1_T0_S2_S1_ called 1 returned 100% blocks executed 100%
-function _ZSt13__copy_move_aILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorES8_ET1_T0_SA_S9_ called 0 returned 0% blocks executed 0%
-function _ZSt13__copy_move_aILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorES8_ET1_T0_SA_S9_ called 0 returned 0% blocks executed 0%
-function _ZSt13__copy_move_aILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorES8_ET1_T0_SA_S9_ called 0 returned 0% blocks executed 0%
-function _ZSt13__copy_move_aILb0EPiS0_ET1_T0_S2_S1_ called 3 returned 100% blocks executed 100%
-function _ZSt13__copy_move_aILb0EN8my_dequeIiSaIiEE14const_iteratorENS2_8iteratorEET1_T0_S6_S5_ called 3 returned 100% blocks executed 100%
+function _ZSt13__copy_move_aILb0EN8my_dequeIZN28Deque_Fixture_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorENS7_8iteratorEET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
+function _ZSt13__copy_move_aILb0EN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorENS7_8iteratorEET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
+function _ZSt13__copy_move_aILb0ESt15_Deque_iteratorIiRKiPS1_ES0_IiRiPiEET1_T0_S9_S8_ called 64 returned 100% blocks executed 100%
+function _ZSt13__copy_move_aILb0EN8my_dequeIZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorES9_ET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
+function _ZSt13__copy_move_aILb0EN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorES9_ET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
+function _ZSt13__copy_move_aILb1EPiS0_ET1_T0_S2_S1_ called 0 returned 0% blocks executed 0%
+function _ZSt13__copy_move_aILb0EN8my_dequeIZN28Deque_Fixture_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorES8_ET1_T0_SA_S9_ called 0 returned 0% blocks executed 0%
+function _ZSt13__copy_move_aILb0EN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorES8_ET1_T0_SA_S9_ called 0 returned 0% blocks executed 0%
+function _ZSt13__copy_move_aILb0EPiS0_ET1_T0_S2_S1_ called 4 returned 100% blocks executed 100%
+function _ZSt13__copy_move_aILb0EN8my_dequeIiSaIiEE14const_iteratorENS2_8iteratorEET1_T0_S6_S5_ called 2 returned 100% blocks executed 100%
 function _ZSt13__copy_move_aILb0EN8my_dequeIiSaIiEE8iteratorES3_ET1_T0_S5_S4_ called 29 returned 100% blocks executed 100%
-      109:  379:    __copy_move_a(_II __first, _II __last, _OI __result)
+       99:  379:    __copy_move_a(_II __first, _II __last, _OI __result)
         -:  380:    {
         -:  381:      typedef typename iterator_traits<_II>::value_type _ValueTypeI;
         -:  382:      typedef typename iterator_traits<_OI>::value_type _ValueTypeO;
@@ -756,10 +578,10 @@ function _ZSt13__copy_move_aILb0EN8my_dequeIiSaIiEE8iteratorES3_ET1_T0_S5_S4_ ca
         -:  384:      const bool __simple = (__is_trivial(_ValueTypeI)
         -:  385:	                     && __is_pointer<_II>::__value
         -:  386:	                     && __is_pointer<_OI>::__value
-      109:  387:			     && __are_same<_ValueTypeI, _ValueTypeO>::__value);
+       99:  387:			     && __are_same<_ValueTypeI, _ValueTypeO>::__value);
         -:  388:
         -:  389:      return std::__copy_move<_IsMove, __simple,
-      109:  390:	                      _Category>::__copy_m(__first, __last, __result);
+       99:  390:	                      _Category>::__copy_m(__first, __last, __result);
 call    0 never executed
 call    1 never executed
 call    2 never executed
@@ -771,46 +593,18 @@ call    7 never executed
 call    8 never executed
 call    9 never executed
 call   10 never executed
-call   11 never executed
-call   12 never executed
-call   13 returned 100%
-call   14 returned 100%
-branch 15 taken 100% (fallthrough)
-branch 16 taken 0% (throw)
-call   17 returned 100%
-call   18 returned 100%
-branch 19 taken 100% (fallthrough)
-branch 20 taken 0% (throw)
+call   11 returned 100%
+call   12 returned 100%
+branch 13 taken 100% (fallthrough)
+branch 14 taken 0% (throw)
+call   15 never executed
+call   16 never executed
+call   17 never executed
+call   18 never executed
+call   19 never executed
+call   20 returned 100%
 call   21 returned 100%
 call   22 returned 100%
-branch 23 taken 100% (fallthrough)
-branch 24 taken 0% (throw)
-call   25 returned 100%
-call   26 returned 100%
-branch 27 taken 100% (fallthrough)
-branch 28 taken 0% (throw)
-call   29 returned 100%
-call   30 returned 100%
-branch 31 taken 100% (fallthrough)
-branch 32 taken 0% (throw)
-call   33 returned 100%
-call   34 returned 100%
-branch 35 taken 100% (fallthrough)
-branch 36 taken 0% (throw)
-call   37 returned 100%
-call   38 returned 100%
-branch 39 taken 100% (fallthrough)
-branch 40 taken 0% (throw)
-call   41 never executed
-call   42 never executed
-call   43 never executed
-call   44 returned 100%
-call   45 never executed
-call   46 never executed
-call   47 never executed
-call   48 returned 100%
-call   49 returned 100%
-call   50 returned 100%
         -:  391:    }
         -:  392:
         -:  393:  // Helpers for streambuf iterators (either istream or ostream).
@@ -845,35 +639,25 @@ call   50 returned 100%
         -:  422:  template<bool _IsMove, typename _II, typename _OI>
         -:  423:    inline _OI
 function _ZSt14__copy_move_a2ILb1ESt15_Deque_iteratorIiRiPiES3_ET1_T0_S5_S4_ called 0 returned 0% blocks executed 0%
-function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorENS8_8iteratorEET1_T0_SC_SB_ called 0 returned 0% blocks executed 0%
-function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorENS8_8iteratorEET1_T0_SC_SB_ called 0 returned 0% blocks executed 0%
-function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorENS8_8iteratorEET1_T0_SC_SB_ called 0 returned 0% blocks executed 0%
+function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorENS8_8iteratorEET1_T0_SC_SB_ called 0 returned 0% blocks executed 0%
+function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorENS8_8iteratorEET1_T0_SC_SB_ called 0 returned 0% blocks executed 0%
 function _ZSt14__copy_move_a2ILb0EPPiS1_ET1_T0_S3_S2_ called 0 returned 0% blocks executed 0%
-function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorENS7_8iteratorEET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorENS7_8iteratorEET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorENS7_8iteratorEET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt14__copy_move_a2ILb0ESt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET1_T0_SF_SE_ called 1 returned 100% blocks executed 89%
-function _ZSt14__copy_move_a2ILb0ESt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET1_T0_SF_SE_ called 1 returned 100% blocks executed 89%
-function _ZSt14__copy_move_a2ILb0ESt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET1_T0_SF_SE_ called 1 returned 100% blocks executed 89%
-function _ZSt14__copy_move_a2ILb0ESt15_Deque_iteratorIiRKiPS1_ES0_IiRiPiEET1_T0_S9_S8_ called 67 returned 100% blocks executed 89%
-function _ZSt14__copy_move_a2ILb0ESt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET1_T0_SF_SE_ called 1 returned 100% blocks executed 89%
-function _ZSt14__copy_move_a2ILb0ESt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET1_T0_SF_SE_ called 1 returned 100% blocks executed 89%
-function _ZSt14__copy_move_a2ILb0ESt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET1_T0_SF_SE_ called 1 returned 100% blocks executed 89%
-function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorES9_ET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorES9_ET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorES9_ET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt14__copy_move_a2ILb1EPiS0_ET1_T0_S2_S1_ called 1 returned 100% blocks executed 100%
-function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorES8_ET1_T0_SA_S9_ called 0 returned 0% blocks executed 0%
-function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorES8_ET1_T0_SA_S9_ called 0 returned 0% blocks executed 0%
-function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorES8_ET1_T0_SA_S9_ called 0 returned 0% blocks executed 0%
-function _ZSt14__copy_move_a2ILb0EPiS0_ET1_T0_S2_S1_ called 3 returned 100% blocks executed 100%
-function _ZSt14__copy_move_a2ILb0EN8my_dequeIiSaIiEE14const_iteratorENS2_8iteratorEET1_T0_S6_S5_ called 3 returned 100% blocks executed 100%
+function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN28Deque_Fixture_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorENS7_8iteratorEET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
+function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorENS7_8iteratorEET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
+function _ZSt14__copy_move_a2ILb0ESt15_Deque_iteratorIiRKiPS1_ES0_IiRiPiEET1_T0_S9_S8_ called 64 returned 100% blocks executed 89%
+function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorES9_ET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
+function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorES9_ET1_T0_SB_SA_ called 0 returned 0% blocks executed 0%
+function _ZSt14__copy_move_a2ILb1EPiS0_ET1_T0_S2_S1_ called 0 returned 0% blocks executed 0%
+function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN28Deque_Fixture_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorES8_ET1_T0_SA_S9_ called 0 returned 0% blocks executed 0%
+function _ZSt14__copy_move_a2ILb0EN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorES8_ET1_T0_SA_S9_ called 0 returned 0% blocks executed 0%
+function _ZSt14__copy_move_a2ILb0EPiS0_ET1_T0_S2_S1_ called 4 returned 100% blocks executed 100%
+function _ZSt14__copy_move_a2ILb0EN8my_dequeIiSaIiEE14const_iteratorENS2_8iteratorEET1_T0_S6_S5_ called 2 returned 100% blocks executed 100%
 function _ZSt14__copy_move_a2ILb0EN8my_dequeIiSaIiEE8iteratorES3_ET1_T0_S5_S4_ called 29 returned 100% blocks executed 100%
-      109:  424:    __copy_move_a2(_II __first, _II __last, _OI __result)
+       99:  424:    __copy_move_a2(_II __first, _II __last, _OI __result)
         -:  425:    {
         -:  426:      return _OI(std::__copy_move_a<_IsMove>(std::__niter_base(__first),
         -:  427:					     std::__niter_base(__last),
-      109:  428:					     std::__niter_base(__result)));
+       99:  428:					     std::__niter_base(__result)));
 call    0 never executed
 call    1 never executed
 branch  2 never executed
@@ -909,121 +693,51 @@ call   31 never executed
 call   32 never executed
 call   33 never executed
 call   34 never executed
-call   35 never executed
-call   36 never executed
-call   37 never executed
-call   38 never executed
-call   39 never executed
-call   40 never executed
-call   41 never executed
-call   42 never executed
-call   43 returned 100%
-call   44 returned 100%
-branch 45 taken 100% (fallthrough)
-branch 46 taken 0% (throw)
-call   47 returned 100%
-call   48 returned 100%
-call   49 returned 100%
-branch 50 taken 100% (fallthrough)
-branch 51 taken 0% (throw)
-call   52 returned 100%
-call   53 returned 100%
-branch 54 taken 100% (fallthrough)
-branch 55 taken 0% (throw)
-call   56 returned 100%
-call   57 returned 100%
-call   58 returned 100%
-branch 59 taken 100% (fallthrough)
-branch 60 taken 0% (throw)
-call   61 returned 100%
-call   62 returned 100%
-branch 63 taken 100% (fallthrough)
-branch 64 taken 0% (throw)
-call   65 returned 100%
-call   66 returned 100%
-call   67 returned 100%
-branch 68 taken 100% (fallthrough)
-branch 69 taken 0% (throw)
+call   35 returned 100%
+call   36 returned 100%
+branch 37 taken 100% (fallthrough)
+branch 38 taken 0% (throw)
+call   39 returned 100%
+branch 40 taken 100% (fallthrough)
+branch 41 taken 0% (throw)
+call   42 returned 100%
+branch 43 taken 100% (fallthrough)
+branch 44 taken 0% (throw)
+call   45 returned 100%
+branch 46 taken 100% (fallthrough)
+branch 47 taken 0% (throw)
+call   48 never executed
+call   49 never executed
+call   50 never executed
+call   51 never executed
+call   52 never executed
+call   53 never executed
+call   54 never executed
+call   55 never executed
+call   56 never executed
+call   57 never executed
+call   58 never executed
+call   59 never executed
+call   60 never executed
+call   61 never executed
+call   62 never executed
+call   63 never executed
+call   64 never executed
+call   65 never executed
+call   66 never executed
+call   67 never executed
+call   68 returned 100%
+call   69 returned 100%
 call   70 returned 100%
 call   71 returned 100%
-branch 72 taken 100% (fallthrough)
-branch 73 taken 0% (throw)
+call   72 returned 100%
+call   73 returned 100%
 call   74 returned 100%
-branch 75 taken 100% (fallthrough)
-branch 76 taken 0% (throw)
+call   75 returned 100%
+call   76 returned 100%
 call   77 returned 100%
-branch 78 taken 100% (fallthrough)
-branch 79 taken 0% (throw)
-call   80 returned 100%
-branch 81 taken 100% (fallthrough)
-branch 82 taken 0% (throw)
-call   83 returned 100%
-call   84 returned 100%
-branch 85 taken 100% (fallthrough)
-branch 86 taken 0% (throw)
-call   87 returned 100%
-call   88 returned 100%
-call   89 returned 100%
-branch 90 taken 100% (fallthrough)
-branch 91 taken 0% (throw)
-call   92 returned 100%
-call   93 returned 100%
-branch 94 taken 100% (fallthrough)
-branch 95 taken 0% (throw)
-call   96 returned 100%
-call   97 returned 100%
-call   98 returned 100%
-branch 99 taken 100% (fallthrough)
-branch 100 taken 0% (throw)
-call   101 returned 100%
-call   102 returned 100%
-branch 103 taken 100% (fallthrough)
-branch 104 taken 0% (throw)
-call   105 returned 100%
-call   106 returned 100%
-call   107 returned 100%
-branch 108 taken 100% (fallthrough)
-branch 109 taken 0% (throw)
-call   110 never executed
-call   111 never executed
-call   112 never executed
-call   113 never executed
-call   114 never executed
-call   115 never executed
-call   116 never executed
-call   117 never executed
-call   118 never executed
-call   119 never executed
-call   120 never executed
-call   121 never executed
-call   122 returned 100%
-call   123 returned 100%
-call   124 returned 100%
-call   125 returned 100%
-call   126 never executed
-call   127 never executed
-call   128 never executed
-call   129 never executed
-call   130 never executed
-call   131 never executed
-call   132 never executed
-call   133 never executed
-call   134 never executed
-call   135 never executed
-call   136 never executed
-call   137 never executed
-call   138 returned 100%
-call   139 returned 100%
-call   140 returned 100%
-call   141 returned 100%
-call   142 returned 100%
-call   143 returned 100%
-call   144 returned 100%
-call   145 returned 100%
-call   146 returned 100%
-call   147 returned 100%
-call   148 returned 100%
-call   149 returned 100%
+call   78 returned 100%
+call   79 returned 100%
         -:  429:    }
         -:  430:
         -:  431:  /**
@@ -1046,30 +760,20 @@ call   149 returned 100%
         -:  448:  template<typename _II, typename _OI>
         -:  449:    inline _OI
 function _ZSt4copyISt13move_iteratorISt15_Deque_iteratorIiRiPiEES4_ET0_T_S7_S6_ called 0 returned 0% blocks executed 0%
-function _ZSt4copyIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorENS8_8iteratorEET0_T_SC_SB_ called 0 returned 0% blocks executed 0%
-function _ZSt4copyIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorENS8_8iteratorEET0_T_SC_SB_ called 0 returned 0% blocks executed 0%
-function _ZSt4copyIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorENS8_8iteratorEET0_T_SC_SB_ called 0 returned 0% blocks executed 0%
+function _ZSt4copyIN8my_dequeIZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorENS8_8iteratorEET0_T_SC_SB_ called 0 returned 0% blocks executed 0%
+function _ZSt4copyIN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE14const_iteratorENS8_8iteratorEET0_T_SC_SB_ called 0 returned 0% blocks executed 0%
 function _ZSt4copyIPPiS1_ET0_T_S3_S2_ called 0 returned 0% blocks executed 0%
-function _ZSt4copyIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorENS7_8iteratorEET0_T_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt4copyIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorENS7_8iteratorEET0_T_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt4copyIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorENS7_8iteratorEET0_T_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt4copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET0_T_SF_SE_ called 1 returned 100% blocks executed 100%
-function _ZSt4copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET0_T_SF_SE_ called 1 returned 100% blocks executed 100%
-function _ZSt4copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET0_T_SF_SE_ called 1 returned 100% blocks executed 100%
-function _ZSt4copyISt15_Deque_iteratorIiRKiPS1_ES0_IiRiPiEET0_T_S9_S8_ called 67 returned 100% blocks executed 100%
-function _ZSt4copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET0_T_SF_SE_ called 1 returned 100% blocks executed 100%
-function _ZSt4copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET0_T_SF_SE_ called 1 returned 100% blocks executed 100%
-function _ZSt4copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET0_T_SF_SE_ called 1 returned 100% blocks executed 100%
-function _ZSt4copyIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorES9_ET0_T_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt4copyIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorES9_ET0_T_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt4copyIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorES9_ET0_T_SB_SA_ called 0 returned 0% blocks executed 0%
-function _ZSt4copyIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorES8_ET0_T_SA_S9_ called 0 returned 0% blocks executed 0%
-function _ZSt4copyIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorES8_ET0_T_SA_S9_ called 0 returned 0% blocks executed 0%
-function _ZSt4copyIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorES8_ET0_T_SA_S9_ called 0 returned 0% blocks executed 0%
-function _ZSt4copyIPiS0_ET0_T_S2_S1_ called 3 returned 100% blocks executed 100%
-function _ZSt4copyIN8my_dequeIiSaIiEE14const_iteratorENS2_8iteratorEET0_T_S6_S5_ called 3 returned 100% blocks executed 100%
+function _ZSt4copyIN8my_dequeIZN28Deque_Fixture_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorENS7_8iteratorEET0_T_SB_SA_ called 0 returned 0% blocks executed 0%
+function _ZSt4copyIN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorENS7_8iteratorEET0_T_SB_SA_ called 0 returned 0% blocks executed 0%
+function _ZSt4copyISt15_Deque_iteratorIiRKiPS1_ES0_IiRiPiEET0_T_S9_S8_ called 64 returned 100% blocks executed 100%
+function _ZSt4copyIN8my_dequeIZN28Deque_Fixture_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorES9_ET0_T_SB_SA_ called 0 returned 0% blocks executed 0%
+function _ZSt4copyIN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS6_EE8iteratorES9_ET0_T_SB_SA_ called 0 returned 0% blocks executed 0%
+function _ZSt4copyIN8my_dequeIZN28Deque_Fixture_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorES8_ET0_T_SA_S9_ called 0 returned 0% blocks executed 0%
+function _ZSt4copyIN8my_dequeIZN34Deque_Fixture_const_iterarrow_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorES8_ET0_T_SA_S9_ called 0 returned 0% blocks executed 0%
+function _ZSt4copyIPiS0_ET0_T_S2_S1_ called 4 returned 100% blocks executed 100%
+function _ZSt4copyIN8my_dequeIiSaIiEE14const_iteratorENS2_8iteratorEET0_T_S6_S5_ called 2 returned 100% blocks executed 100%
 function _ZSt4copyIN8my_dequeIiSaIiEE8iteratorES3_ET0_T_S5_S4_ called 29 returned 100% blocks executed 100%
-      108:  450:    copy(_II __first, _II __last, _OI __result)
+       99:  450:    copy(_II __first, _II __last, _OI __result)
         -:  451:    {
         -:  452:      // concept requirements
         -:  453:      __glibcxx_function_requires(_InputIteratorConcept<_II>)
@@ -1079,7 +783,7 @@ function _ZSt4copyIN8my_dequeIiSaIiEE8iteratorES3_ET0_T_S5_S4_ called 29 returne
         -:  457:
         -:  458:      return (std::__copy_move_a2<__is_move_iterator<_II>::__value>
         -:  459:	      (std::__miter_base(__first), std::__miter_base(__last),
-      108:  460:	       __result));
+       99:  460:	       __result));
 call    0 never executed
 call    1 never executed
 call    2 never executed
@@ -1107,105 +811,33 @@ call   23 never executed
 call   24 never executed
 call   25 never executed
 call   26 never executed
-call   27 never executed
-call   28 never executed
-call   29 never executed
-call   30 never executed
-call   31 never executed
-call   32 never executed
-call   33 returned 100%
-call   34 returned 100%
-branch 35 taken 100% (fallthrough)
-branch 36 taken 0% (throw)
-call   37 returned 100%
-branch 38 taken 100% (fallthrough)
-branch 39 taken 0% (throw)
-call   40 returned 100%
-branch 41 taken 100% (fallthrough)
-branch 42 taken 0% (throw)
-call   43 returned 100%
-call   44 returned 100%
-branch 45 taken 100% (fallthrough)
-branch 46 taken 0% (throw)
+call   27 returned 100%
+call   28 returned 100%
+call   29 returned 100%
+call   30 returned 100%
+branch 31 taken 100% (fallthrough)
+branch 32 taken 0% (throw)
+call   33 never executed
+call   34 never executed
+call   35 never executed
+call   36 never executed
+call   37 never executed
+call   38 never executed
+call   39 never executed
+call   40 never executed
+call   41 never executed
+call   42 never executed
+call   43 never executed
+call   44 never executed
+call   45 returned 100%
+call   46 returned 100%
 call   47 returned 100%
-branch 48 taken 100% (fallthrough)
-branch 49 taken 0% (throw)
+call   48 returned 100%
+call   49 returned 100%
 call   50 returned 100%
-branch 51 taken 100% (fallthrough)
-branch 52 taken 0% (throw)
+call   51 returned 100%
+call   52 returned 100%
 call   53 returned 100%
-call   54 returned 100%
-branch 55 taken 100% (fallthrough)
-branch 56 taken 0% (throw)
-call   57 returned 100%
-branch 58 taken 100% (fallthrough)
-branch 59 taken 0% (throw)
-call   60 returned 100%
-branch 61 taken 100% (fallthrough)
-branch 62 taken 0% (throw)
-call   63 returned 100%
-call   64 returned 100%
-call   65 returned 100%
-call   66 returned 100%
-branch 67 taken 100% (fallthrough)
-branch 68 taken 0% (throw)
-call   69 returned 100%
-call   70 returned 100%
-branch 71 taken 100% (fallthrough)
-branch 72 taken 0% (throw)
-call   73 returned 100%
-branch 74 taken 100% (fallthrough)
-branch 75 taken 0% (throw)
-call   76 returned 100%
-branch 77 taken 100% (fallthrough)
-branch 78 taken 0% (throw)
-call   79 returned 100%
-call   80 returned 100%
-branch 81 taken 100% (fallthrough)
-branch 82 taken 0% (throw)
-call   83 returned 100%
-branch 84 taken 100% (fallthrough)
-branch 85 taken 0% (throw)
-call   86 returned 100%
-branch 87 taken 100% (fallthrough)
-branch 88 taken 0% (throw)
-call   89 returned 100%
-call   90 returned 100%
-branch 91 taken 100% (fallthrough)
-branch 92 taken 0% (throw)
-call   93 returned 100%
-branch 94 taken 100% (fallthrough)
-branch 95 taken 0% (throw)
-call   96 returned 100%
-branch 97 taken 100% (fallthrough)
-branch 98 taken 0% (throw)
-call   99 never executed
-call   100 never executed
-call   101 never executed
-call   102 never executed
-call   103 never executed
-call   104 never executed
-call   105 never executed
-call   106 never executed
-call   107 never executed
-call   108 never executed
-call   109 never executed
-call   110 never executed
-call   111 never executed
-call   112 never executed
-call   113 never executed
-call   114 never executed
-call   115 never executed
-call   116 never executed
-call   117 returned 100%
-call   118 returned 100%
-call   119 returned 100%
-call   120 returned 100%
-call   121 returned 100%
-call   122 returned 100%
-call   123 returned 100%
-call   124 returned 100%
-call   125 returned 100%
         -:  461:    }
         -:  462:
         -:  463:#if __cplusplus >= 201103L
@@ -1228,8 +860,8 @@ call   125 returned 100%
         -:  480:  */
         -:  481:  template<typename _II, typename _OI>
         -:  482:    inline _OI
-function _ZSt4moveIPiS0_ET0_T_S2_S1_ called 1 returned 100% blocks executed 100%
-        1:  483:    move(_II __first, _II __last, _OI __result)
+function _ZSt4moveIPiS0_ET0_T_S2_S1_ called 0 returned 0% blocks executed 0%
+    #####:  483:    move(_II __first, _II __last, _OI __result)
         -:  484:    {
         -:  485:      // concept requirements
         -:  486:      __glibcxx_function_requires(_InputIteratorConcept<_II>)
@@ -1238,10 +870,10 @@ function _ZSt4moveIPiS0_ET0_T_S2_S1_ called 1 returned 100% blocks executed 100%
         -:  489:      __glibcxx_requires_valid_range(__first, __last);
         -:  490:
         -:  491:      return std::__copy_move_a2<true>(std::__miter_base(__first),
-        1:  492:				       std::__miter_base(__last), __result);
-call    0 returned 100%
-call    1 returned 100%
-call    2 returned 100%
+    #####:  492:				       std::__miter_base(__last), __result);
+call    0 never executed
+call    1 never executed
+call    2 never executed
         -:  493:    }
         -:  494:
         -:  495:#define _GLIBCXX_MOVE3(_Tp, _Up, _Vp) std::move(_Tp, _Up, _Vp)
@@ -1313,25 +945,25 @@ call    2 returned 100%
         -:  561:      template<typename _Tp>
         -:  562:        static _Tp*
 function _ZNSt20__copy_move_backwardILb0ELb1ESt26random_access_iterator_tagE13__copy_move_bIPiEEPT_PKS4_S7_S5_ called 0 returned 0% blocks executed 0%
-function _ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_ called 0 returned 0% blocks executed 0%
-    #####:  563:        __copy_move_b(const _Tp* __first, const _Tp* __last, _Tp* __result)
+function _ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIiEEPT_PKS3_S6_S4_ called 1 returned 100% blocks executed 100%
+        1:  563:        __copy_move_b(const _Tp* __first, const _Tp* __last, _Tp* __result)
         -:  564:        {
-    #####:  565:	  const ptrdiff_t _Num = __last - __first;
-    #####:  566:	  if (_Num)
+        1:  565:	  const ptrdiff_t _Num = __last - __first;
+        1:  566:	  if (_Num)
 branch  0 never executed
 branch  1 never executed
-branch  2 never executed
-branch  3 never executed
-    #####:  567:	    __builtin_memmove(__result - _Num, __first, sizeof(_Tp) * _Num);
-    #####:  568:	  return __result - _Num;
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+        1:  567:	    __builtin_memmove(__result - _Num, __first, sizeof(_Tp) * _Num);
+        1:  568:	  return __result - _Num;
         -:  569:	}
         -:  570:    };
         -:  571:
         -:  572:  template<bool _IsMove, typename _BI1, typename _BI2>
         -:  573:    inline _BI2
 function _ZSt22__copy_move_backward_aILb0EPPiS1_ET1_T0_S3_S2_ called 0 returned 0% blocks executed 0%
-function _ZSt22__copy_move_backward_aILb1EPiS0_ET1_T0_S2_S1_ called 0 returned 0% blocks executed 0%
-    #####:  574:    __copy_move_backward_a(_BI1 __first, _BI1 __last, _BI2 __result)
+function _ZSt22__copy_move_backward_aILb1EPiS0_ET1_T0_S2_S1_ called 1 returned 100% blocks executed 100%
+        1:  574:    __copy_move_backward_a(_BI1 __first, _BI1 __last, _BI2 __result)
         -:  575:    {
         -:  576:      typedef typename iterator_traits<_BI1>::value_type _ValueType1;
         -:  577:      typedef typename iterator_traits<_BI2>::value_type _ValueType2;
@@ -1339,33 +971,33 @@ function _ZSt22__copy_move_backward_aILb1EPiS0_ET1_T0_S2_S1_ called 0 returned 0
         -:  579:      const bool __simple = (__is_trivial(_ValueType1)
         -:  580:	                     && __is_pointer<_BI1>::__value
         -:  581:	                     && __is_pointer<_BI2>::__value
-    #####:  582:			     && __are_same<_ValueType1, _ValueType2>::__value);
+        1:  582:			     && __are_same<_ValueType1, _ValueType2>::__value);
         -:  583:
         -:  584:      return std::__copy_move_backward<_IsMove, __simple,
         -:  585:	                               _Category>::__copy_move_b(__first,
         -:  586:								 __last,
-    #####:  587:								 __result);
+        1:  587:								 __result);
 call    0 never executed
-call    1 never executed
+call    1 returned 100%
         -:  588:    }
         -:  589:
         -:  590:  template<bool _IsMove, typename _BI1, typename _BI2>
         -:  591:    inline _BI2
 function _ZSt23__copy_move_backward_a2ILb0EPPiS1_ET1_T0_S3_S2_ called 0 returned 0% blocks executed 0%
-function _ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_ called 0 returned 0% blocks executed 0%
-    #####:  592:    __copy_move_backward_a2(_BI1 __first, _BI1 __last, _BI2 __result)
+function _ZSt23__copy_move_backward_a2ILb1EPiS0_ET1_T0_S2_S1_ called 1 returned 100% blocks executed 100%
+        1:  592:    __copy_move_backward_a2(_BI1 __first, _BI1 __last, _BI2 __result)
         -:  593:    {
         -:  594:      return _BI2(std::__copy_move_backward_a<_IsMove>
         -:  595:		  (std::__niter_base(__first), std::__niter_base(__last),
-    #####:  596:		   std::__niter_base(__result)));
+        1:  596:		   std::__niter_base(__result)));
 call    0 never executed
 call    1 never executed
 call    2 never executed
 call    3 never executed
-call    4 never executed
-call    5 never executed
-call    6 never executed
-call    7 never executed
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+call    7 returned 100%
         -:  597:    }
         -:  598:
         -:  599:  /**
@@ -1428,8 +1060,8 @@ call    2 never executed
         -:  652:  */
         -:  653:  template<typename _BI1, typename _BI2>
         -:  654:    inline _BI2
-function _ZSt13move_backwardIPiS0_ET0_T_S2_S1_ called 0 returned 0% blocks executed 0%
-    #####:  655:    move_backward(_BI1 __first, _BI1 __last, _BI2 __result)
+function _ZSt13move_backwardIPiS0_ET0_T_S2_S1_ called 1 returned 100% blocks executed 100%
+        1:  655:    move_backward(_BI1 __first, _BI1 __last, _BI2 __result)
         -:  656:    {
         -:  657:      // concept requirements
         -:  658:      __glibcxx_function_requires(_BidirectionalIteratorConcept<_BI1>)
@@ -1441,10 +1073,10 @@ function _ZSt13move_backwardIPiS0_ET0_T_S2_S1_ called 0 returned 0% blocks execu
         -:  664:
         -:  665:      return std::__copy_move_backward_a2<true>(std::__miter_base(__first),
         -:  666:						std::__miter_base(__last),
-    #####:  667:						__result);
-call    0 never executed
-call    1 never executed
-call    2 never executed
+        1:  667:						__result);
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
         -:  668:    }
         -:  669:
         -:  670:#define _GLIBCXX_MOVE_BACKWARD3(_Tp, _Up, _Vp) std::move_backward(_Tp, _Up, _Vp)
@@ -1455,68 +1087,32 @@ call    2 never executed
         -:  675:  template<typename _ForwardIterator, typename _Tp>
         -:  676:    inline typename
         -:  677:    __gnu_cxx::__enable_if<!__is_scalar<_Tp>::__value, void>::__type
-function _ZSt8__fill_aIPZN39Deque_Fixture_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SS5_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SE_RKSA_ called 1 returned 100% blocks executed 100%
-function _ZSt8__fill_aIPZN39Deque_Fixture_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SS5_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SE_RKSA_ called 1 returned 100% blocks executed 100%
-function _ZSt8__fill_aIPZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SS5_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SE_RKSA_ called 1 returned 100% blocks executed 100%
-function _ZSt8__fill_aIPZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SS5_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SE_RKSA_ called 1 returned 100% blocks executed 100%
-function _ZSt8__fill_aIPZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SS5_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SE_RKSA_ called 1 returned 100% blocks executed 100%
-function _ZSt8__fill_aIPZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SS5_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SE_RKSA_ called 1 returned 100% blocks executed 100%
-function _ZSt8__fill_aIPZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SE_RKSA_ called 1 returned 100% blocks executed 100%
-function _ZSt8__fill_aIPZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SE_RKSA_ called 1 returned 100% blocks executed 100%
-function _ZSt8__fill_aIPZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SE_RKSA_ called 1 returned 100% blocks executed 100%
-function _ZSt8__fill_aIPZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SE_RKSA_ called 1 returned 100% blocks executed 100%
-function _ZSt8__fill_aIPZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SE_RKSA_ called 1 returned 100% blocks executed 100%
-function _ZSt8__fill_aIPZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EN9__gnu_cxx11__enable_ifIXntsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SE_RKSA_ called 1 returned 100% blocks executed 100%
-       12:  678:    __fill_a(_ForwardIterator __first, _ForwardIterator __last,
+        -:  678:    __fill_a(_ForwardIterator __first, _ForwardIterator __last,
         -:  679: 	     const _Tp& __value)
         -:  680:    {
-       36:  681:      for (; __first != __last; ++__first)
-branch  0 taken 67%
-branch  1 taken 33% (fallthrough)
-branch  2 taken 67%
-branch  3 taken 33% (fallthrough)
-branch  4 taken 67%
-branch  5 taken 33% (fallthrough)
-branch  6 taken 67%
-branch  7 taken 33% (fallthrough)
-branch  8 taken 67%
-branch  9 taken 33% (fallthrough)
-branch 10 taken 67%
-branch 11 taken 33% (fallthrough)
-branch 12 taken 67%
-branch 13 taken 33% (fallthrough)
-branch 14 taken 67%
-branch 15 taken 33% (fallthrough)
-branch 16 taken 67%
-branch 17 taken 33% (fallthrough)
-branch 18 taken 67%
-branch 19 taken 33% (fallthrough)
-branch 20 taken 67%
-branch 21 taken 33% (fallthrough)
-branch 22 taken 67%
-branch 23 taken 33% (fallthrough)
-       24:  682:	*__first = __value;
-       12:  683:    }
+        -:  681:      for (; __first != __last; ++__first)
+        -:  682:	*__first = __value;
+        -:  683:    }
         -:  684:    
         -:  685:  template<typename _ForwardIterator, typename _Tp>
         -:  686:    inline typename
         -:  687:    __gnu_cxx::__enable_if<__is_scalar<_Tp>::__value, void>::__type
-function _ZSt8__fill_aISt15_Deque_iteratorIiRiPiEiEN9__gnu_cxx11__enable_ifIXsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SB_RKS7_ called 3 returned 100% blocks executed 100%
-function _ZSt8__fill_aIPiiEN9__gnu_cxx11__enable_ifIXsrSt11__is_scalarIT0_E7__valueEvE6__typeET_S8_RKS4_ called 411 returned 100% blocks executed 100%
-      414:  688:    __fill_a(_ForwardIterator __first, _ForwardIterator __last,
+function _ZSt8__fill_aISt15_Deque_iteratorIiRiPiEiEN9__gnu_cxx11__enable_ifIXsrSt11__is_scalarIT0_E7__valueEvE6__typeET_SB_RKS7_ called 2 returned 100% blocks executed 100%
+function _ZSt8__fill_aIPiiEN9__gnu_cxx11__enable_ifIXsrSt11__is_scalarIT0_E7__valueEvE6__typeET_S8_RKS4_ called 177 returned 100% blocks executed 100%
+      179:  688:    __fill_a(_ForwardIterator __first, _ForwardIterator __last,
         -:  689:	     const _Tp& __value)
         -:  690:    {
-      414:  691:      const _Tp __tmp = __value;
-    33579:  692:      for (; __first != __last; ++__first)
+      179:  691:      const _Tp __tmp = __value;
+     1610:  692:      for (; __first != __last; ++__first)
 call    0 returned 100%
 call    1 returned 100%
-branch  2 taken 93%
-branch  3 taken 7% (fallthrough)
-branch  4 taken 99%
-branch  5 taken 1% (fallthrough)
-    33165:  693:	*__first = __tmp;
+branch  2 taken 83%
+branch  3 taken 17% (fallthrough)
+branch  4 taken 89%
+branch  5 taken 11% (fallthrough)
+     1431:  693:	*__first = __tmp;
 call    0 returned 100%
-      414:  694:    }
+      179:  694:    }
         -:  695:
         -:  696:  // Specialization: for char types we can use memset.
         -:  697:  template<typename _Tp>
@@ -1543,80 +1139,32 @@ call    0 returned 100%
         -:  718:  */
         -:  719:  template<typename _ForwardIterator, typename _Tp>
         -:  720:    inline void
-function _ZSt4fillIPZN39Deque_Fixture_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RKT0_ called 1 returned 100% blocks executed 100%
-function _ZSt4fillIPZN39Deque_Fixture_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RKT0_ called 1 returned 100% blocks executed 100%
-function _ZSt4fillIPZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RKT0_ called 1 returned 100% blocks executed 100%
-function _ZSt4fillIPZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RKT0_ called 1 returned 100% blocks executed 100%
-function _ZSt4fillIPZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RKT0_ called 1 returned 100% blocks executed 100%
-function _ZSt4fillIPZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RKT0_ called 1 returned 100% blocks executed 100%
-function _ZSt4fillISt15_Deque_iteratorIiRiPiEiEvT_S4_RKT0_ called 3 returned 100% blocks executed 70%
-function _ZSt4fillIPiiEvT_S1_RKT0_ called 411 returned 100% blocks executed 100%
-function _ZSt4fillIPZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RKT0_ called 1 returned 100% blocks executed 100%
-function _ZSt4fillIPZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RKT0_ called 1 returned 100% blocks executed 100%
-function _ZSt4fillIPZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RKT0_ called 1 returned 100% blocks executed 100%
-function _ZSt4fillIPZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RKT0_ called 1 returned 100% blocks executed 100%
-function _ZSt4fillIPZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RKT0_ called 1 returned 100% blocks executed 100%
-function _ZSt4fillIPZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RKT0_ called 1 returned 100% blocks executed 100%
-      426:  721:    fill(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __value)
+function _ZSt4fillISt15_Deque_iteratorIiRiPiEiEvT_S4_RKT0_ called 2 returned 100% blocks executed 70%
+function _ZSt4fillIPiiEvT_S1_RKT0_ called 177 returned 100% blocks executed 100%
+      179:  721:    fill(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __value)
         -:  722:    {
         -:  723:      // concept requirements
         -:  724:      __glibcxx_function_requires(_Mutable_ForwardIteratorConcept<
         -:  725:				  _ForwardIterator>)
         -:  726:      __glibcxx_requires_valid_range(__first, __last);
         -:  727:
-      426:  728:      std::__fill_a(std::__niter_base(__first), std::__niter_base(__last),
+      179:  728:      std::__fill_a(std::__niter_base(__first), std::__niter_base(__last),
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+      181:  729:		    __value);
 call    0 returned 100%
 call    1 returned 100%
-call    2 returned 100%
-call    3 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
 call    4 returned 100%
 call    5 returned 100%
-call    6 returned 100%
-branch  7 taken 100% (fallthrough)
-branch  8 taken 0% (throw)
-call    9 returned 100%
-call   10 returned 100%
-call   11 returned 100%
-call   12 returned 100%
-call   13 returned 100%
-call   14 returned 100%
-call   15 returned 100%
-      429:  729:		    __value);
-call    0 returned 100%
-call    1 returned 100%
-call    2 returned 100%
-call    3 returned 100%
-call    4 returned 100%
-call    5 returned 100%
-call    6 returned 100%
-call    7 returned 100%
+branch  6 taken 100% (fallthrough)
+branch  7 taken 0% (throw)
 call    8 returned 100%
 call    9 returned 100%
-call   10 returned 100%
-call   11 returned 100%
-call   12 returned 100%
-call   13 returned 100%
-branch 14 taken 100% (fallthrough)
-branch 15 taken 0% (throw)
-call   16 returned 100%
-call   17 returned 100%
-branch 18 taken 100% (fallthrough)
-branch 19 taken 0% (throw)
-call   20 returned 100%
-call   21 returned 100%
-call   22 returned 100%
-call   23 returned 100%
-call   24 returned 100%
-call   25 returned 100%
-call   26 returned 100%
-call   27 returned 100%
-call   28 returned 100%
-call   29 returned 100%
-call   30 returned 100%
-call   31 returned 100%
-call   32 returned 100%
-call   33 returned 100%
-      426:  730:    }
+      179:  730:    }
         -:  731:
         -:  732:  template<typename _OutputIterator, typename _Size, typename _Tp>
         -:  733:    inline typename
@@ -1680,32 +1228,32 @@ call   33 returned 100%
         -:  791:    {
         -:  792:      template<typename _II1, typename _II2>
         -:  793:        static bool
-function _ZNSt7__equalILb0EE5equalISt15_Deque_iteratorIiRKiPS3_ES6_EEbT_S7_T0_ called 26 returned 100% blocks executed 100%
-function _ZNSt7__equalILb0EE5equalIN8my_dequeIiSaIiEE14const_iteratorES5_EEbT_S6_T0_ called 26 returned 100% blocks executed 100%
-       52:  794:        equal(_II1 __first1, _II1 __last1, _II2 __first2)
+function _ZNSt7__equalILb0EE5equalISt15_Deque_iteratorIiRKiPS3_ES6_EEbT_S7_T0_ called 21 returned 100% blocks executed 100%
+function _ZNSt7__equalILb0EE5equalIN8my_dequeIiSaIiEE14const_iteratorES5_EEbT_S6_T0_ called 21 returned 100% blocks executed 100%
+       42:  794:        equal(_II1 __first1, _II1 __last1, _II2 __first2)
         -:  795:        {
-      324:  796:	  for (; __first1 != __last1; ++__first1, ++__first2)
+     1098:  796:	  for (; __first1 != __last1; ++__first1, ++__first2)
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
-branch  3 taken 88%
-branch  4 taken 12% (fallthrough)
+branch  3 taken 97%
+branch  4 taken 3% (fallthrough)
 call    5 returned 100%
 call    6 returned 100%
 call    7 returned 100%
-branch  8 taken 88%
-branch  9 taken 12% (fallthrough)
-      284:  797:	    if (!(*__first1 == *__first2))
+branch  8 taken 97%
+branch  9 taken 3% (fallthrough)
+     1064:  797:	    if (!(*__first1 == *__first2))
 call    0 returned 100%
 call    1 returned 100%
-branch  2 taken 4% (fallthrough)
-branch  3 taken 96%
+branch  2 taken 1% (fallthrough)
+branch  3 taken 99%
 call    4 returned 100%
 call    5 returned 100%
-branch  6 taken 4% (fallthrough)
-branch  7 taken 96%
-       12:  798:	      return false;
-       40:  799:	  return true;
+branch  6 taken 1% (fallthrough)
+branch  7 taken 99%
+        8:  798:	      return false;
+       34:  799:	  return true;
         -:  800:	}
         -:  801:    };
         -:  802:
@@ -1723,9 +1271,9 @@ branch  7 taken 96%
         -:  814:
         -:  815:  template<typename _II1, typename _II2>
         -:  816:    inline bool
-function _ZSt11__equal_auxISt15_Deque_iteratorIiRKiPS1_ES4_EbT_S5_T0_ called 26 returned 100% blocks executed 100%
-function _ZSt11__equal_auxIN8my_dequeIiSaIiEE14const_iteratorES3_EbT_S4_T0_ called 26 returned 100% blocks executed 100%
-       52:  817:    __equal_aux(_II1 __first1, _II1 __last1, _II2 __first2)
+function _ZSt11__equal_auxISt15_Deque_iteratorIiRKiPS1_ES4_EbT_S5_T0_ called 21 returned 100% blocks executed 100%
+function _ZSt11__equal_auxIN8my_dequeIiSaIiEE14const_iteratorES3_EbT_S4_T0_ called 21 returned 100% blocks executed 100%
+       42:  817:    __equal_aux(_II1 __first1, _II1 __last1, _II2 __first2)
         -:  818:    {
         -:  819:      typedef typename iterator_traits<_II1>::value_type _ValueType1;
         -:  820:      typedef typename iterator_traits<_II2>::value_type _ValueType2;
@@ -1733,9 +1281,9 @@ function _ZSt11__equal_auxIN8my_dequeIiSaIiEE14const_iteratorES3_EbT_S4_T0_ call
         -:  822:			      || __is_pointer<_ValueType1>::__value)
         -:  823:	                     && __is_pointer<_II1>::__value
         -:  824:	                     && __is_pointer<_II2>::__value
-       52:  825:			     && __are_same<_ValueType1, _ValueType2>::__value);
+       42:  825:			     && __are_same<_ValueType1, _ValueType2>::__value);
         -:  826:
-       52:  827:      return std::__equal<__simple>::equal(__first1, __last1, __first2);
+       42:  827:      return std::__equal<__simple>::equal(__first1, __last1, __first2);
 call    0 returned 100%
 call    1 returned 100%
         -:  828:    }
@@ -1997,9 +1545,9 @@ call    1 returned 100%
         -: 1018:  */
         -: 1019:  template<typename _II1, typename _II2>
         -: 1020:    inline bool
-function _ZSt5equalISt15_Deque_iteratorIiRKiPS1_ES4_EbT_S5_T0_ called 26 returned 100% blocks executed 100%
-function _ZSt5equalIN8my_dequeIiSaIiEE14const_iteratorES3_EbT_S4_T0_ called 26 returned 100% blocks executed 100%
-       52: 1021:    equal(_II1 __first1, _II1 __last1, _II2 __first2)
+function _ZSt5equalISt15_Deque_iteratorIiRKiPS1_ES4_EbT_S5_T0_ called 21 returned 100% blocks executed 100%
+function _ZSt5equalIN8my_dequeIiSaIiEE14const_iteratorES3_EbT_S4_T0_ called 21 returned 100% blocks executed 100%
+       42: 1021:    equal(_II1 __first1, _II1 __last1, _II2 __first2)
         -: 1022:    {
         -: 1023:      // concept requirements
         -: 1024:      __glibcxx_function_requires(_InputIteratorConcept<_II1>)
@@ -2011,7 +1559,7 @@ function _ZSt5equalIN8my_dequeIiSaIiEE14const_iteratorES3_EbT_S4_T0_ called 26 r
         -: 1030:
         -: 1031:      return std::__equal_aux(std::__niter_base(__first1),
         -: 1032:			      std::__niter_base(__last1),
-       52: 1033:			      std::__niter_base(__first2));
+       42: 1033:			      std::__niter_base(__first2));
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%

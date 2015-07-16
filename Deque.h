@@ -794,9 +794,15 @@ public:
             if(it == end()){ //if at the end already, just need to push it to the back
                 push_back(r);
             }
+
+            else if (it == begin()){   //if at beginning utitlize push_front
+                push_front(r);
+            }
             else{           //have to grow the deque and copy everything, moving it one position down.  insert the value into current position
-                resize(size()+1);
+                value_type v = *(end()-1);
                 std::copy(it, end(), it+1);
+                *it = r;
+                resize(size()+1, v);
             }
             assert(valid());
             return iterator(this);}
