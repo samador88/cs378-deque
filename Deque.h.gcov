@@ -1,0 +1,3987 @@
+        -:    0:Source:Deque.h
+        -:    0:Graph:TestDeque.gcno
+        -:    0:Data:TestDeque.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:// --------------------------
+        -:    2:// projects/c++/deque/Deque.h
+        -:    3:// Copyright (C) 2015
+        -:    4:// Glenn P. Downing
+        -:    5:// --------------------------
+        -:    6:
+        -:    7:#ifndef Deque_h
+        -:    8:#define Deque_h
+        -:    9:
+        -:   10:// --------
+        -:   11:// includes
+        -:   12:// --------
+        -:   13:
+        -:   14:#include <algorithm> // copy, equal, lexicographical_compare, max, swap
+        -:   15:#include <cassert>   // assert
+        -:   16:#include <iterator>  // iterator, bidirectional_iterator_tag
+        -:   17:#include <memory>    // allocator
+        -:   18:#include <stdexcept> // out_of_range
+        -:   19:#include <utility>   // !=, <=, >, >=
+        -:   20:
+        -:   21:// -----
+        -:   22:// using
+        -:   23:// -----
+        -:   24:
+        -:   25:using std::rel_ops::operator!=;
+        -:   26:using std::rel_ops::operator<=;
+        -:   27:using std::rel_ops::operator>;
+        -:   28:using std::rel_ops::operator>=;
+        -:   29:
+        -:   30:// -------
+        -:   31:// destroy
+        -:   32:// -------
+        -:   33:
+        -:   34:template <typename A, typename BI>
+function _Z7destroyISaIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEN8my_dequeIS5_S6_E8iteratorEET0_RT_SA_SA_ called 1 returned 100% blocks executed 100%
+function _Z7destroyISaIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEN8my_dequeIS5_S6_E8iteratorEET0_RT_SA_SA_ called 1 returned 100% blocks executed 100%
+function _Z7destroyISaIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEN8my_dequeIS5_S6_E8iteratorEET0_RT_SA_SA_ called 1 returned 100% blocks executed 100%
+function _Z7destroyISaIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SENS1_IS5_S6_E8iteratorEET0_RT_S9_S9_ called 1 returned 100% blocks executed 100%
+function _Z7destroyISaIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SENS1_IS5_S6_E8iteratorEET0_RT_S9_S9_ called 1 returned 100% blocks executed 100%
+function _Z7destroyISaIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SENS1_IS5_S6_E8iteratorEET0_RT_S9_S9_ called 1 returned 100% blocks executed 100%
+function _Z7destroyISaIiEN8my_dequeIiS0_E8iteratorEET0_RT_S4_S4_ called 300 returned 100% blocks executed 100%
+      306:   35:BI destroy (A& a, BI b, BI e) {
+    34580:   36:    while (b != e) {
+call    0 returned 100%
+branch  1 taken 67%
+branch  2 taken 33% (fallthrough)
+call    3 returned 100%
+branch  4 taken 67%
+branch  5 taken 33% (fallthrough)
+call    6 returned 100%
+branch  7 taken 67%
+branch  8 taken 33% (fallthrough)
+call    9 returned 100%
+branch 10 taken 67%
+branch 11 taken 33% (fallthrough)
+call   12 returned 100%
+branch 13 taken 67%
+branch 14 taken 33% (fallthrough)
+call   15 returned 100%
+branch 16 taken 67%
+branch 17 taken 33% (fallthrough)
+call   18 returned 100%
+branch 19 taken 99%
+branch 20 taken 1% (fallthrough)
+    33968:   37:        --e;
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+    33968:   38:        a.destroy(&*e);}
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+call    7 returned 100%
+call    8 returned 100%
+call    9 returned 100%
+call   10 returned 100%
+call   11 returned 100%
+call   12 returned 100%
+call   13 returned 100%
+      306:   39:    return b;}
+        -:   40:
+        -:   41:// ------------------
+        -:   42:// uninitialized_copy
+        -:   43:// ------------------
+        -:   44:
+        -:   45:template <typename A, typename II, typename BI>
+function _Z18uninitialized_copyISaIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEN8my_dequeIS5_S6_E14const_iteratorENS8_8iteratorEET1_RT_T0_SE_SB_ called 0 returned 0% blocks executed 0%
+function _Z18uninitialized_copyISaIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEN8my_dequeIS5_S6_E14const_iteratorENS8_8iteratorEET1_RT_T0_SE_SB_ called 0 returned 0% blocks executed 0%
+function _Z18uninitialized_copyISaIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEN8my_dequeIS5_S6_E14const_iteratorENS8_8iteratorEET1_RT_T0_SE_SB_ called 0 returned 0% blocks executed 0%
+function _Z18uninitialized_copyISaIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SENS1_IS5_S6_E14const_iteratorENS7_8iteratorEET1_RT_T0_SD_SA_ called 0 returned 0% blocks executed 0%
+function _Z18uninitialized_copyISaIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SENS1_IS5_S6_E14const_iteratorENS7_8iteratorEET1_RT_T0_SD_SA_ called 0 returned 0% blocks executed 0%
+function _Z18uninitialized_copyISaIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SENS1_IS5_S6_E14const_iteratorENS7_8iteratorEET1_RT_T0_SD_SA_ called 0 returned 0% blocks executed 0%
+function _Z18uninitialized_copyISaIiEN8my_dequeIiS0_E14const_iteratorENS2_8iteratorEET1_RT_T0_S8_S5_ called 64 returned 100% blocks executed 65%
+       64:   46:BI uninitialized_copy (A& a, II b, II e, BI x) {
+       64:   47:    BI p = x;
+        -:   48:    try {
+      702:   49:        while (b != e) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+branch 18 never executed
+branch 19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+branch 28 never executed
+branch 29 never executed
+call   30 returned 100%
+branch 31 taken 90%
+branch 32 taken 10% (fallthrough)
+      574:   50:            a.construct(&*x, *b);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+call   14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+call   23 never executed
+call   24 never executed
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+call   28 never executed
+call   29 never executed
+call   30 returned 100%
+branch 31 taken 100% (fallthrough)
+branch 32 taken 0% (throw)
+call   33 returned 100%
+call   34 returned 100%
+      574:   51:            ++b;
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 returned 100%
+branch 19 taken 100% (fallthrough)
+branch 20 taken 0% (throw)
+      574:   52:            ++x;}}
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 returned 100%
+branch 19 taken 100% (fallthrough)
+branch 20 taken 0% (throw)
+    =====:   53:    catch (...) {
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+call   11 never executed
+call   12 never executed
+call   13 never executed
+    =====:   54:        destroy(a, p, x);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    =====:   55:        throw;}
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 never executed
+       64:   56:    return x;}
+        -:   57:
+        -:   58:// ------------------
+        -:   59:// uninitialized_fill
+        -:   60:// ------------------
+        -:   61:
+        -:   62:template <typename A, typename BI, typename U>
+function _Z18uninitialized_fillISaIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEN8my_dequeIS5_S6_E8iteratorES5_ET0_RT_SA_SA_RKT1_ called 1 returned 100% blocks executed 60%
+function _Z18uninitialized_fillISaIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEN8my_dequeIS5_S6_E8iteratorES5_ET0_RT_SA_SA_RKT1_ called 1 returned 100% blocks executed 60%
+function _Z18uninitialized_fillISaIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEN8my_dequeIS5_S6_E8iteratorES5_ET0_RT_SA_SA_RKT1_ called 1 returned 100% blocks executed 60%
+function _Z18uninitialized_fillISaIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SENS1_IS5_S6_E8iteratorES5_ET0_RT_S9_S9_RKT1_ called 1 returned 100% blocks executed 60%
+function _Z18uninitialized_fillISaIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SENS1_IS5_S6_E8iteratorES5_ET0_RT_S9_S9_RKT1_ called 1 returned 100% blocks executed 60%
+function _Z18uninitialized_fillISaIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SENS1_IS5_S6_E8iteratorES5_ET0_RT_S9_S9_RKT1_ called 1 returned 100% blocks executed 60%
+function _Z18uninitialized_fillISaIiEN8my_dequeIiS0_E8iteratorEiET0_RT_S4_S4_RKT1_ called 187 returned 100% blocks executed 60%
+      193:   63:BI uninitialized_fill (A& a, BI b, BI e, const U& v) {
+      193:   64:    BI p = b;
+        -:   65:    try {
+    33762:   66:        while (b != e) {
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+branch  3 taken 67%
+branch  4 taken 33% (fallthrough)
+call    5 returned 100%
+branch  6 taken 100% (fallthrough)
+branch  7 taken 0% (throw)
+branch  8 taken 67%
+branch  9 taken 33% (fallthrough)
+call   10 returned 100%
+branch 11 taken 100% (fallthrough)
+branch 12 taken 0% (throw)
+branch 13 taken 67%
+branch 14 taken 33% (fallthrough)
+call   15 returned 100%
+branch 16 taken 100% (fallthrough)
+branch 17 taken 0% (throw)
+branch 18 taken 67%
+branch 19 taken 33% (fallthrough)
+call   20 returned 100%
+branch 21 taken 100% (fallthrough)
+branch 22 taken 0% (throw)
+branch 23 taken 67%
+branch 24 taken 33% (fallthrough)
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 67%
+branch 29 taken 33% (fallthrough)
+call   30 returned 100%
+branch 31 taken 99%
+branch 32 taken 1% (fallthrough)
+    33376:   67:            a.construct(&*b, v);
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+call    7 returned 100%
+call    8 returned 100%
+call    9 returned 100%
+call   10 returned 100%
+call   11 returned 100%
+call   12 returned 100%
+call   13 returned 100%
+    33376:   68:            ++b;}}
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+call    6 returned 100%
+branch  7 taken 100% (fallthrough)
+branch  8 taken 0% (throw)
+call    9 returned 100%
+branch 10 taken 100% (fallthrough)
+branch 11 taken 0% (throw)
+call   12 returned 100%
+branch 13 taken 100% (fallthrough)
+branch 14 taken 0% (throw)
+call   15 returned 100%
+branch 16 taken 100% (fallthrough)
+branch 17 taken 0% (throw)
+call   18 returned 100%
+branch 19 taken 100% (fallthrough)
+branch 20 taken 0% (throw)
+    =====:   69:    catch (...) {
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+call   11 never executed
+call   12 never executed
+call   13 never executed
+    =====:   70:        destroy(a, p, b);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    =====:   71:        throw;}
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 never executed
+      193:   72:    return e;}
+        -:   73:
+        -:   74:// -------
+        -:   75:// my_deque
+        -:   76:// -------
+        -:   77:
+        -:   78:template < typename T, typename A = std::allocator<T> >
+        -:   79:class my_deque {
+        -:   80:    public:
+        -:   81:        // --------
+        -:   82:        // typedefs
+        -:   83:        // --------
+        -:   84:
+        -:   85:        typedef A                                           allocator_type;
+        -:   86:        typedef typename allocator_type::value_type         value_type;
+        -:   87:
+        -:   88:        typedef typename allocator_type::size_type          size_type;
+        -:   89:        typedef typename allocator_type::difference_type    difference_type;
+        -:   90:
+        -:   91:        typedef typename allocator_type::pointer            pointer;
+        -:   92:        typedef typename allocator_type::const_pointer      const_pointer;
+        -:   93:
+        -:   94:        typedef typename allocator_type::reference          reference;
+        -:   95:        typedef typename allocator_type::const_reference    const_reference;
+        -:   96:
+        -:   97:        typedef typename A::template rebind<pointer>::other B;
+        -:   98:        typedef typename allocator_type::template rebind<T*>::other all_pointer;
+        -:   99:
+        -:  100:    public:
+        -:  101:        // -----------
+        -:  102:        // operator ==
+        -:  103:        // -----------
+        -:  104:
+        -:  105:        /**
+        -:  106:         * @param two my_deques
+        -:  107:         * @return true if they are equal to one another
+        -:  108:         */
+function _ZeqRK8my_dequeIiSaIiEES3_ called 16 returned 100% blocks executed 100%
+       16:  109:        friend bool operator == (const my_deque& lhs, const my_deque& rhs) {
+       16:  110:            return (lhs.size() == rhs.size()) && std::equal(lhs.begin(), lhs.end(), rhs.begin());}
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 75% (fallthrough)
+branch  3 taken 25%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+call    7 returned 100%
+branch  8 taken 83% (fallthrough)
+branch  9 taken 17%
+        -:  111:
+        -:  112:
+        -:  113:        // ----------
+        -:  114:        // operator <
+        -:  115:        // ----------
+        -:  116:
+        -:  117:        /**
+        -:  118:         * @param take in two mydeques
+        -:  119:         * @return true if the left is less than right
+        -:  120:         */
+function _ZltRK8my_dequeIiSaIiEES3_ called 4 returned 100% blocks executed 100%
+        4:  121:        friend bool operator < (const my_deque& lhs, const my_deque& rhs) {
+        4:  122:            return std::lexicographical_compare(lhs.begin(), lhs.end(), rhs.begin(), rhs.end());}
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+        -:  123:
+        -:  124:    private:
+        -:  125:        // ----
+        -:  126:        // data
+        -:  127:        // ----
+        -:  128:
+        -:  129:        allocator_type _a;
+        -:  130:        pointer _lb;  
+        -:  131:        pointer _le; 
+        -:  132:        pointer _bd; 
+        -:  133:        pointer _ed; 
+        -:  134:        pointer* _outermost; 
+        -:  135:        all_pointer _aP; 
+        -:  136:    private:
+        -:  137:        // -----
+        -:  138:        // valid
+        -:  139:        // -----
+        -:  140:
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5validEv called 4 returned 100% blocks executed 64%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5validEv called 4 returned 100% blocks executed 64%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5validEv called 4 returned 100% blocks executed 64%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5validEv called 4 returned 100% blocks executed 64%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5validEv called 4 returned 100% blocks executed 64%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5validEv called 4 returned 100% blocks executed 64%
+function _ZNK8my_dequeIiSaIiEE5validEv called 1122 returned 100% blocks executed 91%
+     1146:  141:        bool valid () const {
+     1146:  142:            return (!_bd && !_ed && !_lb && !_le) || ((_bd <= _ed) && (_ed <= _le) && (_lb <= _bd));}
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+branch  6 never executed
+branch  7 never executed
+branch  8 taken 100% (fallthrough)
+branch  9 taken 0%
+branch 10 taken 100% (fallthrough)
+branch 11 taken 0%
+branch 12 taken 100% (fallthrough)
+branch 13 taken 0%
+branch 14 taken 0% (fallthrough)
+branch 15 taken 100%
+branch 16 never executed
+branch 17 never executed
+branch 18 never executed
+branch 19 never executed
+branch 20 never executed
+branch 21 never executed
+branch 22 taken 100% (fallthrough)
+branch 23 taken 0%
+branch 24 taken 100% (fallthrough)
+branch 25 taken 0%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0%
+branch 28 taken 0% (fallthrough)
+branch 29 taken 100%
+branch 30 never executed
+branch 31 never executed
+branch 32 never executed
+branch 33 never executed
+branch 34 never executed
+branch 35 never executed
+branch 36 taken 100% (fallthrough)
+branch 37 taken 0%
+branch 38 taken 100% (fallthrough)
+branch 39 taken 0%
+branch 40 taken 100% (fallthrough)
+branch 41 taken 0%
+branch 42 taken 0% (fallthrough)
+branch 43 taken 100%
+branch 44 never executed
+branch 45 never executed
+branch 46 never executed
+branch 47 never executed
+branch 48 never executed
+branch 49 never executed
+branch 50 taken 100% (fallthrough)
+branch 51 taken 0%
+branch 52 taken 100% (fallthrough)
+branch 53 taken 0%
+branch 54 taken 100% (fallthrough)
+branch 55 taken 0%
+branch 56 taken 0% (fallthrough)
+branch 57 taken 100%
+branch 58 never executed
+branch 59 never executed
+branch 60 never executed
+branch 61 never executed
+branch 62 never executed
+branch 63 never executed
+branch 64 taken 100% (fallthrough)
+branch 65 taken 0%
+branch 66 taken 100% (fallthrough)
+branch 67 taken 0%
+branch 68 taken 100% (fallthrough)
+branch 69 taken 0%
+branch 70 taken 0% (fallthrough)
+branch 71 taken 100%
+branch 72 never executed
+branch 73 never executed
+branch 74 never executed
+branch 75 never executed
+branch 76 never executed
+branch 77 never executed
+branch 78 taken 100% (fallthrough)
+branch 79 taken 0%
+branch 80 taken 100% (fallthrough)
+branch 81 taken 0%
+branch 82 taken 100% (fallthrough)
+branch 83 taken 0%
+branch 84 taken 2% (fallthrough)
+branch 85 taken 98%
+branch 86 taken 100% (fallthrough)
+branch 87 taken 0%
+branch 88 taken 100% (fallthrough)
+branch 89 taken 0%
+branch 90 taken 0% (fallthrough)
+branch 91 taken 100%
+branch 92 taken 100% (fallthrough)
+branch 93 taken 0%
+branch 94 taken 100% (fallthrough)
+branch 95 taken 0%
+branch 96 taken 100% (fallthrough)
+branch 97 taken 0%
+        -:  143:
+        -:  144:public:
+        -:  145:        // --------
+        -:  146:        // iterator
+        -:  147:        // --------
+        -:  148:
+        -:  149:        class iterator {
+        -:  150:            public:
+        -:  151:                // --------
+        -:  152:                // typedefs
+        -:  153:                // --------
+        -:  154:
+        -:  155:                typedef          std::bidirectional_iterator_tag iterator_category;
+        -:  156:                typedef typename my_deque::value_type            value_type;
+        -:  157:                typedef typename my_deque::difference_type       difference_type;
+        -:  158:                typedef typename my_deque::pointer               pointer;
+        -:  159:                typedef typename my_deque::reference             reference;
+        -:  160:
+        -:  161:            public:
+        -:  162:                // -----------
+        -:  163:                // operator ==
+        -:  164:                // -----------
+        -:  165:
+        -:  166:                /**
+        -:  167:                 * @param take in two iterators
+        -:  168:                 * @return true if they are equal
+        -:  169:                 */
+function _ZeqRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorESA_ called 6 returned 100% blocks executed 100%
+function _ZeqRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorESA_ called 6 returned 100% blocks executed 100%
+function _ZeqRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorESA_ called 6 returned 100% blocks executed 100%
+function _ZeqRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorES9_ called 6 returned 100% blocks executed 100%
+function _ZeqRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorES9_ called 6 returned 100% blocks executed 100%
+function _ZeqRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorES9_ called 6 returned 100% blocks executed 100%
+function _ZeqRKN8my_dequeIiSaIiEE8iteratorES4_ called 67921 returned 100% blocks executed 100%
+    67957:  170:                friend bool operator == (const iterator& lhs, const iterator& rhs) {
+    67957:  171:                    return lhs._d == rhs._d && lhs._i == rhs._i;}
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 33% (fallthrough)
+branch  3 taken 67%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0%
+branch  6 taken 33% (fallthrough)
+branch  7 taken 67%
+branch  8 taken 100% (fallthrough)
+branch  9 taken 0%
+branch 10 taken 33% (fallthrough)
+branch 11 taken 67%
+branch 12 taken 100% (fallthrough)
+branch 13 taken 0%
+branch 14 taken 33% (fallthrough)
+branch 15 taken 67%
+branch 16 taken 100% (fallthrough)
+branch 17 taken 0%
+branch 18 taken 33% (fallthrough)
+branch 19 taken 67%
+branch 20 taken 100% (fallthrough)
+branch 21 taken 0%
+branch 22 taken 33% (fallthrough)
+branch 23 taken 67%
+branch 24 taken 99% (fallthrough)
+branch 25 taken 1%
+branch 26 taken 1% (fallthrough)
+branch 27 taken 99%
+        -:  172:
+        -:  173:                /**
+        -:  174:                 * @param take in two iterators
+        -:  175:                 * @return true if they are not equal
+        -:  176:                 */
+function _ZneRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorESA_ called 6 returned 100% blocks executed 100%
+function _ZneRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorESA_ called 6 returned 100% blocks executed 100%
+function _ZneRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorESA_ called 6 returned 100% blocks executed 100%
+function _ZneRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorES9_ called 6 returned 100% blocks executed 100%
+function _ZneRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorES9_ called 6 returned 100% blocks executed 100%
+function _ZneRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorES9_ called 6 returned 100% blocks executed 100%
+function _ZneRKN8my_dequeIiSaIiEE8iteratorES4_ called 67888 returned 100% blocks executed 100%
+    67924:  177:                friend bool operator != (const iterator& lhs, const iterator& rhs) {
+    67924:  178:                    return !(lhs == rhs);}
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+        -:  179:
+        -:  180:                // ----------
+        -:  181:                // operator +
+        -:  182:                // ----------
+        -:  183:
+        -:  184:                /**
+        -:  185:                 * @param iterator
+        -:  186:                 * @param difference type
+        -:  187:                 * @return the iterator advanced difference_type number of places (sum)
+        -:  188:                 */
+function _ZplN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorEl called 1 returned 100% blocks executed 100%
+function _ZplN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorEl called 1 returned 100% blocks executed 100%
+function _ZplN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorEl called 1 returned 100% blocks executed 100%
+function _ZplN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorEl called 1 returned 100% blocks executed 100%
+function _ZplN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorEl called 1 returned 100% blocks executed 100%
+function _ZplN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorEl called 1 returned 100% blocks executed 100%
+function _ZplN8my_dequeIiSaIiEE8iteratorEl called 312 returned 100% blocks executed 100%
+      318:  189:                friend iterator operator + (iterator lhs, difference_type rhs) {
+      318:  190:                    return lhs += rhs;}
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+        -:  191:
+        -:  192:                // ----------
+        -:  193:                // operator -
+        -:  194:                // ----------
+        -:  195:
+        -:  196:                /**
+        -:  197:                 * @param iterator
+        -:  198:                 * @param difference type
+        -:  199:                 * @return decremented iterator by number of difference type
+        -:  200:                 */
+function _ZmiN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorEl called 0 returned 0% blocks executed 0%
+function _ZmiN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorEl called 0 returned 0% blocks executed 0%
+function _ZmiN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorEl called 0 returned 0% blocks executed 0%
+function _ZmiN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorEl called 0 returned 0% blocks executed 0%
+function _ZmiN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorEl called 0 returned 0% blocks executed 0%
+function _ZmiN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorEl called 0 returned 0% blocks executed 0%
+function _ZmiN8my_dequeIiSaIiEE8iteratorEl called 26 returned 100% blocks executed 100%
+       26:  201:                friend iterator operator - (iterator lhs, difference_type rhs) {
+       26:  202:                    return lhs -= rhs;}
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 returned 100%
+        -:  203:
+        -:  204:            private:
+        -:  205:                // ----
+        -:  206:                // data
+        -:  207:                // ----
+        -:  208:
+        -:  209:                my_deque* _d;
+        -:  210:                size_type _i;
+        -:  211:
+        -:  212:            private:
+        -:  213:                // -----
+        -:  214:                // valid
+        -:  215:                // -----
+        -:  216:
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iterator5validEv called 10 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iterator5validEv called 10 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iterator5validEv called 10 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iterator5validEv called 10 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iterator5validEv called 11 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iterator5validEv called 11 returned 100% blocks executed 100%
+function _ZNK8my_dequeIiSaIiEE8iterator5validEv called 69596 returned 100% blocks executed 100%
+    69658:  217:                bool valid () const {
+    69658:  218:                    return (_i >= 0);}
+        -:  219:
+        -:  220:            public:
+        -:  221:                // -----------
+        -:  222:                // constructor
+        -:  223:                // -----------
+        -:  224:
+        -:  225:                /**
+        -:  226:                 * @param a my deque
+        -:  227:                 * @param a size type
+        -:  228:                 * set iterator on deque at position given
+        -:  229:                 */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorC2EPS7_m called 5 returned 100% blocks executed 75%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorC2EPS7_m called 5 returned 100% blocks executed 75%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorC2EPS7_m called 5 returned 100% blocks executed 75%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorC2EPS6_m called 5 returned 100% blocks executed 75%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorC2EPS6_m called 5 returned 100% blocks executed 75%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorC2EPS6_m called 5 returned 100% blocks executed 75%
+function _ZN8my_dequeIiSaIiEE8iteratorC2EPS1_m called 1184 returned 100% blocks executed 75%
+     1214:  230:                iterator (my_deque* d, size_type i = 0){
+     1214:  231:                    _d = d;
+     1214:  232:                    _i = i;
+     1214:  233:                    assert(valid());}
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+call    8 returned 100%
+branch  9 taken 0% (fallthrough)
+branch 10 taken 100%
+call   11 never executed
+call   12 returned 100%
+branch 13 taken 0% (fallthrough)
+branch 14 taken 100%
+call   15 never executed
+call   16 returned 100%
+branch 17 taken 0% (fallthrough)
+branch 18 taken 100%
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 0% (fallthrough)
+branch 22 taken 100%
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 0% (fallthrough)
+branch 26 taken 100%
+call   27 never executed
+        -:  234:
+        -:  235:                // Default copy, destructor, and copy assignment.
+        -:  236:                // iterator (const iterator&);
+        -:  237:                // ~iterator ();
+        -:  238:                // iterator& operator = (const iterator&);
+        -:  239:
+        -:  240:                // ----------
+        -:  241:                // operator *
+        -:  242:                // ----------
+        -:  243:
+        -:  244:                /**
+        -:  245:                 * @return a reference to element at that position
+        -:  246:                 */
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratordeEv called 6 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratordeEv called 6 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratordeEv called 6 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratordeEv called 6 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratordeEv called 6 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratordeEv called 6 returned 100% blocks executed 100%
+function _ZNK8my_dequeIiSaIiEE8iteratordeEv called 68319 returned 100% blocks executed 100%
+    68355:  247:                reference operator * () const {
+    68355:  248:                    return (*_d)[_i];}
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+        -:  249:
+        -:  250:                 // -----------
+        -:  251:                // operator ->
+        -:  252:                // -----------
+        -:  253:
+        -:  254:                /**
+        -:  255:                 * @param return pointer to this
+        -:  256:                 */
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorptEv called 1 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorptEv called 1 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorptEv called 1 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorptEv called 1 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorptEv called 1 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorptEv called 1 returned 100% blocks executed 100%
+        6:  257:                pointer operator -> () const {
+        6:  258:                    return &**this;}
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+        -:  259:
+        -:  260:                // -----------
+        -:  261:                // operator ++
+        -:  262:                // -----------
+        -:  263:
+        -:  264:                /**
+        -:  265:                 * pre-increment iterator by one to next position
+        -:  266:                 */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorppEv called 2 returned 100% blocks executed 80%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorppEv called 2 returned 100% blocks executed 80%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorppEv called 2 returned 100% blocks executed 80%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorppEv called 2 returned 100% blocks executed 80%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorppEv called 3 returned 100% blocks executed 80%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorppEv called 3 returned 100% blocks executed 80%
+function _ZN8my_dequeIiSaIiEE8iteratorppEv called 34091 returned 100% blocks executed 80%
+    34105:  267:                iterator& operator ++ () {
+    34105:  268:                    ++_i;
+    34105:  269:                    assert(valid());
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+call    8 returned 100%
+branch  9 taken 0% (fallthrough)
+branch 10 taken 100%
+call   11 never executed
+call   12 returned 100%
+branch 13 taken 0% (fallthrough)
+branch 14 taken 100%
+call   15 never executed
+call   16 returned 100%
+branch 17 taken 0% (fallthrough)
+branch 18 taken 100%
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 0% (fallthrough)
+branch 22 taken 100%
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 0% (fallthrough)
+branch 26 taken 100%
+call   27 never executed
+    34105:  270:                    return *this;}
+        -:  271:
+        -:  272:                /**
+        -:  273:                 * post-increment iterator by one to next position
+        -:  274:                 */
+function _ZN8my_dequeIiSaIiEE8iteratorppEi called 4 returned 100% blocks executed 86%
+        4:  275:                iterator operator ++ (int) {
+        4:  276:                    iterator x = *this;
+        4:  277:                    ++(*this);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        4:  278:                    assert(valid());
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+        4:  279:                    return x;}
+        -:  280:
+        -:  281:                // -----------
+        -:  282:                // operator --
+        -:  283:                // -----------
+        -:  284:
+        -:  285:                /**
+        -:  286:                 * pre-decrement iterator to previous position
+        -:  287:                 */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratormmEv called 2 returned 100% blocks executed 80%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratormmEv called 2 returned 100% blocks executed 80%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratormmEv called 2 returned 100% blocks executed 80%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratormmEv called 2 returned 100% blocks executed 80%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratormmEv called 2 returned 100% blocks executed 80%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratormmEv called 2 returned 100% blocks executed 80%
+function _ZN8my_dequeIiSaIiEE8iteratormmEv called 33967 returned 100% blocks executed 80%
+    33979:  288:                iterator& operator -- () {
+    33979:  289:                    --_i;
+    33979:  290:                    assert(valid());
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+call    8 returned 100%
+branch  9 taken 0% (fallthrough)
+branch 10 taken 100%
+call   11 never executed
+call   12 returned 100%
+branch 13 taken 0% (fallthrough)
+branch 14 taken 100%
+call   15 never executed
+call   16 returned 100%
+branch 17 taken 0% (fallthrough)
+branch 18 taken 100%
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 0% (fallthrough)
+branch 22 taken 100%
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 0% (fallthrough)
+branch 26 taken 100%
+call   27 never executed
+    33979:  291:                    return *this;}
+        -:  292:
+        -:  293:                /**
+        -:  294:                 * post-decrement iterator to previous position
+        -:  295:                 */
+function _ZN8my_dequeIiSaIiEE8iteratormmEi called 5 returned 100% blocks executed 86%
+        5:  296:                iterator operator -- (int) {
+        5:  297:                    iterator x = *this;
+        5:  298:                    --(*this);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        5:  299:                    assert(valid());
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+        5:  300:                    return x;}
+        -:  301:
+        -:  302:                // -----------
+        -:  303:                // operator +=
+        -:  304:                // -----------
+        -:  305:
+        -:  306:                /**
+        -:  307:                 * increment iterator by value given
+        -:  308:                 */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorpLEl called 1 returned 100% blocks executed 80%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorpLEl called 1 returned 100% blocks executed 80%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorpLEl called 1 returned 100% blocks executed 80%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorpLEl called 1 returned 100% blocks executed 80%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorpLEl called 1 returned 100% blocks executed 80%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratorpLEl called 1 returned 100% blocks executed 80%
+function _ZN8my_dequeIiSaIiEE8iteratorpLEl called 316 returned 100% blocks executed 80%
+      322:  309:                iterator& operator += (difference_type d) {
+      322:  310:                    _i += d;
+      322:  311:                    assert(valid());
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+call    8 returned 100%
+branch  9 taken 0% (fallthrough)
+branch 10 taken 100%
+call   11 never executed
+call   12 returned 100%
+branch 13 taken 0% (fallthrough)
+branch 14 taken 100%
+call   15 never executed
+call   16 returned 100%
+branch 17 taken 0% (fallthrough)
+branch 18 taken 100%
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 0% (fallthrough)
+branch 22 taken 100%
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 0% (fallthrough)
+branch 26 taken 100%
+call   27 never executed
+      322:  312:                    return *this;}
+        -:  313:
+        -:  314:                // -----------
+        -:  315:                // operator -=
+        -:  316:                // -----------
+        -:  317:
+        -:  318:                /**
+        -:  319:                 * decrement iterator by value given
+        -:  320:                 */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratormIEl called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratormIEl called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratormIEl called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratormIEl called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratormIEl called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE8iteratormIEl called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIiSaIiEE8iteratormIEl called 29 returned 100% blocks executed 80%
+       29:  321:                iterator& operator -= (difference_type d) {
+       29:  322:                    _i -= d;
+       29:  323:                    assert(valid());
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+call   11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 0% (fallthrough)
+branch 26 taken 100%
+call   27 never executed
+       29:  324:                    return *this;}};
+        -:  325:
+        -:  326:    public:
+        -:  327:        // --------------
+        -:  328:        // const_iterator
+        -:  329:        // --------------
+        -:  330:
+        -:  331:        class const_iterator {
+        -:  332:            public:
+        -:  333:                // --------
+        -:  334:                // typedefs
+        -:  335:                // --------
+        -:  336:
+        -:  337:                typedef          std::bidirectional_iterator_tag iterator_category;
+        -:  338:                typedef typename my_deque::value_type            value_type;
+        -:  339:                typedef typename my_deque::difference_type       difference_type;
+        -:  340:                typedef typename my_deque::const_pointer         pointer;
+        -:  341:                typedef typename my_deque::const_reference       reference;
+        -:  342:
+        -:  343:            public:
+        -:  344:                // -----------
+        -:  345:                // operator ==
+        -:  346:                // -----------
+        -:  347:
+        -:  348:                /**
+        -:  349:                 * @param two const iterators
+        -:  350:                 * @return true if the iterators are equal
+        -:  351:                 */
+function _ZeqRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorESA_ called 0 returned 0% blocks executed 0%
+function _ZeqRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorESA_ called 0 returned 0% blocks executed 0%
+function _ZeqRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorESA_ called 0 returned 0% blocks executed 0%
+function _ZeqRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorES9_ called 0 returned 0% blocks executed 0%
+function _ZeqRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorES9_ called 0 returned 0% blocks executed 0%
+function _ZeqRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorES9_ called 0 returned 0% blocks executed 0%
+function _ZeqRKN8my_dequeIiSaIiEE14const_iteratorES4_ called 831 returned 100% blocks executed 100%
+      831:  352:                friend bool operator == (const const_iterator& lhs, const const_iterator& rhs) {
+      831:  353:                    return (lhs._d == rhs._d) && (lhs._i == rhs._i);}
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+branch  6 never executed
+branch  7 never executed
+branch  8 never executed
+branch  9 never executed
+branch 10 never executed
+branch 11 never executed
+branch 12 never executed
+branch 13 never executed
+branch 14 never executed
+branch 15 never executed
+branch 16 never executed
+branch 17 never executed
+branch 18 never executed
+branch 19 never executed
+branch 20 never executed
+branch 21 never executed
+branch 22 never executed
+branch 23 never executed
+branch 24 taken 99% (fallthrough)
+branch 25 taken 1%
+branch 26 taken 12% (fallthrough)
+branch 27 taken 88%
+        -:  354:
+        -:  355:                /**
+        -:  356:                 * @param two iterators
+        -:  357:                 * @return true if the iterators are not equal
+        -:  358:                 */
+function _ZneRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorESA_ called 0 returned 0% blocks executed 0%
+function _ZneRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorESA_ called 0 returned 0% blocks executed 0%
+function _ZneRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorESA_ called 0 returned 0% blocks executed 0%
+function _ZneRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorES9_ called 0 returned 0% blocks executed 0%
+function _ZneRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorES9_ called 0 returned 0% blocks executed 0%
+function _ZneRKN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorES9_ called 0 returned 0% blocks executed 0%
+function _ZneRKN8my_dequeIiSaIiEE14const_iteratorES4_ called 800 returned 100% blocks executed 100%
+      800:  359:                friend bool operator != (const const_iterator& lhs, const const_iterator& rhs) {
+      800:  360:                    return !(lhs == rhs);}
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 returned 100%
+        -:  361:
+        -:  362:                // ----------
+        -:  363:                // operator +
+        -:  364:                // ----------
+        -:  365:
+        -:  366:                /**
+        -:  367:                 * @param a const iterator
+        -:  368:                 * @param a difference type
+        -:  369:                 * @return the iterator position advanced
+        -:  370:                 */
+function _ZplN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorEl called 0 returned 0% blocks executed 0%
+function _ZplN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorEl called 0 returned 0% blocks executed 0%
+function _ZplN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorEl called 0 returned 0% blocks executed 0%
+function _ZplN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorEl called 0 returned 0% blocks executed 0%
+function _ZplN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorEl called 0 returned 0% blocks executed 0%
+function _ZplN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorEl called 0 returned 0% blocks executed 0%
+function _ZplN8my_dequeIiSaIiEE14const_iteratorEl called 11 returned 100% blocks executed 100%
+       11:  371:                friend const_iterator operator + (const_iterator lhs, difference_type rhs) {
+       11:  372:                    return lhs += rhs;}
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 returned 100%
+        -:  373:
+        -:  374:                // ----------
+        -:  375:                // operator -
+        -:  376:                // ----------
+        -:  377:
+        -:  378:                /**
+        -:  379:                 * @param a const iterator
+        -:  380:                 * @param difference type
+        -:  381:                 * @return iterator decremented by difference type
+        -:  382:                 */
+function _ZmiN8my_dequeIiSaIiEE14const_iteratorEl called 8 returned 100% blocks executed 100%
+        8:  383:                friend const_iterator operator - (const_iterator lhs, difference_type rhs) {
+        8:  384:                    return lhs -= rhs;}
+call    0 returned 100%
+        -:  385:
+        -:  386:
+        -:  387:            private:
+        -:  388:                // ----
+        -:  389:                // data
+        -:  390:                // ----
+        -:  391:
+        -:  392:                const my_deque* _d;
+        -:  393:
+        -:  394:                size_type _i;
+        -:  395:
+        -:  396:            private:
+        -:  397:                // -----
+        -:  398:                // valid
+        -:  399:                // -----
+        -:  400:
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iterator5validEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iterator5validEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iterator5validEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iterator5validEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iterator5validEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iterator5validEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIiSaIiEE14const_iterator5validEv called 1148 returned 100% blocks executed 100%
+     1148:  401:                bool valid () const {
+     1148:  402:                    return _i >= 0;}
+        -:  403:
+        -:  404:          public:
+        -:  405:                // -----------
+        -:  406:                // constructor
+        -:  407:                // -----------
+        -:  408:
+        -:  409:                /**
+        -:  410:                 * @param a const my_deque
+        -:  411:                 * @param size_type
+        -:  412:                 * @return a const iterator starting at position given for given deque
+        -:  413:                 */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorC2EPKS7_m called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorC2EPKS7_m called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorC2EPKS7_m called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorC2EPKS6_m called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorC2EPKS6_m called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorC2EPKS6_m called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIiSaIiEE14const_iteratorC2EPKS1_m called 248 returned 100% blocks executed 75%
+      248:  414:            const_iterator (const my_deque* d, size_type i=0) {
+      248:  415:                _d = d;
+      248:  416:                _i = i;
+      248:  417:                assert(valid());}
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+call   11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 0% (fallthrough)
+branch 26 taken 100%
+call   27 never executed
+        -:  418:
+        -:  419:                // Default copy, destructor, and copy assignment.
+        -:  420:                // const_iterator (const const_iterator&);
+        -:  421:                // ~const_iterator ();
+        -:  422:                // const_iterator& operator = (const const_iterator&);
+        -:  423:
+        -:  424:                // ----------
+        -:  425:                // operator *
+        -:  426:                // ----------
+        -:  427:
+        -:  428:                /**
+        -:  429:                 * @return reference to element at current index
+        -:  430:                 */
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratordeEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratordeEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratordeEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratordeEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratordeEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratordeEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIiSaIiEE14const_iteratordeEv called 856 returned 100% blocks executed 100%
+      856:  431:                reference operator * () const {
+      856:  432:                return (*_d)[_i];}
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 returned 100%
+        -:  433:
+        -:  434:                // -----------
+        -:  435:                // operator ->
+        -:  436:                // -----------
+        -:  437:
+        -:  438:                /**
+        -:  439:                 * @ return pointer to this
+        -:  440:                 */
+        -:  441:                pointer operator -> () const {
+        -:  442:                    return &**this;}
+        -:  443:
+        -:  444:                // -----------
+        -:  445:                // operator ++
+        -:  446:                // -----------
+        -:  447:
+        -:  448:                /**
+        -:  449:                 * pre-increment
+        -:  450:                 * @return const iterator incremented once
+        -:  451:                 */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorppEv called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorppEv called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorppEv called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorppEv called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorppEv called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorppEv called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIiSaIiEE14const_iteratorppEv called 854 returned 100% blocks executed 80%
+      854:  452:                const_iterator& operator ++ () {
+      854:  453:                ++_i;
+      854:  454:                assert(valid());
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+call   11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 0% (fallthrough)
+branch 26 taken 100%
+call   27 never executed
+      854:  455:                return *this;}
+        -:  456:
+        -:  457:
+        -:  458:                /**
+        -:  459:                 * post-increment
+        -:  460:                 * @return const iterator incremented once
+        -:  461:                 */
+function _ZN8my_dequeIiSaIiEE14const_iteratorppEi called 4 returned 100% blocks executed 86%
+        4:  462:                const_iterator operator ++ (int) {
+        4:  463:                    const_iterator x = *this;
+        4:  464:                    ++(*this);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        4:  465:                    assert(valid());
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+        4:  466:                    return x;}
+        -:  467:
+        -:  468:                // -----------
+        -:  469:                // operator --
+        -:  470:                // -----------
+        -:  471:
+        -:  472:                /**
+        -:  473:                 * pre-decrement
+        -:  474:                 * @return const iterator decremented once
+        -:  475:                 */
+function _ZN8my_dequeIiSaIiEE14const_iteratormmEv called 11 returned 100% blocks executed 80%
+       11:  476:                const_iterator& operator -- () {
+       11:  477:                --_i;
+       11:  478:                assert(valid());
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+       11:  479:                return *this;}
+        -:  480:
+        -:  481:                /**
+        -:  482:                 * post-decrement
+        -:  483:                 * @return const iterator decremented once
+        -:  484:                 */
+function _ZN8my_dequeIiSaIiEE14const_iteratormmEi called 5 returned 100% blocks executed 86%
+        5:  485:                const_iterator operator -- (int) {
+        5:  486:                    const_iterator x = *this;
+        5:  487:                    --(*this);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+        5:  488:                    assert(valid());
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+        5:  489:                    return x;}
+        -:  490:
+        -:  491:                // -----------
+        -:  492:                // operator +=
+        -:  493:                // -----------
+        -:  494:
+        -:  495:                /**
+        -:  496:                 * @param difference type
+        -:  497:                 * @return const iterator incremented by that many
+        -:  498:                 */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorpLEl called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorpLEl called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorpLEl called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorpLEl called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorpLEl called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE14const_iteratorpLEl called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIiSaIiEE14const_iteratorpLEl called 15 returned 100% blocks executed 80%
+       15:  499:                const_iterator& operator += (difference_type d) {
+       15:  500:                _i += d;
+       15:  501:                assert(valid());
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+call   11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 0% (fallthrough)
+branch 26 taken 100%
+call   27 never executed
+       15:  502:                return *this;}
+        -:  503:
+        -:  504:                // -----------
+        -:  505:                // operator -=
+        -:  506:                // -----------
+        -:  507:
+        -:  508:                /**
+        -:  509:                 * @param difference type
+        -:  510:                 * @return const iterator decremented by that many
+        -:  511:                 */
+function _ZN8my_dequeIiSaIiEE14const_iteratormIEl called 11 returned 100% blocks executed 80%
+       11:  512:                const_iterator& operator -= (difference_type d) {
+       11:  513:                _i -= d;
+       11:  514:                assert(valid());
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+       11:  515:                return *this;}};
+        -:  516:
+        -:  517:    public:
+        -:  518:        // ------------
+        -:  519:        // constructors
+        -:  520:        // ------------
+        -:  521:
+        -:  522:        /**
+        -:  523:         * defaul constructor
+        -:  524:         * @param allocator type defaulted
+        -:  525:         * set everything to 0
+        -:  526:         */
+function _ZN8my_dequeIiSaIiEEC2ERKS0_ called 10 returned 100% blocks executed 83%
+       10:  527:        explicit my_deque (const allocator_type& a = allocator_type()) 
+       10:  528:            : _a(a), _aP() {
+call    0 returned 100%
+call    1 returned 100%
+       10:  529:             _lb = _le = _bd = _ed = 0;
+       10:  530:            _outermost = 0;
+       10:  531:            assert(valid() );}
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+        -:  532:
+        -:  533:        /**
+        -:  534:         * constructor with given size
+        -:  535:         * split size up into rows and columns
+        -:  536:         */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2EmRKS5_RKS6_ called 1 returned 100% blocks executed 51%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2EmRKS5_RKS6_ called 1 returned 100% blocks executed 51%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2EmRKS5_RKS6_ called 1 returned 100% blocks executed 51%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEC2EmRKS4_RKS5_ called 1 returned 100% blocks executed 51%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEC2EmRKS4_RKS5_ called 1 returned 100% blocks executed 51%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEC2EmRKS4_RKS5_ called 1 returned 100% blocks executed 51%
+function _ZN8my_dequeIiSaIiEEC2EmRKiRKS0_ called 186 returned 100% blocks executed 88%
+      192:  537:        explicit my_deque (size_type s, const_reference v = value_type(), const allocator_type& a = allocator_type()) 
+      192:  538:            : _a(a), _aP() {
+call    0 returned 100%
+call    1 returned 100%
+call    2 never executed
+call    3 never executed
+call    4 returned 100%
+call    5 returned 100%
+call    6 never executed
+call    7 never executed
+call    8 returned 100%
+call    9 returned 100%
+call   10 never executed
+call   11 never executed
+call   12 returned 100%
+call   13 returned 100%
+call   14 never executed
+call   15 never executed
+call   16 returned 100%
+call   17 returned 100%
+call   18 never executed
+call   19 never executed
+call   20 returned 100%
+call   21 returned 100%
+call   22 never executed
+call   23 never executed
+call   24 returned 100%
+call   25 returned 100%
+call   26 never executed
+call   27 never executed
+        -:  539:
+      192:  540:            size_type numrows = s / 10;         //divide the size into different rows
+        -:  541:            
+      192:  542:            if (s % 10 > 0){                   //make sure there is no extra space, add an extra row if remainder
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0%
+branch  6 taken 100% (fallthrough)
+branch  7 taken 0%
+branch  8 taken 100% (fallthrough)
+branch  9 taken 0%
+branch 10 taken 100% (fallthrough)
+branch 11 taken 0%
+branch 12 taken 92% (fallthrough)
+branch 13 taken 8%
+      178:  543:                ++numrows;
+        -:  544:
+      178:  545:                _outermost = _aP.allocate(numrows);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+call    6 returned 100%
+branch  7 taken 100% (fallthrough)
+branch  8 taken 0% (throw)
+call    9 returned 100%
+branch 10 taken 100% (fallthrough)
+branch 11 taken 0% (throw)
+call   12 returned 100%
+branch 13 taken 100% (fallthrough)
+branch 14 taken 0% (throw)
+call   15 returned 100%
+branch 16 taken 100% (fallthrough)
+branch 17 taken 0% (throw)
+call   18 returned 100%
+branch 19 taken 100% (fallthrough)
+branch 20 taken 0% (throw)
+        -:  546:            
+      178:  547:                size_type x = 0;
+      560:  548:                while (x != numrows){
+branch  0 taken 50%
+branch  1 taken 50% (fallthrough)
+branch  2 taken 50%
+branch  3 taken 50% (fallthrough)
+branch  4 taken 50%
+branch  5 taken 50% (fallthrough)
+branch  6 taken 50%
+branch  7 taken 50% (fallthrough)
+branch  8 taken 50%
+branch  9 taken 50% (fallthrough)
+branch 10 taken 50%
+branch 11 taken 50% (fallthrough)
+branch 12 taken 54%
+branch 13 taken 46% (fallthrough)
+      204:  549:                    _outermost[x] = _a.allocate(10);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+call    6 returned 100%
+branch  7 taken 100% (fallthrough)
+branch  8 taken 0% (throw)
+call    9 returned 100%
+branch 10 taken 100% (fallthrough)
+branch 11 taken 0% (throw)
+call   12 returned 100%
+branch 13 taken 100% (fallthrough)
+branch 14 taken 0% (throw)
+call   15 returned 100%
+branch 16 taken 100% (fallthrough)
+branch 17 taken 0% (throw)
+call   18 returned 100%
+branch 19 taken 100% (fallthrough)
+branch 20 taken 0% (throw)
+      204:  550:                    ++x;
+        -:  551:                }
+        -:  552:
+      178:  553:                x = 0;
+      560:  554:                while(x != numrows){
+branch  0 taken 50%
+branch  1 taken 50% (fallthrough)
+branch  2 taken 50%
+branch  3 taken 50% (fallthrough)
+branch  4 taken 50%
+branch  5 taken 50% (fallthrough)
+branch  6 taken 50%
+branch  7 taken 50% (fallthrough)
+branch  8 taken 50%
+branch  9 taken 50% (fallthrough)
+branch 10 taken 50%
+branch 11 taken 50% (fallthrough)
+branch 12 taken 54%
+branch 13 taken 46% (fallthrough)
+      204:  555:                    _a.deallocate(_outermost[x], 10);
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+      204:  556:                    ++x;
+        -:  557:                }
+        -:  558:            
+      178:  559:                _aP.deallocate(_outermost, numrows);
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+      178:  560:                _bd = _lb = _a.allocate(s);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+call    6 returned 100%
+branch  7 taken 100% (fallthrough)
+branch  8 taken 0% (throw)
+call    9 returned 100%
+branch 10 taken 100% (fallthrough)
+branch 11 taken 0% (throw)
+call   12 returned 100%
+branch 13 taken 100% (fallthrough)
+branch 14 taken 0% (throw)
+call   15 returned 100%
+branch 16 taken 100% (fallthrough)
+branch 17 taken 0% (throw)
+call   18 returned 100%
+branch 19 taken 100% (fallthrough)
+branch 20 taken 0% (throw)
+        -:  561:
+      178:  562:                _ed = _le = _bd + s;
+        -:  563:
+      178:  564:                uninitialized_fill(_a, begin(), end(), v);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+call    6 returned 100%
+branch  7 taken 100% (fallthrough)
+branch  8 taken 0% (throw)
+call    9 returned 100%
+branch 10 taken 100% (fallthrough)
+branch 11 taken 0% (throw)
+call   12 returned 100%
+branch 13 taken 100% (fallthrough)
+branch 14 taken 0% (throw)
+call   15 returned 100%
+branch 16 taken 100% (fallthrough)
+branch 17 taken 0% (throw)
+call   18 returned 100%
+branch 19 taken 100% (fallthrough)
+branch 20 taken 0% (throw)
+call   21 returned 100%
+branch 22 taken 100% (fallthrough)
+branch 23 taken 0% (throw)
+call   24 returned 100%
+branch 25 taken 100% (fallthrough)
+branch 26 taken 0% (throw)
+call   27 returned 100%
+branch 28 taken 100% (fallthrough)
+branch 29 taken 0% (throw)
+call   30 returned 100%
+branch 31 taken 100% (fallthrough)
+branch 32 taken 0% (throw)
+call   33 returned 100%
+branch 34 taken 100% (fallthrough)
+branch 35 taken 0% (throw)
+call   36 returned 100%
+branch 37 taken 100% (fallthrough)
+branch 38 taken 0% (throw)
+call   39 returned 100%
+branch 40 taken 100% (fallthrough)
+branch 41 taken 0% (throw)
+call   42 returned 100%
+branch 43 taken 100% (fallthrough)
+branch 44 taken 0% (throw)
+call   45 returned 100%
+branch 46 taken 100% (fallthrough)
+branch 47 taken 0% (throw)
+call   48 returned 100%
+branch 49 taken 100% (fallthrough)
+branch 50 taken 0% (throw)
+call   51 returned 100%
+branch 52 taken 100% (fallthrough)
+branch 53 taken 0% (throw)
+call   54 returned 100%
+branch 55 taken 100% (fallthrough)
+branch 56 taken 0% (throw)
+call   57 returned 100%
+branch 58 taken 100% (fallthrough)
+branch 59 taken 0% (throw)
+call   60 returned 100%
+branch 61 taken 100% (fallthrough)
+branch 62 taken 0% (throw)
+      178:  565:                assert(valid());
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+call    8 returned 100%
+branch  9 taken 0% (fallthrough)
+branch 10 taken 100%
+call   11 never executed
+call   12 returned 100%
+branch 13 taken 0% (fallthrough)
+branch 14 taken 100%
+call   15 never executed
+call   16 returned 100%
+branch 17 taken 0% (fallthrough)
+branch 18 taken 100%
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 0% (fallthrough)
+branch 22 taken 100%
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 0% (fallthrough)
+branch 26 taken 100%
+call   27 never executed
+        -:  566:                }
+        -:  567:
+        -:  568:            else{
+       14:  569:                _outermost = _aP.allocate(numrows);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 returned 100%
+branch 19 taken 100% (fallthrough)
+branch 20 taken 0% (throw)
+        -:  570:            
+       14:  571:                size_type x = 0;
+     3289:  572:                while (x != numrows){
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+branch  6 never executed
+branch  7 never executed
+branch  8 never executed
+branch  9 never executed
+branch 10 never executed
+branch 11 never executed
+branch 12 taken 99%
+branch 13 taken 1% (fallthrough)
+     3261:  573:                    _outermost[x] = _a.allocate(10);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 returned 100%
+branch 19 taken 100% (fallthrough)
+branch 20 taken 0% (throw)
+     3261:  574:                    ++x;
+        -:  575:                }
+        -:  576:
+       14:  577:                x = 0;
+     3289:  578:                while(x != numrows){
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+branch  6 never executed
+branch  7 never executed
+branch  8 never executed
+branch  9 never executed
+branch 10 never executed
+branch 11 never executed
+branch 12 taken 99%
+branch 13 taken 1% (fallthrough)
+     3261:  579:                    _a.deallocate(_outermost[x], 10);
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 returned 100%
+     3261:  580:                    ++x;
+        -:  581:                }
+        -:  582:            
+       14:  583:                _aP.deallocate(_outermost, numrows);
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 returned 100%
+       14:  584:                _bd = _lb = _a.allocate(s);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 returned 100%
+branch 19 taken 100% (fallthrough)
+branch 20 taken 0% (throw)
+        -:  585:
+       14:  586:                _ed = _le = _bd + s;
+        -:  587:
+       14:  588:                uninitialized_fill(_a, begin(), end(), v);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+call   33 never executed
+branch 34 never executed
+branch 35 never executed
+call   36 never executed
+branch 37 never executed
+branch 38 never executed
+call   39 never executed
+branch 40 never executed
+branch 41 never executed
+call   42 never executed
+branch 43 never executed
+branch 44 never executed
+call   45 never executed
+branch 46 never executed
+branch 47 never executed
+call   48 never executed
+branch 49 never executed
+branch 50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+call   54 returned 100%
+branch 55 taken 100% (fallthrough)
+branch 56 taken 0% (throw)
+call   57 returned 100%
+branch 58 taken 100% (fallthrough)
+branch 59 taken 0% (throw)
+call   60 returned 100%
+branch 61 taken 100% (fallthrough)
+branch 62 taken 0% (throw)
+       14:  589:                assert(valid());}}
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+call   11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 0% (fallthrough)
+branch 26 taken 100%
+call   27 never executed
+        -:  590:        /**
+        -:  591:         * copy constructor
+        -:  592:         * @param my_deque to be copied
+        -:  593:         */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2ERKS7_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2ERKS7_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2ERKS7_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEC2ERKS6_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEC2ERKS6_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEC2ERKS6_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIiSaIiEEC2ERKS1_ called 64 returned 100% blocks executed 76%
+       64:  594:        my_deque (const my_deque& that) 
+       64:  595:            : _a(that._a), _aP() {
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+call   11 never executed
+call   12 never executed
+call   13 never executed
+call   14 never executed
+call   15 never executed
+call   16 never executed
+call   17 never executed
+call   18 never executed
+call   19 never executed
+call   20 never executed
+call   21 never executed
+call   22 never executed
+call   23 never executed
+call   24 returned 100%
+call   25 returned 100%
+call   26 never executed
+call   27 never executed
+       64:  596:            _outermost = 0; 
+       64:  597:            _lb = _bd = _a.allocate(that.size());
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+call    8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+call   20 never executed
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+call   24 returned 100%
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+       64:  598:            _ed = _le = _lb + that.size();
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 returned 100%
+       64:  599:            uninitialized_copy(_a, that.begin(), that.end(), begin());
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+call   33 never executed
+branch 34 never executed
+branch 35 never executed
+call   36 never executed
+branch 37 never executed
+branch 38 never executed
+call   39 never executed
+branch 40 never executed
+branch 41 never executed
+call   42 never executed
+branch 43 never executed
+branch 44 never executed
+call   45 never executed
+branch 46 never executed
+branch 47 never executed
+call   48 never executed
+branch 49 never executed
+branch 50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+call   57 never executed
+branch 58 never executed
+branch 59 never executed
+call   60 never executed
+branch 61 never executed
+branch 62 never executed
+call   63 never executed
+branch 64 never executed
+branch 65 never executed
+call   66 never executed
+branch 67 never executed
+branch 68 never executed
+call   69 never executed
+branch 70 never executed
+branch 71 never executed
+call   72 returned 100%
+branch 73 taken 100% (fallthrough)
+branch 74 taken 0% (throw)
+call   75 returned 100%
+branch 76 taken 100% (fallthrough)
+branch 77 taken 0% (throw)
+call   78 returned 100%
+branch 79 taken 100% (fallthrough)
+branch 80 taken 0% (throw)
+call   81 returned 100%
+branch 82 taken 100% (fallthrough)
+branch 83 taken 0% (throw)
+       64:  600:            assert(valid());}
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+call   11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 0% (fallthrough)
+branch 26 taken 100%
+call   27 never executed
+        -:  601:
+        -:  602:        // ----------
+        -:  603:        // destructor
+        -:  604:        // ----------
+        -:  605:
+        -:  606:        /**
+        -:  607:         * destructor
+        -:  608:         * if not empty, clear and deallocate space
+        -:  609:         */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 1 returned 100% blocks executed 89%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 1 returned 100% blocks executed 89%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 1 returned 100% blocks executed 89%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EED2Ev called 1 returned 100% blocks executed 89%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EED2Ev called 1 returned 100% blocks executed 89%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EED2Ev called 1 returned 100% blocks executed 89%
+function _ZN8my_dequeIiSaIiEED2Ev called 260 returned 100% blocks executed 89%
+      266:  610:        ~my_deque () {
+      266:  611:            if (_lb) {  //check if it's empty.  if not, deallocate entire capacity
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0%
+branch  6 taken 100% (fallthrough)
+branch  7 taken 0%
+branch  8 taken 100% (fallthrough)
+branch  9 taken 0%
+branch 10 taken 100% (fallthrough)
+branch 11 taken 0%
+branch 12 taken 96% (fallthrough)
+branch 13 taken 4%
+      256:  612:                clear();
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+      256:  613:                _a.deallocate(_lb, (_le - _lb));}
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+        -:  614:
+      266:  615:            assert(valid() );}
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 never executed
+call   10 returned 100%
+call   11 returned 100%
+call   12 returned 100%
+branch 13 taken 0% (fallthrough)
+branch 14 taken 100%
+call   15 never executed
+call   16 returned 100%
+call   17 returned 100%
+call   18 returned 100%
+branch 19 taken 0% (fallthrough)
+branch 20 taken 100%
+call   21 never executed
+call   22 returned 100%
+call   23 returned 100%
+call   24 returned 100%
+branch 25 taken 0% (fallthrough)
+branch 26 taken 100%
+call   27 never executed
+call   28 returned 100%
+call   29 returned 100%
+call   30 returned 100%
+branch 31 taken 0% (fallthrough)
+branch 32 taken 100%
+call   33 never executed
+call   34 returned 100%
+call   35 returned 100%
+call   36 returned 100%
+branch 37 taken 0% (fallthrough)
+branch 38 taken 100%
+call   39 never executed
+call   40 returned 100%
+call   41 returned 100%
+        -:  616:
+        -:  617:        // ----------
+        -:  618:        // operator =
+        -:  619:        // ----------
+        -:  620:
+        -:  621:        /**
+        -:  622:         * @param my_deque
+        -:  623:         */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEaSERKS7_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEaSERKS7_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEaSERKS7_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEaSERKS6_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEaSERKS6_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEaSERKS6_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIiSaIiEEaSERKS1_ called 4 returned 100% blocks executed 61%
+        4:  624:        my_deque& operator = (const my_deque& rhs) {
+        4:  625:            if (this == &rhs)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+branch  6 never executed
+branch  7 never executed
+branch  8 never executed
+branch  9 never executed
+branch 10 never executed
+branch 11 never executed
+branch 12 taken 0% (fallthrough)
+branch 13 taken 100%
+    #####:  626:                return *this;
+        4:  627:            if (rhs.size() == size())
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+call    8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+call   20 never executed
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+call   24 returned 100%
+call   25 returned 100%
+branch 26 taken 25% (fallthrough)
+branch 27 taken 75%
+        1:  628:                std::copy(rhs.begin(), rhs.end(), begin());
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+call   11 never executed
+call   12 never executed
+call   13 never executed
+call   14 never executed
+call   15 never executed
+call   16 never executed
+call   17 never executed
+call   18 never executed
+call   19 never executed
+call   20 never executed
+call   21 never executed
+call   22 never executed
+call   23 never executed
+call   24 returned 100%
+call   25 returned 100%
+call   26 returned 100%
+call   27 returned 100%
+        3:  629:            else if (rhs.size() < size()) {
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+call    8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+call   20 never executed
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+call   24 returned 100%
+call   25 returned 100%
+branch 26 taken 67% (fallthrough)
+branch 27 taken 33%
+        2:  630:                std::copy(rhs.begin(), rhs.end(), begin());
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+call   11 never executed
+call   12 never executed
+call   13 never executed
+call   14 never executed
+call   15 never executed
+call   16 never executed
+call   17 never executed
+call   18 never executed
+call   19 never executed
+call   20 never executed
+call   21 never executed
+call   22 never executed
+call   23 never executed
+call   24 returned 100%
+call   25 returned 100%
+call   26 returned 100%
+call   27 returned 100%
+        2:  631:                resize(rhs.size());
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+call    4 never executed
+call    5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+call   10 never executed
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+call   14 never executed
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+call   20 never executed
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+call   24 never executed
+call   25 never executed
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+call   29 never executed
+call   30 returned 100%
+call   31 returned 100%
+branch 32 taken 100% (fallthrough)
+branch 33 taken 0% (throw)
+call   34 never executed
+        -:  632:            }    
+        1:  633:            else if (rhs.size() <= (_le - _bd)) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 returned 100%
+branch 19 taken 0% (fallthrough)
+branch 20 taken 100%
+    #####:  634:                std::copy(rhs.begin(), rhs.begin() + size(), begin());
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+call   11 never executed
+call   12 never executed
+call   13 never executed
+call   14 never executed
+call   15 never executed
+call   16 never executed
+call   17 never executed
+call   18 never executed
+call   19 never executed
+call   20 never executed
+call   21 never executed
+call   22 never executed
+call   23 never executed
+call   24 never executed
+call   25 never executed
+call   26 never executed
+call   27 never executed
+call   28 never executed
+call   29 never executed
+call   30 never executed
+call   31 never executed
+call   32 never executed
+call   33 never executed
+call   34 never executed
+call   35 never executed
+call   36 never executed
+call   37 never executed
+call   38 never executed
+call   39 never executed
+call   40 never executed
+call   41 never executed
+    #####:  635:                _ed = &(*uninitialized_copy(_a, rhs.begin() + size(), rhs.end(), end())); //had to do * & because compiler said canot convert types
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+call   11 never executed
+call   12 never executed
+call   13 never executed
+call   14 never executed
+call   15 never executed
+call   16 never executed
+call   17 never executed
+call   18 never executed
+call   19 never executed
+call   20 never executed
+call   21 never executed
+call   22 never executed
+call   23 never executed
+call   24 never executed
+call   25 never executed
+call   26 never executed
+call   27 never executed
+call   28 never executed
+call   29 never executed
+call   30 never executed
+call   31 never executed
+call   32 never executed
+call   33 never executed
+call   34 never executed
+call   35 never executed
+call   36 never executed
+call   37 never executed
+call   38 never executed
+call   39 never executed
+call   40 never executed
+call   41 never executed
+call   42 never executed
+call   43 never executed
+call   44 never executed
+call   45 never executed
+call   46 never executed
+call   47 never executed
+call   48 never executed
+        -:  636:            }
+        -:  637:            else {
+        1:  638:                clear();
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 returned 100%
+branch 19 taken 100% (fallthrough)
+branch 20 taken 0% (throw)
+        1:  639:                my_deque x(rhs);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 returned 100%
+branch 19 taken 100% (fallthrough)
+branch 20 taken 0% (throw)
+        1:  640:                swap(x);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+call   14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+call   23 never executed
+call   24 never executed
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+call   28 never executed
+call   29 never executed
+call   30 returned 100%
+branch 31 taken 100% (fallthrough)
+branch 32 taken 0% (throw)
+call   33 returned 100%
+call   34 never executed
+        -:  641:            }    
+        4:  642:            assert(valid());
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+call   11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 0% (fallthrough)
+branch 26 taken 100%
+call   27 never executed
+        4:  643:            return *this;}
+        -:  644:
+        -:  645:        // -----------
+        -:  646:        // operator []
+        -:  647:        // -----------
+        -:  648:
+        -:  649:        /**
+        -:  650:         * @return reference to value at index from beginning of data
+        -:  651:         */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEixEm called 8 returned 100% blocks executed 100%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEixEm called 8 returned 100% blocks executed 100%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEixEm called 8 returned 100% blocks executed 100%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEixEm called 8 returned 100% blocks executed 100%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEixEm called 8 returned 100% blocks executed 100%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEixEm called 8 returned 100% blocks executed 100%
+function _ZN8my_dequeIiSaIiEEixEm called 69640 returned 100% blocks executed 100%
+    69688:  652:        reference operator [] (size_type index) {
+    69688:  653:            return *(_bd + index);}
+        -:  654:
+        -:  655:        /**
+        -:  656:         * @return const reference to value at index from beginning of data
+        -:  657:         */
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEixEm called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEixEm called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEixEm called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEixEm called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEixEm called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEixEm called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIiSaIiEEixEm called 859 returned 100% blocks executed 100%
+      859:  658:        const_reference operator [] (size_type index) const {
+      859:  659:            return const_cast<my_deque*>(this)->operator[](index);}
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 returned 100%
+        -:  660:
+        -:  661:        // --
+        -:  662:        // at
+        -:  663:        // --
+        -:  664:
+        -:  665:        /**
+        -:  666:         * @return reference to value at index
+        -:  667:         */
+function _ZN8my_dequeIiSaIiEE2atEm called 6 returned 100% blocks executed 29%
+        6:  668:        reference at (size_type index) {
+        6:  669:            if (index >= size())
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+    #####:  670:                throw std::out_of_range("my_deque");
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+call   11 never executed
+call   12 never executed
+call   13 never executed
+        6:  671:            return (*this)[index];}
+call    0 returned 100%
+        -:  672:
+        -:  673:        /**
+        -:  674:         * @return const reference to value at index
+        -:  675:         */
+function _ZNK8my_dequeIiSaIiEE2atEm called 3 returned 100% blocks executed 100%
+        3:  676:        const_reference at (size_type index) const {
+        3:  677:            return const_cast<my_deque*>(this)->at(index);}
+call    0 returned 100%
+        -:  678:
+        -:  679:        // ----
+        -:  680:        // back
+        -:  681:        // ----
+        -:  682:
+        -:  683:        /**
+        -:  684:         * @return the reference to last element
+        -:  685:         * has to be end of data, not end of capacity
+        -:  686:         */
+function _ZN8my_dequeIiSaIiEE4backEv called 6 returned 100% blocks executed 80%
+        6:  687:        reference back () {
+        6:  688:            assert(size() > 0);
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+        6:  689:            return *(_ed - 1);}
+        -:  690:
+        -:  691:        /**
+        -:  692:         * @return const reference to last element
+        -:  693:         */
+function _ZNK8my_dequeIiSaIiEE4backEv called 3 returned 100% blocks executed 100%
+        3:  694:        const_reference back () const {
+        3:  695:            return const_cast<my_deque*>(this)->back();}
+call    0 returned 100%
+        -:  696:
+        -:  697:        // -----
+        -:  698:        // begin
+        -:  699:        // -----
+        -:  700:
+        -:  701:        /**
+        -:  702:         * @return iterator to beginning position (default)
+        -:  703:         */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5beginEv called 3 returned 100% blocks executed 100%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5beginEv called 3 returned 100% blocks executed 100%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5beginEv called 3 returned 100% blocks executed 100%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5beginEv called 3 returned 100% blocks executed 100%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5beginEv called 3 returned 100% blocks executed 100%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5beginEv called 3 returned 100% blocks executed 100%
+function _ZN8my_dequeIiSaIiEE5beginEv called 652 returned 100% blocks executed 100%
+      670:  704:        iterator begin () {
+      670:  705:            return iterator(this);}
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+        -:  706:
+        -:  707:        /**
+        -:  708:         * @return constant iterator to beginning position (default)
+        -:  709:         */
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5beginEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5beginEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5beginEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5beginEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5beginEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5beginEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIiSaIiEE5beginEv called 138 returned 100% blocks executed 100%
+      138:  710:        const_iterator begin () const {
+      138:  711:            return const_iterator(this);}
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 returned 100%
+        -:  712:
+        -:  713:        // -----
+        -:  714:        // clear
+        -:  715:        // -----
+        -:  716:
+        -:  717:        /**
+        -:  718:         * resize to 0 to clear all data
+        -:  719:         */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5clearEv called 1 returned 100% blocks executed 83%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5clearEv called 1 returned 100% blocks executed 83%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5clearEv called 1 returned 100% blocks executed 83%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5clearEv called 1 returned 100% blocks executed 83%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5clearEv called 1 returned 100% blocks executed 83%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5clearEv called 1 returned 100% blocks executed 83%
+function _ZN8my_dequeIiSaIiEE5clearEv called 254 returned 100% blocks executed 83%
+      260:  720:        void clear () {
+      260:  721:            resize(0);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0% (throw)
+call    6 returned 100%
+branch  7 taken 100% (fallthrough)
+branch  8 taken 0% (throw)
+call    9 returned 100%
+branch 10 taken 100% (fallthrough)
+branch 11 taken 0% (throw)
+call   12 returned 100%
+branch 13 taken 100% (fallthrough)
+branch 14 taken 0% (throw)
+call   15 returned 100%
+branch 16 taken 100% (fallthrough)
+branch 17 taken 0% (throw)
+call   18 returned 100%
+branch 19 taken 100% (fallthrough)
+branch 20 taken 0% (throw)
+      260:  722:            assert(valid());}
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+call    8 returned 100%
+branch  9 taken 0% (fallthrough)
+branch 10 taken 100%
+call   11 never executed
+call   12 returned 100%
+branch 13 taken 0% (fallthrough)
+branch 14 taken 100%
+call   15 never executed
+call   16 returned 100%
+branch 17 taken 0% (fallthrough)
+branch 18 taken 100%
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 0% (fallthrough)
+branch 22 taken 100%
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 0% (fallthrough)
+branch 26 taken 100%
+call   27 never executed
+        -:  723:
+        -:  724:        // -----
+        -:  725:        // empty
+        -:  726:        // -----
+        -:  727:
+        -:  728:        /**
+        -:  729:         * @return true if my_deque is empty
+        -:  730:         */
+function _ZNK8my_dequeIiSaIiEE5emptyEv called 16 returned 100% blocks executed 100%
+       16:  731:        bool empty () const {
+       16:  732:            return size()==0;}
+call    0 returned 100%
+        -:  733:
+        -:  734:        // ---
+        -:  735:        // end
+        -:  736:        // ---
+        -:  737:
+        -:  738:        /**
+        -:  739:         * @return iterator to the end
+        -:  740:         */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE3endEv called 2 returned 100% blocks executed 100%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE3endEv called 2 returned 100% blocks executed 100%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE3endEv called 2 returned 100% blocks executed 100%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE3endEv called 2 returned 100% blocks executed 100%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE3endEv called 2 returned 100% blocks executed 100%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE3endEv called 2 returned 100% blocks executed 100%
+function _ZN8my_dequeIiSaIiEE3endEv called 528 returned 100% blocks executed 100%
+      540:  741:        iterator end () {
+      540:  742:            return iterator(this, size());}
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+call    7 returned 100%
+call    8 returned 100%
+call    9 returned 100%
+call   10 returned 100%
+call   11 returned 100%
+call   12 returned 100%
+call   13 returned 100%
+        -:  743:
+        -:  744:        /**
+        -:  745:         * @return const iterator to the end
+        -:  746:         */
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE3endEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE3endEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE3endEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE3endEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE3endEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE3endEv called 0 returned 0% blocks executed 0%
+function _ZNK8my_dequeIiSaIiEE3endEv called 110 returned 100% blocks executed 100%
+      110:  747:        const_iterator end () const {
+      110:  748:            return const_iterator(this, size());}
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+call   11 never executed
+call   12 returned 100%
+call   13 returned 100%
+        -:  749:
+        -:  750:        // -----
+        -:  751:        // erase
+        -:  752:        // -----
+        -:  753:
+        -:  754:        /**
+        -:  755:         * <your documentation>
+        -:  756:         */
+function _ZN8my_dequeIiSaIiEE5eraseENS1_8iteratorE called 3 returned 100% blocks executed 94%
+        3:  757:        iterator erase (iterator i) {
+        3:  758:            if(i == end()-1){       //if at the last element, just pop it off
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+branch  3 taken 33% (fallthrough)
+branch  4 taken 67%
+        1:  759:                pop_back();
+call    0 returned 100%
+        -:  760:            }
+        -:  761:
+        -:  762:            else{                    //else copy elements after over curent element, resize
+        2:  763:                std::copy(i+1, end(), i);
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+        2:  764:                resize(size()-1);
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+        -:  765:            }
+        3:  766:            assert(valid() );
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+        3:  767:            return iterator(this);}
+call    0 returned 100%
+        -:  768:
+        -:  769:        // -----
+        -:  770:        // front
+        -:  771:        // -----
+        -:  772:
+        -:  773:        /**
+        -:  774:         * @return reference to the first element
+        -:  775:         */
+function _ZN8my_dequeIiSaIiEE5frontEv called 6 returned 100% blocks executed 80%
+        6:  776:        reference front () {
+        6:  777:            assert(!empty());
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+        6:  778:            return *(_bd);}
+        -:  779:
+        -:  780:        /**
+        -:  781:         * @return const reference to first element
+        -:  782:         */
+function _ZNK8my_dequeIiSaIiEE5frontEv called 3 returned 100% blocks executed 100%
+        3:  783:        const_reference front () const {
+        3:  784:            return const_cast<my_deque*>(this)->front();}
+call    0 returned 100%
+        -:  785:
+        -:  786:        // ------
+        -:  787:        // insert
+        -:  788:        // ------
+        -:  789:
+        -:  790:        /**
+        -:  791:         * @return iterator to given position, but with new value
+        -:  792:         */
+function _ZN8my_dequeIiSaIiEE6insertENS1_8iteratorERKi called 1 returned 100% blocks executed 63%
+        1:  793:        iterator insert (iterator it, const_reference r) {
+        1:  794:            if(it == end()){ //if at the end already, just need to push it to the back
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+        1:  795:                push_back(r);
+call    0 returned 100%
+        -:  796:            }
+        -:  797:            else{           //have to grow the deque and copy everything, moving it one position down.  insert the value into current position
+    #####:  798:                resize(size()+1);
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####:  799:                std::copy(it, end(), it+1);
+call    0 never executed
+call    1 never executed
+call    2 never executed
+        -:  800:            }
+        1:  801:            assert(valid());
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+        1:  802:            return iterator(this);}
+call    0 returned 100%
+        -:  803:
+        -:  804:        // ---
+        -:  805:        // pop
+        -:  806:        // ---
+        -:  807:
+        -:  808:        /**
+        -:  809:         * shrink deque to cut off last element
+        -:  810:         */
+function _ZN8my_dequeIiSaIiEE8pop_backEv called 13 returned 100% blocks executed 80%
+       13:  811:        void pop_back () {
+       13:  812:            assert(size() != 0);
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+       13:  813:            resize(size() - 1);
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+       13:  814:            assert(valid());}
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+        -:  815:
+        -:  816:        /**
+        -:  817:         * destroy the first element
+        -:  818:         * move pointer of beginning data to next element
+        -:  819:         */
+function _ZN8my_dequeIiSaIiEE9pop_frontEv called 4 returned 100% blocks executed 82%
+        4:  820:        void pop_front () {
+        4:  821:            assert(size() != 0);
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+        4:  822:            destroy(_a, begin(), begin() + 1);
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+        4:  823:            ++_bd;
+        4:  824:            assert(valid());}
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+        -:  825:
+        -:  826:        // ----
+        -:  827:        // push
+        -:  828:        // ----
+        -:  829:
+        -:  830:        /**
+        -:  831:         * make size bigger by one and input new value with resize
+        -:  832:         */
+function _ZN8my_dequeIiSaIiEE9push_backERKi called 5 returned 100% blocks executed 83%
+        5:  833:        void push_back (const_reference v) {
+        5:  834:            resize(size() + 1, v);
+call    0 returned 100%
+call    1 returned 100%
+        5:  835:            assert(valid());}
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+        -:  836:
+        -:  837:        /**
+        -:  838:         * make sure there is space for element
+        -:  839:         * once there is, construct a new space and insert element
+        -:  840:         */
+function _ZN8my_dequeIiSaIiEE10push_frontERKi called 18 returned 100% blocks executed 92%
+       18:  841:        void push_front (const_reference v) {
+       18:  842:            if (_bd == _lb) {
+branch  0 taken 44% (fallthrough)
+branch  1 taken 56%
+        8:  843:                resize(size() + 1);
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+        8:  844:                pop_back();
+call    0 returned 100%
+        -:  845:            }    
+       18:  846:            --_bd;
+       18:  847:            _a.construct(&*begin(), v); 
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+       18:  848:            assert(valid());}
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+        -:  849:
+        -:  850:        // ------
+        -:  851:        // resize
+        -:  852:        // ------
+        -:  853:
+        -:  854:        /**
+        -:  855:         * @param size type
+        -:  856:         * check to see if possible to fill current deque, or resize
+        -:  857:         * if not, make a new deque of the right size and copy elements over, swap
+        -:  858:         */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE6resizeEmRKS5_ called 1 returned 100% blocks executed 26%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE6resizeEmRKS5_ called 1 returned 100% blocks executed 26%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE6resizeEmRKS5_ called 1 returned 100% blocks executed 26%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE6resizeEmRKS4_ called 1 returned 100% blocks executed 26%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE6resizeEmRKS4_ called 1 returned 100% blocks executed 26%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE6resizeEmRKS4_ called 1 returned 100% blocks executed 26%
+function _ZN8my_dequeIiSaIiEE6resizeEmRKi called 291 returned 100% blocks executed 91%
+      297:  859:        void resize (size_type s, const_reference v = value_type()) {
+      297:  860:            if (s == size())
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 returned 100%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+call    6 returned 100%
+branch  7 taken 0% (fallthrough)
+branch  8 taken 100%
+call    9 returned 100%
+branch 10 taken 0% (fallthrough)
+branch 11 taken 100%
+call   12 returned 100%
+branch 13 taken 0% (fallthrough)
+branch 14 taken 100%
+call   15 returned 100%
+branch 16 taken 0% (fallthrough)
+branch 17 taken 100%
+call   18 returned 100%
+branch 19 taken 3% (fallthrough)
+branch 20 taken 97%
+      306:  861:                return;
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 never executed
+      288:  862:            if (s < size())
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0%
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0%
+call    6 returned 100%
+branch  7 taken 100% (fallthrough)
+branch  8 taken 0%
+call    9 returned 100%
+branch 10 taken 100% (fallthrough)
+branch 11 taken 0%
+call   12 returned 100%
+branch 13 taken 100% (fallthrough)
+branch 14 taken 0%
+call   15 returned 100%
+branch 16 taken 100% (fallthrough)
+branch 17 taken 0%
+call   18 returned 100%
+branch 19 taken 94% (fallthrough)
+branch 20 taken 6%
+      272:  863:                _ed = &(*destroy(_a, begin() + s, end() )); //had to put &* to compile
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+call    7 returned 100%
+call    8 returned 100%
+call    9 returned 100%
+call   10 returned 100%
+call   11 returned 100%
+call   12 returned 100%
+call   13 returned 100%
+call   14 returned 100%
+call   15 returned 100%
+call   16 returned 100%
+call   17 returned 100%
+call   18 returned 100%
+call   19 returned 100%
+call   20 returned 100%
+call   21 returned 100%
+call   22 returned 100%
+call   23 returned 100%
+call   24 returned 100%
+call   25 returned 100%
+call   26 returned 100%
+call   27 returned 100%
+call   28 returned 100%
+call   29 returned 100%
+call   30 returned 100%
+call   31 returned 100%
+call   32 returned 100%
+call   33 returned 100%
+call   34 returned 100%
+       16:  864:            else if (s <= (_ed -_lb))
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+branch  6 never executed
+branch  7 never executed
+branch  8 never executed
+branch  9 never executed
+branch 10 never executed
+branch 11 never executed
+branch 12 taken 6% (fallthrough)
+branch 13 taken 94%
+        1:  865:                _ed = &*uninitialized_fill(_a, end(), begin() + s, v);
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+call   11 never executed
+call   12 never executed
+call   13 never executed
+call   14 never executed
+call   15 never executed
+call   16 never executed
+call   17 never executed
+call   18 never executed
+call   19 never executed
+call   20 never executed
+call   21 never executed
+call   22 never executed
+call   23 never executed
+call   24 never executed
+call   25 never executed
+call   26 never executed
+call   27 never executed
+call   28 never executed
+call   29 never executed
+call   30 returned 100%
+call   31 returned 100%
+call   32 returned 100%
+call   33 returned 100%
+call   34 returned 100%
+        -:  866:         
+        -:  867:            else {              //need to make new, bigger deque but keep all pointers the same
+       15:  868:                size_type newsize = size() * 2;
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 returned 100%
+       15:  869:                if (s > newsize){
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+branch  6 never executed
+branch  7 never executed
+branch  8 never executed
+branch  9 never executed
+branch 10 never executed
+branch 11 never executed
+branch 12 taken 33% (fallthrough)
+branch 13 taken 67%
+        5:  870:                    newsize = s;
+        -:  871:                }
+        -:  872:
+       15:  873:                if (newsize == s){
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+branch  6 never executed
+branch  7 never executed
+branch  8 never executed
+branch  9 never executed
+branch 10 never executed
+branch 11 never executed
+branch 12 taken 33% (fallthrough)
+branch 13 taken 67%
+        5:  874:                    newsize = newsize + 10;
+        -:  875:                }
+        -:  876:
+       15:  877:                size_type middled = (newsize - s) / 2;
+       15:  878:                size_type enddata = middled;
+        -:  879:
+       15:  880:                if ((newsize - s) % 2){
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+branch  6 never executed
+branch  7 never executed
+branch  8 never executed
+branch  9 never executed
+branch 10 never executed
+branch 11 never executed
+branch 12 taken 20% (fallthrough)
+branch 13 taken 80%
+        3:  881:                    ++enddata;
+        -:  882:                }
+        -:  883:                
+       15:  884:                my_deque x(newsize, v);
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+call    4 never executed
+call    5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+call   10 never executed
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+call   14 never executed
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+call   20 never executed
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+call   24 never executed
+call   25 never executed
+call   26 never executed
+branch 27 never executed
+branch 28 never executed
+call   29 never executed
+call   30 returned 100%
+call   31 returned 100%
+branch 32 taken 100% (fallthrough)
+branch 33 taken 0% (throw)
+call   34 returned 100%
+        -:  885:
+       15:  886:                std::copy(begin(), end(), x.begin() + middled);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+call   33 never executed
+branch 34 never executed
+branch 35 never executed
+call   36 never executed
+branch 37 never executed
+branch 38 never executed
+call   39 never executed
+branch 40 never executed
+branch 41 never executed
+call   42 never executed
+branch 43 never executed
+branch 44 never executed
+call   45 never executed
+branch 46 never executed
+branch 47 never executed
+call   48 never executed
+branch 49 never executed
+branch 50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+call   57 never executed
+branch 58 never executed
+branch 59 never executed
+call   60 never executed
+branch 61 never executed
+branch 62 never executed
+call   63 never executed
+branch 64 never executed
+branch 65 never executed
+call   66 never executed
+branch 67 never executed
+branch 68 never executed
+call   69 never executed
+branch 70 never executed
+branch 71 never executed
+call   72 never executed
+branch 73 never executed
+branch 74 never executed
+call   75 never executed
+branch 76 never executed
+branch 77 never executed
+call   78 never executed
+branch 79 never executed
+branch 80 never executed
+call   81 never executed
+branch 82 never executed
+branch 83 never executed
+call   84 never executed
+branch 85 never executed
+branch 86 never executed
+call   87 never executed
+branch 88 never executed
+branch 89 never executed
+call   90 returned 100%
+branch 91 taken 100% (fallthrough)
+branch 92 taken 0% (throw)
+call   93 returned 100%
+branch 94 taken 100% (fallthrough)
+branch 95 taken 0% (throw)
+call   96 returned 100%
+branch 97 taken 100% (fallthrough)
+branch 98 taken 0% (throw)
+call   99 returned 100%
+branch 100 taken 100% (fallthrough)
+branch 101 taken 0% (throw)
+call   102 returned 100%
+branch 103 taken 100% (fallthrough)
+branch 104 taken 0% (throw)
+        -:  887:
+       15:  888:                destroy(x._a, x.begin(), x.begin() + middled);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+call   33 never executed
+branch 34 never executed
+branch 35 never executed
+call   36 never executed
+branch 37 never executed
+branch 38 never executed
+call   39 never executed
+branch 40 never executed
+branch 41 never executed
+call   42 never executed
+branch 43 never executed
+branch 44 never executed
+call   45 never executed
+branch 46 never executed
+branch 47 never executed
+call   48 never executed
+branch 49 never executed
+branch 50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+call   57 never executed
+branch 58 never executed
+branch 59 never executed
+call   60 never executed
+branch 61 never executed
+branch 62 never executed
+call   63 never executed
+branch 64 never executed
+branch 65 never executed
+call   66 never executed
+branch 67 never executed
+branch 68 never executed
+call   69 never executed
+branch 70 never executed
+branch 71 never executed
+call   72 returned 100%
+branch 73 taken 100% (fallthrough)
+branch 74 taken 0% (throw)
+call   75 returned 100%
+branch 76 taken 100% (fallthrough)
+branch 77 taken 0% (throw)
+call   78 returned 100%
+branch 79 taken 100% (fallthrough)
+branch 80 taken 0% (throw)
+call   81 returned 100%
+branch 82 taken 100% (fallthrough)
+branch 83 taken 0% (throw)
+       15:  889:                destroy(x._a, x.end() - enddata, x.end());
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+call   33 never executed
+branch 34 never executed
+branch 35 never executed
+call   36 never executed
+branch 37 never executed
+branch 38 never executed
+call   39 never executed
+branch 40 never executed
+branch 41 never executed
+call   42 never executed
+branch 43 never executed
+branch 44 never executed
+call   45 never executed
+branch 46 never executed
+branch 47 never executed
+call   48 never executed
+branch 49 never executed
+branch 50 never executed
+call   51 never executed
+branch 52 never executed
+branch 53 never executed
+call   54 never executed
+branch 55 never executed
+branch 56 never executed
+call   57 never executed
+branch 58 never executed
+branch 59 never executed
+call   60 never executed
+branch 61 never executed
+branch 62 never executed
+call   63 never executed
+branch 64 never executed
+branch 65 never executed
+call   66 never executed
+branch 67 never executed
+branch 68 never executed
+call   69 never executed
+branch 70 never executed
+branch 71 never executed
+call   72 returned 100%
+branch 73 taken 100% (fallthrough)
+branch 74 taken 0% (throw)
+call   75 returned 100%
+branch 76 taken 100% (fallthrough)
+branch 77 taken 0% (throw)
+call   78 returned 100%
+branch 79 taken 100% (fallthrough)
+branch 80 taken 0% (throw)
+call   81 returned 100%
+branch 82 taken 100% (fallthrough)
+branch 83 taken 0% (throw)
+       15:  890:                x._bd = x._bd + middled;
+       15:  891:                x._ed = x._ed - enddata;
+        -:  892:
+       15:  893:                swap(x);}
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+call   14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+call   23 never executed
+call   24 never executed
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+call   28 never executed
+call   29 never executed
+call   30 returned 100%
+branch 31 taken 100% (fallthrough)
+branch 32 taken 0% (throw)
+call   33 returned 100%
+call   34 never executed
+      288:  894:            assert(valid());}
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+call    3 never executed
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+call    8 returned 100%
+branch  9 taken 0% (fallthrough)
+branch 10 taken 100%
+call   11 never executed
+call   12 returned 100%
+branch 13 taken 0% (fallthrough)
+branch 14 taken 100%
+call   15 never executed
+call   16 returned 100%
+branch 17 taken 0% (fallthrough)
+branch 18 taken 100%
+call   19 never executed
+call   20 returned 100%
+branch 21 taken 0% (fallthrough)
+branch 22 taken 100%
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 0% (fallthrough)
+branch 26 taken 100%
+call   27 never executed
+        -:  895:
+        -:  896:        // ----
+        -:  897:        // size
+        -:  898:        // ----
+        -:  899:
+        -:  900:        /**
+        -:  901:         * @return the distance from beginning of data to end of data
+        -:  902:         */
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE4sizeEv called 4 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE4sizeEv called 4 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE4sizeEv called 4 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE4sizeEv called 4 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE4sizeEv called 4 returned 100% blocks executed 100%
+function _ZNK8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE4sizeEv called 4 returned 100% blocks executed 100%
+function _ZNK8my_dequeIiSaIiEE4sizeEv called 1504 returned 100% blocks executed 100%
+     1528:  903:        size_type size () const {
+     1528:  904:            return (_ed - _bd);}
+        -:  905:
+        -:  906:        // ----
+        -:  907:        // swap
+        -:  908:        // ----
+        -:  909:
+        -:  910:        /**
+        -:  911:         * replace this with that
+        -:  912:         * swap all pointers
+        -:  913:         */
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE4swapERS7_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE4swapERS7_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE4swapERS7_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE4swapERS6_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE4swapERS6_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE4swapERS6_ called 0 returned 0% blocks executed 0%
+function _ZN8my_dequeIiSaIiEE4swapERS1_ called 18 returned 100% blocks executed 56%
+       18:  914:        void swap (my_deque& that) {
+       18:  915:            if(_a == that._a) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 returned 100%
+branch 19 taken 100% (fallthrough)
+branch 20 taken 0%
+       18:  916:                std::swap(_bd, that._bd);
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 returned 100%
+       18:  917:                std::swap(_lb, that._lb);
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 returned 100%
+       18:  918:                std::swap(_ed, that._ed);
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 returned 100%
+       18:  919:                std::swap(_le, that._le);
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 returned 100%
+        -:  920:            }
+        -:  921:            else{
+    #####:  922:                my_deque x(*this);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    #####:  923:                *this = that;
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    #####:  924:                that = x;
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+call   14 never executed
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+call   18 never executed
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+call   23 never executed
+call   24 never executed
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+call   28 never executed
+call   29 never executed
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+call   33 never executed
+call   34 never executed
+        -:  925:            }
+       18:  926:            assert(valid() );}};
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+call   11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+call   23 never executed
+call   24 returned 100%
+branch 25 taken 0% (fallthrough)
+branch 26 taken 100%
+call   27 never executed
+        -:  927:
+        -:  928:#endif // Deque_h

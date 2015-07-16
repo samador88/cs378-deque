@@ -26,7 +26,7 @@ using std::rel_ops::operator!=;
 using std::rel_ops::operator<=;
 using std::rel_ops::operator>;
 using std::rel_ops::operator>=;
-using namespace std;
+
 // -------
 // destroy
 // -------
@@ -103,7 +103,8 @@ class my_deque {
         // -----------
 
         /**
-         * <your documentation>
+         * @param two my_deques
+         * @return true if they are equal to one another
          */
         friend bool operator == (const my_deque& lhs, const my_deque& rhs) {
             return (lhs.size() == rhs.size()) && std::equal(lhs.begin(), lhs.end(), rhs.begin());}
@@ -114,7 +115,8 @@ class my_deque {
         // ----------
 
         /**
-         * <your documentation>
+         * @param take in two mydeques
+         * @return true if the left is less than right
          */
         friend bool operator < (const my_deque& lhs, const my_deque& rhs) {
             return std::lexicographical_compare(lhs.begin(), lhs.end(), rhs.begin(), rhs.end());}
@@ -123,22 +125,21 @@ class my_deque {
         // ----
         // data
         // ----
-ddddddddd
-        allocator_type _a;
-        all_pointer _aPointer; 
-        pointer* _outermost;    
-        pointer _front;  
-        pointer _back; 
-        pointer _b; 
-        pointer _e; 
 
+        allocator_type _a;
+        pointer _lb;  
+        pointer _le; 
+        pointer _bd; 
+        pointer _ed; 
+        pointer* _outermost; 
+        all_pointer _aP; 
     private:
         // -----
         // valid
         // -----
 
         bool valid () const {
-            return (!_front && !_back && !_b && !_e) || ((_front <= _b) && (_b <= _e) && (_e <= _back));}
+            return (!_bd && !_ed && !_lb && !_le) || ((_bd <= _ed) && (_ed <= _le) && (_lb <= _bd));}
 
 public:
         // --------
@@ -163,13 +164,15 @@ public:
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @param take in two iterators
+                 * @return true if they are equal
                  */
                 friend bool operator == (const iterator& lhs, const iterator& rhs) {
-                    return lhs._deque == rhs._deque && lhs._idx == rhs._idx;}
+                    return lhs._d == rhs._d && lhs._i == rhs._i;}
 
                 /**
-                 * <your documentation>
+                 * @param take in two iterators
+                 * @return true if they are not equal
                  */
                 friend bool operator != (const iterator& lhs, const iterator& rhs) {
                     return !(lhs == rhs);}
@@ -179,7 +182,9 @@ public:
                 // ----------
 
                 /**
-                 * <your documentation>
+                 * @param iterator
+                 * @param difference type
+                 * @return the iterator advanced difference_type number of places (sum)
                  */
                 friend iterator operator + (iterator lhs, difference_type rhs) {
                     return lhs += rhs;}
@@ -189,7 +194,9 @@ public:
                 // ----------
 
                 /**
-                 * <your documentation>
+                 * @param iterator
+                 * @param difference type
+                 * @return decremented iterator by number of difference type
                  */
                 friend iterator operator - (iterator lhs, difference_type rhs) {
                     return lhs -= rhs;}
@@ -199,9 +206,8 @@ public:
                 // data
                 // ----
 
-                my_deque* _deque;
-
-                size_type _idx;
+                my_deque* _d;
+                size_type _i;
 
             private:
                 // -----
@@ -209,7 +215,7 @@ public:
                 // -----
 
                 bool valid () const {
-                    return (_idx >= 0);}
+                    return (_i >= 0);}
 
             public:
                 // -----------
@@ -217,10 +223,13 @@ public:
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @param a my deque
+                 * @param a size type
+                 * set iterator on deque at position given
                  */
-                iterator (my_deque* d, size_type i = 0)
-                    : _deque(d), _idx(i) {
+                iterator (my_deque* d, size_type i = 0){
+                    _d = d;
+                    _i = i;
                     assert(valid());}
 
                 // Default copy, destructor, and copy assignment.
@@ -233,17 +242,17 @@ public:
                 // ----------
 
                 /**
-                 * <your documentation>
+                 * @return a reference to element at that position
                  */
                 reference operator * () const {
-                    return (*_deque)[_idx];}
+                    return (*_d)[_i];}
 
                  // -----------
                 // operator ->
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @param return pointer to this
                  */
                 pointer operator -> () const {
                     return &**this;}
@@ -253,15 +262,15 @@ public:
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * pre-increment iterator by one to next position
                  */
                 iterator& operator ++ () {
-                    ++_idx;
+                    ++_i;
                     assert(valid());
                     return *this;}
 
                 /**
-                 * <your documentation>
+                 * post-increment iterator by one to next position
                  */
                 iterator operator ++ (int) {
                     iterator x = *this;
@@ -274,15 +283,15 @@ public:
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * pre-decrement iterator to previous position
                  */
                 iterator& operator -- () {
-                    --_idx;
+                    --_i;
                     assert(valid());
                     return *this;}
 
                 /**
-                 * <your documentation>
+                 * post-decrement iterator to previous position
                  */
                 iterator operator -- (int) {
                     iterator x = *this;
@@ -295,10 +304,10 @@ public:
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * increment iterator by value given
                  */
                 iterator& operator += (difference_type d) {
-                    _idx += d;
+                    _i += d;
                     assert(valid());
                     return *this;}
 
@@ -307,10 +316,10 @@ public:
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * decrement iterator by value given
                  */
                 iterator& operator -= (difference_type d) {
-                    _idx -= d;
+                    _i -= d;
                     assert(valid());
                     return *this;}};
 
@@ -337,13 +346,15 @@ public:
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @param two const iterators
+                 * @return true if the iterators are equal
                  */
                 friend bool operator == (const const_iterator& lhs, const const_iterator& rhs) {
-                    return (lhs._cDeque == rhs._cDeque) && (lhs._idx == rhs._idx);}
+                    return (lhs._d == rhs._d) && (lhs._i == rhs._i);}
 
                 /**
-                 * <your documentation>
+                 * @param two iterators
+                 * @return true if the iterators are not equal
                  */
                 friend bool operator != (const const_iterator& lhs, const const_iterator& rhs) {
                     return !(lhs == rhs);}
@@ -353,7 +364,9 @@ public:
                 // ----------
 
                 /**
-                 * <your documentation>
+                 * @param a const iterator
+                 * @param a difference type
+                 * @return the iterator position advanced
                  */
                 friend const_iterator operator + (const_iterator lhs, difference_type rhs) {
                     return lhs += rhs;}
@@ -363,7 +376,9 @@ public:
                 // ----------
 
                 /**
-                 * <your documentation>
+                 * @param a const iterator
+                 * @param difference type
+                 * @return iterator decremented by difference type
                  */
                 friend const_iterator operator - (const_iterator lhs, difference_type rhs) {
                     return lhs -= rhs;}
@@ -374,9 +389,9 @@ public:
                 // data
                 // ----
 
-                const my_deque* _cDeque;
+                const my_deque* _d;
 
-                size_type _idx;
+                size_type _i;
 
             private:
                 // -----
@@ -384,7 +399,7 @@ public:
                 // -----
 
                 bool valid () const {
-                    return _idx >= 0;}
+                    return _i >= 0;}
 
           public:
                 // -----------
@@ -392,10 +407,13 @@ public:
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @param a const my_deque
+                 * @param size_type
+                 * @return a const iterator starting at position given for given deque
                  */
-            const_iterator (const my_deque* d, size_type i)
-                : _cDeque(d), _idx(i) {
+            const_iterator (const my_deque* d, size_type i=0) {
+                _d = d;
+                _i = i;
                 assert(valid());}
 
                 // Default copy, destructor, and copy assignment.
@@ -408,17 +426,17 @@ public:
                 // ----------
 
                 /**
-                 * <your documentation>
+                 * @return reference to element at current index
                  */
                 reference operator * () const {
-                return (*_cDeque)[_idx];}
+                return (*_d)[_i];}
 
                 // -----------
                 // operator ->
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @ return pointer to this
                  */
                 pointer operator -> () const {
                     return &**this;}
@@ -428,16 +446,18 @@ public:
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * pre-increment
+                 * @return const iterator incremented once
                  */
                 const_iterator& operator ++ () {
-                ++_idx;
+                ++_i;
                 assert(valid());
                 return *this;}
 
 
                 /**
-                 * <your documentation>
+                 * post-increment
+                 * @return const iterator incremented once
                  */
                 const_iterator operator ++ (int) {
                     const_iterator x = *this;
@@ -450,15 +470,17 @@ public:
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * pre-decrement
+                 * @return const iterator decremented once
                  */
                 const_iterator& operator -- () {
-                --_idx;
+                --_i;
                 assert(valid());
                 return *this;}
 
                 /**
-                 * <your documentation>
+                 * post-decrement
+                 * @return const iterator decremented once
                  */
                 const_iterator operator -- (int) {
                     const_iterator x = *this;
@@ -471,10 +493,11 @@ public:
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @param difference type
+                 * @return const iterator incremented by that many
                  */
-                const_iterator& operator += (difference_type rhs) {
-                _idx += rhs;
+                const_iterator& operator += (difference_type d) {
+                _i += d;
                 assert(valid());
                 return *this;}
 
@@ -483,10 +506,11 @@ public:
                 // -----------
 
                 /**
-                 * <your documentation>
+                 * @param difference type
+                 * @return const iterator decremented by that many
                  */
-                const_iterator& operator -= (difference_type rhs) {
-                _idx -= rhs;
+                const_iterator& operator -= (difference_type d) {
+                _i -= d;
                 assert(valid());
                 return *this;}};
 
@@ -496,42 +520,82 @@ public:
         // ------------
 
         /**
-         * <your documentation>
+         * defaul constructor
+         * @param allocator type defaulted
+         * set everything to 0
          */
         explicit my_deque (const allocator_type& a = allocator_type()) 
-            : _a(a), _aPointer(), _outermost(0), _front(0), _back(0), _b(0), _e(0) {
+            : _a(a), _aP() {
+             _lb = _le = _bd = _ed = 0;
+            _outermost = 0;
             assert(valid() );}
 
         /**
-         * <your documentation>
+         * constructor with given size
+         * split size up into rows and columns
          */
         explicit my_deque (size_type s, const_reference v = value_type(), const allocator_type& a = allocator_type()) 
-            : _a(a), _aPointer() {
-            size_type rows = s / 50;
-            if (s % 50 != 0)
-                ++rows;
-            _outermost = _aPointer.allocate(rows);
-            
-            for (size_type i = 0; i < rows; ++i) 
-                _outermost[i] = _a.allocate(50);
-            
-            for (size_type i = 0; i < rows; ++i) 
-                _a.deallocate(_outermost[i], 50);
-            
-            _aPointer.deallocate(_outermost, rows);
-            _front = _b = _a.allocate(s);
-            _e = _back = _b + s;
-            uninitialized_fill(_a, begin(), end(), v);
-            assert(valid());}
+            : _a(a), _aP() {
 
+            size_type numrows = s / 10;         //divide the size into different rows
+            
+            if (s % 10 > 0){                   //make sure there is no extra space, add an extra row if remainder
+                ++numrows;
+
+                _outermost = _aP.allocate(numrows);
+            
+                size_type x = 0;
+                while (x != numrows){
+                    _outermost[x] = _a.allocate(10);
+                    ++x;
+                }
+
+                x = 0;
+                while(x != numrows){
+                    _a.deallocate(_outermost[x], 10);
+                    ++x;
+                }
+            
+                _aP.deallocate(_outermost, numrows);
+                _bd = _lb = _a.allocate(s);
+
+                _ed = _le = _bd + s;
+
+                uninitialized_fill(_a, begin(), end(), v);
+                assert(valid());
+                }
+
+            else{
+                _outermost = _aP.allocate(numrows);
+            
+                size_type x = 0;
+                while (x != numrows){
+                    _outermost[x] = _a.allocate(10);
+                    ++x;
+                }
+
+                x = 0;
+                while(x != numrows){
+                    _a.deallocate(_outermost[x], 10);
+                    ++x;
+                }
+            
+                _aP.deallocate(_outermost, numrows);
+                _bd = _lb = _a.allocate(s);
+
+                _ed = _le = _bd + s;
+
+                uninitialized_fill(_a, begin(), end(), v);
+                assert(valid());}}
         /**
-         * <your documentation>
+         * copy constructor
+         * @param my_deque to be copied
          */
         my_deque (const my_deque& that) 
-            : _a(that._a), _aPointer() {
+            : _a(that._a), _aP() {
             _outermost = 0; 
-            _front = _b = _a.allocate(that.size());
-            _e = _back = _front + that.size();
+            _lb = _bd = _a.allocate(that.size());
+            _ed = _le = _lb + that.size();
             uninitialized_copy(_a, that.begin(), that.end(), begin());
             assert(valid());}
 
@@ -540,12 +604,14 @@ public:
         // ----------
 
         /**
-         * <your documentation>
+         * destructor
+         * if not empty, clear and deallocate space
          */
         ~my_deque () {
-            if (_front) {
+            if (_lb) {  //check if it's empty.  if not, deallocate entire capacity
                 clear();
-                _a.deallocate(_front, (_back - _front));}
+                _a.deallocate(_lb, (_le - _lb));}
+
             assert(valid() );}
 
         // ----------
@@ -553,26 +619,26 @@ public:
         // ----------
 
         /**
-         * <your documentation>
+         * @param my_deque
          */
         my_deque& operator = (const my_deque& rhs) {
             if (this == &rhs)
                 return *this;
             if (rhs.size() == size())
-                copy(rhs.begin(), rhs.end(), begin());
+                std::copy(rhs.begin(), rhs.end(), begin());
             else if (rhs.size() < size()) {
-                copy(rhs.begin(), rhs.end(), begin());
+                std::copy(rhs.begin(), rhs.end(), begin());
                 resize(rhs.size());
             }    
-            else if (rhs.size() <= (unsigned)(_back - _b)) {
-                copy(rhs.begin(), rhs.begin() + size(), begin());
-                _e = &(*uninitialized_copy(_a, rhs.begin() + size(), rhs.end(), end()));
+            else if (rhs.size() <= (_le - _bd)) {
+                std::copy(rhs.begin(), rhs.begin() + size(), begin());
+                _ed = &(*uninitialized_copy(_a, rhs.begin() + size(), rhs.end(), end())); //had to do * & because compiler said canot convert types
             }
             else {
                 clear();
-                my_deque d(rhs);
-                swap(d);
-            }
+                my_deque x(rhs);
+                swap(x);
+            }    
             assert(valid());
             return *this;}
 
@@ -581,13 +647,13 @@ public:
         // -----------
 
         /**
-         * <your documentation>
+         * @return reference to value at index from beginning of data
          */
         reference operator [] (size_type index) {
-            return *(_b + index);}
+            return *(_bd + index);}
 
         /**
-         * <your documentation>
+         * @return const reference to value at index from beginning of data
          */
         const_reference operator [] (size_type index) const {
             return const_cast<my_deque*>(this)->operator[](index);}
@@ -597,15 +663,15 @@ public:
         // --
 
         /**
-         * <your documentation>
+         * @return reference to value at index
          */
         reference at (size_type index) {
             if (index >= size())
-                throw std::out_of_range("Out of bounds.");
+                throw std::out_of_range("my_deque");
             return (*this)[index];}
 
         /**
-         * <your documentation>
+         * @return const reference to value at index
          */
         const_reference at (size_type index) const {
             return const_cast<my_deque*>(this)->at(index);}
@@ -615,14 +681,15 @@ public:
         // ----
 
         /**
-         * <your documentation>
+         * @return the reference to last element
+         * has to be end of data, not end of capacity
          */
         reference back () {
-            assert(size() != 0);
-            return *(_e - 1);}
+            assert(size() > 0);
+            return *(_ed - 1);}
 
         /**
-         * <your documentation>
+         * @return const reference to last element
          */
         const_reference back () const {
             return const_cast<my_deque*>(this)->back();}
@@ -632,23 +699,23 @@ public:
         // -----
 
         /**
-         * <your documentation>
+         * @return iterator to beginning position (default)
          */
         iterator begin () {
-            return iterator(this, 0);}
+            return iterator(this);}
 
         /**
-         * <your documentation>
+         * @return constant iterator to beginning position (default)
          */
         const_iterator begin () const {
-            return const_iterator(this, 0);}
+            return const_iterator(this);}
 
         // -----
         // clear
         // -----
 
         /**
-         * <your documentation>
+         * resize to 0 to clear all data
          */
         void clear () {
             resize(0);
@@ -659,23 +726,23 @@ public:
         // -----
 
         /**
-         * <your documentation>
+         * @return true if my_deque is empty
          */
         bool empty () const {
-            return !size();}
+            return size()==0;}
 
         // ---
         // end
         // ---
 
         /**
-         * <your documentation>
+         * @return iterator to the end
          */
         iterator end () {
             return iterator(this, size());}
 
         /**
-         * <your documentation>
+         * @return const iterator to the end
          */
         const_iterator end () const {
             return const_iterator(this, size());}
@@ -688,27 +755,30 @@ public:
          * <your documentation>
          */
         iterator erase (iterator i) {
-            if(i != end() - 1) {
-                copy(i + 1, end(), i);
-                resize(size() - 1);
-            }
-            else
+            if(i == end()-1){       //if at the last element, just pop it off
                 pop_back();
+            }
+
+            else{                    //else copy elements after over curent element, resize
+                std::copy(i+1, end(), i);
+                resize(size()-1);
+            }
             assert(valid() );
-            return iterator(this, 0);}
+            return iterator(this);}
 
         // -----
         // front
         // -----
 
         /**
-         * <your documentation>
+         * @return reference to the first element
          */
         reference front () {
-            return *(_b);}
+            assert(!empty());
+            return *(_bd);}
 
         /**
-         * <your documentation>
+         * @return const reference to first element
          */
         const_reference front () const {
             return const_cast<my_deque*>(this)->front();}
@@ -718,16 +788,16 @@ public:
         // ------
 
         /**
-         * <your documentation>
+         * @return iterator to given position, but with new value
          */
-        iterator insert (iterator i, const_reference v) {
-            if(i != end()) {
-                resize(size() + 1);
-                copy(i, end(), i + 1);
-                *i = v;
+        iterator insert (iterator it, const_reference r) {
+            if(it == end()){ //if at the end already, just need to push it to the back
+                push_back(r);
             }
-            else
-                push_back(v);
+            else{           //have to grow the deque and copy everything, moving it one position down.  insert the value into current position
+                resize(size()+1);
+                std::copy(it, end(), it+1);
+            }
             assert(valid());
             return iterator(this);}
 
@@ -736,7 +806,7 @@ public:
         // ---
 
         /**
-         * <your documentation>
+         * shrink deque to cut off last element
          */
         void pop_back () {
             assert(size() != 0);
@@ -744,12 +814,13 @@ public:
             assert(valid());}
 
         /**
-         * <your documentation>
+         * destroy the first element
+         * move pointer of beginning data to next element
          */
         void pop_front () {
             assert(size() != 0);
             destroy(_a, begin(), begin() + 1);
-            ++_b;
+            ++_bd;
             assert(valid());}
 
         // ----
@@ -757,21 +828,22 @@ public:
         // ----
 
         /**
-         * <your documentation>
+         * make size bigger by one and input new value with resize
          */
         void push_back (const_reference v) {
             resize(size() + 1, v);
             assert(valid());}
 
         /**
-         * <your documentation>
+         * make sure there is space for element
+         * once there is, construct a new space and insert element
          */
         void push_front (const_reference v) {
-            if (_front == _b) {
+            if (_bd == _lb) {
                 resize(size() + 1);
                 pop_back();
             }    
-            --_b;
+            --_bd;
             _a.construct(&*begin(), v); 
             assert(valid());}
 
@@ -780,34 +852,45 @@ public:
         // ------
 
         /**
-         * <your documentation>
+         * @param size type
+         * check to see if possible to fill current deque, or resize
+         * if not, make a new deque of the right size and copy elements over, swap
          */
         void resize (size_type s, const_reference v = value_type()) {
             if (s == size())
                 return;
             if (s < size())
-                _e = &*destroy(_a, begin() + s, end() );
-            else if ((s <= (unsigned)(_e -_front)) && (s <= (unsigned)(_back - _b)))
-                _e = &*uninitialized_fill(_a, end(), begin() + s, v);
-            // Not large enough capacity
-            else { 
-                size_type c = 2 * size();
-                if (s > c)
-                    c = s;
-                if (c == s)
-                    c += 3;
-                size_type b_offset = (c - s) / 2;
-                size_type e_offset = b_offset;
-                if ((c - s) % 2)
-                    ++e_offset;
+                _ed = &(*destroy(_a, begin() + s, end() )); //had to put &* to compile
+            else if (s <= (_ed -_lb))
+                _ed = &*uninitialized_fill(_a, end(), begin() + s, v);
+         
+            else {              //need to make new, bigger deque but keep all pointers the same
+                size_type newsize = size() * 2;
+                if (s > newsize){
+                    newsize = s;
+                }
+
+                if (newsize == s){
+                    newsize = newsize + 10;
+                }
+
+                size_type middled = (newsize - s) / 2;
+                size_type enddata = middled;
+
+                if ((newsize - s) % 2){
+                    ++enddata;
+                }
                 
-                my_deque d(c, v);
-                copy(begin(), end(), d.begin() + b_offset);
-                destroy(d._a, d.begin(), d.begin() + b_offset);
-                destroy(d._a, d.end() - e_offset, d.end());
-                d._b += b_offset;
-                d._e -= e_offset;
-                swap(d);}
+                my_deque x(newsize, v);
+
+                std::copy(begin(), end(), x.begin() + middled);
+
+                destroy(x._a, x.begin(), x.begin() + middled);
+                destroy(x._a, x.end() - enddata, x.end());
+                x._bd = x._bd + middled;
+                x._ed = x._ed - enddata;
+
+                swap(x);}
             assert(valid());}
 
         // ----
@@ -815,30 +898,31 @@ public:
         // ----
 
         /**
-         * <your documentation>
+         * @return the distance from beginning of data to end of data
          */
         size_type size () const {
-            return _e - _b;}
+            return (_ed - _bd);}
 
         // ----
         // swap
         // ----
 
         /**
-         * <your documentation>
+         * replace this with that
+         * swap all pointers
          */
         void swap (my_deque& that) {
-        if (_a != that._a) {
-            my_deque d(*this);
-            *this = that;
-            that = d;
-        }
-        else {
-            std::swap(_front, that._front);
-            std::swap(_back, that._back);
-            std::swap(_b, that._b);
-            std::swap(_e, that._e);
-        }
-        assert(valid() );}};
+            if(_a == that._a) {
+                std::swap(_bd, that._bd);
+                std::swap(_lb, that._lb);
+                std::swap(_ed, that._ed);
+                std::swap(_le, that._le);
+            }
+            else{
+                my_deque x(*this);
+                *this = that;
+                that = x;
+            }
+            assert(valid() );}};
 
 #endif // Deque_h
