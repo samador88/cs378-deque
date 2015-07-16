@@ -89,9 +89,9 @@
         -:   84:     */
         -:   85:    template <class _Tp>
         -:   86:      inline bool
-function _ZNSt7rel_opsneI8my_dequeIiSaIiEEEEbRKT_S6_ called 5 returned 100% blocks executed 100%
-        5:   87:      operator!=(const _Tp& __x, const _Tp& __y)
-        5:   88:      { return !(__x == __y); }
+function _ZNSt7rel_opsneI8my_dequeIiSaIiEEEEbRKT_S6_ called 10 returned 100% blocks executed 100%
+       10:   87:      operator!=(const _Tp& __x, const _Tp& __y)
+       10:   88:      { return !(__x == __y); }
 call    0 returned 100%
         -:   89:
         -:   90:    /**

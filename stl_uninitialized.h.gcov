@@ -97,13 +97,13 @@ function _ZNSt20__uninitialized_copyILb1EE13__uninit_copyISt13move_iteratorISt15
 function _ZNSt20__uninitialized_copyILb1EE13__uninit_copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS8_PS9_ES2_IS8_RS8_PS8_EEET0_T_SH_SG_ called 1 returned 100% blocks executed 100%
 function _ZNSt20__uninitialized_copyILb1EE13__uninit_copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS8_PS9_ES2_IS8_RS8_PS8_EEET0_T_SH_SG_ called 1 returned 100% blocks executed 100%
 function _ZNSt20__uninitialized_copyILb1EE13__uninit_copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS8_PS9_ES2_IS8_RS8_PS8_EEET0_T_SH_SG_ called 1 returned 100% blocks executed 100%
-function _ZNSt20__uninitialized_copyILb1EE13__uninit_copyISt15_Deque_iteratorIiRKiPS3_ES2_IiRiPiEEET0_T_SB_SA_ called 64 returned 100% blocks executed 100%
+function _ZNSt20__uninitialized_copyILb1EE13__uninit_copyISt15_Deque_iteratorIiRKiPS3_ES2_IiRiPiEEET0_T_SB_SA_ called 67 returned 100% blocks executed 100%
 function _ZNSt20__uninitialized_copyILb1EE13__uninit_copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS8_PS9_ES2_IS8_RS8_PS8_EEET0_T_SH_SG_ called 1 returned 100% blocks executed 100%
 function _ZNSt20__uninitialized_copyILb1EE13__uninit_copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS8_PS9_ES2_IS8_RS8_PS8_EEET0_T_SH_SG_ called 1 returned 100% blocks executed 100%
 function _ZNSt20__uninitialized_copyILb1EE13__uninit_copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS8_PS9_ES2_IS8_RS8_PS8_EEET0_T_SH_SG_ called 1 returned 100% blocks executed 100%
-       70:   91:        __uninit_copy(_InputIterator __first, _InputIterator __last,
+       73:   91:        __uninit_copy(_InputIterator __first, _InputIterator __last,
         -:   92:		      _ForwardIterator __result)
-       70:   93:        { return std::copy(__first, __last, __result); }
+       73:   93:        { return std::copy(__first, __last, __result); }
 call    0 never executed
 call    1 never executed
 call    2 never executed
@@ -155,11 +155,11 @@ function _ZSt18uninitialized_copyISt13move_iteratorISt15_Deque_iteratorIiRiPiEES
 function _ZSt18uninitialized_copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET0_T_SF_SE_ called 1 returned 100% blocks executed 100%
 function _ZSt18uninitialized_copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET0_T_SF_SE_ called 1 returned 100% blocks executed 100%
 function _ZSt18uninitialized_copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET0_T_SF_SE_ called 1 returned 100% blocks executed 100%
-function _ZSt18uninitialized_copyISt15_Deque_iteratorIiRKiPS1_ES0_IiRiPiEET0_T_S9_S8_ called 64 returned 100% blocks executed 100%
+function _ZSt18uninitialized_copyISt15_Deque_iteratorIiRKiPS1_ES0_IiRiPiEET0_T_S9_S8_ called 67 returned 100% blocks executed 100%
 function _ZSt18uninitialized_copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET0_T_SF_SE_ called 1 returned 100% blocks executed 100%
 function _ZSt18uninitialized_copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET0_T_SF_SE_ called 1 returned 100% blocks executed 100%
 function _ZSt18uninitialized_copyISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_EET0_T_SF_SE_ called 1 returned 100% blocks executed 100%
-       70:  107:    uninitialized_copy(_InputIterator __first, _InputIterator __last,
+       73:  107:    uninitialized_copy(_InputIterator __first, _InputIterator __last,
         -:  108:		       _ForwardIterator __result)
         -:  109:    {
         -:  110:      typedef typename iterator_traits<_InputIterator>::value_type
@@ -169,7 +169,7 @@ function _ZSt18uninitialized_copyISt15_Deque_iteratorIZN45Deque_Fixture_const_it
         -:  114:
         -:  115:      return std::__uninitialized_copy<(__is_trivial(_ValueType1)
         -:  116:					&& __is_trivial(_ValueType2))>::
-       70:  117:	__uninit_copy(__first, __last, __result);
+       73:  117:	__uninit_copy(__first, __last, __result);
 call    0 never executed
 call    1 never executed
 call    2 never executed
@@ -350,13 +350,13 @@ function _ZSt22__uninitialized_copy_aISt13move_iteratorISt15_Deque_iteratorIiRiP
 function _ZSt22__uninitialized_copy_aISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_ES6_ET0_T_SF_SE_RSaIT1_E called 1 returned 100% blocks executed 100%
 function _ZSt22__uninitialized_copy_aISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_ES6_ET0_T_SF_SE_RSaIT1_E called 1 returned 100% blocks executed 100%
 function _ZSt22__uninitialized_copy_aISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_ES6_ET0_T_SF_SE_RSaIT1_E called 1 returned 100% blocks executed 100%
-function _ZSt22__uninitialized_copy_aISt15_Deque_iteratorIiRKiPS1_ES0_IiRiPiEiET0_T_S9_S8_RSaIT1_E called 64 returned 100% blocks executed 100%
+function _ZSt22__uninitialized_copy_aISt15_Deque_iteratorIiRKiPS1_ES0_IiRiPiEiET0_T_S9_S8_RSaIT1_E called 67 returned 100% blocks executed 100%
 function _ZSt22__uninitialized_copy_aISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_ES6_ET0_T_SF_SE_RSaIT1_E called 1 returned 100% blocks executed 100%
 function _ZSt22__uninitialized_copy_aISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_ES6_ET0_T_SF_SE_RSaIT1_E called 1 returned 100% blocks executed 100%
 function _ZSt22__uninitialized_copy_aISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS6_PS7_ES0_IS6_RS6_PS6_ES6_ET0_T_SF_SE_RSaIT1_E called 1 returned 100% blocks executed 100%
-       70:  256:    __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,
+       73:  256:    __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,
         -:  257:			   _ForwardIterator __result, allocator<_Tp>&)
-       70:  258:    { return std::uninitialized_copy(__first, __last, __result); }
+       73:  258:    { return std::uninitialized_copy(__first, __last, __result); }
 call    0 never executed
 call    1 never executed
 call    2 never executed
@@ -667,19 +667,19 @@ function _ZNSt25__uninitialized_default_1ILb1EE16__uninit_defaultIPZN45Deque_Fix
 function _ZNSt25__uninitialized_default_1ILb1EE16__uninit_defaultIPZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEEvT_S9_ called 1 returned 100% blocks executed 100%
 function _ZNSt25__uninitialized_default_1ILb1EE16__uninit_defaultIPZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEEvT_S9_ called 1 returned 100% blocks executed 100%
 function _ZNSt25__uninitialized_default_1ILb1EE16__uninit_defaultISt15_Deque_iteratorIiRiPiEEEvT_S6_ called 3 returned 100% blocks executed 71%
-function _ZNSt25__uninitialized_default_1ILb1EE16__uninit_defaultIPiEEvT_S3_ called 413 returned 100% blocks executed 100%
+function _ZNSt25__uninitialized_default_1ILb1EE16__uninit_defaultIPiEEvT_S3_ called 405 returned 100% blocks executed 100%
 function _ZNSt25__uninitialized_default_1ILb1EE16__uninit_defaultIPZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEEvT_S9_ called 1 returned 100% blocks executed 100%
 function _ZNSt25__uninitialized_default_1ILb1EE16__uninit_defaultIPZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEEvT_S9_ called 1 returned 100% blocks executed 100%
 function _ZNSt25__uninitialized_default_1ILb1EE16__uninit_defaultIPZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEEvT_S9_ called 1 returned 100% blocks executed 100%
 function _ZNSt25__uninitialized_default_1ILb1EE16__uninit_defaultIPZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEEvT_S9_ called 1 returned 100% blocks executed 100%
 function _ZNSt25__uninitialized_default_1ILb1EE16__uninit_defaultIPZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEEvT_S9_ called 1 returned 100% blocks executed 100%
 function _ZNSt25__uninitialized_default_1ILb1EE16__uninit_defaultIPZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEEvT_S9_ called 1 returned 100% blocks executed 100%
-      428:  475:        __uninit_default(_ForwardIterator __first, _ForwardIterator __last)
+      420:  475:        __uninit_default(_ForwardIterator __first, _ForwardIterator __last)
         -:  476:        {
         -:  477:	  typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  478:	    _ValueType;
         -:  479:
-      428:  480:	  std::fill(__first, __last, _ValueType());
+      420:  480:	  std::fill(__first, __last, _ValueType());
 call    0 returned 100%
 branch  1 taken 100% (fallthrough)
 branch  2 taken 0% (throw)
@@ -724,7 +724,7 @@ branch 40 taken 0% (throw)
 call   41 returned 100%
 branch 42 taken 100% (fallthrough)
 branch 43 taken 0% (throw)
-      428:  481:	}
+      420:  481:	}
         -:  482:    };
         -:  483:
         -:  484:  template<bool _TrivialValueType>
@@ -774,20 +774,20 @@ function _ZSt23__uninitialized_defaultIPZN45Deque_Fixture_const_iter_arrow_op_te
 function _ZSt23__uninitialized_defaultIPZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEvT_S7_ called 1 returned 100% blocks executed 100%
 function _ZSt23__uninitialized_defaultIPZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SEvT_S7_ called 1 returned 100% blocks executed 100%
 function _ZSt23__uninitialized_defaultISt15_Deque_iteratorIiRiPiEEvT_S4_ called 3 returned 100% blocks executed 83%
-function _ZSt23__uninitialized_defaultIPiEvT_S1_ called 413 returned 100% blocks executed 100%
+function _ZSt23__uninitialized_defaultIPiEvT_S1_ called 405 returned 100% blocks executed 100%
 function _ZSt23__uninitialized_defaultIPZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEvT_S7_ called 1 returned 100% blocks executed 100%
 function _ZSt23__uninitialized_defaultIPZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEvT_S7_ called 1 returned 100% blocks executed 100%
 function _ZSt23__uninitialized_defaultIPZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEvT_S7_ called 1 returned 100% blocks executed 100%
 function _ZSt23__uninitialized_defaultIPZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEvT_S7_ called 1 returned 100% blocks executed 100%
 function _ZSt23__uninitialized_defaultIPZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEvT_S7_ called 1 returned 100% blocks executed 100%
 function _ZSt23__uninitialized_defaultIPZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SEvT_S7_ called 1 returned 100% blocks executed 100%
-      428:  524:    __uninitialized_default(_ForwardIterator __first,
+      420:  524:    __uninitialized_default(_ForwardIterator __first,
         -:  525:			    _ForwardIterator __last)
         -:  526:    {
         -:  527:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  528:	_ValueType;
         -:  529:
-      428:  530:      std::__uninitialized_default_1<__is_trivial(_ValueType)>::
+      420:  530:      std::__uninitialized_default_1<__is_trivial(_ValueType)>::
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -807,7 +807,7 @@ call   15 returned 100%
         6:  531:	__uninit_default(__first, __last);
 call    0 returned 100%
 call    1 returned 100%
-      428:  532:    }
+      420:  532:    }
         -:  533:
         -:  534:  // __uninitialized_default_n
         -:  535:  // Fills [first, first + n) with n default constructed value_type(s).
@@ -855,17 +855,17 @@ function _ZSt25__uninitialized_default_aIPZN45Deque_Fixture_const_iter_arrow_op_
 function _ZSt25__uninitialized_default_aIPZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RSaIT0_E called 1 returned 100% blocks executed 100%
 function _ZSt25__uninitialized_default_aIPZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RSaIT0_E called 1 returned 100% blocks executed 100%
 function _ZSt25__uninitialized_default_aISt15_Deque_iteratorIiRiPiEiEvT_S4_RSaIT0_E called 3 returned 100% blocks executed 83%
-function _ZSt25__uninitialized_default_aIPiiEvT_S1_RSaIT0_E called 413 returned 100% blocks executed 100%
+function _ZSt25__uninitialized_default_aIPiiEvT_S1_RSaIT0_E called 405 returned 100% blocks executed 100%
 function _ZSt25__uninitialized_default_aIPZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RSaIT0_E called 1 returned 100% blocks executed 100%
 function _ZSt25__uninitialized_default_aIPZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RSaIT0_E called 1 returned 100% blocks executed 100%
 function _ZSt25__uninitialized_default_aIPZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RSaIT0_E called 1 returned 100% blocks executed 100%
 function _ZSt25__uninitialized_default_aIPZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RSaIT0_E called 1 returned 100% blocks executed 100%
 function _ZSt25__uninitialized_default_aIPZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RSaIT0_E called 1 returned 100% blocks executed 100%
 function _ZSt25__uninitialized_default_aIPZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SS5_EvT_S7_RSaIT0_E called 1 returned 100% blocks executed 100%
-      428:  573:    __uninitialized_default_a(_ForwardIterator __first,
+      420:  573:    __uninitialized_default_a(_ForwardIterator __first,
         -:  574:			      _ForwardIterator __last,
         -:  575:			      allocator<_Tp>&)
-      428:  576:    { std::__uninitialized_default(__first, __last); }
+      420:  576:    { std::__uninitialized_default(__first, __last); }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%

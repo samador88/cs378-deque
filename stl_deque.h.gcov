@@ -91,10 +91,10 @@
         -:   86:#endif
         -:   87:
         -:   88:  inline size_t
-function _ZSt16__deque_buf_sizem called 3140 returned 100% blocks executed 80%
-     3140:   89:  __deque_buf_size(size_t __size)
+function _ZSt16__deque_buf_sizem called 3213 returned 100% blocks executed 80%
+     3213:   89:  __deque_buf_size(size_t __size)
         -:   90:  { return (__size < _GLIBCXX_DEQUE_BUF_SIZE
-     3140:   91:	    ? size_t(_GLIBCXX_DEQUE_BUF_SIZE / __size) : size_t(1)); }
+     3213:   91:	    ? size_t(_GLIBCXX_DEQUE_BUF_SIZE / __size) : size_t(1)); }
 branch  0 taken 100% (fallthrough)
 branch  1 taken 0%
         -:   92:
@@ -134,10 +134,10 @@ function _ZNSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5d
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS5_PS6_E14_S_buffer_sizeEv called 1 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_E14_S_buffer_sizeEv called 4 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS5_PS6_E14_S_buffer_sizeEv called 1 returned 100% blocks executed 100%
-function _ZNSt15_Deque_iteratorIiRiPiE14_S_buffer_sizeEv called 1160 returned 100% blocks executed 100%
-function _ZNSt15_Deque_iteratorIiRKiPS0_E14_S_buffer_sizeEv called 110 returned 100% blocks executed 100%
-     1342:  111:      static size_t _S_buffer_size()
-     1342:  112:      { return __deque_buf_size(sizeof(_Tp)); }
+function _ZNSt15_Deque_iteratorIiRiPiE14_S_buffer_sizeEv called 1170 returned 100% blocks executed 100%
+function _ZNSt15_Deque_iteratorIiRKiPS0_E14_S_buffer_sizeEv called 133 returned 100% blocks executed 100%
+     1375:  111:      static size_t _S_buffer_size()
+     1375:  112:      { return __deque_buf_size(sizeof(_Tp)); }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -209,15 +209,15 @@ function _ZNSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5d
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2Ev called 4 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2Ev called 4 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2Ev called 4 returned 100% blocks executed 100%
-function _ZNSt15_Deque_iteratorIiRiPiEC2Ev called 488 returned 100% blocks executed 100%
+function _ZNSt15_Deque_iteratorIiRiPiEC2Ev called 496 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2Ev called 2 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2Ev called 2 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2Ev called 2 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2Ev called 4 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2Ev called 4 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2Ev called 4 returned 100% blocks executed 100%
-      524:  132:      _Deque_iterator()
-      524:  133:      : _M_cur(0), _M_first(0), _M_last(0), _M_node(0) { }
+      532:  132:      _Deque_iterator()
+      532:  133:      : _M_cur(0), _M_first(0), _M_last(0), _M_node(0) { }
         -:  134:
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS5_PS6_EC2ERKS_IS5_RS5_PS5_E called 3 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2ERKS8_ called 18 returned 100% blocks executed 100%
@@ -225,7 +225,7 @@ function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_Tes
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2ERKS8_ called 18 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS5_PS6_EC2ERKS_IS5_RS5_PS5_E called 3 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2ERKS8_ called 18 returned 100% blocks executed 100%
-function _ZNSt15_Deque_iteratorIiRKiPS0_EC2ERKS_IiRiPiE called 257 returned 100% blocks executed 100%
+function _ZNSt15_Deque_iteratorIiRKiPS0_EC2ERKS_IiRiPiE called 321 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS5_PS6_EC2ERKS_IS5_RS5_PS5_E called 3 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2ERKS8_ called 18 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS5_PS6_EC2ERKS_IS5_RS5_PS5_E called 3 returned 100% blocks executed 100%
@@ -235,13 +235,13 @@ function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_Tes
 function _ZNSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2ERKS8_ called 7 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2ERKS8_ called 7 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2ERKS8_ called 7 returned 100% blocks executed 100%
-function _ZNSt15_Deque_iteratorIiRiPiEC2ERKS2_ called 2302 returned 100% blocks executed 100%
+function _ZNSt15_Deque_iteratorIiRiPiEC2ERKS2_ called 2274 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2ERKS8_ called 7 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2ERKS8_ called 7 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EC2ERKS8_ called 7 returned 100% blocks executed 100%
-     2727:  135:      _Deque_iterator(const iterator& __x)
+     2763:  135:      _Deque_iterator(const iterator& __x)
         -:  136:      : _M_cur(__x._M_cur), _M_first(__x._M_first),
-     2727:  137:        _M_last(__x._M_last), _M_node(__x._M_node) { }
+     2763:  137:        _M_last(__x._M_last), _M_node(__x._M_node) { }
         -:  138:
         -:  139:      reference
 function _ZNKSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS5_PS6_EdeEv called 2 returned 100% blocks executed 100%
@@ -262,10 +262,10 @@ function _ZNKSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my
 function _ZNKSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EdeEv called 4 returned 100% blocks executed 100%
 function _ZNKSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EdeEv called 4 returned 100% blocks executed 100%
 function _ZNKSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EdeEv called 4 returned 100% blocks executed 100%
-function _ZNKSt15_Deque_iteratorIiRiPiEdeEv called 1095 returned 100% blocks executed 100%
-function _ZNKSt15_Deque_iteratorIiRKiPS0_EdeEv called 854 returned 100% blocks executed 100%
-     1997:  140:      operator*() const
-     1997:  141:      { return *_M_cur; }
+function _ZNKSt15_Deque_iteratorIiRiPiEdeEv called 1068 returned 100% blocks executed 100%
+function _ZNKSt15_Deque_iteratorIiRKiPS0_EdeEv called 922 returned 100% blocks executed 100%
+     2038:  140:      operator*() const
+     2038:  141:      { return *_M_cur; }
         -:  142:
         -:  143:      pointer
 function _ZNKSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EptEv called 1 returned 100% blocks executed 100%
@@ -296,14 +296,14 @@ function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_Tes
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EppEv called 2 returned 100% blocks executed 60%
 function _ZNSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EppEv called 1 returned 100% blocks executed 60%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS5_PS6_EppEv called 3 returned 100% blocks executed 60%
-function _ZNSt15_Deque_iteratorIiRKiPS0_EppEv called 846 returned 100% blocks executed 60%
-function _ZNSt15_Deque_iteratorIiRiPiEppEv called 640 returned 100% blocks executed 60%
+function _ZNSt15_Deque_iteratorIiRKiPS0_EppEv called 892 returned 100% blocks executed 100%
+function _ZNSt15_Deque_iteratorIiRiPiEppEv called 646 returned 100% blocks executed 60%
 function _ZNSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EppEv called 1 returned 100% blocks executed 60%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS5_PS6_EppEv called 3 returned 100% blocks executed 60%
-     1514:  148:      operator++()
+     1566:  148:      operator++()
         -:  149:      {
-     1514:  150:	++_M_cur;
-     1514:  151:	if (_M_cur == _M_last)
+     1566:  150:	++_M_cur;
+     1566:  151:	if (_M_cur == _M_last)
 branch  0 taken 0% (fallthrough)
 branch  1 taken 100%
 branch  2 taken 0% (fallthrough)
@@ -328,8 +328,8 @@ branch 20 taken 0% (fallthrough)
 branch 21 taken 100%
 branch 22 taken 0% (fallthrough)
 branch 23 taken 100%
-branch 24 taken 0% (fallthrough)
-branch 25 taken 100%
+branch 24 taken 1% (fallthrough)
+branch 25 taken 99%
 branch 26 taken 0% (fallthrough)
 branch 27 taken 100%
 branch 28 taken 0% (fallthrough)
@@ -337,7 +337,7 @@ branch 29 taken 100%
 branch 30 taken 0% (fallthrough)
 branch 31 taken 100%
         -:  152:	  {
-    #####:  153:	    _M_set_node(_M_node + 1);
+       12:  153:	    _M_set_node(_M_node + 1);
 call    0 never executed
 call    1 never executed
 call    2 never executed
@@ -350,13 +350,13 @@ call    8 never executed
 call    9 never executed
 call   10 never executed
 call   11 never executed
-call   12 never executed
+call   12 returned 100%
 call   13 never executed
 call   14 never executed
 call   15 never executed
-    #####:  154:	    _M_cur = _M_first;
+       12:  154:	    _M_cur = _M_first;
         -:  155:	  }
-     1514:  156:	return *this;
+     1566:  156:	return *this;
         -:  157:      }
         -:  158:
         -:  159:      _Self
@@ -418,12 +418,12 @@ function _ZNSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EpLEl called 2 returned 100% blocks executed 47%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EpLEl called 2 returned 100% blocks executed 47%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EpLEl called 2 returned 100% blocks executed 47%
-function _ZNSt15_Deque_iteratorIiRiPiEpLEl called 503 returned 100% blocks executed 88%
+function _ZNSt15_Deque_iteratorIiRiPiEpLEl called 470 returned 100% blocks executed 88%
 function _ZNSt15_Deque_iteratorIiRKiPS0_EpLEl called 31 returned 100% blocks executed 47%
-      558:  188:      operator+=(difference_type __n)
+      525:  188:      operator+=(difference_type __n)
         -:  189:      {
-      558:  190:	const difference_type __offset = __n + (_M_cur - _M_first);
-      558:  191:	if (__offset >= 0 && __offset < difference_type(_S_buffer_size()))
+      525:  190:	const difference_type __offset = __n + (_M_cur - _M_first);
+      525:  191:	if (__offset >= 0 && __offset < difference_type(_S_buffer_size()))
 branch  0 taken 100% (fallthrough)
 branch  1 taken 0%
 call    2 returned 100%
@@ -522,7 +522,7 @@ branch 94 taken 100% (fallthrough)
 branch 95 taken 0%
 branch 96 taken 100% (fallthrough)
 branch 97 taken 0%
-      553:  192:	  _M_cur += __n;
+      520:  192:	  _M_cur += __n;
         -:  193:	else
         -:  194:	  {
         -:  195:	    const difference_type __node_offset =
@@ -617,7 +617,7 @@ call   11 never executed
 call   12 returned 100%
 call   13 never executed
         -:  202:	  }
-      558:  203:	return *this;
+      525:  203:	return *this;
         -:  204:      }
         -:  205:
         -:  206:      _Self
@@ -633,11 +633,11 @@ function _ZNKSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my
 function _ZNKSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EplEl called 2 returned 100% blocks executed 100%
 function _ZNKSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EplEl called 2 returned 100% blocks executed 100%
 function _ZNKSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EplEl called 2 returned 100% blocks executed 100%
-function _ZNKSt15_Deque_iteratorIiRiPiEplEl called 484 returned 100% blocks executed 100%
+function _ZNKSt15_Deque_iteratorIiRiPiEplEl called 451 returned 100% blocks executed 100%
 function _ZNKSt15_Deque_iteratorIiRKiPS0_EplEl called 12 returned 100% blocks executed 100%
-      520:  207:      operator+(difference_type __n) const
+      487:  207:      operator+(difference_type __n) const
         -:  208:      {
-      520:  209:	_Self __tmp = *this;
+      487:  209:	_Self __tmp = *this;
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -651,7 +651,7 @@ call    9 returned 100%
 call   10 returned 100%
 call   11 returned 100%
 call   12 returned 100%
-      520:  210:	return __tmp += __n;
+      487:  210:	return __tmp += __n;
 call    0 returned 100%
 branch  1 taken 100% (fallthrough)
 branch  2 taken 0% (throw)
@@ -741,15 +741,15 @@ function _ZNKSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5
 function _ZNKSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EixEl called 2 returned 100% blocks executed 100%
 function _ZNKSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EixEl called 2 returned 100% blocks executed 100%
 function _ZNKSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EixEl called 2 returned 100% blocks executed 100%
-function _ZNKSt15_Deque_iteratorIiRiPiEixEl called 465 returned 100% blocks executed 100%
+function _ZNKSt15_Deque_iteratorIiRiPiEixEl called 432 returned 100% blocks executed 100%
 function _ZNKSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EixEl called 2 returned 100% blocks executed 100%
 function _ZNKSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EixEl called 2 returned 100% blocks executed 100%
 function _ZNKSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EixEl called 2 returned 100% blocks executed 100%
 function _ZNKSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EixEl called 2 returned 100% blocks executed 100%
 function _ZNKSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EixEl called 2 returned 100% blocks executed 100%
 function _ZNKSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_EixEl called 2 returned 100% blocks executed 100%
-      489:  225:      operator[](difference_type __n) const
-      489:  226:      { return *(*this + __n); }
+      456:  225:      operator[](difference_type __n) const
+      456:  226:      { return *(*this + __n); }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -799,15 +799,15 @@ function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_2_Tes
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_E11_M_set_nodeEPS7_ called 4 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_E11_M_set_nodeEPS7_ called 2 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRKS5_PS6_E11_M_set_nodeEPPS5_ called 0 returned 0% blocks executed 0%
-function _ZNSt15_Deque_iteratorIiRKiPS0_E11_M_set_nodeEPPi called 1 returned 100% blocks executed 100%
-function _ZNSt15_Deque_iteratorIiRiPiE11_M_set_nodeEPS1_ called 497 returned 100% blocks executed 100%
+function _ZNSt15_Deque_iteratorIiRKiPS0_E11_M_set_nodeEPPi called 13 returned 100% blocks executed 100%
+function _ZNSt15_Deque_iteratorIiRiPiE11_M_set_nodeEPS1_ called 517 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_E11_M_set_nodeEPS7_ called 2 returned 100% blocks executed 100%
 function _ZNSt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRKS5_PS6_E11_M_set_nodeEPPS5_ called 0 returned 0% blocks executed 0%
-      534:  234:      _M_set_node(_Map_pointer __new_node)
+      566:  234:      _M_set_node(_Map_pointer __new_node)
         -:  235:      {
-      534:  236:	_M_node = __new_node;
-      534:  237:	_M_first = *__new_node;
-      534:  238:	_M_last = _M_first + difference_type(_S_buffer_size());
+      566:  236:	_M_node = __new_node;
+      566:  237:	_M_first = *__new_node;
+      566:  238:	_M_last = _M_first + difference_type(_S_buffer_size());
 call    0 never executed
 call    1 never executed
 call    2 never executed
@@ -828,7 +828,7 @@ call   16 returned 100%
 call   17 returned 100%
 call   18 returned 100%
 call   19 never executed
-      534:  239:      }
+      566:  239:      }
         -:  240:    };
         -:  241:
         -:  242:  // Note: we also provide overloads whose operands are of the same type in
@@ -837,10 +837,10 @@ call   19 never executed
         -:  245:  template<typename _Tp, typename _Ref, typename _Ptr>
         -:  246:    inline bool
 function _ZSteqIiRiPiEbRKSt15_Deque_iteratorIT_T0_T1_ES8_ called 88 returned 100% blocks executed 100%
-function _ZSteqIiRKiPS0_EbRKSt15_Deque_iteratorIT_T0_T1_ES9_ called 178 returned 100% blocks executed 100%
-      266:  247:    operator==(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+function _ZSteqIiRKiPS0_EbRKSt15_Deque_iteratorIT_T0_T1_ES9_ called 224 returned 100% blocks executed 100%
+      312:  247:    operator==(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
         -:  248:	       const _Deque_iterator<_Tp, _Ref, _Ptr>& __y)
-      266:  249:    { return __x._M_cur == __y._M_cur; }
+      312:  249:    { return __x._M_cur == __y._M_cur; }
         -:  250:
         -:  251:  template<typename _Tp, typename _RefL, typename _PtrL,
         -:  252:	   typename _RefR, typename _PtrR>
@@ -852,10 +852,10 @@ function _ZSteqIiRKiPS0_EbRKSt15_Deque_iteratorIT_T0_T1_ES9_ called 178 returned
         -:  258:  template<typename _Tp, typename _Ref, typename _Ptr>
         -:  259:    inline bool
 function _ZStneIiRiPiEbRKSt15_Deque_iteratorIT_T0_T1_ES8_ called 49 returned 100% blocks executed 100%
-function _ZStneIiRKiPS0_EbRKSt15_Deque_iteratorIT_T0_T1_ES9_ called 147 returned 100% blocks executed 100%
-      196:  260:    operator!=(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+function _ZStneIiRKiPS0_EbRKSt15_Deque_iteratorIT_T0_T1_ES9_ called 189 returned 100% blocks executed 100%
+      238:  260:    operator!=(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
         -:  261:	       const _Deque_iterator<_Tp, _Ref, _Ptr>& __y)
-      196:  262:    { return !(__x == __y); }
+      238:  262:    { return !(__x == __y); }
 call    0 returned 100%
 call    1 returned 100%
         -:  263:
@@ -935,16 +935,16 @@ function _ZStmiIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaI
 function _ZStmiIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_ENSt15_Deque_iteratorIT_T0_T1_E15difference_typeERKSC_SF_ called 1 returned 100% blocks executed 100%
 function _ZStmiIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_ENSt15_Deque_iteratorIT_T0_T1_E15difference_typeERKSC_SF_ called 1 returned 100% blocks executed 100%
 function _ZStmiIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_ENSt15_Deque_iteratorIT_T0_T1_E15difference_typeERKSC_SF_ called 1 returned 100% blocks executed 100%
-function _ZStmiIiRKiPS0_ENSt15_Deque_iteratorIT_T0_T1_E15difference_typeERKS7_SA_ called 78 returned 100% blocks executed 100%
+function _ZStmiIiRKiPS0_ENSt15_Deque_iteratorIT_T0_T1_E15difference_typeERKS7_SA_ called 89 returned 100% blocks executed 100%
 function _ZStmiIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_ENSt15_Deque_iteratorIT_T0_T1_E15difference_typeERKSC_SF_ called 1 returned 100% blocks executed 100%
 function _ZStmiIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_ENSt15_Deque_iteratorIT_T0_T1_E15difference_typeERKSC_SF_ called 1 returned 100% blocks executed 100%
 function _ZStmiIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SRS5_PS5_ENSt15_Deque_iteratorIT_T0_T1_E15difference_typeERKSC_SF_ called 1 returned 100% blocks executed 100%
-function _ZStmiIiRiPiENSt15_Deque_iteratorIT_T0_T1_E15difference_typeERKS6_S9_ called 150 returned 100% blocks executed 100%
-      240:  331:    operator-(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+function _ZStmiIiRiPiENSt15_Deque_iteratorIT_T0_T1_E15difference_typeERKS6_S9_ called 173 returned 100% blocks executed 100%
+      274:  331:    operator-(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
         -:  332:	      const _Deque_iterator<_Tp, _Ref, _Ptr>& __y)
         -:  333:    {
         -:  334:      return typename _Deque_iterator<_Tp, _Ref, _Ptr>::difference_type
-      240:  335:	(_Deque_iterator<_Tp, _Ref, _Ptr>::_S_buffer_size())
+      274:  335:	(_Deque_iterator<_Tp, _Ref, _Ptr>::_S_buffer_size())
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -960,7 +960,7 @@ call   11 returned 100%
 call   12 returned 100%
 call   13 returned 100%
         -:  336:	* (__x._M_node - __y._M_node - 1) + (__x._M_cur - __x._M_first)
-      240:  337:	+ (__y._M_last - __y._M_cur);
+      274:  337:	+ (__y._M_last - __y._M_cur);
         -:  338:    }
         -:  339:
         -:  340:  template<typename _Tp, typename _RefL, typename _PtrL,
@@ -1088,12 +1088,12 @@ branch  5 never executed
         -:  448:      typedef _Deque_iterator<_Tp, _Tp&, _Tp*>             iterator;
         -:  449:      typedef _Deque_iterator<_Tp, const _Tp&, const _Tp*> const_iterator;
         -:  450:
-function _ZNSt11_Deque_baseIiSaIiEEC2Ev called 10 returned 100% blocks executed 80%
-       10:  451:      _Deque_base()
-       10:  452:      : _M_impl()
+function _ZNSt11_Deque_baseIiSaIiEEC2Ev called 19 returned 100% blocks executed 80%
+       19:  451:      _Deque_base()
+       19:  452:      : _M_impl()
 call    0 returned 100%
 call    1 never executed
-       10:  453:      { _M_initialize_map(0); }
+       19:  453:      { _M_initialize_map(0); }
 call    0 returned 100%
 branch  1 taken 100% (fallthrough)
 branch  2 taken 0% (throw)
@@ -1104,15 +1104,15 @@ function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5deque
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2Em called 1 returned 100% blocks executed 80%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2Em called 1 returned 100% blocks executed 80%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2Em called 1 returned 100% blocks executed 80%
-function _ZNSt11_Deque_baseIiSaIiEEC2Em called 165 returned 100% blocks executed 80%
+function _ZNSt11_Deque_baseIiSaIiEEC2Em called 157 returned 100% blocks executed 80%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2Em called 1 returned 100% blocks executed 80%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2Em called 1 returned 100% blocks executed 80%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2Em called 1 returned 100% blocks executed 80%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2Em called 1 returned 100% blocks executed 80%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2Em called 1 returned 100% blocks executed 80%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2Em called 1 returned 100% blocks executed 80%
-      177:  455:      _Deque_base(size_t __num_elements)
-      177:  456:      : _M_impl()
+      169:  455:      _Deque_base(size_t __num_elements)
+      169:  456:      : _M_impl()
 call    0 returned 100%
 call    1 never executed
 call    2 returned 100%
@@ -1139,7 +1139,7 @@ call   22 returned 100%
 call   23 never executed
 call   24 returned 100%
 call   25 never executed
-      177:  457:      { _M_initialize_map(__num_elements); }
+      169:  457:      { _M_initialize_map(__num_elements); }
 call    0 returned 100%
 branch  1 taken 100% (fallthrough)
 branch  2 taken 0% (throw)
@@ -1183,12 +1183,12 @@ branch 38 taken 0% (throw)
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2ERKS6_m called 1 returned 100% blocks executed 80%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2ERKS6_m called 1 returned 100% blocks executed 80%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2ERKS6_m called 1 returned 100% blocks executed 80%
-function _ZNSt11_Deque_baseIiSaIiEEC2ERKS0_m called 69 returned 100% blocks executed 80%
+function _ZNSt11_Deque_baseIiSaIiEEC2ERKS0_m called 72 returned 100% blocks executed 80%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2ERKS6_m called 1 returned 100% blocks executed 80%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2ERKS6_m called 1 returned 100% blocks executed 80%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2ERKS6_m called 1 returned 100% blocks executed 80%
-       75:  459:      _Deque_base(const allocator_type& __a, size_t __num_elements)
-       75:  460:      : _M_impl(__a)
+       78:  459:      _Deque_base(const allocator_type& __a, size_t __num_elements)
+       78:  460:      : _M_impl(__a)
 call    0 returned 100%
 call    1 never executed
 call    2 returned 100%
@@ -1203,7 +1203,7 @@ call   10 returned 100%
 call   11 never executed
 call   12 returned 100%
 call   13 never executed
-       75:  461:      { _M_initialize_map(__num_elements); }
+       78:  461:      { _M_initialize_map(__num_elements); }
 call    0 returned 100%
 branch  1 taken 100% (fallthrough)
 branch  2 taken 0% (throw)
@@ -1261,14 +1261,14 @@ function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5deque
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implD2Ev called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implD2Ev called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implD2Ev called 2 returned 100% blocks executed 100%
-function _ZNSt11_Deque_baseIiSaIiEE11_Deque_implD2Ev called 244 returned 100% blocks executed 100%
+function _ZNSt11_Deque_baseIiSaIiEE11_Deque_implD2Ev called 248 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implD2Ev called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implD2Ev called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implD2Ev called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implD2Ev called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implD2Ev called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implD2Ev called 2 returned 100% blocks executed 100%
-      262:  492:      struct _Deque_impl
+      266:  492:      struct _Deque_impl
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -1295,16 +1295,16 @@ function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5deque
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implC2Ev called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implC2Ev called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implC2Ev called 1 returned 100% blocks executed 100%
-function _ZNSt11_Deque_baseIiSaIiEE11_Deque_implC2Ev called 175 returned 100% blocks executed 100%
+function _ZNSt11_Deque_baseIiSaIiEE11_Deque_implC2Ev called 176 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implC2Ev called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implC2Ev called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implC2Ev called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implC2Ev called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implC2Ev called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implC2Ev called 1 returned 100% blocks executed 100%
-      187:  500:	_Deque_impl()
+      188:  500:	_Deque_impl()
         -:  501:	: _Tp_alloc_type(), _M_map(0), _M_map_size(0),
-      187:  502:	  _M_start(), _M_finish()
+      188:  502:	  _M_start(), _M_finish()
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -1344,18 +1344,18 @@ call   35 returned 100%
 call   36 returned 100%
 call   37 returned 100%
 call   38 returned 100%
-      187:  503:	{ }
+      188:  503:	{ }
         -:  504:
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implC2ERKS6_ called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implC2ERKS6_ called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implC2ERKS6_ called 1 returned 100% blocks executed 100%
-function _ZNSt11_Deque_baseIiSaIiEE11_Deque_implC2ERKS0_ called 69 returned 100% blocks executed 100%
+function _ZNSt11_Deque_baseIiSaIiEE11_Deque_implC2ERKS0_ called 72 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implC2ERKS6_ called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implC2ERKS6_ called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE11_Deque_implC2ERKS6_ called 1 returned 100% blocks executed 100%
-       75:  505:	_Deque_impl(const _Tp_alloc_type& __a)
+       78:  505:	_Deque_impl(const _Tp_alloc_type& __a)
         -:  506:	: _Tp_alloc_type(__a), _M_map(0), _M_map_size(0),
-       75:  507:	  _M_start(), _M_finish()
+       78:  507:	  _M_start(), _M_finish()
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -1377,7 +1377,7 @@ call   17 returned 100%
 call   18 returned 100%
 call   19 returned 100%
 call   20 returned 100%
-       75:  508:	{ }
+       78:  508:	{ }
         -:  509:
         -:  510:#if __cplusplus >= 201103L
         -:  511:	_Deque_impl(_Tp_alloc_type&& __a)
@@ -1394,15 +1394,15 @@ function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5deque
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE19_M_get_Tp_allocatorEv called 4 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE19_M_get_Tp_allocatorEv called 4 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE19_M_get_Tp_allocatorEv called 4 returned 100% blocks executed 100%
-function _ZNSt11_Deque_baseIiSaIiEE19_M_get_Tp_allocatorEv called 743 returned 100% blocks executed 100%
+function _ZNSt11_Deque_baseIiSaIiEE19_M_get_Tp_allocatorEv called 742 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE19_M_get_Tp_allocatorEv called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE19_M_get_Tp_allocatorEv called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE19_M_get_Tp_allocatorEv called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE19_M_get_Tp_allocatorEv called 4 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE19_M_get_Tp_allocatorEv called 4 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE19_M_get_Tp_allocatorEv called 4 returned 100% blocks executed 100%
-      779:  519:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
-      779:  520:      { return *static_cast<_Tp_alloc_type*>(&this->_M_impl); }
+      778:  519:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
+      778:  520:      { return *static_cast<_Tp_alloc_type*>(&this->_M_impl); }
         -:  521:
         -:  522:      const _Tp_alloc_type&
 function _ZNKSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE19_M_get_Tp_allocatorEv called 2 returned 100% blocks executed 100%
@@ -1414,12 +1414,12 @@ function _ZNKSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_deq
 function _ZNKSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE19_M_get_Tp_allocatorEv called 5 returned 100% blocks executed 100%
 function _ZNKSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE19_M_get_Tp_allocatorEv called 5 returned 100% blocks executed 100%
 function _ZNKSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE19_M_get_Tp_allocatorEv called 5 returned 100% blocks executed 100%
-function _ZNKSt11_Deque_baseIiSaIiEE19_M_get_Tp_allocatorEv called 551 returned 100% blocks executed 100%
+function _ZNKSt11_Deque_baseIiSaIiEE19_M_get_Tp_allocatorEv called 562 returned 100% blocks executed 100%
 function _ZNKSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE19_M_get_Tp_allocatorEv called 5 returned 100% blocks executed 100%
 function _ZNKSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE19_M_get_Tp_allocatorEv called 5 returned 100% blocks executed 100%
 function _ZNKSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE19_M_get_Tp_allocatorEv called 5 returned 100% blocks executed 100%
-      593:  523:      _M_get_Tp_allocator() const _GLIBCXX_NOEXCEPT
-      593:  524:      { return *static_cast<const _Tp_alloc_type*>(&this->_M_impl); }
+      604:  523:      _M_get_Tp_allocator() const _GLIBCXX_NOEXCEPT
+      604:  524:      { return *static_cast<const _Tp_alloc_type*>(&this->_M_impl); }
         -:  525:
         -:  526:      _Map_alloc_type
 function _ZNKSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE20_M_get_map_allocatorEv called 2 returned 100% blocks executed 100%
@@ -1428,15 +1428,15 @@ function _ZNKSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5dequ
 function _ZNKSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE20_M_get_map_allocatorEv called 4 returned 100% blocks executed 100%
 function _ZNKSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE20_M_get_map_allocatorEv called 4 returned 100% blocks executed 100%
 function _ZNKSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE20_M_get_map_allocatorEv called 4 returned 100% blocks executed 100%
-function _ZNKSt11_Deque_baseIiSaIiEE20_M_get_map_allocatorEv called 488 returned 100% blocks executed 100%
+function _ZNKSt11_Deque_baseIiSaIiEE20_M_get_map_allocatorEv called 496 returned 100% blocks executed 100%
 function _ZNKSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE20_M_get_map_allocatorEv called 2 returned 100% blocks executed 100%
 function _ZNKSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE20_M_get_map_allocatorEv called 2 returned 100% blocks executed 100%
 function _ZNKSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE20_M_get_map_allocatorEv called 2 returned 100% blocks executed 100%
 function _ZNKSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE20_M_get_map_allocatorEv called 4 returned 100% blocks executed 100%
 function _ZNKSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE20_M_get_map_allocatorEv called 4 returned 100% blocks executed 100%
 function _ZNKSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE20_M_get_map_allocatorEv called 4 returned 100% blocks executed 100%
-      524:  527:      _M_get_map_allocator() const _GLIBCXX_NOEXCEPT
-      524:  528:      { return _Map_alloc_type(_M_get_Tp_allocator()); }
+      532:  527:      _M_get_map_allocator() const _GLIBCXX_NOEXCEPT
+      532:  528:      { return _Map_alloc_type(_M_get_Tp_allocator()); }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -1477,10 +1477,10 @@ function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequ
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE16_M_allocate_nodeEv called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE16_M_allocate_nodeEv called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE16_M_allocate_nodeEv called 2 returned 100% blocks executed 100%
-function _ZNSt11_Deque_baseIiSaIiEE16_M_allocate_nodeEv called 495 returned 100% blocks executed 100%
-      513:  531:      _M_allocate_node()
+function _ZNSt11_Deque_baseIiSaIiEE16_M_allocate_nodeEv called 511 returned 100% blocks executed 100%
+      529:  531:      _M_allocate_node()
         -:  532:      { 
-      513:  533:	return _M_impl._Tp_alloc_type::allocate(__deque_buf_size(sizeof(_Tp)));
+      529:  533:	return _M_impl._Tp_alloc_type::allocate(__deque_buf_size(sizeof(_Tp)));
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -1522,10 +1522,10 @@ function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequ
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE18_M_deallocate_nodeEPS5_ called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE18_M_deallocate_nodeEPS5_ called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE18_M_deallocate_nodeEPS5_ called 2 returned 100% blocks executed 100%
-function _ZNSt11_Deque_baseIiSaIiEE18_M_deallocate_nodeEPi called 495 returned 100% blocks executed 100%
-      513:  537:      _M_deallocate_node(_Tp* __p)
+function _ZNSt11_Deque_baseIiSaIiEE18_M_deallocate_nodeEPi called 511 returned 100% blocks executed 100%
+      529:  537:      _M_deallocate_node(_Tp* __p)
         -:  538:      {
-      513:  539:	_M_impl._Tp_alloc_type::deallocate(__p, __deque_buf_size(sizeof(_Tp)));
+      529:  539:	_M_impl._Tp_alloc_type::deallocate(__p, __deque_buf_size(sizeof(_Tp)));
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -1552,7 +1552,7 @@ call   22 returned 100%
 call   23 returned 100%
 call   24 returned 100%
 call   25 returned 100%
-      513:  540:      }
+      529:  540:      }
         -:  541:
         -:  542:      _Tp**
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_allocate_mapEm called 1 returned 100% blocks executed 86%
@@ -1561,15 +1561,15 @@ function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5deque
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_allocate_mapEm called 2 returned 100% blocks executed 86%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_allocate_mapEm called 2 returned 100% blocks executed 86%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_allocate_mapEm called 2 returned 100% blocks executed 86%
-function _ZNSt11_Deque_baseIiSaIiEE15_M_allocate_mapEm called 244 returned 100% blocks executed 86%
+function _ZNSt11_Deque_baseIiSaIiEE15_M_allocate_mapEm called 248 returned 100% blocks executed 86%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_allocate_mapEm called 1 returned 100% blocks executed 86%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_allocate_mapEm called 1 returned 100% blocks executed 86%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_allocate_mapEm called 1 returned 100% blocks executed 86%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_allocate_mapEm called 2 returned 100% blocks executed 86%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_allocate_mapEm called 2 returned 100% blocks executed 86%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_allocate_mapEm called 2 returned 100% blocks executed 86%
-      262:  543:      _M_allocate_map(size_t __n)
-      262:  544:      { return _M_get_map_allocator().allocate(__n); }
+      266:  543:      _M_allocate_map(size_t __n)
+      266:  544:      { return _M_get_map_allocator().allocate(__n); }
 call    0 returned 100%
 call    1 returned 100%
 branch  2 taken 100% (fallthrough)
@@ -1656,15 +1656,15 @@ function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5deque
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_deallocate_mapEPPS5_m called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_deallocate_mapEPPS5_m called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_deallocate_mapEPPS5_m called 2 returned 100% blocks executed 100%
-function _ZNSt11_Deque_baseIiSaIiEE17_M_deallocate_mapEPPim called 244 returned 100% blocks executed 100%
+function _ZNSt11_Deque_baseIiSaIiEE17_M_deallocate_mapEPPim called 248 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_deallocate_mapEPPS5_m called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_deallocate_mapEPPS5_m called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_deallocate_mapEPPS5_m called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_deallocate_mapEPPS5_m called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_deallocate_mapEPPS5_m called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_deallocate_mapEPPS5_m called 2 returned 100% blocks executed 100%
-      262:  547:      _M_deallocate_map(_Tp** __p, size_t __n)
-      262:  548:      { _M_get_map_allocator().deallocate(__p, __n); }
+      266:  547:      _M_deallocate_map(_Tp** __p, size_t __n)
+      266:  548:      { _M_get_map_allocator().deallocate(__p, __n); }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -1721,17 +1721,17 @@ function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5deque
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSt11_Deque_baseIiSaIiEED2Ev called 244 returned 100% blocks executed 100%
+function _ZNSt11_Deque_baseIiSaIiEED2Ev called 248 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 2 returned 100% blocks executed 100%
-      262:  560:    _Deque_base<_Tp, _Alloc>::
+      266:  560:    _Deque_base<_Tp, _Alloc>::
         -:  561:    ~_Deque_base()
         -:  562:    {
-      262:  563:      if (this->_M_impl._M_map)
+      266:  563:      if (this->_M_impl._M_map)
 branch  0 taken 100% (fallthrough)
 branch  1 taken 0%
 branch  2 taken 100% (fallthrough)
@@ -1759,7 +1759,7 @@ branch 23 taken 0%
 branch 24 taken 100% (fallthrough)
 branch 25 taken 0%
         -:  564:	{
-      262:  565:	  _M_destroy_nodes(this->_M_impl._M_start._M_node,
+      266:  565:	  _M_destroy_nodes(this->_M_impl._M_start._M_node,
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -1773,8 +1773,8 @@ call    9 returned 100%
 call   10 returned 100%
 call   11 returned 100%
 call   12 returned 100%
-      262:  566:			   this->_M_impl._M_finish._M_node + 1);
-      262:  567:	  _M_deallocate_map(this->_M_impl._M_map, this->_M_impl._M_map_size);
+      266:  566:			   this->_M_impl._M_finish._M_node + 1);
+      266:  567:	  _M_deallocate_map(this->_M_impl._M_map, this->_M_impl._M_map_size);
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -1789,7 +1789,7 @@ call   10 returned 100%
 call   11 returned 100%
 call   12 returned 100%
         -:  568:	}
-      262:  569:    }
+      266:  569:    }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -1820,17 +1820,17 @@ function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5deque
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_initialize_mapEm called 2 returned 100% blocks executed 64%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_initialize_mapEm called 2 returned 100% blocks executed 64%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_initialize_mapEm called 2 returned 100% blocks executed 64%
-function _ZNSt11_Deque_baseIiSaIiEE17_M_initialize_mapEm called 244 returned 100% blocks executed 64%
+function _ZNSt11_Deque_baseIiSaIiEE17_M_initialize_mapEm called 248 returned 100% blocks executed 64%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_initialize_mapEm called 1 returned 100% blocks executed 64%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_initialize_mapEm called 1 returned 100% blocks executed 64%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_initialize_mapEm called 1 returned 100% blocks executed 64%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_initialize_mapEm called 2 returned 100% blocks executed 64%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_initialize_mapEm called 2 returned 100% blocks executed 64%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE17_M_initialize_mapEm called 2 returned 100% blocks executed 64%
-      262:  581:    _Deque_base<_Tp, _Alloc>::
+      266:  581:    _Deque_base<_Tp, _Alloc>::
         -:  582:    _M_initialize_map(size_t __num_elements)
         -:  583:    {
-      262:  584:      const size_t __num_nodes = (__num_elements/ __deque_buf_size(sizeof(_Tp))
+      266:  584:      const size_t __num_nodes = (__num_elements/ __deque_buf_size(sizeof(_Tp))
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -1844,10 +1844,10 @@ call    9 returned 100%
 call   10 returned 100%
 call   11 returned 100%
 call   12 returned 100%
-      262:  585:				  + 1);
+      266:  585:				  + 1);
         -:  586:
-      262:  587:      this->_M_impl._M_map_size = std::max((size_t) _S_initial_map_size,
-      524:  588:					   size_t(__num_nodes + 2));
+      266:  587:      this->_M_impl._M_map_size = std::max((size_t) _S_initial_map_size,
+      532:  588:					   size_t(__num_nodes + 2));
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -1861,7 +1861,7 @@ call    9 returned 100%
 call   10 returned 100%
 call   11 returned 100%
 call   12 returned 100%
-      262:  589:      this->_M_impl._M_map = _M_allocate_map(this->_M_impl._M_map_size);
+      266:  589:      this->_M_impl._M_map = _M_allocate_map(this->_M_impl._M_map_size);
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -1882,11 +1882,11 @@ call   12 returned 100%
         -:  594:      // _M_map+3.
         -:  595:
         -:  596:      _Tp** __nstart = (this->_M_impl._M_map
-      262:  597:			+ (this->_M_impl._M_map_size - __num_nodes) / 2);
-      262:  598:      _Tp** __nfinish = __nstart + __num_nodes;
+      266:  597:			+ (this->_M_impl._M_map_size - __num_nodes) / 2);
+      266:  598:      _Tp** __nfinish = __nstart + __num_nodes;
         -:  599:
         -:  600:      __try
-      262:  601:	{ _M_create_nodes(__nstart, __nfinish); }
+      266:  601:	{ _M_create_nodes(__nstart, __nfinish); }
 call    0 returned 100%
 branch  1 taken 100% (fallthrough)
 branch  2 taken 0% (throw)
@@ -2010,7 +2010,7 @@ branch 36 never executed
     =====:  607:	  __throw_exception_again;
         -:  608:	}
         -:  609:
-      262:  610:      this->_M_impl._M_start._M_set_node(__nstart);
+      266:  610:      this->_M_impl._M_start._M_set_node(__nstart);
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -2024,7 +2024,7 @@ call    9 returned 100%
 call   10 returned 100%
 call   11 returned 100%
 call   12 returned 100%
-      262:  611:      this->_M_impl._M_finish._M_set_node(__nfinish - 1);
+      266:  611:      this->_M_impl._M_finish._M_set_node(__nfinish - 1);
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -2038,10 +2038,10 @@ call    9 returned 100%
 call   10 returned 100%
 call   11 returned 100%
 call   12 returned 100%
-      262:  612:      this->_M_impl._M_start._M_cur = _M_impl._M_start._M_first;
-      262:  613:      this->_M_impl._M_finish._M_cur = (this->_M_impl._M_finish._M_first
-      524:  614:					+ __num_elements
-      262:  615:					% __deque_buf_size(sizeof(_Tp)));
+      266:  612:      this->_M_impl._M_start._M_cur = _M_impl._M_start._M_first;
+      266:  613:      this->_M_impl._M_finish._M_cur = (this->_M_impl._M_finish._M_first
+      532:  614:					+ __num_elements
+      266:  615:					% __deque_buf_size(sizeof(_Tp)));
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -2055,7 +2055,7 @@ call    9 returned 100%
 call   10 returned 100%
 call   11 returned 100%
 call   12 returned 100%
-      262:  616:    }
+      266:  616:    }
         -:  617:
         -:  618:  template<typename _Tp, typename _Alloc>
         -:  619:    void
@@ -2065,20 +2065,20 @@ function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5deque
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_create_nodesEPPS5_S9_ called 2 returned 100% blocks executed 55%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_create_nodesEPPS5_S9_ called 2 returned 100% blocks executed 55%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_create_nodesEPPS5_S9_ called 2 returned 100% blocks executed 55%
-function _ZNSt11_Deque_baseIiSaIiEE15_M_create_nodesEPPiS3_ called 244 returned 100% blocks executed 55%
+function _ZNSt11_Deque_baseIiSaIiEE15_M_create_nodesEPPiS3_ called 248 returned 100% blocks executed 55%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_create_nodesEPPS5_S9_ called 1 returned 100% blocks executed 55%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_create_nodesEPPS5_S9_ called 1 returned 100% blocks executed 55%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_create_nodesEPPS5_S9_ called 1 returned 100% blocks executed 55%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_create_nodesEPPS5_S9_ called 2 returned 100% blocks executed 55%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_create_nodesEPPS5_S9_ called 2 returned 100% blocks executed 55%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_create_nodesEPPS5_S9_ called 2 returned 100% blocks executed 55%
-      262:  620:    _Deque_base<_Tp, _Alloc>::
+      266:  620:    _Deque_base<_Tp, _Alloc>::
         -:  621:    _M_create_nodes(_Tp** __nstart, _Tp** __nfinish)
         -:  622:    {
         -:  623:      _Tp** __cur;
         -:  624:      __try
         -:  625:	{
-      772:  626:	  for (__cur = __nstart; __cur < __nfinish; ++__cur)
+      780:  626:	  for (__cur = __nstart; __cur < __nfinish; ++__cur)
 branch  0 taken 50%
 branch  1 taken 50% (fallthrough)
 branch  2 taken 50%
@@ -2105,7 +2105,7 @@ branch 22 taken 50%
 branch 23 taken 50% (fallthrough)
 branch 24 taken 50%
 branch 25 taken 50% (fallthrough)
-      510:  627:	    *__cur = this->_M_allocate_node();
+      514:  627:	    *__cur = this->_M_allocate_node();
 call    0 returned 100%
 branch  1 taken 100% (fallthrough)
 branch  2 taken 0% (throw)
@@ -2229,7 +2229,7 @@ branch 37 never executed
 branch 38 never executed
     =====:  632:	  __throw_exception_again;
         -:  633:	}
-      262:  634:    }
+      266:  634:    }
         -:  635:
         -:  636:  template<typename _Tp, typename _Alloc>
         -:  637:    void
@@ -2239,17 +2239,17 @@ function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestISt5deque
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE16_M_destroy_nodesEPPS5_S9_ called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE16_M_destroy_nodesEPPS5_S9_ called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE16_M_destroy_nodesEPPS5_S9_ called 2 returned 100% blocks executed 100%
-function _ZNSt11_Deque_baseIiSaIiEE16_M_destroy_nodesEPPiS3_ called 253 returned 100% blocks executed 100%
+function _ZNSt11_Deque_baseIiSaIiEE16_M_destroy_nodesEPPiS3_ called 257 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE16_M_destroy_nodesEPPS5_S9_ called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE16_M_destroy_nodesEPPS5_S9_ called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE16_M_destroy_nodesEPPS5_S9_ called 1 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE16_M_destroy_nodesEPPS5_S9_ called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE16_M_destroy_nodesEPPS5_S9_ called 2 returned 100% blocks executed 100%
 function _ZNSt11_Deque_baseIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE16_M_destroy_nodesEPPS5_S9_ called 2 returned 100% blocks executed 100%
-      271:  638:    _Deque_base<_Tp, _Alloc>::
+      275:  638:    _Deque_base<_Tp, _Alloc>::
         -:  639:    _M_destroy_nodes(_Tp** __nstart, _Tp** __nfinish)
         -:  640:    {
-      784:  641:      for (_Tp** __n = __nstart; __n < __nfinish; ++__n)
+      804:  641:      for (_Tp** __n = __nstart; __n < __nfinish; ++__n)
 branch  0 taken 50%
 branch  1 taken 50% (fallthrough)
 branch  2 taken 50%
@@ -2262,8 +2262,8 @@ branch  8 taken 50%
 branch  9 taken 50% (fallthrough)
 branch 10 taken 50%
 branch 11 taken 50% (fallthrough)
-branch 12 taken 66%
-branch 13 taken 34% (fallthrough)
+branch 12 taken 67%
+branch 13 taken 33% (fallthrough)
 branch 14 taken 50%
 branch 15 taken 50% (fallthrough)
 branch 16 taken 50%
@@ -2276,7 +2276,7 @@ branch 22 taken 50%
 branch 23 taken 50% (fallthrough)
 branch 24 taken 50%
 branch 25 taken 50% (fallthrough)
-      513:  642:	_M_deallocate_node(*__n);
+      529:  642:	_M_deallocate_node(*__n);
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -2290,7 +2290,7 @@ call    9 returned 100%
 call   10 returned 100%
 call   11 returned 100%
 call   12 returned 100%
-      271:  643:    }
+      275:  643:    }
         -:  644:
         -:  645:  /**
         -:  646:   *  @brief  A standard container using fixed-size memory allocation and
@@ -2455,9 +2455,9 @@ call   12 never executed
         -:  779:      /**
         -:  780:       *  @brief  Default constructor creates no elements.
         -:  781:       */
-function _ZNSt5dequeIiSaIiEEC2Ev called 10 returned 100% blocks executed 100%
-       10:  782:      deque()
-       10:  783:      : _Base() { }
+function _ZNSt5dequeIiSaIiEEC2Ev called 19 returned 100% blocks executed 100%
+       19:  782:      deque()
+       19:  783:      : _Base() { }
 call    0 returned 100%
         -:  784:
         -:  785:      /**
@@ -2483,15 +2483,15 @@ function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_3_TestIS_IiSaIiEEE8Tes
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEC2Em called 1 returned 100% blocks executed 80%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEC2Em called 1 returned 100% blocks executed 80%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEC2Em called 1 returned 100% blocks executed 80%
-function _ZNSt5dequeIiSaIiEEC2Em called 165 returned 100% blocks executed 80%
+function _ZNSt5dequeIiSaIiEEC2Em called 157 returned 100% blocks executed 80%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2Em called 1 returned 100% blocks executed 80%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2Em called 1 returned 100% blocks executed 80%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2Em called 1 returned 100% blocks executed 80%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2Em called 1 returned 100% blocks executed 80%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2Em called 1 returned 100% blocks executed 80%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2Em called 1 returned 100% blocks executed 80%
-      177:  802:      deque(size_type __n)
-      177:  803:      : _Base(__n)
+      169:  802:      deque(size_type __n)
+      169:  803:      : _Base(__n)
 call    0 returned 100%
 call    1 never executed
 call    2 returned 100%
@@ -2518,7 +2518,7 @@ call   22 returned 100%
 call   23 never executed
 call   24 returned 100%
 call   25 never executed
-      177:  804:      { _M_default_initialize(); }
+      169:  804:      { _M_default_initialize(); }
 call    0 returned 100%
 branch  1 taken 100% (fallthrough)
 branch  2 taken 0% (throw)
@@ -2603,12 +2603,12 @@ branch  2 taken 0% (throw)
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEC2ERKS6_ called 1 returned 100% blocks executed 83%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEC2ERKS6_ called 1 returned 100% blocks executed 83%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEC2ERKS6_ called 1 returned 100% blocks executed 83%
-function _ZNSt5dequeIiSaIiEEC2ERKS1_ called 63 returned 100% blocks executed 83%
+function _ZNSt5dequeIiSaIiEEC2ERKS1_ called 66 returned 100% blocks executed 83%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2ERKS7_ called 1 returned 100% blocks executed 83%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2ERKS7_ called 1 returned 100% blocks executed 83%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEC2ERKS7_ called 1 returned 100% blocks executed 83%
-       69:  841:      deque(const deque& __x)
-       69:  842:      : _Base(__x._M_get_Tp_allocator(), __x.size())
+       72:  841:      deque(const deque& __x)
+       72:  842:      : _Base(__x._M_get_Tp_allocator(), __x.size())
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -2637,7 +2637,7 @@ call   24 returned 100%
 call   25 returned 100%
 call   26 returned 100%
 call   27 never executed
-       69:  843:      { std::__uninitialized_copy_a(__x.begin(), __x.end(), 
+       72:  843:      { std::__uninitialized_copy_a(__x.begin(), __x.end(), 
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -2681,7 +2681,7 @@ call   39 returned 100%
 branch 40 taken 100% (fallthrough)
 branch 41 taken 0% (throw)
         -:  844:				    this->_M_impl._M_start,
-      138:  845:				    _M_get_Tp_allocator()); }
+      144:  845:				    _M_get_Tp_allocator()); }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -2766,15 +2766,15 @@ function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_3_TestIS_IiSaIiEEE8Tes
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EED2Ev called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EED2Ev called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EED2Ev called 2 returned 100% blocks executed 100%
-function _ZNSt5dequeIiSaIiEED2Ev called 244 returned 100% blocks executed 100%
+function _ZNSt5dequeIiSaIiEED2Ev called 248 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 1 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 1 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 1 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EED2Ev called 2 returned 100% blocks executed 100%
-      262:  917:      ~deque() _GLIBCXX_NOEXCEPT
-      262:  918:      { _M_destroy_data(begin(), end(), _M_get_Tp_allocator()); }
+      266:  917:      ~deque() _GLIBCXX_NOEXCEPT
+      266:  918:      { _M_destroy_data(begin(), end(), _M_get_Tp_allocator()); }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -2967,12 +2967,12 @@ function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_deque
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5beginEv called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5beginEv called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5beginEv called 2 returned 100% blocks executed 100%
-function _ZNSt5dequeIiSaIiEE5beginEv called 303 returned 100% blocks executed 100%
+function _ZNSt5dequeIiSaIiEE5beginEv called 307 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5beginEv called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5beginEv called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5beginEv called 2 returned 100% blocks executed 100%
-      327: 1037:      begin() _GLIBCXX_NOEXCEPT
-      327: 1038:      { return this->_M_impl._M_start; }
+      331: 1037:      begin() _GLIBCXX_NOEXCEPT
+      331: 1038:      { return this->_M_impl._M_start; }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -2995,12 +2995,12 @@ call   12 returned 100%
 function _ZNKSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5beginEv called 2 returned 100% blocks executed 100%
 function _ZNKSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5beginEv called 2 returned 100% blocks executed 100%
 function _ZNKSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE5beginEv called 2 returned 100% blocks executed 100%
-function _ZNKSt5dequeIiSaIiEE5beginEv called 142 returned 100% blocks executed 100%
+function _ZNKSt5dequeIiSaIiEE5beginEv called 181 returned 100% blocks executed 100%
 function _ZNKSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5beginEv called 2 returned 100% blocks executed 100%
 function _ZNKSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5beginEv called 2 returned 100% blocks executed 100%
 function _ZNKSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE5beginEv called 2 returned 100% blocks executed 100%
-      154: 1045:      begin() const _GLIBCXX_NOEXCEPT
-      154: 1046:      { return this->_M_impl._M_start; }
+      193: 1045:      begin() const _GLIBCXX_NOEXCEPT
+      193: 1046:      { return this->_M_impl._M_start; }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -3027,9 +3027,9 @@ function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIi
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE3endEv called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE3endEv called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE3endEv called 2 returned 100% blocks executed 100%
-function _ZNSt5dequeIiSaIiEE3endEv called 283 returned 100% blocks executed 100%
-      301: 1054:      end() _GLIBCXX_NOEXCEPT
-      301: 1055:      { return this->_M_impl._M_finish; }
+function _ZNSt5dequeIiSaIiEE3endEv called 287 returned 100% blocks executed 100%
+      305: 1054:      end() _GLIBCXX_NOEXCEPT
+      305: 1055:      { return this->_M_impl._M_finish; }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -3056,9 +3056,9 @@ function _ZNKSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestIS_IiSaIi
 function _ZNKSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE3endEv called 1 returned 100% blocks executed 100%
 function _ZNKSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE3endEv called 1 returned 100% blocks executed 100%
 function _ZNKSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE3endEv called 1 returned 100% blocks executed 100%
-function _ZNKSt5dequeIiSaIiEE3endEv called 113 returned 100% blocks executed 100%
-      119: 1063:      end() const _GLIBCXX_NOEXCEPT
-      119: 1064:      { return this->_M_impl._M_finish; }
+function _ZNKSt5dequeIiSaIiEE3endEv called 138 returned 100% blocks executed 100%
+      144: 1063:      end() const _GLIBCXX_NOEXCEPT
+      144: 1064:      { return this->_M_impl._M_finish; }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -3149,9 +3149,9 @@ function _ZNKSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestIS_IiSaIi
 function _ZNKSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE4sizeEv called 1 returned 100% blocks executed 100%
 function _ZNKSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE4sizeEv called 1 returned 100% blocks executed 100%
 function _ZNKSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE4sizeEv called 1 returned 100% blocks executed 100%
-function _ZNKSt5dequeIiSaIiEE4sizeEv called 147 returned 100% blocks executed 100%
-      153: 1142:      size() const _GLIBCXX_NOEXCEPT
-      153: 1143:      { return this->_M_impl._M_finish - this->_M_impl._M_start; }
+function _ZNKSt5dequeIiSaIiEE4sizeEv called 170 returned 100% blocks executed 100%
+      176: 1142:      size() const _GLIBCXX_NOEXCEPT
+      176: 1143:      { return this->_M_impl._M_finish - this->_M_impl._M_start; }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -3281,15 +3281,15 @@ function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_3_TestIS_IiSaIiEEE8Tes
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEixEm called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEixEm called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EEixEm called 2 returned 100% blocks executed 100%
-function _ZNSt5dequeIiSaIiEEixEm called 459 returned 100% blocks executed 100%
+function _ZNSt5dequeIiSaIiEEixEm called 426 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEixEm called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEixEm called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEixEm called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEixEm called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEixEm called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EEixEm called 2 returned 100% blocks executed 100%
-      483: 1244:      operator[](size_type __n)
-      483: 1245:      { return this->_M_impl._M_start[difference_type(__n)]; }
+      450: 1244:      operator[](size_type __n)
+      450: 1245:      { return this->_M_impl._M_start[difference_type(__n)]; }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -3460,9 +3460,9 @@ call    0 returned 100%
         -: 1369:
         -: 1370:#if __cplusplus >= 201103L
         -: 1371:      void
-function _ZNSt5dequeIiSaIiEE10push_frontEOi called 18 returned 100% blocks executed 100%
-       18: 1372:      push_front(value_type&& __x)
-       18: 1373:      { emplace_front(std::move(__x)); }
+function _ZNSt5dequeIiSaIiEE10push_frontEOi called 30 returned 100% blocks executed 100%
+       30: 1372:      push_front(value_type&& __x)
+       30: 1373:      { emplace_front(std::move(__x)); }
 call    0 returned 100%
 call    1 returned 100%
         -: 1374:
@@ -3986,19 +3986,19 @@ function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_3_TestIS_IiSaIiEEE8Tes
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE15_M_destroy_dataESt15_Deque_iteratorIS4_RS4_PS4_ESA_RKS5_ called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE15_M_destroy_dataESt15_Deque_iteratorIS4_RS4_PS4_ESA_RKS5_ called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE15_M_destroy_dataESt15_Deque_iteratorIS4_RS4_PS4_ESA_RKS5_ called 2 returned 100% blocks executed 100%
-function _ZNSt5dequeIiSaIiEE15_M_destroy_dataESt15_Deque_iteratorIiRiPiES5_RKS0_ called 253 returned 100% blocks executed 100%
+function _ZNSt5dequeIiSaIiEE15_M_destroy_dataESt15_Deque_iteratorIiRiPiES5_RKS0_ called 257 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_destroy_dataESt15_Deque_iteratorIS5_RS5_PS5_ESB_RKS6_ called 1 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_destroy_dataESt15_Deque_iteratorIS5_RS5_PS5_ESB_RKS6_ called 1 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_destroy_dataESt15_Deque_iteratorIS5_RS5_PS5_ESB_RKS6_ called 1 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_destroy_dataESt15_Deque_iteratorIS5_RS5_PS5_ESB_RKS6_ called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_destroy_dataESt15_Deque_iteratorIS5_RS5_PS5_ESB_RKS6_ called 2 returned 100% blocks executed 100%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE15_M_destroy_dataESt15_Deque_iteratorIS5_RS5_PS5_ESB_RKS6_ called 2 returned 100% blocks executed 100%
-      271: 1849:      _M_destroy_data(iterator __first, iterator __last,
+      275: 1849:      _M_destroy_data(iterator __first, iterator __last,
         -: 1850:		      const std::allocator<_Tp>&)
         -: 1851:      {
         -: 1852:	if (!__has_trivial_destructor(value_type))
         -: 1853:	  _M_destroy_data_aux(__first, __last);
-      271: 1854:      }
+      275: 1854:      }
         -: 1855:
         -: 1856:      // Called by erase(q1, q2).
         -: 1857:      void
@@ -4098,16 +4098,16 @@ call    0 never executed
     #####: 1929:      }
         -: 1930:
         -: 1931:      void
-function _ZNSt5dequeIiSaIiEE23_M_reserve_map_at_frontEm called 3 returned 100% blocks executed 67%
-        3: 1932:      _M_reserve_map_at_front(size_type __nodes_to_add = 1)
+function _ZNSt5dequeIiSaIiEE23_M_reserve_map_at_frontEm called 15 returned 100% blocks executed 67%
+       15: 1932:      _M_reserve_map_at_front(size_type __nodes_to_add = 1)
         -: 1933:      {
-        3: 1934:	if (__nodes_to_add > size_type(this->_M_impl._M_start._M_node
+       15: 1934:	if (__nodes_to_add > size_type(this->_M_impl._M_start._M_node
 branch  0 taken 0% (fallthrough)
 branch  1 taken 100%
         -: 1935:				       - this->_M_impl._M_map))
     #####: 1936:	  _M_reallocate_map(__nodes_to_add, true);
 call    0 never executed
-        3: 1937:      }
+       15: 1937:      }
         -: 1938:
         -: 1939:      void
         -: 1940:      _M_reallocate_map(size_type __nodes_to_add, bool __add_at_front);
@@ -4127,21 +4127,21 @@ call    0 never executed
         -: 1954:  */
         -: 1955:  template<typename _Tp, typename _Alloc>
         -: 1956:    inline bool
-function _ZSteqIiSaIiEEbRKSt5dequeIT_T0_ES6_ called 16 returned 100% blocks executed 100%
-       16: 1957:    operator==(const deque<_Tp, _Alloc>& __x,
+function _ZSteqIiSaIiEEbRKSt5dequeIT_T0_ES6_ called 26 returned 100% blocks executed 100%
+       26: 1957:    operator==(const deque<_Tp, _Alloc>& __x,
         -: 1958:                         const deque<_Tp, _Alloc>& __y)
-       16: 1959:    { return __x.size() == __y.size()
+       26: 1959:    { return __x.size() == __y.size()
 call    0 returned 100%
 call    1 returned 100%
-       16: 1960:             && std::equal(__x.begin(), __x.end(), __y.begin()); }
-branch  0 taken 75% (fallthrough)
-branch  1 taken 25%
+       26: 1960:             && std::equal(__x.begin(), __x.end(), __y.begin()); }
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
 call    2 returned 100%
 call    3 returned 100%
 call    4 returned 100%
 call    5 returned 100%
-branch  6 taken 83% (fallthrough)
-branch  7 taken 17%
+branch  6 taken 77% (fallthrough)
+branch  7 taken 23%
         -: 1961:
         -: 1962:  /**
         -: 1963:   *  @brief  Deque ordering relation.
@@ -4156,11 +4156,11 @@ branch  7 taken 17%
         -: 1972:  */
         -: 1973:  template<typename _Tp, typename _Alloc>
         -: 1974:    inline bool
-function _ZStltIiSaIiEEbRKSt5dequeIT_T0_ES6_ called 4 returned 100% blocks executed 100%
-        4: 1975:    operator<(const deque<_Tp, _Alloc>& __x,
+function _ZStltIiSaIiEEbRKSt5dequeIT_T0_ES6_ called 8 returned 100% blocks executed 100%
+        8: 1975:    operator<(const deque<_Tp, _Alloc>& __x,
         -: 1976:	      const deque<_Tp, _Alloc>& __y)
         -: 1977:    { return std::lexicographical_compare(__x.begin(), __x.end(),
-        4: 1978:					  __y.begin(), __y.end()); }
+        8: 1978:					  __y.begin(), __y.end()); }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -4170,10 +4170,10 @@ call    4 returned 100%
         -: 1980:  /// Based on operator==
         -: 1981:  template<typename _Tp, typename _Alloc>
         -: 1982:    inline bool
-function _ZStneIiSaIiEEbRKSt5dequeIT_T0_ES6_ called 5 returned 100% blocks executed 100%
-        5: 1983:    operator!=(const deque<_Tp, _Alloc>& __x,
+function _ZStneIiSaIiEEbRKSt5dequeIT_T0_ES6_ called 10 returned 100% blocks executed 100%
+       10: 1983:    operator!=(const deque<_Tp, _Alloc>& __x,
         -: 1984:	       const deque<_Tp, _Alloc>& __y)
-        5: 1985:    { return !(__x == __y); }
+       10: 1985:    { return !(__x == __y); }
 call    0 returned 100%
         -: 1986:
         -: 1987:  /// Based on operator<

@@ -205,9 +205,9 @@
         -:  200:    inline typename iterator_traits<_Iter>::iterator_category
 function _ZSt19__iterator_categoryISt15_Deque_iteratorIiRKiPS1_EENSt15iterator_traitsIT_E17iterator_categoryERKS6_ called 1 returned 100% blocks executed 100%
 function _ZSt19__iterator_categoryIPcENSt15iterator_traitsIT_E17iterator_categoryERKS2_ called 0 returned 0% blocks executed 0%
-function _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_ called 2336 returned 100% blocks executed 100%
-     2337:  201:    __iterator_category(const _Iter&)
-     2337:  202:    { return typename iterator_traits<_Iter>::iterator_category(); }
+function _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_ called 2364 returned 100% blocks executed 100%
+     2365:  201:    __iterator_category(const _Iter&)
+     2365:  202:    { return typename iterator_traits<_Iter>::iterator_category(); }
         -:  203:
         -:  204:  //@}
         -:  205:
@@ -230,7 +230,7 @@ function _ZNSt10_Iter_baseIPZN45Deque_Fixture_const_iter_arrow_op_test_2_TestISt
 function _ZNSt10_Iter_baseISt15_Deque_iteratorIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SRS6_PS6_ELb0EE7_S_baseES9_ called 1 returned 100% blocks executed 100%
 function _ZNSt10_Iter_baseIPZN45Deque_Fixture_const_iter_arrow_op_test_3_TestISt5dequeIiSaIiEEE8TestBodyEvE1SLb0EE7_S_baseES6_ called 2 returned 100% blocks executed 100%
 function _ZNSt10_Iter_baseIPPiLb0EE7_S_baseES1_ called 0 returned 0% blocks executed 0%
-function _ZNSt10_Iter_baseISt15_Deque_iteratorIiRiPiELb0EE7_S_baseES3_ called 70 returned 100% blocks executed 100%
+function _ZNSt10_Iter_baseISt15_Deque_iteratorIiRiPiELb0EE7_S_baseES3_ called 73 returned 100% blocks executed 100%
 function _ZNSt10_Iter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorELb0EE7_S_baseES8_ called 0 returned 0% blocks executed 0%
 function _ZNSt10_Iter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorELb0EE7_S_baseES8_ called 0 returned 0% blocks executed 0%
 function _ZNSt10_Iter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE14const_iteratorELb0EE7_S_baseES8_ called 0 returned 0% blocks executed 0%
@@ -255,12 +255,12 @@ function _ZNSt10_Iter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_
 function _ZNSt10_Iter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_1_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorELb0EE7_S_baseES8_ called 0 returned 0% blocks executed 0%
 function _ZNSt10_Iter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_2_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorELb0EE7_S_baseES8_ called 0 returned 0% blocks executed 0%
 function _ZNSt10_Iter_baseIN8my_dequeIZN42Deque_Fixture_my_iter_arrow_op_test_3_TestIS0_IiSaIiEEE8TestBodyEvE1SSaIS5_EE8iteratorELb0EE7_S_baseES8_ called 0 returned 0% blocks executed 0%
-function _ZNSt10_Iter_baseIPiLb0EE7_S_baseES0_ called 858 returned 100% blocks executed 100%
-function _ZNSt10_Iter_baseISt15_Deque_iteratorIiRKiPS1_ELb0EE7_S_baseES4_ called 308 returned 100% blocks executed 100%
-function _ZNSt10_Iter_baseIN8my_dequeIiSaIiEE8iteratorELb0EE7_S_baseES3_ called 88 returned 100% blocks executed 100%
-function _ZNSt10_Iter_baseIN8my_dequeIiSaIiEE14const_iteratorELb0EE7_S_baseES3_ called 64 returned 100% blocks executed 100%
-     1442:  212:      static iterator_type _S_base(_Iterator __it)
-     1442:  213:      { return __it; }
+function _ZNSt10_Iter_baseIPiLb0EE7_S_baseES0_ called 842 returned 100% blocks executed 100%
+function _ZNSt10_Iter_baseISt15_Deque_iteratorIiRKiPS1_ELb0EE7_S_baseES4_ called 378 returned 100% blocks executed 100%
+function _ZNSt10_Iter_baseIN8my_dequeIiSaIiEE8iteratorELb0EE7_S_baseES3_ called 148 returned 100% blocks executed 100%
+function _ZNSt10_Iter_baseIN8my_dequeIiSaIiEE14const_iteratorELb0EE7_S_baseES3_ called 122 returned 100% blocks executed 100%
+     1617:  212:      static iterator_type _S_base(_Iterator __it)
+     1617:  213:      { return __it; }
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%

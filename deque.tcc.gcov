@@ -74,20 +74,20 @@ function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_3_TestIS_IiSaIiEEE8Tes
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE21_M_default_initializeEv called 1 returned 100% blocks executed 30%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE21_M_default_initializeEv called 1 returned 100% blocks executed 30%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestIS_IiSaIiEEE8TestBodyEvE1SSaIS4_EE21_M_default_initializeEv called 1 returned 100% blocks executed 30%
-function _ZNSt5dequeIiSaIiEE21_M_default_initializeEv called 165 returned 100% blocks executed 50%
+function _ZNSt5dequeIiSaIiEE21_M_default_initializeEv called 157 returned 100% blocks executed 50%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE21_M_default_initializeEv called 1 returned 100% blocks executed 30%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE21_M_default_initializeEv called 1 returned 100% blocks executed 30%
 function _ZNSt5dequeIZN39Deque_Fixture_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE21_M_default_initializeEv called 1 returned 100% blocks executed 30%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_1_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE21_M_default_initializeEv called 1 returned 100% blocks executed 30%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_2_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE21_M_default_initializeEv called 1 returned 100% blocks executed 30%
 function _ZNSt5dequeIZN45Deque_Fixture_const_iter_arrow_op_test_3_TestI8my_dequeIiSaIiEEE8TestBodyEvE1SSaIS5_EE21_M_default_initializeEv called 1 returned 100% blocks executed 30%
-      177:   66:    deque<_Tp, _Alloc>::
+      169:   66:    deque<_Tp, _Alloc>::
         -:   67:    _M_default_initialize()
         -:   68:    {
         -:   69:      _Map_pointer __cur;
         -:   70:      __try
         -:   71:        {
-      425:   72:          for (__cur = this->_M_impl._M_start._M_node;
+      417:   72:          for (__cur = this->_M_impl._M_start._M_node;
 branch  0 taken 0%
 branch  1 taken 100% (fallthrough)
 branch  2 taken 0%
@@ -100,8 +100,8 @@ branch  8 taken 0%
 branch  9 taken 100% (fallthrough)
 branch 10 taken 0%
 branch 11 taken 100% (fallthrough)
-branch 12 taken 60%
-branch 13 taken 40% (fallthrough)
+branch 12 taken 61%
+branch 13 taken 39% (fallthrough)
 branch 14 taken 0%
 branch 15 taken 100% (fallthrough)
 branch 16 taken 0%
@@ -183,7 +183,7 @@ call    9 never executed
 call   10 never executed
 call   11 never executed
 call   12 never executed
-      177:   77:          std::__uninitialized_default_a(this->_M_impl._M_finish._M_first,
+      169:   77:          std::__uninitialized_default_a(this->_M_impl._M_finish._M_first,
 call    0 returned 100%
 branch  1 taken 100% (fallthrough)
 branch  2 taken 0% (throw)
@@ -224,7 +224,7 @@ call   36 returned 100%
 branch 37 taken 100% (fallthrough)
 branch 38 taken 0% (throw)
         -:   78:					 this->_M_impl._M_finish._M_cur,
-      177:   79:					 _M_get_Tp_allocator());
+      169:   79:					 _M_get_Tp_allocator());
 call    0 returned 100%
 call    1 returned 100%
 call    2 returned 100%
@@ -386,7 +386,7 @@ branch 61 never executed
 call   62 never executed
     =====:   85:          __throw_exception_again;
         -:   86:        }
-      177:   87:    }
+      169:   87:    }
         -:   88:#endif
         -:   89:
         -:   90:  template <typename _Tp, typename _Alloc>
@@ -445,13 +445,13 @@ branch  4 taken 0% (throw)
         -:  112:  template<typename _Tp, typename _Alloc>
         -:  113:    template<typename... _Args>
         -:  114:      void
-function _ZNSt5dequeIiSaIiEE13emplace_frontIIiEEEvDpOT_ called 18 returned 100% blocks executed 100%
-       18:  115:      deque<_Tp, _Alloc>::
+function _ZNSt5dequeIiSaIiEE13emplace_frontIIiEEEvDpOT_ called 30 returned 100% blocks executed 100%
+       30:  115:      deque<_Tp, _Alloc>::
         -:  116:      emplace_front(_Args&&... __args)
         -:  117:      {
-       18:  118:	if (this->_M_impl._M_start._M_cur != this->_M_impl._M_start._M_first)
-branch  0 taken 83% (fallthrough)
-branch  1 taken 17%
+       30:  118:	if (this->_M_impl._M_start._M_cur != this->_M_impl._M_start._M_first)
+branch  0 taken 50% (fallthrough)
+branch  1 taken 50%
         -:  119:	  {
        15:  120:	    this->_M_impl.construct(this->_M_impl._M_start._M_cur - 1,
 call    0 returned 100%
@@ -460,10 +460,10 @@ call    0 returned 100%
        15:  122:	    --this->_M_impl._M_start._M_cur;
         -:  123:	  }
         -:  124:	else
-        3:  125:	  _M_push_front_aux(std::forward<_Args>(__args)...);
+       15:  125:	  _M_push_front_aux(std::forward<_Args>(__args)...);
 call    0 returned 100%
 call    1 returned 100%
-       18:  126:      }
+       30:  126:      }
         -:  127:
         -:  128:  template<typename _Tp, typename _Alloc>
         -:  129:    template<typename... _Args>
@@ -932,8 +932,8 @@ call    0 never executed
         -:  469:#if __cplusplus >= 201103L
         -:  470:    template<typename... _Args>
         -:  471:      void
-function _ZNSt5dequeIiSaIiEE17_M_push_front_auxIIiEEEvDpOT_ called 3 returned 100% blocks executed 54%
-        3:  472:      deque<_Tp, _Alloc>::
+function _ZNSt5dequeIiSaIiEE17_M_push_front_auxIIiEEEvDpOT_ called 15 returned 100% blocks executed 54%
+       15:  472:      deque<_Tp, _Alloc>::
         -:  473:      _M_push_front_aux(_Args&&... __args)
         -:  474:#else
         -:  475:      void
@@ -941,22 +941,22 @@ function _ZNSt5dequeIiSaIiEE17_M_push_front_auxIIiEEEvDpOT_ called 3 returned 10
         -:  477:      _M_push_front_aux(const value_type& __t)
         -:  478:#endif
         -:  479:      {
-        3:  480:	_M_reserve_map_at_front();
+       15:  480:	_M_reserve_map_at_front();
 call    0 returned 100%
-        3:  481:	*(this->_M_impl._M_start._M_node - 1) = this->_M_allocate_node();
+       15:  481:	*(this->_M_impl._M_start._M_node - 1) = this->_M_allocate_node();
 call    0 returned 100%
         -:  482:	__try
         -:  483:	  {
-        3:  484:	    this->_M_impl._M_start._M_set_node(this->_M_impl._M_start._M_node
+       15:  484:	    this->_M_impl._M_start._M_set_node(this->_M_impl._M_start._M_node
 call    0 returned 100%
 branch  1 taken 100% (fallthrough)
 branch  2 taken 0% (throw)
         -:  485:					       - 1);
-        3:  486:	    this->_M_impl._M_start._M_cur = this->_M_impl._M_start._M_last - 1;
+       15:  486:	    this->_M_impl._M_start._M_cur = this->_M_impl._M_start._M_last - 1;
         -:  487:#if __cplusplus >= 201103L
-        3:  488:	    this->_M_impl.construct(this->_M_impl._M_start._M_cur,
+       15:  488:	    this->_M_impl.construct(this->_M_impl._M_start._M_cur,
 call    0 returned 100%
-        3:  489:				    std::forward<_Args>(__args)...);
+       15:  489:				    std::forward<_Args>(__args)...);
 call    0 returned 100%
         -:  490:#else
         -:  491:	    this->_M_impl.construct(this->_M_impl._M_start._M_cur, __t);
@@ -975,7 +975,7 @@ branch  2 never executed
 call    0 never executed
     =====:  498:	    __throw_exception_again;
         -:  499:	  }
-        3:  500:      }
+       15:  500:      }
         -:  501:
         -:  502:  // Called only if _M_impl._M_finish._M_cur == _M_impl._M_finish._M_first.
         -:  503:  template <typename _Tp, typename _Alloc>
